@@ -1,0 +1,176 @@
+@import '../../../styles/_variables.scss';
+
+.contact-rm-right-appointment {
+  height: 100%;
+  flex: 1 1;
+  margin-left: 24px;
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  // .appointment-module 
+  .appointment-module {
+    .module-content {
+        padding: 18px 40px;
+    }
+  }
+  // .update-appointment
+  .update-appointment {
+    .line-title {
+        margin-bottom: 25px;
+        padding-left: 0;
+        .icons {
+            &.icon-back {
+                width: 24px;
+                height: 24px;
+                @include icon-line-back;
+                margin-right: 10px;
+            }
+        }
+        .rights {
+            .red-links {
+                color: #91302e;
+                font-size: 16px;
+                font-weight: 700;
+                padding: 2px 15px;
+                text-decoration: none;
+            }
+        }
+    }
+    .update-list {
+        .border-boxs {
+            border-radius: 6px;
+            border: 1px solid #d3d3d3;
+            background-color: #ffffff;
+            padding: 22px;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            .btn-edit {
+                @include icon-green-edit;
+                width: 25px;
+                height: 25px;
+                align-items: flex-start;
+            }
+            .lefts {
+                align-items: flex-start;
+                flex: 1;
+                .color-point {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 24px;
+                    display: inline-block;
+                    background-color: #09d1b6;
+                    color: #003d4c;
+                    font-weight: 700;
+                    margin-right: 15px;
+                    margin-top: 2px;
+                }
+                .right-txt {
+                    flex: 1;
+                    .titles {
+                        font-weight: 700;
+                        color: #001f26;
+                        font-size: 18px;
+                        font-family: $gotham-rounded;
+                        margin-bottom: 20px;
+                    }
+                }
+                .three-area {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .items {
+                        flex: 0 0 40%;
+                        max-width: 40%;
+                        .label-txt {
+                            opacity: 0.5;
+                            color: #003d4c;
+                            font-size: 10px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                        }
+                        .values {
+                            color: #003d4c;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            font-family: $gotham-rounded;
+                            max-width: 419px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+}
+/* fix layout issue when smaller than 1182px width */
+@media (max-width: $normal-desktop-width) {
+    .contact-rm-right-appointment {
+        // .update-appointment
+        .update-appointment {
+            .line-title {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 0;
+                .rights {
+                    margin-top: 15px;
+                    .red-links {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-tablet-width) {
+  .contact-rm-right-appointment {
+    margin-left: 0;
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .contact-rm-right-appointment {
+    // .update-appointment
+    .update-appointment {
+        .update-list {
+            .border-boxs {
+                .lefts {
+                    .three-area {
+                        flex-direction: column;
+                        .items {
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            margin-bottom: 15px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .line-title {
+            .rights {
+                margin-left: 29px;
+                .red-links {
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    margin-left: 0;
+                    padding-left: 7px;
+                }
+            }
+        }
+        
+    }
+  }
+}

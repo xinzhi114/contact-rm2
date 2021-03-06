@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.026" height="16.528" viewBox="0 0 15.026 16.528">
+    <g id="trash" transform="translate(0.75 0.75)">
+        <path id="Path_3999" data-name="Path 3999" d="M3,6H16.526" transform="translate(-3 -2.994)" fill="none"
+            stroke="#91302e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+        <path id="Path_4000" data-name="Path 4000"
+            d="M15.52,5.006v10.52a1.5,1.5,0,0,1-1.5,1.5H6.5a1.5,1.5,0,0,1-1.5-1.5V5.006m2.254,0V3.5A1.5,1.5,0,0,1,8.757,2h3.006a1.5,1.5,0,0,1,1.5,1.5v1.5"
+            transform="translate(-3.497 -2)" fill="none" stroke="#91302e" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1.5" />
+    </g>
+</svg>

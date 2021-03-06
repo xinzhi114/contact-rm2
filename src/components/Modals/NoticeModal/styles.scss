@@ -1,0 +1,48 @@
+@import '../../../styles/variables';
+
+.modal-dialog.flex-dialog.notice-modal {
+  margin: 0 !important;
+  .modal-content {
+    box-shadow: none;
+    background-color: $bg-gray;
+    .modal-body {
+      padding: 20px 30px 30px 20px !important;
+      font-size: 14px;
+      color: $font-black;
+      .top-title {
+        margin-bottom: 18px;
+      }
+    }
+    .modal-footer {
+      background-color: $font-black;
+      padding: 20px;
+      font-size: 14px;
+      .option-text {
+        color: $white;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.base-modal.notice-modal {
+  .modal-body {
+    .flex-list .item .value {
+      white-space: nowrap;
+    }
+    .modal-dialog.important-information {
+      padding: 0;
+      margin: 24px 0;
+      min-width: unset;
+      max-width: unset !important;
+      .btn.btn-close {
+        display: none;
+      }
+    }
+  }
+  .modal-footer {
+    .btn {
+      min-width: 70%;
+    }
+  }
+}

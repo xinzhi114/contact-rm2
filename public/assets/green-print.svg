@@ -1,0 +1,16 @@
+<svg id="icon_print" data-name="icon/print" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+    viewBox="0 0 24 24">
+    <g id="Group" transform="translate(3 3)">
+        <path id="Path" d="M3.962,11H0V0H18V11H14.091" transform="translate(0 4)" fill="none" stroke="#00a792"
+            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+        <rect id="Rectangle_Copy" data-name="Rectangle Copy" width="10" height="4" transform="translate(4)" fill="none"
+            stroke="#00a792" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+        <path id="Rectangle_Copy_2" data-name="Rectangle Copy 2"
+            d="M0,0H10a0,0,0,0,1,0,0V8A1,1,0,0,1,9,9H1A1,1,0,0,1,0,8V0A0,0,0,0,1,0,0Z" transform="translate(4 10)"
+            fill="none" stroke="#00a792" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+        <path id="Line" d="M.75.5h4.5" transform="translate(6 12.5)" fill="none" stroke="#00a792" stroke-linecap="round"
+            stroke-miterlimit="10" stroke-width="2" />
+        <path id="Line_Copy" data-name="Line Copy" d="M.75.5h4.5" transform="translate(6 15.5)" fill="none"
+            stroke="#00a792" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" />
+    </g>
+</svg>

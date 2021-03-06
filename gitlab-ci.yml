@@ -1,0 +1,28 @@
+image: timbru31/java-node
+
+variables:
+  SONAR_TOKEN: $SONAR_TOKEN
+  SONAR_HOST_URL: $SONAR_HOST
+  GIT_DEPTH: 0
+
+stages:
+  - build
+  - sonarqube
+
+build & test:
+  stage: build
+  script:
+    - npm install --silent
+    - npm run build && npm run lint
+    - CI=true npm run test:cov
+  only:
+    - develop
+
+sonarqube:
+  stage: sonarqube
+  script:
+    - npm install --silent
+    - npm run sonar-scanner -- -Dsonar.login=${SONAR_TOKEN} -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.projectKey=odyssey-web-front -Dsonar.sources=.
+  allow_failure: true
+  only:
+    - develop

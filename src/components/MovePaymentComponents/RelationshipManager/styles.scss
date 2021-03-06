@@ -1,0 +1,108 @@
+@import '../../../styles/_variables.scss';
+
+// .contact-boxs
+.payment-home-contact {
+    flex: 0 0 100%;
+    background-color: $white;
+    padding: 11px 24px;
+    border-radius: 5px;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    .icons-arrow {
+        @include lazzada-online;
+    }
+    .left-title {
+        color: $dark-blue;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+    }
+    .user-module {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 5px;
+        .btn-more {
+            @include icon-more-finance;
+            height: 24px;
+            flex: 0 0 20px;
+            max-width: 20px;
+        }
+        .left-img {
+            flex: 0 0 55px;
+            max-width: 55px;
+            width: 55px;
+            height: 55px;
+            border-radius: 100%;
+            position: relative;
+            margin-left: 16px;
+            margin-right: 8px;
+            .green-point {
+                width: 14px;
+                height: 14px;
+                border: 2px solid $white;
+                background-color: $bg-green;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: 100%;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 100%;
+            }
+        }
+        .rights {
+            text-align: right;
+            .names {
+                color: $dark-green;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                
+            }
+            .txt {
+                color: $font-black;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 19px;
+                margin: 0;
+            }
+            .start-list {
+                li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 2px;
+                    margin-top: -7px;
+                    .icon-star-green {
+                        @include icon-list-star-finance;
+                        display: inline-block;
+                        width: 11px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+    .payment-home-contact {
+        max-width: none;
+    }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $min-desktop-width) {
+    .payment-home-contact {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .payment-home-contact {
+        position: relative;
+        background-color: $white;
+    }
+}

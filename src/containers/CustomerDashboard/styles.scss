@@ -1,0 +1,152 @@
+@import '../../styles/_variables.scss';
+
+.content {
+  &.dashboard-content {
+    padding-left: 267px;
+  }
+}
+.tab-all-accounts {
+  background-color: $bg-gray;
+}
+.dashboard {
+  height: 100%;
+  & > div {
+    height: 100%;
+  }
+}
+.dashboard-content {
+  height: 100%;
+  min-height: 800px;
+  .mains {
+    padding-left: 24px;
+    height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .col-items {
+    .contact-boxs,
+    .home-contact {
+      box-shadow: 0 5px 12px $shadow-gray;
+      border-radius: 6px;
+      flex: 1 0 auto;
+      padding: 14px 20px;
+      max-width: none;
+      margin-bottom: 24px;
+      margin-left: 0;
+    }
+  }
+}
+.white-panel {
+  position: relative;
+}
+
+// .some-cols
+.some-cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 28px;
+  &.customer-some-col {
+    align-items: flex-start;
+    .finance-manager {
+      min-height: 545px;
+    }
+    
+  }
+  .col-items {
+    flex-grow: 1;
+    margin-right: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.desktop-hide {
+      display: none;
+    }
+    &.flex-25 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    &.flex-35 {
+      flex: 0 0 32%;
+      max-width: 32%;
+    }
+    &.flex-47 {
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+    &.flex-75 {
+      flex: 0 0 75%;
+      max-width: 50%;
+    }
+    &.flex-all {
+      flex: 1;
+    }
+    &.flex-327 {
+      flex: 0 0 327px;
+      max-width: 327px;
+      margin-right: 0;
+    }
+    &.align-self {
+      flex: 0 0 329px;
+      max-width: 329px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1181px width */
+@media (max-width: $smaller-desktop-width) {
+  .content {
+    &.dashboard-content {
+      padding-left: 168px;
+      padding-top: 50px;
+    }
+  }
+  .some-cols {
+    .col-items {
+      &.flex-35 {
+        flex: 0 0 45%;
+        max-width: 45%;
+      }
+      &.flex-47 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+  .content {
+    &.dashboard-content {
+      padding-left: 0;
+      padding-top: 50px;
+      .mains {
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  // .some-cols
+  .some-cols {
+    .col-items {
+      margin-right: 0;
+      margin-bottom: 24px;
+      flex: 0 0 100%;
+      max-width: 100%;
+      &.flex-35,
+      &.flex-47 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

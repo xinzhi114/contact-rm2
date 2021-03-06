@@ -1,0 +1,331 @@
+@import '../../../styles/_variables.scss';
+
+.card-right-boxs {
+  flex: 1;
+  margin-left: 24px;
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  margin-right: 24px;
+  .title-line-bar {
+    padding: 33px 30px;
+    border-bottom: 1px solid $border-gray;
+    .icon-card {
+      @include icon-card;
+      background-size: 37px 32px;
+      width: 39px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    .txt {
+      color: $font-black;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+    }
+  }
+  .pending-approval {
+    .title-txt {
+      color: $dark-blue;
+      font-size: 20px;
+      font-weight: 500;
+      margin-left: 30px;
+      padding: 15px 30px 25px 0px;
+      border-bottom: 1px solid $border-gray;
+    }
+    .center-area {
+      margin-left: 30px;
+      padding-bottom: 120px;
+      border-bottom: 1px solid $border-gray;
+      .description-txt {
+        color: $font-black;
+        font-size: 14px;
+        padding: 25px 30px 25px 0px;
+      }
+      .data-summary {
+        display: flex;
+        .left-area {
+          flex: 0 0 50%;
+          .user-name {
+            display: flex;
+            align-items: center;
+            .txt {
+              color: $font-black;
+              font-size: 14px;
+              font-weight: 700;
+              display: flex;
+              flex-direction: column;
+              .bottom-txt {
+                font-weight: normal;
+              }
+            }
+            .avatar {
+              flex-grow: unset;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #71b2c9;
+              border-radius: 50%;
+              color: $white;
+              font-weight: 500;
+              height: 40px;
+              width: 40px;
+              min-width: 40px;
+              min-height: 40px;
+              font-size: 14px;
+              margin-right: 12px;
+            }
+          }
+        }
+        .right-area {
+          .br-uppercase {
+            opacity: 0.8;
+            color: $font-black;
+            font-size: 10px;
+            font-weight: 600;
+          }
+          .br-strong {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .bottom-area {
+      margin-left: 30px;
+      padding: 20px 30px 25px 0px;
+      .btn-green {
+        margin-right: 40px;
+      }
+    }
+  }
+  .debit-card-list {
+    padding: 0 30px;
+    .row-line {
+      padding: 13px 0;
+      min-height: 68px;
+      border-bottom: 1px solid $border-gray;
+      .lefts {
+        display: flex;
+        align-items: center;
+        .icons {
+          flex: 0 0 24px;
+          max-width: 24px;
+          margin-right: 10px;
+          width: 24px;
+          height: 24px;
+          &.icon-lock {
+            @include icon-lock;
+          }
+          &.icon-block {
+            @include icon-block;
+          }
+          &.icon-reveal {
+            @include icon-reveal;
+          }
+          &.icon-channel {
+            @include icon-channel;
+          }
+        }
+        .right-txt {
+          .blue-txt {
+            color: $font-black;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+          }
+          .green-txt {
+            color: $dark-green;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+          }
+        }
+      }
+      .rights {
+        display: flex;
+        align-items: center;
+        .gray-bold {
+          color: $dark-black;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 14px;
+        }
+        .icon-setting {
+          @include icon-setting;
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  //.check-round-wrap
+  .check-round-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    height: 28px;
+    input[type='checkbox'] {
+      display: none;
+    }
+    input[type='checkbox'] + label {
+      font-size: 14px;
+      color: $dark-gray;
+      display: inline-block;
+      font-weight: normal;
+      padding-left: 42px;
+      padding-top: 27px;
+      text-align: left;
+      position: relative;
+      line-height: 27px;
+      text-transform: none;
+      cursor: pointer;
+    }
+    label::before {
+      content: '';
+      display: block;
+      vertical-align: middle;
+      margin-right: 5px;
+      width: 42px;
+      height: 27px;
+      border-radius: 15px;
+      background-color: #796E65;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    label::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      display: block;
+      width: 21px;
+      height: 21px;
+      background-color: $white;
+      border-radius: 100%;
+      transition: all 0.25s ease-in-out;
+    }
+    input[type='checkbox']:checked + label::before {
+      background-color: $bg-green;
+    }
+    input[type='checkbox']:checked + label::after {
+      left: 18px;
+    }
+  }
+  .setting-wrap {
+    display: inline-block;
+    &.open {
+      .tip-panel {
+        display: block;
+      }
+    }
+    .tip-panel {
+      display: none;
+      padding: 6px 16px 16px 16px;
+      &.activate-debit-card {
+        top: -125px;
+      }
+      &.reveal-pin-cvv {
+        top: -150px;
+      }
+      .top-txt {
+        border-bottom: 1px solid $border-gray;
+        .icon-txt {
+          display: flex;
+          padding-left: 0;
+          .icon-lock {
+            max-width: 24px;
+            flex: 0 0 24px;
+            margin-right: 12px;
+          }
+          .txt {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+        .icon-lock {
+          @include icon-gray-lock;
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .otp-boxs {
+        .otp-title {
+          padding: 9px 0;
+          .lefts {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 700;
+          }
+          .right-link {
+            color: $dark-green;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: underline;
+          }
+        }
+        .inputs {
+          input {
+            letter-spacing: 10px;
+          }
+        }
+        .expires-txt {
+          color: $font-black;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          margin-bottom: 13px;
+          .bold {
+            font-weight: 700;
+          }
+        }
+      }
+      .bottom-btns {
+        padding: 16px 0;
+        padding-right: 15px;
+        border-top: 1px solid $border-gray;
+        margin-top: 15px;
+        .btn-green {
+          min-width: 100px;
+        }
+        .green-link {
+          color: $green;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+  .card-right-boxs {
+    margin: 20px 0 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .card-right-boxs {
+    margin: 20px 0 0;
+    .debit-card-list {
+      padding: 0 10px;
+      .row-line {
+        flex-direction: column;
+        .lefts {
+          align-self: flex-start;
+        }
+        .rights {
+          margin-top: 10px;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

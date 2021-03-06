@@ -1,0 +1,21 @@
+@import '../../../../styles/variables';
+
+@media (max-width: $max-tablet-width) {
+  .otp-code-step {
+    .modal-body {
+      padding-top: 16px;
+      .base-form {
+        .row-line {
+          > div {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .modal-footer {
+      .btn.btn-primary {
+        width: 100%;
+      }
+    }
+  }
+}

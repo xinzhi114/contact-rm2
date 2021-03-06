@@ -1,0 +1,163 @@
+@import '../../../../../styles/variables';
+
+.select-payment {
+  .top-title {
+    margin-bottom: 23px;
+    .form-check {
+      padding-left: 0;
+    }
+    .form-check-label {
+      padding-left: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      &::before {
+        position: unset;
+        margin-left: 36px;
+      }
+    }
+    .option-text {
+      color: $font-black;
+      margin-left: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  .form-wrap {
+    .bottom-row {
+      &.domestic {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        .notice-modal {
+          width: 66%;
+        }
+        .payment-method-info {
+          @include icon-alert-circle;
+          color: $font-black;
+          background-position: 10px 0;
+          width: 33%;
+          margin-left: 10px;
+          padding-left: 10px;
+          padding-left: 40px;
+          font-size: 14px;
+          .bold {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.select-payment-review {
+  .review {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .small-title {
+      font-size: 16px;
+      font-weight: 500;
+      flex-grow: 0.5;
+    }
+    .flex-list {
+      margin-top: 0;
+      flex-grow: 1;
+      justify-content: flex-end;
+      .item {
+        flex-grow: unset;
+        padding-right: 40px;
+      }
+    }
+  }
+  .review-container {
+    position: relative;
+    display: flex;
+    > div:not(.edit-step-button) {
+      width: 50%;
+    }
+    color: $font-black;
+    .left-info {
+      border-right: 1px solid $border-gray;
+      padding-right: 32px;
+      margin-right: 32px;
+      .small-title {
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      .payment-summary {
+        display: flex;
+        > img {
+          transform: rotateZ(180deg);
+          margin: 0 32px;
+        }
+      }
+    }
+    .helper-text {
+      margin-top: 12px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+    .flex-list {
+      padding-right: 72px;
+      flex-direction: column;
+      .item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        .label {
+          text-transform: none;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+    .edit-step-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .select-payment {
+    .form-wrap {
+      .bottom-row {
+        &.domestic {
+          flex-direction: column-reverse;
+          .notice-modal {
+            width: 100%;
+          }
+          .payment-method-info {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .select-payment-review {
+    .review-container {
+      > div:not(.edit-step-button) {
+        &.left-info {
+          width: 100%;
+          border-right: none;
+        }
+        &.flex-list {
+          display: none;
+        }
+      }
+      .text-wrap {
+        > .flex-list {
+          flex-direction: column;
+          .item {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}

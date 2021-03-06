@@ -1,0 +1,13 @@
+{
+  "dataList": {
+    "accountProfile": {
+      "photoUrl": "/assets/photo-home.jpg",
+      "stars": 4,
+      "name": "Mark Thompson",
+      "role": "Account Manager",
+      "state": "active",
+      "email": "support@odyssey.com",
+      "phoneNumber": "+22 (0) 20 3375 6422"
+    }
+  }
+}

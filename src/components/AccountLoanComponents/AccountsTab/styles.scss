@@ -1,0 +1,75 @@
+@import '../../../styles/_variables.scss';
+// .top-ctrl
+.top-ctrl {
+    margin-bottom: 11px;
+    margin-right: 20px;
+    ul {
+        li {
+            margin-right: 32px;
+        }
+        .tab-link {
+            color: $dark-green;
+            font-size: 14px;
+            font-weight: 700;
+            &.current {
+                color: $font-black;
+            }
+        }
+    }
+    .right-arrow {
+        .btn-arrow {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            &.prev {
+                @include prev;
+                background-color: #66797D;
+                transform: rotate(90deg);
+                &.disabled {
+                    @include prev-disabled;
+                    background-color: #66797D;
+                    pointer-events: none;
+                }
+            }
+            &.next {
+                @include prev;
+                background-color: $dark-green;
+                transform: rotate(-90deg);
+                margin-left: 15px;
+                &.disabled {
+                    @include next-disabled;
+                    background-color: $dark-green;
+                    transform: rotate(-90deg);
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .two-grid {
+        .drop-down {
+          .white-link {
+                color: $white;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .icon-arrow {
+                @include icon-arrow;
+                width: 20px;
+                height: 21px;
+            }
+        }
+    }
+    .tab-dropdown {
+            .dropdown-toggle.btn.btn-success {
+                font-size: 14px;
+                min-width: 131px;
+                padding-left: 0;
+            }
+        }
+}

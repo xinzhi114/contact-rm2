@@ -1,0 +1,18 @@
+{
+  "dataList": {
+    "accountList": [
+      {
+        "accountType": "Saving Account",
+        "accountNumber": "11223344"
+      },
+      {
+        "accountType": "Current Account",
+        "accountNumber": "11223355"
+      }
+    ],
+    "statementOfInterest": {
+      "description": "Lorem ipsum dolor sit amet, consecteture adipisicing elit, sed diam nonumy ermod tempor invidunt",
+      "lastUpdated": "Sep 28, 2020"
+    }
+  }
+}

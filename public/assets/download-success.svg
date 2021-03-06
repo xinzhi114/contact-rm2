@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="159.989" height="159.876" viewBox="0 0 159.989 159.876">
+  <defs>
+    <filter id="Oval" x="0" y="0" width="159.989" height="159.876" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17" result="blur"/>
+      <feFlood flood-opacity="0.318"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Illustrations_confirmation" data-name="Illustrations / confirmation" transform="translate(38.394 33.902)">
+    <path id="Fill_1" data-name="Fill 1" d="M26,.978A.977.977,0,0,0,25.026,0H.977A.975.975,0,0,0,0,.971a.631.631,0,0,0,0,.067c.325,4.777,3,24.44,25,25.015a.978.978,0,0,0,.994-.98Z" transform="translate(26.053 48.649) rotate(90)" fill="#00d9b4" opacity="0.5"/>
+    <g transform="matrix(1, 0, 0, 1, -38.39, -33.9)" filter="url(#Oval)">
+      <ellipse id="Oval-2" data-name="Oval" cx="28.995" cy="28.938" rx="28.995" ry="28.938" transform="translate(51 49)" fill="#00d5b5"/>
+    </g>
+    <path id="Rectangle" d="M36.8.515a.421.421,0,0,1,.59.021l5.646,5.973a.419.419,0,0,1-.022.6L6.68,40.351a.421.421,0,0,1-.592-.024L.529,34.357a.419.419,0,0,1,.023-.594Z" transform="translate(35.673 18.638)" fill="#0b6882"/>
+    <path id="Rectangle_10" data-name="Rectangle  10" d="M.234,4.742a.838.838,0,0,1,.045-1.2L2.917,1.167A4.56,4.56,0,0,1,9.255,1.4L23.144,15.9a.838.838,0,0,1-.005,1.165l-4.977,5.1a.842.842,0,0,1-1.209,0Z" transform="matrix(1, 0.017, -0.017, 1, 24.909, 36.466)" fill="#004052"/>
+    <path id="Fill_1-2" data-name="Fill 1" d="M26.029,1a.98.98,0,0,0-.979-.978L.977,0A.973.973,0,0,0,0,.969a.629.629,0,0,0,0,.067c.33,4.772,3.03,24.417,25.056,25.013a.975.975,0,0,0,.994-.978Z" transform="translate(61.057 41.778) rotate(137)" fill="#192f2b" opacity="0.5"/>
+    <ellipse id="Oval-3" data-name="Oval" cx="0.84" cy="0.839" rx="0.84" ry="0.839" transform="translate(46.644)" fill="#00d5b5"/>
+    <ellipse id="Oval_3" data-name="Oval  3" cx="0.84" cy="0.839" rx="0.84" ry="0.839" transform="translate(46.644 10.065)" fill="#00d5b5"/>
+    <ellipse id="Oval_" data-name="Oval " cx="0.84" cy="0.839" rx="0.84" ry="0.839" transform="translate(60.09)" fill="#00d5b5"/>
+    <ellipse id="Oval_4" data-name="Oval  4" cx="0.84" cy="0.839" rx="0.84" ry="0.839" transform="translate(60.09 10.065)" fill="#00d5b5"/>
+    <ellipse id="Oval_2" data-name="Oval  2" cx="0.84" cy="0.839" rx="0.84" ry="0.839" transform="translate(73.537 0.419)" fill="#00d5b5"/>
+    <ellipse id="Oval_5" data-name="Oval  5" cx="0.84" cy="0.839" rx="0.84" ry="0.839" transform="translate(73.537 10.065)" fill="#00d5b5"/>
+    <ellipse id="Oval_3-2" data-name="Oval  3" cx="0.84" cy="0.839" rx="0.84" ry="0.839" transform="translate(46.644 20.969)" fill="#003b4b"/>
+    <ellipse id="Oval_4-2" data-name="Oval  4" cx="0.84" cy="0.839" rx="0.84" ry="0.839" transform="translate(60.09 20.969)" fill="#00d5b5"/>
+    <ellipse id="Oval_5-2" data-name="Oval  5" cx="0.84" cy="0.839" rx="0.84" ry="0.839" transform="translate(73.537 20.969)" fill="#00d5b5"/>
+  </g>
+</svg>

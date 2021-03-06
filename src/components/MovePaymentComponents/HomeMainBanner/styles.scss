@@ -1,0 +1,245 @@
+@import '../../../styles/_variables.scss';
+// .move-payment-home-main-banner-boxs
+.move-payment-home-main-banner-boxs {
+  flex: 1;
+  border-radius: 6px;
+  background-color: $white;
+  margin-right: 0;
+  padding: 30px 30px;
+  .black-title {
+    color: $font-black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  // .account-menu-wrap
+  .account-menu-wrap {
+    .menu-title {
+        color: $font-black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 37px;
+    }
+    .menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        .items {
+            flex: 0 0 30%;
+            max-width: 30%;
+            .gray-inner {
+                min-height: calc(100% - 20px);
+                border-radius: 10px;
+                background-color: $gray-block;
+                padding: 20px 14px 20px 28px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 30px 20px 0;
+                flex-wrap: wrap;
+                &.disable-click {
+                    cursor: default;
+                }
+                .lefts {
+                    padding-right: 15px;
+                    .top-icons {
+                        margin-bottom: 10px;
+                        img {
+                            width: auto;
+                            height: 24px;
+                        }
+                    }
+                    .menu-name {
+                        color: $font-black;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 26px;
+                    }
+                    .gray-txt {
+                        color: $font-black;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 15px;
+                    }
+                }
+                .rights {
+                    .btn-gray {
+                      min-width: 72px;
+                      border-radius: 15px;
+                      background-color: $btn-gray;
+                      padding: 1px 10px;
+                      line-height: 30px;
+                      height: 30px;
+                      font-size: 12px;
+                      font-weight: 700;
+                      margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+  }
+  .move-money-scroll {
+    position: relative;
+    padding: 25px 15px 47px;
+    .z-top {
+      position: relative;
+      z-index: 1;
+    }
+    .img-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      border-radius: 10px;
+      img {
+          width: 100%;
+          height: auto;
+      }
+    }
+    .white-title {
+      color: $white;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      line-height: 20px;
+      margin-top: 0;
+    }
+    .expend-boxs {
+      .long-txt {
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 390px;
+        margin-bottom: 10px;
+      }
+      .short-txt {
+        color: $white;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        margin: 5px 0 17px;
+      }
+      .inner-area {
+        min-height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .scroll-link {
+        padding-top: 10px;
+      }
+      .bottom-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .white-txt {
+          color: $white;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 16px;
+        }
+      }
+    }
+    .dashboard-scroll-link {
+        left: 15px;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        ul {
+            text-align: left;
+        }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $bigger-desktop-width) {
+    .account-menu-wrap {
+        .row {
+            .col-lg-3 {
+                flex: 0 0 100%;
+                max-width: 100%;
+                .move-money-scroll {
+                    width: 312px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .move-payment-home-main-banner-boxs {
+      .account-menu-wrap {
+        .row {
+          .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+    .move-payment-home-main-banner-boxs {
+      margin: 0 0 20px;
+      .account-menu-wrap {
+        .menu-list {
+          .items {
+            flex: 0 0 50%;
+            max-width: 50%;
+            .gray-inner {
+              margin-right: 10px;
+              padding: 10px 15px;
+            }
+            &:nth-child(even) {
+              .gray-inner {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .move-payment-home-main-banner-boxs {
+      margin: 0;
+      box-shadow: none;
+      padding-top: 10px;
+      .black-title {
+        margin-top: 20px;
+        padding-left: 28px;
+        margin-bottom: 10px;
+      }
+      .account-menu-wrap {
+        .black-title {
+          margin-top: 0;
+          padding-left: 28px;
+          padding-top: 15px;
+          margin-bottom: 0;
+        }
+        .menu-list {
+            margin-bottom: 20px;
+            .items {
+                padding: 0;
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-bottom: 0;
+                border-bottom: 1px solid $border-gray;
+                .gray-inner {
+                    background-color: $white;
+                    margin-right: 0;
+                    margin-bottom: 0;
+                    padding: 20px 28px;
+                }
+            }
+        }
+      }
+   }
+}

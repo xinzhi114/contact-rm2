@@ -1,0 +1,34 @@
+<svg id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" width="21.949" height="15.978"
+    viewBox="0 0 21.949 15.978">
+    <g id="Icons_Special_Flags_EU" data-name="Icons/Special/Flags/EU" transform="translate(0 0)">
+        <rect id="Rectangle" width="21.949" height="15.978" rx="2" fill="#005fcd" />
+        <ellipse id="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624" transform="translate(10.363 2.674)"
+            fill="#ffe65a" />
+        <ellipse id="Oval-2" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(10.363 12.033)" fill="#ffe65a" />
+        <ellipse id="Oval-3" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(12.567 3.301)" fill="#ffc800" />
+        <ellipse id="Oval-4" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(8.158 11.406)" fill="#ffe65a" />
+        <ellipse id="Oval-5" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(14.181 5.014)" fill="#ffc800" />
+        <ellipse id="Oval-6" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(6.544 9.693)" fill="#ffe65a" />
+        <ellipse id="Oval-7" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(14.772 7.354)" fill="#ffc800" />
+        <ellipse id="Oval-8" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(5.954 7.354)" fill="#ffe65a" />
+        <ellipse id="Oval-9" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(14.181 9.693)" fill="#ffc800" />
+        <ellipse id="Oval-10" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(6.544 5.014)" fill="#ffe65a" />
+        <ellipse id="Oval-11" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(8.158 3.301)" fill="#ffe65a" />
+        <ellipse id="Oval-12" data-name="Oval" cx="0.588" cy="0.624" rx="0.588" ry="0.624"
+            transform="translate(12.567 11.406)" fill="#ffc800" />
+        <path id="Path" d="M.588.624A.607.607,0,0,0,0,0V1.248A.607.607,0,0,0,.588.624Z"
+            transform="translate(10.951 2.674)" fill="#ffc800" />
+        <path id="Path-2" data-name="Path" d="M.588.624A.607.607,0,0,0,0,0V1.248A.607.607,0,0,0,.588.624Z"
+            transform="translate(10.951 12.033)" fill="#ffc800" />
+    </g>
+</svg>

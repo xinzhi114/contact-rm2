@@ -1,0 +1,22 @@
+<svg id="Group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1445" height="819"
+  viewBox="0 0 1445 819">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Mask" width="1445" height="819" fill="none" />
+    </clipPath>
+  </defs>
+  <rect id="Mask-2" data-name="Mask" width="1445" height="819" fill="none" />
+  <g id="Group-2" data-name="Group" clip-path="url(#clip-path)">
+    <g id="Group-3" data-name="Group" transform="translate(-23 65)">
+      <path id="Combined_Shape" data-name="Combined Shape"
+        d="M.024,505.768V201.145C548.942,44.771,1213.974,8.444,1493.4,0V505.768Z" transform="translate(0.754 0.351)"
+        fill="#008c7a" opacity="0.4" />
+      <path id="Combined_Shape_Copy" data-name="Combined Shape Copy"
+        d="M.043,498.7V243.4C490.741,73.862,1128.106,18.244,1493.462,0V498.7Z" transform="translate(0.754 7.415)"
+        fill="#008c7a" />
+      <path id="Combined_Shape-2" data-name="Combined Shape"
+        d="M.056,743.111V319.68C404.054,87.1,1114.811,19.6,1493.429,0V743.111Z" transform="translate(0 9.889)"
+        fill="#001f26" />
+    </g>
+  </g>
+</svg>

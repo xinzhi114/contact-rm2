@@ -1,0 +1,55 @@
+@import '../../../styles/variables';
+
+.search-bar-payee {
+  position: relative;
+  flex-grow: 1;
+  img {
+    position: absolute;
+    z-index: 1;
+    top: 11px;
+    left: 18px;
+  }
+  .inputs {
+    padding-left: 54px;
+    ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: $font-black;
+    }
+    ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $font-black;
+    }
+    :-ms-input-placeholder {
+      /* IE 10+ */
+      color: $font-black;
+    }
+    :-moz-placeholder {
+      /* Firefox 18- */
+      color: $font-black;
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .search-bar-payee {
+    margin-right: 30px;
+    flex-grow: unset;
+    img {
+      cursor: pointer;
+    }
+    &:not(.expanded) {
+      height: 22px;
+      width: 22px;
+      img {
+        top: 0;
+        left: 0;
+      }
+      .inputs {
+        display: none;
+      }
+    }
+    &.expanded {
+      flex-grow: 1;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.select-payee-type-button-group {
+  &.btn-group {
+    .btn {
+      &.btn-primary {
+        padding: 10px 0;
+        width: 50%;
+      }
+      &:not(:last-child):not(.dropdown-toggle) {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+      &:not(:first-child) {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .select-payee-type-button-group {
+    &.btn-group {
+      flex-grow: 1;
+    }
+  }
+}

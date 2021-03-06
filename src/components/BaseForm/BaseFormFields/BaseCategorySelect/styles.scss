@@ -1,0 +1,53 @@
+@import '../../../../styles/variables';
+
+.base-category-select {
+  display: flex;
+  .option,
+  .add-option {
+    cursor: pointer;
+    border: 1px solid $border-gray;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-black;
+    margin: 0 4px;
+    &.first {
+      margin-left: 0;
+    }
+  }
+  .option {
+    padding: 16px 24px;
+    &.selected {
+      font-weight: bold;
+      border-color: $green;
+      background-color: $green;
+    }
+  }
+  .add-option {
+    font-size: 60px;
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .base-category-select {
+    flex-wrap: wrap;
+    .option,
+    .option.first,
+    .add-option {
+      padding: 28px 48px;
+      width: calc(50% - 10px);
+      margin: 0;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      height: 118px;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .add-option {
+      justify-content: center;
+    }
+  }
+}

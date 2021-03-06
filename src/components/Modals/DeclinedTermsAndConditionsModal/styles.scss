@@ -1,0 +1,17 @@
+.base-modal.warning-modal.declined-terms-and-conditions-modal {
+  .modal-dialog {
+    max-width: 630px;
+    .modal-body {
+      span {
+        text-align: center;
+        max-width: 310px;
+      }
+    }
+    .modal-footer {
+      padding: 24px 40px;
+      .btn {
+        width: unset;
+      }
+    }
+  }
+}

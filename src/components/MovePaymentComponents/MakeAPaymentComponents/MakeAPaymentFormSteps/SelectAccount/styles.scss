@@ -1,0 +1,78 @@
+@import '../../../../../styles/variables';
+
+.select-account-wrap {
+  display: flex;
+  flex-direction: column;
+  .select-account {
+    display: flex;
+    .row-line {
+      margin-bottom: 8px;
+    }
+    .from-account {
+      flex-grow: 0.35;
+      min-width: 245px;
+      .available-balance {
+        font-size: 12px;
+        font-weight: 500;
+        color: $font-black;
+        .balance-amount {
+          color: $black;
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
+    }
+    .to-account {
+      flex-grow: 0.65;
+      display: flex;
+      > img {
+        transform: rotateZ(180deg);
+        margin: 0 30px;
+        height: 16px;
+        position: relative;
+        top: 42px;
+      }
+      .checkbox-wrap {
+        padding: 12px 0px;
+        input[type='checkbox'] + label {
+          padding-left: 24px;
+        }
+      }
+      .base-checkbox .radio-checkbox.form-check {
+        padding-left: 0;
+      }
+    }
+  }
+  &.to-account-selected {
+    .select-account {
+      border-bottom: 1px solid $border-gray;
+      padding-bottom: 24px;
+    }
+  }
+}
+
+.select-account-review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: $max-tablet-width) {
+  .select-account-wrap {
+    .select-account {
+      flex-direction: column;
+      .from-account {
+        min-width: 100%;
+      }
+      .to-account {
+        margin: 16px 0;
+      }
+    }
+
+    &.to-account-selected {
+      .select-account {
+        border-bottom: none;
+      }
+    }
+  }
+}

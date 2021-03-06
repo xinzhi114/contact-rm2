@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.414" height="21.414" viewBox="0 0 21.414 21.414">
+    <g id="icon_search" data-name="icon/search" transform="translate(-0.586 -2)">
+        <circle id="Oval" cx="7" cy="7" r="7" transform="translate(7 3)" fill="none" stroke="#003d4c"
+            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+        <path id="Path_4" data-name="Path 4" d="M0,0V6.389H7" transform="translate(14 3.611)" fill="none"
+            stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+        <path id="Line" d="M7,0,0,7" transform="translate(2 15)" fill="none" stroke="#003d4c" stroke-linecap="round"
+            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+    </g>
+</svg>

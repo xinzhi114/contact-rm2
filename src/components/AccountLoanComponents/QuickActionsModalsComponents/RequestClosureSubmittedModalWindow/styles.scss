@@ -1,0 +1,138 @@
+@import '../../../../styles/_variables.scss';
+
+.modal-default {
+    &.request-closure-submitted-modal {
+        .modal-mains {
+            width: 592px;
+            background-color: $font-black;
+            border-radius: 10px;
+            padding: 0;
+            .title-area {
+                padding: 25px;
+                border-bottom: 1px solid $light-border;
+                margin-bottom: 0;
+                .blue-title {
+                    color: $white;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .btn-close {
+            @include white-close;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+        .row-line {
+            padding: 0 25px;
+            .blue-txt {
+                font-weight: normal;
+            }
+            .center-info {
+                text-align: center;
+                padding: 38px 45px 25px;
+                .done-icons {
+                    margin-bottom: 18px;
+                    img {
+                        width: 100px;
+                        height: auto;
+                    }
+                }
+                .white-txt {
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    .bold-txt {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .bottom-data {
+            padding: 24px 26px 0;
+            background-color: rgba(0,31,38,0.5);
+            display: flex;
+            flex-wrap: wrap;
+            border-top: 1px solid $light-border;
+            border-bottom: 1px solid $light-border;
+            margin-bottom: -1px;
+            position: relative;
+            .group {
+                flex: 0 0 49%;
+                max-width: 49%;
+                margin-bottom: 21px;
+                .top-label {
+                    line-height: 10px;
+                    font-size: 10px;
+                    color: $white;
+                    opacity: 0.5;
+                    text-transform: uppercase;
+                    margin-bottom: 6px;
+                    font-weight: 600;
+                }
+                .values {
+                    line-height: 14px;
+                    font-size: 14px;
+                    color: $white;
+                    font-weight: 500;
+                }
+            }
+        }
+        .bottom-btns {
+            margin: 0 26px;
+            padding: 20px 30px 23px;
+            justify-content: center;
+            border-top: 1px solid $light-border;
+            .btn {
+                min-width: 140px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .modal-default {
+        &.request-closure-submitted-modal {
+            .modal-mains {
+                width: 667px;
+                .title-area {
+                    margin-bottom: -7px;
+                }
+            }
+            .date-bar {
+                border: 0;
+                .lefts {
+                    .icon-calender {
+                        background-size: 20px 20px;
+                    }
+                }
+            }
+            .bottom-btns {
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                .btn-green {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-default {
+        &.request-closure-submitted-modal {
+            .modal-mains {
+                margin: 17px auto;
+                width: 95%;
+            }
+        }
+    }
+}

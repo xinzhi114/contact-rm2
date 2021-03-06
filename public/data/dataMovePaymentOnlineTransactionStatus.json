@@ -1,0 +1,1040 @@
+{
+  "dataList": {
+    "selectAccountData": [
+      {
+        "title": "Current Account",
+        "subTitle": "9846 - 4754 - 7584"
+      },
+      {
+        "title": "Saving Account",
+        "subTitle": "9846 - 4754 - 7585"
+      },
+      {
+        "title": "Other Account",
+        "subTitle": "9846 - 4754 - 7586"
+      }
+    ],
+    "tableData": [
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Accepted",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Accepted"
+            }
+          ]
+        }
+      },
+      {
+        "id": "08962427",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Company Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Pending",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Pending"
+            }
+          ]
+        }
+      },
+      {
+        "id": "08962428",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Cancelled",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Cancelled"
+            }
+          ]
+        }
+      },
+      {
+        "id": "08962427",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Pending",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Pending"
+            }
+          ]
+        }
+      },
+      {
+        "id": "08962427",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Pending",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Pending"
+            }
+          ]
+        }
+      },
+      {
+        "id": "08962427",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Pending",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Pending"
+            }
+          ]
+        }
+      },
+      {
+        "id": "08962427",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Pending",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Pending"
+            }
+          ]
+        }
+      },
+      {
+        "id": "08962427",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Pending",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Pending"
+            }
+          ]
+        }
+      },
+      {
+        "id": "08962427",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Pending",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Pending"
+            }
+          ]
+        }
+      },
+      {
+        "id": "08962427",
+        "fieldList": [
+          {
+            "fieldType": "expand",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "status",
+            "fieldName": "status",
+            "fieldValue": "Pending",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "furtureData",
+            "fieldName": "type",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Richard Khyle",
+            "queryHide": true
+          },
+          {
+            "fieldType": "currency",
+            "fieldName": "amount",
+            "fieldValue": "$849.99",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": {
+          "areaTitle": "transaction_details",
+          "fieldList": [
+            {
+              "fieldType": "label",
+              "fieldName": "created_date",
+              "fieldValue": "30 Oct 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "future_date",
+              "fieldValue": "30 Nov 2020"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payee_name",
+              "fieldValue": "Richard Khyle"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "amount",
+              "fieldValue": "€ 849.99"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "account_number",
+              "fieldValue": "1094 4545 3121 01"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "iban",
+              "fieldValue": "55687748"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "bic",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldType": "label",
+              "fieldName": "payment_type",
+              "fieldValue": "SEPA"
+            },
+            {
+              "fieldType": "currency",
+              "fieldName": "charges",
+              "fieldValue": "€ 6.50"
+            },
+            {
+              "fieldType": "status",
+              "fieldName": "status",
+              "fieldValue": "Pending"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

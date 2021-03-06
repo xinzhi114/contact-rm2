@@ -1,0 +1,125 @@
+@import '../../../styles/_variables.scss';
+
+.content {
+    &.approve-transactions-content,
+    &.online-transaction-status-content,
+    &.manage-direct-debits-content,
+    &.manage-standing-orders-content,
+    &.manage-payment-template-content {
+        padding-left: 108px;
+        padding-top: 100px;
+        background-color: $bg-gray;
+        height: 100vh;
+        max-height: 100vh;
+        .mains {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .three-row {
+            flex: 1;
+            padding: 24px 28px;
+            height: 100%;
+            .two-row {
+                display: flex;
+                align-content: stretch;
+                height: 100%;
+                .right-container {
+                  flex: 1;
+                }
+            }
+        }
+    }
+}
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $max-tablet-width) {
+    .content {
+        &.approve-transactions-content,
+        &.online-transaction-status-content,
+        &.manage-direct-debits-content,
+        &.manage-standing-orders-content,
+        &.manage-payment-template-content {
+            max-height: none;
+            padding-top: 78px;
+            .mains {
+                width: auto;
+                height: 100%;
+                display: block;
+                
+            }
+            .three-row {
+                padding-top: 50px;
+                .two-row {
+                    display: flex;
+                    min-height: auto;
+                    height: auto;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .white-panel {
+                        flex: 1;
+                    }
+                    .right-container {
+                        margin-left: 0;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .content {
+        &.approve-transactions-content,
+        &.online-transaction-status-content,
+        &.manage-direct-debits-content,
+        &.manage-standing-orders-content,
+        &.manage-payment-template-content {
+            height: auto;
+            
+            .three-row {
+                padding-top: 50px;
+                .mobile-tabs {
+                    padding-left: 25px;
+                }
+                .two-row {
+                    display: flex;
+                    min-height: auto;
+                    height: auto;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {    
+    .content {
+        &.approve-transactions-content,
+        &.online-transaction-status-content,
+        &.manage-direct-debits-content,
+        &.manage-standing-orders-content,
+        &.manage-payment-template-content {
+            padding-left: 0;
+            padding-top: 65px;
+            height: auto;
+            max-height: none;
+            .mains {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .three-row {
+                padding: 0;
+                height: auto;
+                .two-row {
+                    height: auto;
+                }
+            }
+        }
+    }
+}

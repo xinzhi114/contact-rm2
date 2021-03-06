@@ -1,0 +1,116 @@
+@import '../../../../styles/_variables.scss';
+
+/* btn */
+.btn {
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    text-align: center;
+    &.btn-green {
+    	color: $font-black;
+	    height: 44px;
+	    line-height: 42px;
+        padding: 1px 15px;
+	    min-width: 177px;
+	    font-weight: 700;
+	    background: $bg-green;
+	    border-radius: 22px;
+    	&:hover {
+		    opacity: 0.8;
+		}
+		&.disabled {
+		    background: $disabled-bg;
+		    color: $disabled-color;
+		    color: #171717;
+		    pointer-events: none;
+		    //pointer-events: initial;
+		}
+		&.btn-confirm {
+		    min-width: 277px;
+		}
+		&.min-177 {
+            min-width: 177px;
+        }
+    }
+    &.btn-light-blue,
+    &.btn-light-blue:hover,
+    &.btn-light-blue:focus {
+        min-width: 160px;
+        height: 48px;
+        border-radius: 24px;
+        background-color: #006A8E;
+        padding: 1px 14px;
+        line-height: 48px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &.btn-white,
+    &.btn-white:hover,
+    &.btn-white:focus {
+        width: 123px;
+        height: 38px;
+        border-radius: 24px;
+        background-color: $white;
+        color: $dark-blue;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 38px;
+        padding: 1px 13px;
+        border: solid 1px $dark-blue;
+    }
+    &.btn-border-green {
+	    height: 39px;
+	    line-height: 37px;
+        padding: 1px 15px;
+	    min-width: 198px;
+	    font-weight: 700;
+        font-size: 14px;
+        background-color: initial;
+        color: $border-btn-color;
+	    border: 1px solid $border-btn-color;
+	    border-radius: 20px;
+    	&:hover {
+		    opacity: 0.8;
+            color: $border-btn-color;
+		}
+		&.disabled {
+		    background: $disabled-bg;
+		    color: $disabled-color;
+		    pointer-events: none;
+		}
+    }
+}
+
+.green-link {
+    color: $dark-green;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    text-decoration: underline;
+    &:focus,
+    &:hover {
+        color: $bg-green;
+        opacity: 0.8;
+        text-decoration: underline;
+    }
+}
+
+/* fix layout issue when smaller than 991px width */
+@media (max-width: $min-desktop-width) {
+    .green-link {
+        font-size: 12px;
+    }
+}
+/* fix layout issue when smaller than 991px width */
+@media (max-width: $max-mobile-width) {
+    .btn {
+        &.btn-border-green {
+            min-width: auto;
+        }
+    }
+    
+}

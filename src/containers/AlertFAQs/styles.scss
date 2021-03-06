@@ -1,0 +1,53 @@
+@import '../../styles/_variables.scss';
+
+.content {
+  &.alerts-faq-content {
+    padding-left: 267px;
+    padding-top: 100px;
+    background-color: $bg-gray;
+    .three-row {
+      flex: 1;
+      padding: 24px 28px;
+      .two-row {
+        display: flex;
+        align-content: stretch;
+        .right-container {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+  .content {
+    &.alerts-faq-content {
+      padding-top: 78px;
+      .three-row {
+        padding-top: 50px;
+        .mobile-tabs {
+          padding-left: 25px;
+        }
+        .two-row {
+          display: flex;
+          min-height: auto;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .content {
+    &.alerts-faq-content {
+      padding-left: 0;
+      padding-top: 65px;
+      .three-row {
+        padding: 13px 0 0;
+      }
+    }
+  }
+}

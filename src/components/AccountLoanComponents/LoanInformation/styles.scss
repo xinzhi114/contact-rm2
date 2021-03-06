@@ -1,0 +1,64 @@
+@import '../../../styles/_variables.scss';
+
+// .some-cols
+.some-cols {
+    .white-panel {
+        &.min-height-360 {
+            min-height: 360px;
+        }
+    }
+
+    .center-btn {
+        text-align: center;
+        padding-bottom: 10px;
+        .btn-green {
+            min-width: 380px;
+            max-width: 386px;
+        }
+    }
+    
+    .group-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        .group {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-bottom: 17px;
+            .gray-bold {
+                font-size: 14px;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    // .some-cols
+    .some-cols {
+        .white-panel {
+            &.min-height-360 {
+                min-height: auto;
+            }
+        }
+
+        .center-btn {
+            .btn-green {
+                min-width: 260px;
+                max-width: 270px;
+            }
+        }
+        .group-wrap {
+            max-width: 100%;
+            .group {
+                flex-wrap: wrap;
+                margin-bottom: 15px;
+                .items {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

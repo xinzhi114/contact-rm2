@@ -1,0 +1,12 @@
+@import '../../../../styles/variables';
+
+.view-mode-button {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: $max-mobile-width) {
+  .view-mode-button {
+    display: block;
+  }
+}

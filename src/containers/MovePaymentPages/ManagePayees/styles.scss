@@ -1,0 +1,180 @@
+@import '../../../styles/variables';
+
+.content {
+  &.manage-payees-content {
+    padding-left: 108px;
+    padding-top: 100px;
+    background-color: $bg-gray;
+    height: 100vh;
+    max-height: 100vh;
+    .mains {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .modal-dialog {
+        max-width: unset;
+        margin: 24px;
+        margin-bottom: 90px;
+        background-color: $white;
+        flex-grow: 1;
+        height: calc(100% - 90px);
+        .modal-header,
+        .modal-footer {
+          border-color: $border-gray;
+        }
+        .modal-header {
+          padding: 30px 40px;
+          justify-content: flex-start;
+          align-items: center;
+          color: $font-black;
+          font-weight: bold;
+          font-size: 16px;
+          img {
+            margin-right: 16px;
+          }
+        }
+        .modal-content {
+          height: 100%;
+          border: none;
+          -webkit-box-shadow: 0px 5px 12px 0px rgba(221, 225, 230, 1);
+          -moz-box-shadow: 0px 5px 12px 0px rgba(221, 225, 230, 1);
+          box-shadow: 0px 5px 12px 0px rgba(221, 225, 230, 1);
+          .action-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            .btn.btn-primary {
+              font-weight: bold;
+              font-size: 14px;
+              color: $font-black;
+              border-color: $border-gray;
+              background-color: $green;
+              padding: 10px 44px;
+              border-radius: 29px;
+              white-space: nowrap;
+              &.inactive {
+                background-color: $white;
+              }
+              &:not(:disabled):not(.disabled):active:focus {
+                box-shadow: 0 0 0 0.2rem rgba($color: $green, $alpha: 0.5);
+              }
+            }
+            .right-actions {
+              display: flex;
+              align-items: center;
+              min-width: 40%;
+              .total-payees {
+                display: none;
+              }
+              .inputs {
+                border-color: $font-black;
+              }
+              .buttons {
+                flex-grow: 1;
+                display: flex;
+                justify-content: flex-end;
+              }
+              button {
+                margin-left: 24px;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+        .modal-body {
+          padding: 20px 35px;
+          display: flex;
+          flex-direction: column;
+        }
+        .modal-footer {
+          justify-content: center;
+          padding: 20px 0;
+          .load-more {
+            cursor: pointer;
+            text-decoration: underline;
+            color: $dark-green;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  .content {
+    &.manage-payees-content {
+      .mains {
+        .modal-dialog {
+          .modal-content {
+            .action-bar {
+              flex-direction: column;
+              .right-actions {
+                margin-top: 24px;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .content {
+    &.manage-payees-content {
+      padding-top: 63px;
+      padding-left: 0;
+      .mains {
+        .modal-dialog {
+          margin: 0;
+          height: 100%;
+          .modal-content {
+            border-radius: 0;
+            border: none;
+            .action-bar {
+              flex-direction: column;
+              padding: 20px 35px;
+              padding-bottom: 0;
+              .right-actions {
+                justify-content: space-between;
+                .total-payees {
+                  display: block;
+                  text-transform: uppercase;
+                  font-weight: 500;
+                  font-size: 14px;
+                  opacity: 50%;
+                  color: $font-black;
+                }
+                .buttons {
+                  max-width: 60%;
+                  align-items: center;
+                  .btn.btn-primary {
+                    position: fixed;
+                    right: 32px;
+                    bottom: 24px;
+                    z-index: 1;
+                    min-width: 0;
+                    border-radius: 50%;
+                    padding: 12px;
+                  }
+                }
+              }
+            }
+            .modal-body {
+              padding: 0;
+            }
+            .modal-header,
+            .modal-footer {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g id="Group_2" data-name="Group 2" transform="translate(3 5)">
+        <path id="Path_4" data-name="Path 4" d="M7.017,0,0,7l7.017,7" fill="none" stroke="#003d4c"
+            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+        <path id="Line_3" data-name="Line 3" d="M0,1H17" transform="translate(1 6)" fill="none" stroke="#003d4c"
+            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+    </g>
+</svg>

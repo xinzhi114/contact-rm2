@@ -1,0 +1,43 @@
+@import '../../../../styles/variables';
+
+.update-payee-modal {
+  .modal-dialog {
+    display: flex;
+    align-items: center;
+    min-width: 50vw;
+  }
+  .modal-content {
+    height: unset;
+    .modal-header {
+      padding: 24px 22px;
+      display: flex;
+    }
+    .modal-body {
+      padding: 36px 74px;
+      padding-bottom: 16px;
+    }
+    .modal-footer {
+      justify-content: center;
+      padding: 24px;
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .update-payee-modal {
+    .modal-dialog {
+      margin: 0;
+      height: 100%;
+      max-width: unset;
+    }
+    .modal-content {
+      height: 100%;
+      .modal-header {
+        padding: 28px 24px;
+      }
+      .modal-body {
+        padding: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '../../../../styles/variables';
+
+@media (max-width: $max-tablet-width) {
+  .login-top-bar {
+    z-index: 10;
+    background-color: $dark-black;
+    color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    &,
+    * {
+      font-family: $gotham-rounded;
+    }
+    .icon-arrow {
+      @include mobile-back-white;
+      cursor: pointer;
+      height: 18px;
+      width: 18px;
+    }
+    .icon-question {
+      @include icon-question-little;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

@@ -1,0 +1,431 @@
+@import '../../../styles/_variables.scss';
+
+/* .table-data */
+.table-data {
+  border-collapse: collapse;
+  margin: 0 34px;
+  flex: 1;
+  .tables {
+    width: 100%;
+    position: relative;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    height: calc(100%);
+    .table-body {
+      overflow-y: auto;
+      padding-bottom: 20px;
+      position: relative;
+      flex-grow: 1;
+      .list-wrap {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+
+  .row-td,
+  .row-th {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .col-th,
+  .col-td {
+    vertical-align: middle;
+    display: table-cell;
+
+    &:first-child {
+      padding-left: 20px;
+    }
+  }
+  .row-th {
+    border-bottom: 1px solid $top-line-gray;
+  }
+  .col-th {
+    color: $font-black;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    opacity: 0.75;
+    height: 41px;
+  }
+  .expend-wrap {
+    .expend-panel {
+      display: none;
+      position: relative;
+      &:after {
+        content: '';
+        width: calc(100%);
+        height: 1px;
+        background-color: $top-line-gray;
+        bottom: -4px;
+        position: absolute;
+        left: 0;
+      }
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+    &.open {
+      .expend-panel {
+        display: block;
+        padding: 19px 33px;
+        background-color: $bg-gray;
+        margin: 4px 0;
+
+        .bold-title {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 22px;
+          margin-bottom: 17px;
+        }
+        .data-detail {
+          display: flex;
+          flex-wrap: wrap;
+          .group {
+            flex: 0 0 20%;
+            max-width: 20%;
+            margin-bottom: 15px;
+            .label-txt {
+              color: $font-black;
+              opacity: 0.5;
+              font-size: 10px;
+              margin-bottom: 1px;
+              text-transform: uppercase;
+            }
+            .values {
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 14px;
+              color: $font-black;
+              &.green {
+                color: $dark-green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .row-td {
+    color: $font-black;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    height: 58px;
+    border-bottom: 1px solid $top-line-gray;
+    &.active {
+      background-color: $bg-gray;
+      .col-td {
+        font-weight: 600;
+        .price {
+          font-weight: 500;
+        }
+      }
+      .txt {
+        font-weight: 500;
+        display: block;
+        &.red {
+          color: #91302e;
+        }
+      }
+      .btn-link {
+        font-weight: 600;
+      }
+    }
+  }
+  .spacing {
+    display: block;
+    padding: 0 10px;
+    position: relative;
+    .red-link {
+      color: #91302e;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      &:hover {
+        opacity: 1;
+      }
+      &.strong {
+        font-weight: 700;
+      }
+    }
+    .green-link {
+      color: $dark-green;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+      &:hover {
+        opacity: 1;
+      }
+      &.strong {
+        font-weight: 700;
+      }
+    }
+    .approve-btn {
+      min-width: auto;
+      font-size: 14px;
+      height: 35px;
+      line-height: 34px;
+    }
+    .action-txt {
+      font-weight: 700;
+    }
+    .txt {
+      &.font-size-12 {
+        font-size: 12px;
+      }
+      &.weight-600 {
+        font-weight: 600;
+      }
+      strong {
+        font-weight: 600;
+        opacity: 0.9;
+        &.weight-700 {
+          font-weight: 700;
+          color: $font-black;
+          opacity: 1;
+        }
+      }
+      &.gray-txt {
+        color: $disabled-bg;
+        font-size: 12px;
+      }
+      &.green-txt {
+        color: $green;
+      }
+      &.red-txt {
+        color: $red;
+      }
+    }
+    .br-uppercase {
+      opacity: 0.8;
+      color: $font-black;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .br-strong {
+      color: $font-black;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .avatar {
+      flex-grow: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #71b2c9;
+      border-radius: 50%;
+      color: $white;
+      font-weight: 500;
+      height: 40px;
+      width: 40px;
+      min-width: 40px;
+      min-height: 40px;
+      font-size: 14px;
+      margin-right: 22px;
+    }
+    &.user-name {
+      display: flex;
+      align-items: center;
+    }
+    &.action-access-level {
+      .change-manage {
+        position: absolute;
+        padding: 10px 10px;
+        border-radius: 5px;
+        left: -210px;
+        top: -20px;
+        width: 220px;
+        z-index: 999999;
+        background: $white;
+        box-shadow: 0 5px 12px $shadow-gray;
+        .change,
+        .manage {
+          padding: 14px 14px 8px 14px;
+          color: $dark-green;
+          font-size: 14px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+        }
+
+        .change {
+          .icon-change {
+            @include icon-reveal-green;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            margin-right: 15px;
+          }
+          border-bottom: 1px solid $gray-block;
+        }
+        .manage {
+          .icon-manage {
+            @include icon-manage-access-green;
+            display: inline-block;
+            margin-right: 15px;
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+
+      .icon-more {
+        @include icon-more-finance;
+        width: 16px;
+        height: 16px;
+        margin-left: 6px;
+      }
+    }
+  }
+  .price {
+    font-weight: 500;
+  }
+  .load-more {
+    padding: 20px 0;
+    text-align: center;
+
+    .btn-link {
+      color: $dark-green;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  .txt {
+    font-size: 14px;
+    &.green {
+      color: $dark-green;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+  .icons {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    &:hover {
+      .black-tips {
+        display: block;
+      }
+    }
+  }
+  .icon-edit {
+    @include icon-blue-edit;
+    margin-right: 30px;
+  }
+  .icon-edit-bigger {
+    @include icon-blue-edit-bigger;
+  }
+  .icon-clearance-status {
+    @include icon-clearance-status;
+    &.uncleared {
+      @include icon-gray-clearance-status;
+    }
+  }
+  .icon-del {
+    @include red-delete;
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $bigger-desktop-width) {
+  .table-data {
+    .query-hide {
+      display: none;
+    }
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-tablet-width) {
+  .table-data {
+    .query-hide {
+      display: none;
+    }
+    .tables {
+      width: 100%;
+      position: relative;
+      flex: auto;
+      display: block;
+      height: auto;
+      .table-body {
+        overflow-y: auto;
+        padding-bottom: 20px;
+        position: relative;
+        flex-grow: 1;
+        max-height: 400px;
+        .list-wrap {
+          display: block;
+          position: relative;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .table-data {
+    margin: 0 15px;
+    .query-hide {
+      display: none;
+    }
+    .red-link {
+      font-size: 12px;
+    }
+    .txt {
+      font-size: 12px;
+    }
+    .col-th,
+    .col-td {
+      font-size: 12px;
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+    .expend-wrap.open {
+      .expend-panel {
+        .data-detail {
+          .group {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .label-txt {
+              color: $font-black;
+              opacity: 0.5;
+              font-size: 10px;
+              margin-bottom: 1px;
+            }
+            .values {
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 14px;
+              color: $font-black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .table-data {
+    .spacing {
+      .approve-btn {
+        padding: 1px 12px;
+        line-height: 35px;
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "dataList": {
+    "helpAndSupport": [
+      {
+        "title": "How to make internal transfers?",
+        "description": "The former is for transactions within the same bank - moving money from checking to savings, for example. Acme information context-sensitive help here."
+      },
+      {
+        "title": "How do I reactive my online ISA Account?",
+        "description": "The former is for transactions within the same bank - moving money from checking to savings, for example. Acme information context-sensitive."
+      },
+      {
+        "title": "How to setup reccurring transfer from current account?",
+        "description": "The former is for transactions within the same bank - moving money from checking to savings, for example."
+      },
+      {
+        "title": "Review a submitted Transfer before completing",
+        "description": "The former is for transactions within the same bank - moving money from checking to savings."
+      }
+    ],
+    "fromAccountList": [
+      {
+        "label": "Current account",
+        "number": "9846 - 4754 - 7584",
+        "value": "Current account",
+        "availableBalance": "120.650.00"
+      },
+      {
+        "label": "Saving account",
+        "number": "9846 - 4754 - 7585",
+        "value": "Saving account",
+        "availableBalance": "220.650.00"
+      },
+      {
+        "label": "Other account",
+        "number": "9846 - 4754 - 7586",
+        "value": "Other account",
+        "availableBalance": "320.650.00"
+      }
+    ],
+    "toAccountList": [
+      {
+        "label": "London suppliers",
+        "number": "9846 - 4754 - 8580",
+        "value": "London suppliers",
+        "isActive": "Account is Inactive"
+      },
+      {
+        "label": "Saving account",
+        "number": "9846 - 4754 - 7585",
+        "value": "Saving account",
+        "isActive": ""
+      },
+      {
+        "label": "Other account",
+        "number": "9846 - 4754 - 7586",
+        "value": "Other account",
+        "isActive": ""
+      }
+    ]
+  }
+}

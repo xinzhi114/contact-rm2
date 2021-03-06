@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+
+.base-modal.custom-guided-tour-tooltip {
+  background: $white;
+  max-width: 442px;
+  border-radius: 16px;
+  .modal-header {
+    padding: 24px;
+    padding-top: 20px;
+  }
+  .modal-body {
+    padding: 20px 28px 34px 24px;
+    color: $font-black;
+  }
+  .modal-footer {
+    padding: 20px;
+    padding-left: 24px;
+    justify-content: space-between;
+    flex-direction: row;
+    .progress-text {
+      color: $light-gray;
+    }
+    .btn.btn-primary {
+      width: unset;
+    }
+  }
+}

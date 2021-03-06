@@ -1,0 +1,535 @@
+{
+  "dataList": {
+    "selectAccountData": [
+      {
+        "title": "Current Account",
+        "subTitle": "9846 - 4754 - 7584"
+      },
+      {
+        "title": "Saving Account",
+        "subTitle": "9846 - 4754 - 7585"
+      },
+      {
+        "title": "Other Account",
+        "subTitle": "9846 - 4754 - 7586"
+      }
+    ],
+    "fromAccountList": [
+      {
+        "label": "Current account",
+        "number": "9846 - 4754 - 7584",
+        "value": "Current account",
+        "availableBalance": "120.650.00"
+      },
+      {
+        "label": "Saving account",
+        "number": "9846 - 4754 - 7585",
+        "value": "Saving account",
+        "availableBalance": "220.650.00"
+      },
+      {
+        "label": "Other account",
+        "number": "9846 - 4754 - 7586",
+        "value": "Other account",
+        "availableBalance": "320.650.00"
+      }
+    ],
+    "tableData": [
+      {
+        "id": "08962426",
+        "orderDetails": {
+          "fromAccount": "Current account",
+          "regularAmount": "20000",
+          "finalAmount": "30000",
+          "sortCode": "00-00-00",
+          "accountNumber": "11223344"
+        },
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "bank_reference",
+            "fieldValue": "Richard Khyle",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-size-12",
+            "fieldName": "your_reference",
+            "fieldValue": "Business Bills<br/>(SEP-20)",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-frequency",
+            "fieldName": "frequency",
+            "fieldValue": "Monthly",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "final_payment",
+            "fieldValue": "30 Sep 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "49.00",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-edit-cancel",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962427",
+        "orderDetails": {
+          "fromAccount": "Saving account",
+          "regularAmount": "21000",
+          "finalAmount": "28000",
+          "sortCode": "00-00-14",
+          "accountNumber": "11223355"
+        },
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "bank_reference",
+            "fieldValue": "Nick Khyle",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-size-12",
+            "fieldName": "your_reference",
+            "fieldValue": "Business Bills<br/>(SEP-20)",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-frequency",
+            "fieldName": "frequency",
+            "fieldValue": "Monthly",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "final_payment",
+            "fieldValue": "30 Sep 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "24.00",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-edit-cancel",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962428",
+        "orderDetails": {
+          "fromAccount": "Other account",
+          "regularAmount": "20000",
+          "finalAmount": "30000",
+          "sortCode": "00-00-19",
+          "accountNumber": "11223344"
+        },
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "bank_reference",
+            "fieldValue": "Richard Khyle",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-size-12",
+            "fieldName": "your_reference",
+            "fieldValue": "Business Bills<br/>(SEP-20)",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-frequency",
+            "fieldName": "frequency",
+            "fieldValue": "Monthly",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "final_payment",
+            "fieldValue": "30 Sep 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "89",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-edit-cancel",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962429",
+        "orderDetails": {
+          "fromAccount": "Current account",
+          "regularAmount": "30000",
+          "finalAmount": "40000",
+          "sortCode": "00-00-20",
+          "accountNumber": "11223344"
+        },
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "bank_reference",
+            "fieldValue": "Richard Khyle",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-size-12",
+            "fieldName": "your_reference",
+            "fieldValue": "Business Bills<br/>(SEP-20)",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-frequency",
+            "fieldName": "frequency",
+            "fieldValue": "Weekly",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "final_payment",
+            "fieldValue": "30 Sep 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "24.00",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-edit-cancel",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "orderDetails": {
+          "fromAccount": "Current account",
+          "regularAmount": "20000",
+          "finalAmount": "30000",
+          "sortCode": "00-00-00",
+          "accountNumber": "11223344"
+        },
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "bank_reference",
+            "fieldValue": "Richard Khyle",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-size-12",
+            "fieldName": "your_reference",
+            "fieldValue": "Business Bills<br/>(SEP-20)",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-frequency",
+            "fieldName": "frequency",
+            "fieldValue": "Weekly",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "final_payment",
+            "fieldValue": "30 Sep 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "50.80",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-edit-cancel",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "orderDetails": {
+          "fromAccount": "Current account",
+          "regularAmount": "20000",
+          "finalAmount": "30000",
+          "sortCode": "00-00-00",
+          "accountNumber": "11223344"
+        },
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "bank_reference",
+            "fieldValue": "Richard Khyle",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-size-12",
+            "fieldName": "your_reference",
+            "fieldValue": "Business Bills<br/>(SEP-20)",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-frequency",
+            "fieldName": "frequency",
+            "fieldValue": "Weekly",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "final_payment",
+            "fieldValue": "30 Sep 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "49.00",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-edit-cancel",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "orderDetails": {
+          "fromAccount": "Current account",
+          "regularAmount": "20000",
+          "finalAmount": "30000",
+          "sortCode": "00-00-00",
+          "accountNumber": "11223344"
+        },
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "bank_reference",
+            "fieldValue": "Richard Khyle",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-size-12",
+            "fieldName": "your_reference",
+            "fieldValue": "Business Bills<br/>(SEP-20)",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-frequency",
+            "fieldName": "frequency",
+            "fieldValue": "Weekly",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "final_payment",
+            "fieldValue": "30 Sep 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "24.00",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-edit-cancel",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "orderDetails": {
+          "fromAccount": "Current account",
+          "regularAmount": "20000",
+          "finalAmount": "30000",
+          "sortCode": "00-00-00",
+          "accountNumber": "11223344"
+        },
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "bank_reference",
+            "fieldValue": "Richard Khyle",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-size-12",
+            "fieldName": "your_reference",
+            "fieldValue": "Business Bills<br/>(SEP-20)",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-frequency",
+            "fieldName": "frequency",
+            "fieldValue": "Weekly",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "final_payment",
+            "fieldValue": "30 Sep 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "89",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-edit-cancel",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "orderDetails": {
+          "fromAccount": "Current account",
+          "regularAmount": "20000",
+          "finalAmount": "30000",
+          "sortCode": "00-00-00",
+          "accountNumber": "11223344"
+        },
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "bank_reference",
+            "fieldValue": "Richard Khyle",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-size-12",
+            "fieldName": "your_reference",
+            "fieldValue": "Business Bills<br/>(SEP-20)",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label-frequency",
+            "fieldName": "frequency",
+            "fieldValue": "Weekly",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "final_payment",
+            "fieldValue": "30 Sep 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "89",
+            "queryHide": false
+          },
+          {
+            "fieldType": "action-edit-cancel",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      }
+    ]
+  }
+}

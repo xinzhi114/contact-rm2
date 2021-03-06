@@ -1,0 +1,127 @@
+@import '../../../../styles/variables';
+
+.personal-details-step {
+  .option-text {
+    font-weight: normal;
+    .link {
+      color: $dark-green;
+      font-weight: bold;
+    }
+  }
+  .form-section {
+    border-bottom: 1px solid $border-gray;
+    padding: 40px 64px;
+    padding-bottom: 48px;
+    &.terms-and-conditions-section {
+      padding: 24px 64px;
+    }
+    .section-title {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 28px;
+      color: $dark-blue;
+      font-weight: bold;
+      .base-form {
+        flex-grow: unset;
+      }
+    }
+    > .base-form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .row-line {
+        padding-right: 32px;
+        .inputs {
+          padding-right: 20px;
+        }
+        &.account-number {
+          min-width: 300px;
+          width: 35%;
+        }
+        &.title {
+          width: 130px;
+          .dropdown-toggle.btn.btn-success {
+            min-width: unset;
+          }
+          .dropdown-menu.show {
+            min-width: unset;
+          }
+        }
+        &.first-name {
+          width: 35%;
+        }
+        &.last-name {
+          width: 35%;
+        }
+        &.date-of-birth {
+          min-width: 210px;
+          width: 50%;
+          .inputs {
+            padding-right: 10px;
+          }
+        }
+        &.postcode {
+          min-width: 170px;
+          width: 20%;
+        }
+        &.terms-and-conditions {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .submit-section {
+    padding: 20px 64px 84px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .personal-details-step {
+    .form-section {
+      padding: 16px 24px;
+      &.terms-and-conditions-section {
+        padding-left: 8px;
+      }
+      > .base-form {
+        .row-line {
+          &.first-name {
+            width: calc(100% - 130px);
+          }
+          &.last-name {
+            width: 100%;
+          }
+          &.date-of-birth {
+            width: 100%;
+          }
+          &.non-uk-customer {
+            width: 50%;
+            display: flex !important;
+            align-items: center;
+            .form-check {
+              padding-left: 0;
+            }
+            .base-checkbox {
+              .option-text {
+                white-space: normal;
+              }
+            }
+          }
+          &.postcode {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .submit-section {
+      padding-right: 0;
+      padding-left: 0;
+      justify-content: center;
+      .btn.btn-primary {
+        width: 90%;
+      }
+    }
+  }
+}

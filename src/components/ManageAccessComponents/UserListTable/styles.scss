@@ -1,0 +1,173 @@
+@import '../../../styles/_variables.scss';
+
+.user-list-table {
+  background-color: $white;
+  box-shadow: 0px 5px 12px 0px $shadow-gray;
+  height: calc(100% - 200px);
+  border-radius: 10px;
+  overflow-y: auto;
+  .top-table-bar {
+    padding: 26px 46px 26px 40px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $top-line-gray;
+    .lefts {
+      margin-bottom: 2px;
+      width: 328px;
+      .left-img {
+        img {
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          margin-right: 14px;
+        }
+      }
+      .blue-txt {
+        color: $font-black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+    }
+    .rights {
+      display: flex;
+      align-items: center;
+      .inputs {
+        width: 232px;
+        padding-left: 45px;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid $font-black;
+        border-radius: 0;
+        input {
+          font-size: 18px;
+        }
+        .icon-search {
+          @include icon-search;
+          transform: rotateY(-180deg);
+          width: 40px;
+          height: 44px;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+      .btn-green {
+        min-width: 157px;
+        margin-right: 25px;
+      }
+    }
+  }
+  .table-data {
+    height: 100%;
+    .row-td {
+      .col-td {
+        &:last-child {
+          text-align: center;
+        }
+        &:nth-child(3) {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 1280px width */
+@media (max-width: $normal-desktop-width) {
+  .user-list-table {
+    overflow-x: hidden;
+    height: auto;
+    margin-bottom: 30px;
+    .table-data {
+      .tables {
+        .table-body {
+          overflow-x: hidden;
+          .list-wrap {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $min-desktop-width) {
+  .user-list-table {
+    .table-data {
+      margin: 0 15px;
+      .row-td {
+        .col-td {
+          &:first-child {
+            width: 45%;
+          }
+          &:nth-child(4) {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .user-list-table {
+    box-shadow: none;
+    .top-table-bar {
+      padding: 26px 0 26px 0;
+      .three-tab-border {
+        .items {
+          font-size: 12px;
+        }
+      }
+      .rights {
+        .inputs {
+          width: 132px;
+          input {
+            font-size: 12px;
+          }
+        }
+        .btn-green {
+          min-width: 107px;
+          margin-right: 25px;
+        }
+      }
+    }
+    .table-data {
+      height: 100%;
+      margin: 0;
+      .tables {
+        .table-body {
+          overflow-x: hidden;
+        }
+      }
+      .row-td {
+        .col-td {
+          &:nth-child(2) {
+            width: 30%;
+          }
+          &:nth-child(3) {
+            width: 30%;
+          }
+          &:nth-child(4) {
+            display: none;
+          }
+          &:nth-child(5) {
+            width: 30%;
+          }
+          &:last-child {
+            display: table-cell;
+            width: 25%;
+            text-align: center;
+          }
+          .spacing {
+            padding: 0 5px;
+            .avatar {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../styles/_variables.scss';
+
+.content {
+    &.transaction-history-content {
+        padding-left: 267px;
+        padding-top: 100px;
+        background-color: $bg-gray;
+        height: 100vh;
+        max-height: 100vh;
+        .mains {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .content {
+        .container.flex-container {
+            &.column {
+              .row {
+                > div {
+                    min-height: auto;
+                }
+              }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    // .date-boxs
+    .date-boxs {
+        .react-datepicker-popper {
+            .react-datepicker__day-name, 
+            .react-datepicker__day, 
+            .react-datepicker__time-name {
+                outline: none;
+                margin: 0.3rem;
+                width: 2rem;
+                line-height: 2rem;
+            }
+        }
+    }
+}

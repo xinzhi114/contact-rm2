@@ -1,0 +1,160 @@
+@import '../../../styles/_variables.scss';
+
+.card-list-boxs {
+  &.faq-insight-right-content {
+    flex: 1;
+    margin-left: 24px;
+    box-shadow: 0 5px 12px $shadow-gray;
+    border-radius: 6px;
+    background-color: $white;
+    margin-right: 0;
+    .title-line-bar {
+      padding: 19px 30px;
+      border-bottom: 1px solid $border-gray;
+      .icon-blue-user {
+        @include mobile-profile;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+      }
+      img {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+      }
+      .txt {
+        color: $font-black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+    }
+    .debit-card-list {
+      padding: 0 30px;
+      .row-line {
+        padding: 16px 0;
+        min-height: 55px;
+        display: block;
+        border-bottom: 1px solid #e6eaeb;
+      }
+    }
+    .expend-wrap {
+      .expend-title {
+        display: flex;
+        .title {
+          color: $font-black;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+        }
+        .btn-expend {
+          min-width: 20px;
+          height: 20px;
+          @include btn-right-arrow;
+        }
+      }
+      .expend-body {
+        display: none;
+      }
+      &.open {
+        .expend-title {
+          margin-bottom: 10px;
+        }
+        .btn-expend {
+          transform: rotate(-180deg);
+        }
+        .expend-body {
+          display: block;
+          color: $dark-black;
+          font-size: 14px;
+          font-weight: 400;
+          padding-right: 110px;
+        }
+      }
+      .insight-expend {
+        &.insight-expend {
+          padding-right: 0;
+        }
+        .flex-grid {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .green-txt {
+          font-weight: 600;
+          color: $dark-green;
+          display: inline-block;
+          padding: 0 5px;
+        }
+        .lefts {
+          padding-right: 20px;
+          .list-txt {
+            li {
+              display: flex;
+              .txt {
+                color: $dark-black;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 27px;
+                display: flex;
+                flex-wrap: wrap;
+                .left-txt {
+                  display: inline-block;
+                  padding-right: 2px;
+                }
+              }
+            }
+          }
+        }
+        .right-txt {
+          max-width: 253px;
+        }
+      }
+    }
+    .row-bottom {
+      padding: 14px 0;  
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .card-list-boxs {
+    &.faq-insight-right-content {
+      margin: 0 0 20px;
+      box-shadow: none;
+      border-radius: 0;
+      .debit-card-list {
+        padding: 0 20px;
+      }
+      .expend-wrap {
+        .expend-title {
+          align-items: flex-start;
+          .title {
+            padding-right: 37px;
+          }
+        }
+        .insight-expend {
+          margin-top: 15px;
+          .flex-grid {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .lefts {
+            .list-txt {
+              li {
+                .left-txt {
+                  display: inline-block;
+                  margin-right: 15px;
+                }
+              }
+            }
+          }
+          .right-txt {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,533 @@
+@import '../../../styles/_variables.scss';
+// .marketing-preferences-form
+.marketing-preferences-form {
+  .title-line-bar {
+    padding: 19px 30px;
+    border-bottom: 1px solid $border-gray;
+    .icon-blue-user {
+      @include mobile-profile;
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    .txt {
+      color: $font-black;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+    }
+  }
+  .debit-card-list {
+    padding: 0 15px;
+    .row-line {
+      padding: 13px 0;
+      min-height: 70px;
+      border-bottom: 1px solid $border-gray;
+      position: relative;
+      
+      .tip-panel.bottom-check {
+        position: absolute;
+        padding: 16px 25px;
+        background-color: $bg-gray;
+        margin: 0;
+        border-bottom: 1px solid $border-gray;
+        object-fit: 0;
+        top: 70px;
+        left: 0;
+        right: auto;
+        width: 100%;
+        .black-title {
+            text-transform: uppercase;
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .list {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    flex: 0 0 33.33333333%;
+                    max-width: 33.33333333%;
+                    margin: 0 0 25px 0;
+                }
+            }
+        }
+    }
+      .question-wrap {
+        position: relative;
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: middle;
+        .icons.icon-question {
+          @include question-bold;
+          width: 14px;
+          height: 14px;
+          margin-right: 0;
+        }
+        &:hover {
+          .icons.icon-question {
+            @include icon-green-question-little;
+          }
+          .open-panel {
+            display: block;
+          }
+        }
+        .open-panel {
+          padding: 14px;
+          box-shadow: 0 6px 12px rgba(0, 31, 38, 0.21);
+          background-color: $white;
+          z-index: 999;
+          position: absolute;
+          left: 28px;
+          top: -32px;
+          width: 419px;
+          display: none;
+          &:after {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            margin-top: -5px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid $white;
+            transform: rotate(-90deg);
+          }
+          .title {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+            margin-bottom: 9px;
+          }
+          .txt {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+          }
+        }
+      }
+      .lefts {
+        display: flex;
+        align-items: center;
+        .icons {
+          flex: 0 0 24px;
+          max-width: 24px;
+          margin-right: 20px;
+          width: 24px;
+          height: 24px;
+        }
+        .right-txt {
+          .blue-txt {
+            color: $font-black;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+          }
+          .green-txt {
+            color: $dark-green;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+          }
+          
+        }
+      }
+      .rights {
+        display: flex;
+        align-items: center;
+        .check-link {
+          font-size: 16px;
+          font-weight: 600;
+          .on {
+            color: $dark-green;
+          }
+          .off {
+            color: $dark-black;
+            opacity: 0.41;
+          }
+        }
+      }
+    }
+  }
+  //.check-round-wrap
+  .check-round-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    height: 28px;
+    input[type="checkbox"]{
+        display: none;
+    }
+    input[type="checkbox"]+label {
+        font-size: 14px;
+        color: $dark-gray;
+        display: inline-block;
+        font-weight: normal;
+        padding-left: 42px;
+        padding-top: 27px;
+        text-align: left;
+        position: relative;
+        line-height: 27px;
+        text-transform: none;
+        cursor: pointer;
+    }
+    label::before {
+        content: "";
+        display: block;
+        vertical-align: middle;
+        margin-right: 5px;
+        width: 42px;
+        height: 27px;
+        border-radius: 15px;
+        background-color: #796E65;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    label::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        display: block;
+        width: 21px;
+        height: 21px;
+        background-color: $white;
+        border-radius: 100%;
+        transition: all 0.25s ease-in-out;
+    }
+    input[type="checkbox"]:checked+label::before{
+        background-color: $bg-green;
+    }
+    input[type="checkbox"]:checked+label::after {
+        left: 18px;
+    }
+  }
+}
+// .other marketing-setting-wrap
+.other-marketing-setting-wrap {
+  &.setting-wrap {
+    position: relative;
+    background: none!important;
+    &.open {
+        .tip-panel {
+            display: block;
+        }
+    }
+    .tip-panel {
+        position: absolute;
+        top: -155px;
+        right: 100px;
+        width: 258px;
+        background-color: $white;
+        box-shadow: 0 0 16px rgba(0, 31, 38, 0.25);
+        padding: 5px 16px;
+        border-radius: 10px;
+        z-index: 888;
+        display: none;
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -15px;
+            top: 170px;
+            margin-top: -5px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 12px solid $white;
+            transform: rotate(90deg);
+        }
+        .top-txt {
+          border-bottom: 1px solid $border-gray;
+          .icon-txt {
+            display: flex;
+            padding: 19px 28px 30px 0;
+            .icon-lock {
+              max-width: 24px;
+              flex: 0 0 24px;
+              margin-right: 12px;
+            }
+            .bold {
+              font-weight: 700;
+            }
+            .txt {
+              color: $font-black;
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+          .icon-gray-calender {
+            @include icon-gray-calender;
+            width: 20px;
+            height: 20px;
+            flex: 0 0 20px;
+            max-width: 20px;
+            margin-right: 15px;
+          }
+        }
+        .otp-boxs {
+          .otp-title {
+            padding: 9px 0;
+            .lefts {
+              color: $font-black;
+              font-size: 14px;
+              font-weight: 700;
+            }
+            .right-link {
+              color: $dark-green;
+              font-size: 14px;
+              font-weight: 700;
+              text-decoration: underline;
+            }
+          }
+          .inputs {
+            border: 1px solid $black-border;
+            margin-bottom: 16px;
+            height: 50px;
+            &.disabled {
+              border-color: $disabled-bg;
+              pointer-events: none;
+            }
+          }
+          .expires-txt {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            margin-bottom: 13px;
+            .bold {
+              font-weight: 700;
+            }
+          }
+        }
+        .top-area {
+          border-bottom: 1px solid $border-gray;
+          padding-top: 15px;
+          .black-title {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 20px;
+          }
+          .bold {
+            font-weight: 700;
+          }
+          li {
+            margin-bottom: 30px;
+            border: none;
+          }
+        }
+        .bottom-btns {
+          padding: 16px 0;
+          padding-right: 25px;
+          border-top: 1px solid $border-gray;
+          margin: 0;
+          .btn-green {
+            min-width: 100px;
+            line-height: 48px;
+            height: 48px;
+            border-radius: 24px;
+            &.disabled {
+              background-color: $df-gray;
+              color: $light-gray;
+            }
+          }
+          .green-link {
+            color: $dark-green;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+          }
+        }
+        
+    }
+  }
+}
+
+/* .checkbox-wrap */
+.checkbox-wrap {
+  display: inline-block;
+  vertical-align: top;
+  input[type="checkbox"]{
+      display: none;
+  }
+  input[type="checkbox"]+label {
+      font-size: 14px;
+      color: $font-black;
+      display: inline-block;
+      font-weight: normal;
+      padding-left: 36px;
+      text-align: left;
+      position: relative;
+      line-height: 20px;
+      text-transform: none;
+      cursor: pointer;
+  }
+  label::before {
+      border-radius: 2px;
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 10px;
+      border: 1px solid $disabled-bg;
+      background: none;
+      position: absolute;
+      left: 0;
+      top: -2px;
+  }
+  input[type="checkbox"]:checked+label::before{
+      @include icon-check;
+      border: 1px solid $light-green-label;
+  }
+  input[type="checkbox"]:checked+label {
+    font-weight: 700;
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+    .marketing-preferences-form {
+      margin: 0 0 20px;
+    }
+    .card-right-boxs {
+      margin: 20px 0 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: $min-desktop-width) {
+    .marketing-preferences-form {
+      .debit-card-list {
+        .row-line {          
+          .question-wrap {
+              .open-panel {
+                  width: 326px;
+                  .txt {
+                      font-size: 10px;
+                  }
+              }
+          }
+        }
+      }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .mobile-gray-cover {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 3002;
+        background-color: rgba(0,0,0,0.5);
+        top: 0;
+        left: 0;
+    }
+
+    .card-right-boxs {
+      margin: 20px 0 0;
+      .title-line-bar  {
+        padding: 20px 25px;
+      }
+      .debit-card-list {
+        padding: 0 20px;
+        .row-line {
+          flex-direction: column;
+          .lefts {
+            align-self: flex-start;
+          }
+          .rights {
+            margin-top: 10px;
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+    .mobile-check-title {
+      padding: 12px 20px 12px 16px;
+      margin: 0 -16px;
+      display: flex!important;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid $border-gray;
+      .black-title {
+        color: $font-black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+    }
+    .other-marketing-setting-wrap {
+      &.setting-wrap {
+        .tip-panel {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          top: auto;
+          left: 0;
+          z-index: 3004;
+          &:after {
+            display: none;
+          }
+          .bottom-btns {
+            padding-right: 136px;
+          }
+        }
+      }
+    }
+    .marketing-preferences-form {
+      margin-bottom: 0;
+      .debit-card-list {
+        .row-line {
+          .lefts {
+            flex: 1;
+            padding-right: 12px;
+            .right-txt {
+              width: 100%;
+            }
+            .blue-txt {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+          
+          .question-wrap {
+              .icons.icon-question {
+                background-size: 16px 16px;
+                width: 16px;
+                height: 16px;
+              }
+              .open-panel {
+                  left: auto;
+                  right: 0;
+                  top: 28px;
+                  width: 246px;
+                  &:after {
+                    display: none;
+                    top: -6px;
+                    left: 138px;
+                    transform: rotate(0deg);
+                  }
+              }
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,50 @@
+@import '../../../../styles/_variables.scss';
+
+.base-file-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  .attach-button {
+    font-weight: bold;
+    &,
+    &:hover {
+      text-decoration: none;
+      color: $font-black;
+    }
+    min-width: 140px;
+    img {
+      margin-right: 8px;
+    }
+    margin-top: 16px;
+  }
+  .selected-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg-gray;
+    margin-top: 24px;
+    min-width: 40%;
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    font-weight: bold;
+    color: $font-black;
+    font-size: 14px;
+    .file-info {
+      display: flex;
+      justify-content: space-between;
+      .file-name {
+        margin-right: 8px;
+        color: $dark-green;
+        max-width: 40vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    img {
+      cursor: pointer;
+      margin-left: 16px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../styles/_variables.scss';
+
+.dashboard-welcome {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  .big-title {
+    color: $font-black;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 42px;
+    margin-bottom: 12px;
+  }
+  .login-time {
+    color: $font-black;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+  .icon-clock {
+    @include bold-clock;
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .dashboard-welcome {
+    .big-title {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+  }
+}

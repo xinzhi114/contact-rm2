@@ -1,0 +1,26 @@
+@import '../../../../styles/variables';
+
+.spam-warning {
+  .header-section {
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+    img {
+      margin-right: 18px;
+    }
+    .header-label {
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: bold;
+      color: $font-black;
+    }
+  }
+  .message-section {
+    padding-bottom: 24px;
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      color: $font-black;
+    }
+  }
+}

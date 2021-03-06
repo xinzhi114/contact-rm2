@@ -1,0 +1,46 @@
+@import '../../../../../styles/variables';
+
+.password-requirements {
+  color: $font-black;
+  .title {
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .requirements {
+    .requirements-list {
+      &.nested {
+        padding-left: 28px;
+      }
+      .requirement-item {
+        height: 18px;
+        font-size: 14px;
+        margin: 18px 0;
+        padding-left: 30px;
+        &.pass {
+          @include background-image('/assets/icon-circle-check-pass.svg', 16px, 16px, 0 1px);
+        }
+        &:not(.pass) {
+          @include background-image('/assets/icon-circle-check.svg', 16px, 16px, 0 1px);
+        }
+      }
+    }
+    .suggest-password {
+      cursor: pointer;
+      padding-left: 28px;
+      color: #00a793;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .password-requirements {
+    .requirements {
+      .requirements-list {
+        .requirement-item {
+          height: unset;
+        }
+      }
+    }
+  }
+}

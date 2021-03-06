@@ -1,0 +1,245 @@
+{
+  "dataList": {
+    "userAccessLevelData": {
+      "userNameColor": "#1b806d",
+      "userNameShortLabel": "AM",
+      "fieldList": [
+        {
+          "fieldType": "userNameShortLabel",
+          "fieldName": "user_name_short_label",
+          "fieldValue": "Angel Marsh",
+          "queryHide": false
+        },
+        {
+          "fieldType": "card_linked_number_label",
+          "fieldName": "card_linked_number",
+          "fieldValue": "2",
+          "isHide": true,
+          "queryHide": false
+        },
+        {
+          "fieldType": "access_level_label",
+          "fieldName": "access_level",
+          "fieldValue": "Input payment only",
+          "queryHide": false
+        },
+        {
+          "fieldType": "action-edit",
+          "fieldName": "action",
+          "fieldValue": "",
+          "queryHide": false
+        }
+      ]
+    },
+    "cardDetails": [
+      {
+        "bankName": "Odyssey Bank",
+        "cardType": "PLATINUM DEBIT CARD",
+        "fieldList": [
+          {
+            "label": "card_number",
+            "value": "XXXX - XXXX - XXXX - 3367"
+          },
+          {
+            "label": "card_type",
+            "value": "Visa"
+          },
+          {
+            "label": "expiry",
+            "value": "DEC 2019"
+          },
+          {
+            "label": "status",
+            "value": "active"
+          },
+          {
+            "label": "account_linked",
+            "value": "4094 4545 3121 02"
+          },
+          {
+            "label": "user_name",
+            "value": "Alvin Butler"
+          }
+        ],
+        "manageDebitCard": [
+          {
+            "type": "cardLimit",
+            "iconUrl": "/assets/card-limit.svg",
+            "title": "Card limit",
+            "description": "Limited on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": false
+          },
+          {
+            "type": "internationalUsage",
+            "iconUrl": "/assets/filter-build@2x.png",
+            "title": "International usage",
+            "description": "Actived on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": false
+          },
+          {
+            "type": "cancelAndReplaceCard",
+            "iconUrl": "/assets/reveal@2x.png",
+            "title": "Cancel and replace card",
+            "description": "Replaced on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": false
+          }
+        ]
+      },
+      {
+        "bankName": "Odyssey Bank",
+        "cardType": "PLATINUM DEBIT CARD",
+        "fieldList": [
+          {
+            "label": "card_number",
+            "value": "XXXX - XXXX - XXXX - 3362"
+          },
+          {
+            "label": "card_type",
+            "value": "Master"
+          },
+          {
+            "label": "expiry",
+            "value": "DEC 2018"
+          },
+          {
+            "label": "status",
+            "value": "inactive"
+          },
+          {
+            "label": "account_linked",
+            "value": "4094 4545 3121 01"
+          },
+          {
+            "label": "user_name",
+            "value": "Alvin But"
+          }
+        ],
+        "manageDebitCard": [
+          {
+            "type": "activateDebitCard",
+            "iconUrl": "/assets/icon-activate.svg",
+            "title": "Activate debit card",
+            "description": "",
+            "rightGrayText": "",
+            "actived": false
+          }
+        ]
+      },
+      {
+        "bankName": "Odyssey Bank",
+        "cardType": "PLATINUM DEBIT CARD",
+        "fieldList": [
+          {
+            "label": "card_number",
+            "value": "XXXX - XXXX - XXXX - 3369"
+          },
+          {
+            "label": "card_type",
+            "value": "Visa"
+          },
+          {
+            "label": "expiry",
+            "value": "DEC 2019"
+          },
+          {
+            "label": "status",
+            "value": "closed"
+          },
+          {
+            "label": "account_linked",
+            "value": "4094 4545 3121 01"
+          },
+          {
+            "label": "user_name",
+            "value": "Alvin But"
+          }
+        ],
+        "manageDebitCard": [
+          {
+            "type": "cardLimit",
+            "iconUrl": "/assets/card-limit.svg",
+            "title": "Card limit",
+            "description": "Limited on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": true
+          },
+          {
+            "type": "internationalUsage",
+            "iconUrl": "/assets/filter-build@2x.png",
+            "title": "International usage",
+            "description": "Actived on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": false
+          },
+          {
+            "type": "cancelAndReplaceCard",
+            "iconUrl": "/assets/reveal@2x.png",
+            "title": "Cancel and replace card",
+            "description": "Replaced on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": false
+          }
+        ]
+      },
+      {
+        "bankName": "Odyssey Bank",
+        "cardType": "PLATINUM DEBIT CARD",
+        "fieldList": [
+          {
+            "label": "card_number",
+            "value": "XXXX - XXXX - XXXX - 3360"
+          },
+          {
+            "label": "card_type",
+            "value": "Visa"
+          },
+          {
+            "label": "expiry",
+            "value": "DEC 2019"
+          },
+          {
+            "label": "status",
+            "value": "active"
+          },
+          {
+            "label": "account_linked",
+            "value": "4094 4545 3121 01"
+          },
+          {
+            "label": "user_name",
+            "value": "Alvin"
+          }
+        ],
+        "manageDebitCard": [
+          {
+            "type": "cardLimit",
+            "iconUrl": "/assets/card-limit.svg",
+            "title": "Card limit",
+            "description": "Limited on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": false
+          },
+          {
+            "type": "internationalUsage",
+            "iconUrl": "/assets/filter-build@2x.png",
+            "title": "International usage",
+            "description": "Actived on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": false
+          },
+          {
+            "type": "cancelAndReplaceCard",
+            "iconUrl": "/assets/reveal@2x.png",
+            "title": "Cancel and replace card",
+            "description": "Replaced on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": true
+          }
+        ]
+      }
+    ]
+  }
+}

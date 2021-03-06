@@ -1,0 +1,138 @@
+@import '../../../styles/_variables.scss';
+
+// .quick-actions
+.quick-actions {
+    .row-line {
+        padding: 19px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid#f5f5f5;
+        .lefts {
+            display: flex;
+            .icons {
+                margin-right: 10px;
+                flex: 0 0 24px;
+                max-width: 24px;
+                &.payment {
+                    @include payment;
+                    width: 24px;
+                    height: 26px;
+                }
+                &.management {
+                    @include management;
+                    width: 24px;
+                    height: 24px;
+                }
+                &.more-option {
+                    @include more-option;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            .txt-area {
+                .green-txt {
+                    color: $dark-green;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16px;
+                }
+                .gray-txt {
+                    opacity: 0.8;
+                    color: $dark-black;
+                    font-size: 12px;
+                }
+            }
+        }
+        .right-icons {
+            @include btn-left;
+            width: 24px;
+            height: 24px;
+            transform: rotate(-180deg);
+            align-self: start;
+        }
+    }
+}
+
+.account-management {
+    .title-bar {
+        border-bottom: 1px solid $gray-block;
+        padding-bottom: 15px;
+        &.flex-grid {
+            margin-bottom: 0;
+        }
+        .btn-close {
+            @include btn-blue-close;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .icon-list {
+        .row-line {
+            display: flex;
+            align-items: center;
+            padding: 18px 0;
+            border-bottom: 1px solid $gray-block;
+            .left-img {
+                margin-right: 20px;
+                img {
+                    width: 20px;
+                    height: auto;
+                }
+            }
+            .green-txt {
+                color: $dark-green;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.payment-transfer-management {
+    .title-bar {
+        border-bottom: 1px solid $gray-block;
+        padding-bottom: 15px;
+        &.flex-grid {
+            margin-bottom: 0;
+        }
+        .btn-close {
+            @include btn-blue-close;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .gray-bar {
+        background-color: $bg-gray;
+        padding: 11px 24px;
+        color: $font-black;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19px;
+        margin: 0 -20px;
+    }
+}
+.more-option {
+    .title-bar {
+        border-bottom: 1px solid $gray-block;
+        padding-bottom: 15px;
+        &.flex-grid {
+            margin-bottom: 0;
+        }
+        .btn-close {
+            @include btn-blue-close;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .gray-bar {
+        background-color: $bg-gray;
+        padding: 11px 24px;
+        color: $font-black;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19px;
+        margin: 0 -20px;
+    }
+}

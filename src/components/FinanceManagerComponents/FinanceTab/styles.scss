@@ -1,0 +1,205 @@
+@import '../../../styles/_variables.scss';
+
+// .finance-tabs
+.finance-tabs {
+  &.flex-grid {
+    padding: 10px 0;
+    background: $white;
+    align-items: center;
+  }
+
+  .tab-link {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: block;
+    padding: 20px 28px;
+    padding-right: 12px;
+    color: $dark-green;
+    font-size: 16px;
+    background-color: rgba(265, 265, 265, 0.2);
+    font-weight: 700;
+
+    &.current {
+      color: #145564;
+      font-weight: 700;
+    }
+  }
+  .right-users {
+    display: flex;
+    padding-right: 20px;
+    .left-star {
+      margin-right: 12px;
+      text-align: right;
+      .pole-txt {
+        color: $dark-green;
+        font-size: 12px;
+      }
+      .names {
+        color: $font-black;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: -6px;
+      }
+    }
+    .star-list {
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 4px;
+        .icon-star {
+          @include icon-list-star-finance;
+          width: 12px;
+          height: 12px;
+          margin-left: -5px;
+        }
+      }
+    }
+    .user-photo-fm {
+      position: relative;
+      .green-point {
+        position: absolute;
+        top: 3px;
+        right: 0px;
+        width: 13px;
+        height: 13px;
+        background-color: $bg-green;
+        border-radius: 100%;
+        border: 1px solid $white;
+      }
+    }
+
+    .icon-more {
+      @include icon-more-dark;
+      width: 24px;
+      height: 24px;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+  }
+}
+.mobile-show-nonstrict {
+  display: block;
+}
+/* fix layout issue when smaller than 1356px width */
+@media (max-width: $bigger-desktop-width) {
+  .finance-tabs {
+    padding-top: 25px;
+    flex-direction: column-reverse;
+    .right-users {
+      margin-left: auto;
+      margin-bottom: 15px;
+    }
+    .ul-list {
+      align-self: flex-start;
+      li {
+        .tab-link {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 1260px width */
+@media (max-width: $normal-desktop-width) {
+  .finance-tabs {
+    padding-top: 25px;
+    flex-direction: column-reverse;
+    .right-users {
+      margin-left: auto;
+      margin-bottom: 15px;
+    }
+    .ul-list {
+      align-self: flex-start;
+    }
+    .tab-link {
+      font-size: 16px;
+      padding: 15px 15px;
+    }
+  }
+}
+/* fix layout issue when smaller than 1024px width */
+@media (max-width: $min-desktop-width) {
+  .finance-tabs {
+    padding-top: 35px;
+    .ul-list {
+      display: none;
+    }
+  }
+  .mobile-tab-finance {
+    &.mobile-show {
+      display: block;
+    }
+    color: $white;
+    padding: 0 0 23px;
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .finance-tabs {
+    padding: 25px 20px 15px;
+    background: $dark-black !important;
+    justify-content: flex-start !important;
+    flex-direction: row;
+    padding-left: 28px !important;
+    .right-users {
+      display: none;
+    }
+    .ul-list {
+      display: none;
+    }
+  }
+  .finance-manager-mobile-tab-dropdown.drop-module {
+    &.white-drop {
+      height: 100%;
+      .dropdown-toggle {
+        &.btn.btn-success {
+          color: $white;
+          &:after {
+            @include finance-manager-mobile-tab-dropdown;
+            transform: rotate(0deg) translateX(5px);
+          }
+        }
+      }
+    }
+  }
+  .mobile-tab-finance {
+    color: $white;
+    padding: 0;
+    &.mobile-show {
+      display: block;
+    }
+    .drop-module {
+      .black-bg {
+        display: none;
+      }
+    }
+  }
+  .dropdown-menu {
+    z-index: 99999 !important;
+    .top-area {
+      padding: 20px 25px;
+      padding-top: 10px;
+      .txt-title {
+        font-size: 16px !important;
+        color: $font-black !important;
+        font-weight: 700 !important;
+      }
+    }
+    .dropdown-item {
+      .icon-checkmark {
+        @include icon-checkbox-24;
+        width: 24px;
+        height: 24px;
+        margin-left: auto !important;
+      }
+    }
+  }
+}
+
+.txt-title-to {
+  padding: 6px 25px;
+  font-size: 16px !important;
+  color: $font-black !important;
+  font-weight: 700 !important;
+}

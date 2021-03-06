@@ -1,0 +1,68 @@
+@import '../../../../styles/variables';
+
+.base-modal.order-digi-pass-modal {
+  display: flex !important;
+  align-items: center;
+  .modal-dialog {
+    height: unset;
+    min-width: unset;
+    max-width: 550px;
+  }
+  .modal-header {
+    padding: 24px;
+    padding-top: 20px;
+    border-bottom: none;
+    .modal-title-text span {
+      font-family: $gotham-rounded;
+    }
+  }
+  .modal-body {
+    padding: 24px 68px;
+    padding-bottom: 11px;
+    display: flex;
+    align-items: center;
+    background-color: $bg-gray;
+    img.digi-pass {
+      width: 215px;
+      height: 179px;
+      margin-bottom: 16px;
+    }
+    span {
+      color: $font-black;
+      margin-bottom: 13px;
+      text-align: center;
+      &.bold {
+        font-weight: bold;
+        white-space: nowrap;
+      }
+    }
+  }
+  .modal-footer {
+    padding: 24px 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-top: none;
+  }
+  &.already-ordered {
+    .modal-dialog {
+      max-width: 621px;
+    }
+    .modal-footer {
+      .btn.btn-primary {
+        min-width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .base-modal.order-digi-pass-modal {
+    .modal-dialog {
+      max-width: 96vw !important;
+    }
+    .modal-footer {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

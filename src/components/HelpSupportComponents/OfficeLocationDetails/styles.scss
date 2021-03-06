@@ -1,0 +1,107 @@
+@import '../../../styles/_variables.scss';
+
+.card-list-boxs {
+  &.office-location-right-content {
+    height: 100%;
+    margin-left: 24px;
+    flex: 1;
+    box-shadow: 0 5px 12px $shadow-gray;
+    border-radius: 6px;
+    background-color: $white;
+    margin-right: 0;
+    .title-line-bar {
+      padding: 19px 30px;
+      border-bottom: 1px solid $border-gray;
+      .icon-blue-user {
+        @include mobile-profile;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+      }
+      img {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+      }
+      .txt {
+        color: $font-black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+    }
+    .list-content {
+      padding: 0 30px;
+      .row-line {
+        padding: 31px 0 35px;
+        min-height: 55px;
+        display: block;
+        border-bottom: 1px solid $border-gray;
+        .title {
+          color: $font-black;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+          margin-bottom: 24px;
+        }
+        .group {
+          .left-txt {
+            .black-txt,
+            .green-txt {
+              color: $dark-green;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 21px;
+            }
+            .black-txt {
+              color: $dark-black;
+            }
+          }
+          .btn-green {
+            margin-top: -26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .card-list-boxs {
+    &.office-location-right-content {
+      margin-left: 0;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .card-list-boxs {
+    &.office-location-right-content {
+      margin: 0 0 20px;
+      box-shadow: none;
+      border-radius: 0;
+      .list-content {
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        .row-line {
+          padding: 20px 25px;
+          .title {
+            margin-bottom: 10px;
+          }
+        }
+        .group {
+          &.flex-grid {
+            flex-direction: column;
+            align-items: flex-start;
+            .btn-green {
+              align-items: center;
+              margin: 15px auto 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

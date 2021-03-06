@@ -1,0 +1,50 @@
+@import '../../../../styles/variables';
+
+.more-actions-modal {
+  display: flex !important;
+  align-items: flex-end;
+  .modal-dialog {
+    max-width: unset;
+    height: 30vh;
+    min-height: 250px;
+    margin: 0;
+    flex-grow: 1;
+    .modal-header {
+      padding: 28px 32px;
+    }
+    .modal-body {
+      padding: 7px 24px;
+      ul {
+        li {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 22px;
+          padding: 25px 16px;
+          border-bottom: 1px solid $border-gray;
+          &:last-child {
+            border-bottom: none;
+          }
+          &:hover {
+            background-color: $bg-gray;
+          }
+          .left-info {
+            img {
+              width: 18px;
+              height: 18px;
+              margin-right: 14px;
+            }
+          }
+          .select-arrow {
+            transform: rotateZ(-90deg);
+          }
+        }
+      }
+    }
+    .modal-footer {
+      display: none;
+    }
+  }
+}

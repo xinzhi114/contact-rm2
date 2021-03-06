@@ -1,0 +1,131 @@
+@import '../../../styles/variables';
+
+.compose-email-modal {
+  .title {
+    color: $font-black;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  .modal-header {
+    padding: 24px;
+  }
+  .modal-footer {
+    padding: 24px 40px;
+  }
+  .customer-info {
+    display: flex;
+    margin-bottom: 28px;
+    > div {
+      display: flex;
+      flex-direction: column;
+      margin-right: 32px;
+      .value {
+        color: $font-black;
+        font-size: 14px;
+        line-height: 18px;
+        width: 115px;
+      }
+    }
+  }
+  .base-form {
+    .base-textarea {
+      height: 100%;
+    }
+    .row-line {
+      margin-bottom: 40px;
+      &.email-content-row {
+        margin-bottom: 0;
+      }
+      &.request-callback-row {
+        margin-bottom: 28px;
+      }
+      &.attach-file-row {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .dropdown-menu.show {
+    max-height: unset;
+    border: 1px solid $black-border;
+  }
+  textarea {
+    padding: 16px;
+    font-size: 14px;
+    border-radius: 2px;
+  }
+  .form-check {
+    padding-left: 0;
+  }
+  .email-content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+  }
+  .btn-close {
+    @include btn-close;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .compose-email-modal {
+    .customer-info {
+      display: none;
+    }
+    .modal-body {
+      padding: 0;
+    }
+    .modal-footer {
+      .btn.btn-link {
+        display: none;
+      }
+    }
+    .base-form {
+      .row-line {
+        border-bottom: 1px solid $border-gray;
+        margin-bottom: 0;
+        padding: 0;
+        &.request-callback-row {
+          order: 2;
+          padding: 20px 50px;
+          padding-left: 20px;
+          margin-bottom: 0;
+        }
+        &.email-subject-row {
+          order: 1;
+        }
+        &.email-content-row {
+          order: 3;
+          border-bottom: none;
+          min-height: 250px;
+        }
+        &.attach-file-row {
+          order: 4;
+          padding: 0 20px;
+        }
+        .title {
+          display: none;
+        }
+        textarea,
+        .textareas,
+        .drop-module .dropdown-toggle.btn.btn-success {
+          border: none;
+        }
+        .base-textarea {
+          padding: 20px;
+          margin-bottom: 10px;
+        }
+        .base-checkbox .option-text {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

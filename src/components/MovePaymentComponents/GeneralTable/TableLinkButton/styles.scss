@@ -1,0 +1,43 @@
+@import '../../../../styles/variables';
+
+.table-link-button {
+  &.btn-link {
+    &,
+    &:hover,
+    &:focus {
+      color: $font-black;
+      text-decoration: unset;
+    }
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    white-space: nowrap;
+    .icon-drop {
+      @include black-right-arrow;
+      width: 10px;
+      height: 6px;
+      flex: 0 0 10px;
+      max-width: 10px;
+      margin-left: 5px;
+    }
+  }
+  &.open {
+    .icon-drop {
+      transform: rotate(-180deg);
+    }
+  }
+  &.full-width {
+    width: 100%;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .table-link-button.btn-link {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+}

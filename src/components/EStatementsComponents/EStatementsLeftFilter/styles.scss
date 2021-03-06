@@ -1,0 +1,319 @@
+@import '../../../styles/_variables.scss';
+
+// .filter-box-eStatements
+.filter-box-eStatements {
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  padding: 25px 32px 102px;
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  .modal-mains {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .title-area {
+      margin-bottom: 40px;
+    }
+    .lefts {
+      flex: 0 0 543px;
+      max-width: 543px;
+    }
+    .rights {
+      width: 333px;
+      flex: 0 0 333px;
+      max-width: 333px;
+    }
+    .green-box {
+      border-radius: 25px 0 0;
+      background-color: #ccf5ef;
+      padding: 50px 26px;
+      text-align: center;
+      .email-box {
+        width: 40px;
+        height: 29px;
+        margin: 0 auto 17px;
+        .email-img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .interest-box {
+        font-size: 18px;
+      }
+      .p-txt {
+        font-size: 12px;
+        color: #003d4d;
+        margin-bottom: 32px;
+      }
+      .bottom-btn {
+        .btn-green {
+          margin-bottom: 10px;
+        }
+        .gray-txt {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .title-area {
+    .blue-title {
+      color: $font-black;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+    }
+  }
+  .row-line {
+    margin-bottom: 24px;
+    &.inner {
+      margin-bottom: 5px;
+      &:last-child {
+        padding-top: 5px;
+      }
+      .title {
+        margin-bottom: 10px;
+      }
+    }
+    &:last-child {
+      padding-top: 0px;
+    }
+    &.pt0 {
+      padding-top: 0;
+    }
+    .title {
+      color: $font-black;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .drop-module {
+      .dropdown-item {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .download-choose {
+    .gray-txt {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .two-tab {
+      display: flex;
+      .gray-item {
+        border-radius: 4px;
+        background-color: $gray-block;
+        height: 70px;
+        flex: 0 0 64px;
+        max-width: 64px;
+        margin-right: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &.active {
+          background-color: #cef6f0;
+          .txt {
+            color: $bg-green;
+            margin-top: 5px;
+          }
+          .pdf-icon {
+            @include pdf-icon-active;
+          }
+          .excel-icon {
+            @include excel-icon-active;
+          }
+        }
+        .icons {
+          width: 20px;
+          height: 25px;
+        }
+        .pdf-icon {
+          @include pdf-icon;
+        }
+        .excel-icon {
+          @include excel-icon;
+        }
+      }
+      .txt {
+        color: $dark-black;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 2px;
+      }
+    }
+  }
+  .bottom-btns {
+    margin: 30px 0;
+    .btn-green {
+      min-width: 156px;
+    }
+    .gray-txt {
+      color: #003d4c;
+      font-size: 14px;
+    }
+    .month-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 25px;
+      .month-file-item {
+        flex: 0 0 90px;
+        margin-bottom: 20px;
+        .gray-item {
+          border-radius: 4px;
+          height: 70px;
+          flex: 0 0 64px;
+          max-width: 64px;
+          margin-right: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          &:hover {
+            opacity: 0.75;
+          }
+          .icons {
+            width: 32px;
+            height: 40px;
+          }
+          .pdf-icon {
+            @include icon-download-file;
+          }
+        }
+        .txt {
+          color: #003d4c;
+          font-size: 14px;
+          line-height: 16px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .some-txt {
+    .bold-title {
+      font-weight: 700;
+      color: $dark-black;
+      font-size: 12px;
+    }
+    .txt,
+    .down-txt {
+      font-size: 12px;
+      color: $dark-black;
+    }
+    .green-link {
+      font-weight: 700;
+      color: $dark-green;
+      text-decoration: none;
+    }
+  }
+  .date-boxs {
+    &.calender-boxs {
+      .inputs {
+        padding-right: 0;
+      }
+    }
+    .inputs {
+      input {
+        height: 100%;
+        font-size: 14px;
+        color: $font-black;
+      }
+      .icons {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        &.icon-search {
+          right: 7px;
+          top: 10px;
+          @include icon-search;
+        }
+      }
+      .react-daterange-picker {
+        width: 100%;
+        height: 100%;
+        .react-daterange-picker__wrapper {
+          border: none;
+        }
+      }
+    }
+  }
+  .green-file {
+    display: inline-block;
+    .icon-pdf {
+      @include icon-pdf;
+      width: 19px;
+      height: 22px;
+      margin-right: 12px;
+    }
+    .txt {
+      display: inline-block;
+      color: $bg-green;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      max-width: 170px;
+      vertical-align: middle;
+    }
+    &.disabled {
+      .icon-pdf {
+        opacity: 0.6;
+      }
+      .txt {
+        color: $label-gray;
+      }
+    }
+  }
+}
+.drop-module {
+  &.eStatements-account-dropdown {
+    .dropdown-menu {
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+      &.show {
+        .dropdown-item {
+          display: flex;
+          flex-direction: column;
+          color: $dark-green;
+          font-size: 14px;
+          font-weight: 700;
+          .gray-txt {
+            color: $font-gray;
+            font-weight: normal;
+          }
+          &.active {
+            color: $dark-green;
+            background-color: #cef6f0;
+          }
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+  .filter-box-eStatements {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .filter-box-eStatements {
+    .date-boxs {
+      .inputs {
+        width: 100%;
+      }
+    }
+    .modal-mains {
+      .rights,
+      .lefts {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

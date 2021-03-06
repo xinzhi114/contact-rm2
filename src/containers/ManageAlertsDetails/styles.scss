@@ -1,0 +1,86 @@
+@import '../../styles/_variables.scss';
+
+.content {
+  &.manage-alerts-details-content {
+    padding-left: 267px;
+    padding-top: 100px;
+    background-color: $bg-gray;
+    height: 100vh;
+    .mains {
+      height: 100%;
+    }
+    .three-row {
+      height: 100%;
+      flex: 1;
+      padding: 24px 28px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      .right-link {
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        .icon-back {
+          color: $dark-green;
+          font-size: 16px;
+          font-weight: 700;
+          @include icon-arrow-back-left;
+          display: inline-block;
+          padding-left: 23px;
+        }
+      }
+      .two-row {
+        display: flex;
+        flex-grow: 1;
+        padding-bottom: 24px;
+        .right-container {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+  .content {
+    &.manage-alerts-details-content {
+      padding-top: 78px;
+      .three-row {
+        padding-top: 50px;
+        .right-link {
+          top: 50px;
+        }
+        .two-row {
+          display: flex;
+          min-height: auto;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .content {
+    &.manage-alerts-details-content {
+      padding-left: 0;
+      padding-top: 58px;
+      background-color: initial;
+      .mobile-select-top {
+        padding: 5px 20px;
+        background-color: $dark-black;
+        margin: -14px -20px 20px -20px;
+      }
+      .three-row {
+        padding: 0;
+        .two-row {
+          .right-container {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g id="mail" transform="translate(9 10)">
+        <path id="Path"
+            d="M1.418,0H12.764a1.422,1.422,0,0,1,1.418,1.418V9.927a1.422,1.422,0,0,1-1.418,1.418H1.418A1.422,1.422,0,0,1,0,9.927V1.418A1.422,1.422,0,0,1,1.418,0Z"
+            fill="none" stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+            stroke-width="1.2" />
+        <path id="Path-2" data-name="Path" d="M14.182,0,7.091,4.964,0,0" transform="translate(0 1.418)" fill="none"
+            stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.2" />
+    </g>
+</svg>

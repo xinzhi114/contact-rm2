@@ -1,0 +1,30 @@
+@import '../../../../../styles/variables';
+
+.select-more-details-review {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+  .text-wrap {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    > span {
+      width: 50%;
+      font-weight: 500;
+      color: $font-black;
+    }
+    > .flex-list {
+      width: 50%;
+      margin-top: 0;
+      .item {
+        padding-right: 0;
+      }
+    }
+  }
+  .edit-button-wrap {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

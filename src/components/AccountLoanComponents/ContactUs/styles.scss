@@ -1,0 +1,80 @@
+@import '../../../styles/_variables.scss';
+
+.contact-boxs {
+    min-height: 197px;
+    box-shadow: 0 2px 4px rgba(27, 128, 109, 0.16);
+    border-radius: 10px;
+    background-color: $gray-block;
+    padding: 14px 20px;
+    flex:  0 0 345px;
+    max-width: 345px;
+    margin-left: 22px;
+    .big-title {
+        color: $dark-black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 15px;
+        .btn-arrow {
+            @include btn-arrow;
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .green-txt {
+        color: $dark-blue;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .three-link {
+        padding: 14px 0 5px 0;
+        .icon-link {
+            margin-bottom: 20px;
+            color: $dark-black;
+            font-size: 14px;
+            font-weight: 700;
+            display: block;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .icons {
+                width: 24px;
+                height: 24px;
+                margin-right: 12px;
+                display: inline-block;
+            }
+            .icon-mobile {
+                @include icon-mobile;
+            }
+            .icon-email {
+                @include icon-email;
+            }
+            .icon-message {
+                @include icon-message;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .contact-boxs {
+        min-height: auto;
+        background-color: $white;
+        &.mobile-contact {
+            padding: 14px 0;
+            box-shadow: none;
+            margin-left: 0;
+            padding-left: 0;
+        } 
+    }
+
+    .home-grid {
+      .contact-boxs {
+          &.mobile-contact {
+              padding: 14px 24px;
+          } 
+      }
+    }
+}

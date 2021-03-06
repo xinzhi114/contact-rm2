@@ -1,0 +1,89 @@
+@import '../../../../styles/_variables.scss';
+
+.modal-default {
+    &.quick-actions-account-information-modal {
+        .modal-mains {
+            width: 410px;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 0;
+            .title-area {
+                margin-bottom: 0;
+                padding: 24px 28px;
+                .blue-title {
+                    color: $font-black;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+            .modal-info {
+                background-color: $bg-gray;
+                border-top: 0;
+                padding: 19px 0 0;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+        .row-line {
+            padding: 0 25px;
+            &.flex {
+                flex-wrap: wrap;
+                .group {
+                    flex: 0 0 50%;
+                    margin-bottom: 25px;
+                }
+                .label-txt {
+                    opacity: 0.8;
+                    color: $font-black;
+                    font-size: 10px;
+                    font-weight: 600;
+                    line-height: 10px;
+                    margin-bottom: 9px;
+                    text-transform: uppercase;
+                }
+                .values-txt {
+                    color: $font-black;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 14px;
+                }
+            }
+            
+        }
+        .btn-close {
+            @include btn-close;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .modal-default {
+        &.quick-actions-account-information-modal {
+            .modal-mains {
+                width: 667px;
+                .title-area {
+                    margin-bottom: -7px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-default {
+        &.quick-actions-account-information-modal {
+            .modal-mains {
+                margin: 17px auto;
+                width: 95%;
+            }
+        }
+    }
+}

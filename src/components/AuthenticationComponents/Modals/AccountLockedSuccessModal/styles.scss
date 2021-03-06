@@ -1,0 +1,9 @@
+@import '../../../../styles/variables';
+
+.base-modal.account-locked-success-modal {
+  .modal-footer {
+    .btn.btn-primary {
+      width: unset;
+    }
+  }
+}

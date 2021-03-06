@@ -1,0 +1,129 @@
+@import '../../../styles/_variables.scss';
+
+.profile-right-otp {
+  height: 100%;
+  flex: 1 1;
+  margin-left: 24px;
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  margin-right: 0;
+  .top-line-bar {
+    padding: 20px;
+    border-bottom: 1px solid $border-gray;
+    .left-area {
+        color: $font-black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        img {
+          width: 20px;
+          height: 26px;
+          margin-right: 18px;
+          display: inline-block;
+        }
+    }
+  }
+  .otp-container {
+    padding: 32px 24px;
+    .p-txt {
+      padding-bottom: 40px;
+      max-width: 60%;
+      color: $font-black;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .control-bar {
+      display: flex;
+      flex-wrap: wrap;
+      .input-otp {
+        .otp-inputs {
+          input {
+            letter-spacing: 4px;
+          }
+        }
+      }
+      .group {
+        flex: 0 0 30%;
+        max-width: 30%;
+        margin-right: 24px;
+        .labels {
+          color: $font-black;
+          font-size: 14px;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+        .input-otp {
+          .bottom-input {
+              color: $font-black;
+              font-size: 14px;
+              margin-top: 8px;
+              .bold-txt {
+                font-weight: 700;
+              }
+          }
+        }
+        .green-link {
+          align-self: center;
+          margin-top: 35px;
+          display: block;
+          color: $dark-green;
+          font-size: 14px;
+          font-weight: 700;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .tool-btns {
+    padding: 23px 21px;
+    border-top: 1px solid $border-gray;
+    .btn {
+      margin-right: 40px;
+    }
+    .green-link {
+      min-width: 104px;
+      display: inline-block;
+      text-align: center;
+      font-weight: 700;
+    }
+    .btn-green {
+      min-width: 152px;
+      &.disabled {
+        background-color: $df-gray;
+        cursor: default;
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 1024px width */
+@media (max-width: $smaller-desktop-width) {
+  .profile-right-otp {
+    margin-left: 0;
+    .otp-container {
+      .control-bar {
+        .group {
+          flex: 0 0 40%;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .profile-right-otp {
+    .otp-container {
+      .p-txt {
+        max-width: 100%;
+        padding-bottom: 20px;
+      }
+      .control-bar {
+        .group {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

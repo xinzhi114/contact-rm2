@@ -1,0 +1,51 @@
+@import '../../../styles/_variables.scss';
+
+.center-more {
+  text-align: center;
+  display: block;
+  width: 100%;
+  .link-arrow {
+    color: $dark-green;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    text-decoration: underline;
+    display: inline-block;
+    .icon-drop {
+      @include icon-drop;
+      width: 10px;
+      height: 10px;
+      margin-left: 10px;
+      &.expanded {
+        transform: rotateX(180deg);
+      }
+    }
+  }
+}
+.content {
+  .setting-wrap {
+    &.open {
+        .btn-setting {
+          @include icon-setting;
+        }
+    }
+  }
+}
+
+// .left-setting
+.left-setting {
+  &.setting-wrap {
+    .tip-panel {
+      top: -70px;
+      right: 38px;
+    }
+  }
+}
+
+.icon-four-arrow {
+  @include icon-four-arrow;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  margin-top: -6px;
+}

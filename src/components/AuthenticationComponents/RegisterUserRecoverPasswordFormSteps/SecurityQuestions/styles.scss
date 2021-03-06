@@ -1,0 +1,72 @@
+@import '../../../../styles/variables';
+
+.security-questions-step {
+  .question-row {
+    padding: 20px 64px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $border-gray;
+    .section-title {
+      font-weight: bold;
+      color: $dark-blue;
+      margin-bottom: 28px;
+    }
+    .base-form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .row-line {
+        flex-grow: 1;
+        &.odd {
+          flex-grow: 0.4;
+          > div {
+            padding-left: 32px;
+          }
+          .inputs {
+            padding-right: 14px;
+          }
+        }
+      }
+    }
+    &.single-question {
+      border-bottom: none;
+      .row-line {
+        position: relative;
+        .right-text {
+          position: absolute;
+          right: 24px;
+          top: 43px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  .submit-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 64px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .security-questions-step {
+    .question-row {
+      padding: 16px 24px;
+      .base-form {
+        flex-direction: column;
+        .row-line {
+          &.odd {
+            > div {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .submit-row {
+      .btn.btn-primary {
+        width: 100%;
+      }
+    }
+  }
+}

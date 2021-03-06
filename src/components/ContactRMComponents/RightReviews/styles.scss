@@ -1,0 +1,283 @@
+@import '../../../styles/_variables.scss';
+
+.contact-rm-right-reviews {
+  height: 100%;
+  flex: 1 1;
+  margin-left: 24px;
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  // .rate-relation-manager-module
+  .rate-relation-manager-module {
+    .inner-container {
+      padding: 18px 42px;
+      .gray-area {
+        background-color: #f9f9f9;
+        padding: 23px 27px;
+        .lefts {
+          flex: 0 0 40%;
+          max-width: 40%;
+          .thin-txt {
+            color: #003d4c;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            opacity: 0.5;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+          }
+          .star-boxs {
+            .black-txt {
+              color: #001f26;
+              font-size: 54px;
+              font-weight: 300;
+              line-height: 55px;
+            }
+            .right-star {
+              margin-left: 35px;
+              .star-list {
+                .icon-star {
+                  margin-right: 10px;
+                  margin-left: 0;
+                  background-size: 20px 19px;
+                  width: 20px;
+                  height: 20px;
+                  &.gray {
+                    @include icon-star-gray;
+                    background-size: 20px 19px;
+                  }
+                }
+              }
+              .green-txt {
+                color: #00a793;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                margin-top: 9px;
+              }
+            }
+          }
+        }
+        .rights {
+          flex: 0 0 60%;
+          max-width: 60%;
+          .chart-list {
+            .bar {
+              .num {
+                color: #003d4c;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17px;
+                margin-right: 12px;
+              }
+              .parents {
+                color: #888888;
+                font-family: $gotham-rounded;
+                font-size: 10px;
+                font-weight: 300;
+                line-height: 18px;
+                margin-left: 8px;
+              }
+              .progress-bg {
+                height: 11px;
+                background-color: #ededed;
+                width: 262px;
+                position: relative;
+                .color-inner {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  height: 100%;
+                  background-color: #00a792;
+                }
+              }
+            }
+          }
+        }
+      }
+      .rate-box {
+        padding: 32px 0 12px;
+        .rate-title {
+          color: $font-black;
+          font-family: $gotham-rounded;
+          font-size: 14px;
+          font-weight: 500;
+          margin-bottom: 19px;
+        }
+        .txt {
+          color: $font-black;
+          font-family: $gotham-rounded;
+          font-size: 24px;
+          font-weight: 300;
+          letter-spacing: 0.6px;
+          line-height: 34px;
+        }
+      }
+      .num-progress {
+        position: relative;
+        padding-top: 38px;
+        width: 326px;
+        .top-green-txt {
+          color: $light-green-label;
+          font-family: $gotham-rounded;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: right;
+          position: absolute;
+          right: 12px;
+          top: 2px;
+        }
+        .horizontal-slider {
+          height: 20px;
+          width: calc(100% - 34px);
+          .example-track {
+            height: 10px;
+            border-radius: 5px;
+            &.example-track-0 {
+              background-color: #00a792;
+            }
+            &.example-track-1 {
+              background-color: #ededed;
+            }
+          }
+          .example-thumb {
+            width: 24px;
+            height: 24px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+            background-color: #ffffff;
+            border-radius: 100%;
+            top: -8px;
+            color: transparent;
+            &:focus,
+            &:hover {
+              outline: none;
+            }
+          }
+        }
+        .num-list {
+          padding-right: 33px;
+          .num {
+            color: #979797;
+            font-family: $gotham-rounded;
+            font-size: 14px;
+            font-weight: 300;
+            font-style: normal;
+            &.current {
+              font-weight: 700;
+              color: $light-green-label;
+            }
+          }
+        }
+      }
+      .textarea-area {
+        padding-top: 48px;
+        width: 506px;
+        .top-txt {
+          color: $font-black;
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 13px;
+        }
+        .textareas {
+          border: 1px solid $font-black;
+          textarea {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+        .bottom-txt {
+          color: $font-black;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: right;
+          margin-top: 9px;
+        }
+      }
+      .bottom-line-bar {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid $border-gray;
+        .green-link {
+          color: $light-green-label;
+          font-size: 16px;
+          font-weight: 700;
+          padding: 1px 8px;
+          text-decoration: none;
+          margin-right: 28px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $smaller-desktop-width) {
+  .contact-rm-right-reviews {
+    margin-left: 0;
+    .rate-relation-manager-module {
+      .inner-container {
+        .gray-area {
+          flex-direction: column;
+          align-items: flex-start;
+          .lefts {
+            flex: 1;
+            max-width: none;
+            margin: 0 0 20px 0;
+          }
+          .rights {
+            flex: 1;
+            max-width: none;
+          }
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-tablet-width) {
+  .contact-rm-right-reviews {
+    margin-left: 0;
+    .rate-relation-manager-module {
+      .inner-container {
+        .textarea-area {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .contact-rm-right-reviews {
+    .rate-relation-manager-module {
+      .inner-container {
+        padding: 18px 20px;
+        .gray-area {
+          .rights {
+            .chart-list {
+              .bar {
+                .progress-bg {
+                  width: 210px;
+                }
+              }
+            }
+          }
+        }
+        .num-progress {
+          width: 100%;
+          .progress-img {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

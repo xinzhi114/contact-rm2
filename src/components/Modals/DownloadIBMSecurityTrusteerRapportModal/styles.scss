@@ -1,0 +1,52 @@
+@import '../../../styles/variables';
+
+.base-modal.security-trusteer-download-modal {
+  .modal-dialog {
+    min-width: 592px;
+    max-width: 592px;
+    height: unset;
+    .modal-header {
+      padding: 24px;
+      padding-top: 20px;
+      .btn.btn-close {
+        width: 16px;
+        height: 16px;
+        margin-top: 8px;
+      }
+    }
+    .modal-body {
+      padding-top: 20px;
+      .subtitle {
+        font-weight: bold;
+      }
+      .paragraphs {
+        > div {
+          position: relative;
+          margin: 20px 0;
+          padding-left: 52px;
+          img {
+            position: absolute;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+    .modal-footer {
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 30px 20px 20px 24px;
+      > span {
+        font-weight: bold;
+        white-space: nowrap;
+        margin-right: 20px;
+        color: $light-green-label;
+      }
+      .btn.btn-primary {
+        padding: 0;
+      }
+    }
+  }
+}

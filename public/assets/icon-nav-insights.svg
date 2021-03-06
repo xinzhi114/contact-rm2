@@ -1,0 +1,19 @@
+<svg id="icon_nav_insights" data-name="icon/nav/insights" xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+  viewBox="0 0 44 44">
+  <circle id="Oval" cx="12.833" cy="12.833" r="12.833" transform="translate(9.167 7.333)" fill="none" stroke="#003d4c"
+    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" />
+  <circle id="Oval-2" data-name="Oval" cx="1.833" cy="1.833" r="1.833" transform="translate(1.833 20.167)"
+    fill="#003d4c" />
+  <circle id="Oval_Copy" data-name="Oval Copy" cx="1.833" cy="1.833" r="1.833" transform="translate(38.5 20.167)"
+    fill="#003d4c" />
+  <circle id="Oval_Copy_2" data-name="Oval Copy 2" cx="1.833" cy="1.833" r="1.833" transform="translate(20.167)"
+    fill="#003d4c" />
+  <circle id="Oval_Copy_3" data-name="Oval Copy 3" cx="1.833" cy="1.833" r="1.833" transform="translate(5.5 5.5)"
+    fill="#003d4c" />
+  <circle id="Oval_Copy_4" data-name="Oval Copy 4" cx="1.833" cy="1.833" r="1.833" transform="translate(34.833 5.5)"
+    fill="#003d4c" />
+  <rect id="Rectangle" width="9.167" height="5.5" transform="translate(17.417 33)" fill="none" stroke="#003d4c"
+    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" />
+  <path id="Path" d="M1.833,11H0V0H12.833" transform="translate(22 22)" fill="none" stroke="#003d4c"
+    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" />
+</svg>

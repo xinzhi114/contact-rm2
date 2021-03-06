@@ -1,0 +1,58 @@
+@import '../../../styles/_variables.scss';
+
+.content {
+    &.move-payment-content {
+        padding-left: 108px;
+        background-color: $bg-gray;
+        .three-row {
+            flex: 1;
+            position: relative;
+            .two-row {
+                display: flex;
+                min-height: 804px;
+                flex: 1;
+                .card-list-boxs {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .content {
+        &.move-payment-content {
+            .three-row {
+                padding-top: 0;
+                .two-row {
+                    display: flex;
+                    min-height: auto;
+                    flex-direction: column;
+                    .right-container  {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .content {
+        &.move-payment-content {
+            padding-left: 0;
+            background-color: initial;
+            .three-row {
+                padding: 0;
+                .two-row {
+                    .right-container  {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

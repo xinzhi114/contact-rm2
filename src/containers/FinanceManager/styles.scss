@@ -1,0 +1,122 @@
+@import '../../styles/_variables.scss';
+
+.content {
+  &.finance-manager-content {
+    padding-left: 267px;
+    height: auto;
+    min-height: 100%;
+    background-color: $bg-gray;
+    .mains {
+      padding: 20px 24px;
+    }
+    .floating-rm-button {
+      position: fixed;
+      bottom: 2%;
+      right: 5%;
+      background: $font-black;
+      height: 59px;
+      min-width: 183px;
+      border-radius: 36.5px;
+      border-bottom-left-radius: 2px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      justify-content: space-between;
+      z-index: 10;
+      .greenicon {
+        width: 12px;
+        height: 12px;
+        background: #5ec100;
+        border-radius: 6px;
+        margin-right: 10px;
+      }
+      .relationship-manager {
+        @include icon-manager;
+        width: 42px;
+        height: 42px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .txt {
+        color: $white;
+        font-size: 14px;
+      }
+    }
+    .rm-modal {
+      display: flex !important;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9500000;
+      .black-bg {
+        background: rgba(0, 0, 0, 0.75);
+        flex-grow: 1;
+      }
+      .manager-modal-content {
+        width: 100%;
+        background: $white;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+        position: fixed;
+        bottom: 0;
+        z-index: 999999;
+        .title-txt {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 24px;
+          padding: 15px 0;
+          border-bottom: 1px solid $border-gray;
+          .txt {
+            color: $font-black;
+            font-weight: 700;
+          }
+          .icon-close {
+            @include icon-closegreen;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+          }
+        }
+        .home-contact {
+          position: static;
+          border: 0px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+.desktop-hide-strict {
+  display: none !important;
+}
+/* fix layout issue when smaller than 1024px width */
+@media (max-width: $min-desktop-width) {
+  .content {
+    &.finance-manager-content {
+      padding-left: 237px;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .content {
+    &.finance-manager-content {
+      padding-left: 0;
+      background-color: $bg-gray;
+      .mains {
+        padding: 0 !important;
+        background: none !important;
+      }
+    }
+  }
+
+  .mobile-showflex-strict {
+    display: flex !important;
+  }
+}

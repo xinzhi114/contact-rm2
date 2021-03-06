@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.163" height="21.163" viewBox="0 0 21.163 21.163">
+    <g id="nav_copy" data-name="nav copy" transform="translate(-1 -1)">
+        <path id="Path"
+            d="M8.571,0H1.9A1.9,1.9,0,0,0,0,1.9V15.238a1.9,1.9,0,0,0,1.9,1.9H15.238a1.9,1.9,0,0,0,1.9-1.9V8.571"
+            transform="translate(2 4.02)" fill="none" stroke="#00a793" stroke-linecap="round" stroke-linejoin="round"
+            stroke-miterlimit="10" stroke-width="2" />
+        <path id="Path-2" data-name="Path" d="M10,.592a2.02,2.02,0,0,1,2.857,2.857L3.81,12.5,0,13.449l.952-3.81Z"
+            transform="translate(7.714 2)" fill="none" stroke="#00a793" stroke-linecap="round" stroke-linejoin="round"
+            stroke-miterlimit="10" stroke-width="2" />
+    </g>
+</svg>

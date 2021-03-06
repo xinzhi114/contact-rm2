@@ -1,0 +1,100 @@
+@import '../../../styles/_variables.scss';
+
+// .some-cols
+.some-cols {
+    .chat-img {
+        position: relative;
+        max-width: 229px;
+        margin: 0 auto 40px;
+        img {
+            width: 229px;
+            height: auto;
+        }
+        .center-txt {
+            position: absolute;
+            left: 50%;
+            margin-left: -40px;
+            top: 30px;
+            .parents {
+                color: $font-black;
+                font-size: 32px;
+                font-weight: 300;
+                .icon-up {
+                    @include icon-up;
+                    width: 15px;
+                    height: 20px;
+                    transform: rotate(90deg);
+                    margin-top: -5px;
+                    margin-right: 5px;
+                }
+            }
+            .little-txt {
+                color: $font-black;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.09px;
+                line-height: 16px;
+            }
+        }
+    }
+    
+    .two-lines {
+        .row-line {
+            border-bottom: 1px solid rgba(151,151,151,0.2);
+            padding: 17px 0;
+            &:last-child {
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+            .point {
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                display: inline-block;
+                margin-right: 15px;
+                vertical-align: middle;
+                &.blue {
+                    background-color: #006b92;
+                }
+                &.green {
+                    background-color: $bg-green;
+                }
+            }
+            .txt {
+                color: $font-black;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .values {
+                color: $font-black;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+            }
+        }
+    }
+}
+/* fix layout issue when smaller than 1024px width */
+@media (max-width: $max-tablet-width) {
+    // .some-cols
+    .some-cols {
+        .chat-img {
+            .center-txt {
+                margin-left: -38px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1023px width */
+@media (max-width: $min-desktop-width) {
+    // .some-cols
+    .some-cols {
+        .chat-img {
+            .center-txt {
+                margin-left: -68px;
+            }
+        }
+    }
+}
+

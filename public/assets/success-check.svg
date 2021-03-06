@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.416" height="22.027" viewBox="0 0 22.416 22.027">
+    <g id="icon_caution" transform="translate(1.002 0.018)">
+        <path id="Path" d="M20,9.086v.92A10,10,0,1,1,14.07.866" transform="translate(0 0.994)" fill="none"
+            stroke="#00d0b5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+        <path id="Path-2" d="M13,0,3,10.01l-3-3" transform="translate(7 3)" fill="none" stroke="#00d0b5"
+            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+    </g>
+</svg>

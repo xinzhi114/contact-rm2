@@ -1,0 +1,25 @@
+@import '../../../styles/_variables.scss';
+/* fix layout issue when smaller than 1399px width */
+@media (max-width: $bigger-desktop-width) {
+  svg.half-donut {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: $normal-desktop-width) {
+  svg.half-donut {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: $smaller-desktop-width) {
+  svg.half-donut {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: $min-desktop-width) {
+  svg.half-donut {
+    transform: scale(0.8);
+  }
+}

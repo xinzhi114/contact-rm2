@@ -1,0 +1,2294 @@
+{
+  "dataList": {
+    "reasonDropdownOptions": [
+      "Select",
+      "Reason 1",
+      "Reason 2",
+      "Other"
+    ],
+    "productForAutoClosure": [
+      {
+        "title": "ODY-SAVINGS",
+        "category": "Savings account"
+      },
+      {
+        "title": "ODY-FIXED-DEPOSIT",
+        "category": "Fixed deposit"
+      },
+      {
+        "title": "ODY-MUTUAL-FUND",
+        "category": "Fixed deposit"
+      },
+      {
+        "title": "PRODUCT-NAME",
+        "category": "Product"
+      }
+    ],
+    "contactUs": {
+      "phoneNumber": "+44 20 7646 0612",
+      "email": "support@odyssey.com"
+    },
+    "relationshipManager": {
+      "photoUrl": "/assets/photo-home.jpg",
+      "stars": 4,
+      "name": "Mark Thompson",
+      "role": "Relationship Manager",
+      "state": "Offline",
+      "email": "support@odyssey.com",
+      "phoneNumber": "+22 (0) 20 3375 6422",
+      "yourNextAppointment": null
+    },
+    "fromAccountList": [
+      {
+        "label": "Current account",
+        "number": "9846 - 4754 - 7584",
+        "value": "Current account",
+        "availableBalance": "120.650.00"
+      },
+      {
+        "label": "Saving account",
+        "number": "9846 - 4754 - 7585",
+        "value": "Saving account",
+        "availableBalance": "220.650.00"
+      },
+      {
+        "label": "Other account",
+        "number": "9846 - 4754 - 7586",
+        "value": "Other account",
+        "availableBalance": "320.650.00"
+      }
+    ],
+    "accountsList": [
+      {
+        "id": 1,
+        "accountType": "current",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533200",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 851",
+        "accountCardInfoNormalClosed": {
+          "activity": "Current Account",
+          "number": "1094  4545  3121  01",
+          "sortCode": "16-06-00",
+          "money": "£170,028.23",
+          "overDraft": "£49,200.00",
+          "closedDate": "",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": true,
+          "accountsAlertSwitchAccountToList": [
+            "Fixed ISA Account 1",
+            "Fixed ISA Account 2",
+            "Fixed ISA Account 3"
+          ],
+          "transactionHistory": {
+            "transactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ],
+            "spendingCategories": [
+              {
+                "iconUrl": "/assets/send.svg",
+                "title": "Transfers",
+                "timeLabel": "12 transactions",
+                "price": "£750.00"
+              },
+              {
+                "iconUrl": "/assets/shopping-transaction.svg",
+                "title": "Shopping",
+                "timeLabel": "15 transactions",
+                "price": "£2,500.00"
+              },
+              {
+                "iconUrl": "/assets/book-open.svg",
+                "title": "Education",
+                "timeLabel": "9 transactions",
+                "price": "£4,000.00"
+              },
+              {
+                "iconUrl": "/assets/smile.svg",
+                "title": "Entertainment",
+                "timeLabel": "5 transactions",
+                "price": "£500.00"
+              },
+              {
+                "iconUrl": "/assets/home.svg",
+                "title": "Bills & Utilities",
+                "timeLabel": "5 transactions",
+                "price": "£1,500.00"
+              }
+            ],
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "upcomingActivityEventsChart": {
+            "title": "Last 7 days",
+            "isEmpty": false,
+            "dataList": [
+              [100, 220, 280, 330, 340, 350, 360],
+              [130, 180, 230, 280, 200, 300, 250]
+            ],
+            "xTitles": ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"]
+          },
+          "upcomingActivityEvents": [
+            {
+              "dateLabelYear": "2020",
+              "dateLabelDay": "14",
+              "dateLabelMonth": "Dec",
+              "eventsList": [
+                {
+                  "title": "Central Apartement Loan Payment",
+                  "dueTime": "Due today",
+                  "amount": "-£1,500.00",
+                  "accountType": "Current Account",
+                  "accountId": "123"
+                },
+                {
+                  "title": "Central Apartement Payment",
+                  "dueTime": "Due today",
+                  "amount": "-£1,200.00",
+                  "accountType": "Loan Account",
+                  "accountId": "453"
+                }
+              ]
+            },
+            {
+              "dateLabelYear": "2020",
+              "dateLabelDay": "18",
+              "dateLabelMonth": "Dec",
+              "eventsList": [
+                {
+                  "title": "Payment Due to Screwfix",
+                  "dueTime": "Due today",
+                  "amount": "-£322.00",
+                  "accountType": "Loan Account",
+                  "accountId": "123"
+                }
+              ]
+            },
+            {
+              "dateLabelYear": "2020",
+              "dateLabelDay": "27",
+              "dateLabelMonth": "Dec",
+              "eventsList": [
+                {
+                  "title": "Payment Due to Screwfix",
+                  "dueTime": "Due today",
+                  "amount": "-£922.00",
+                  "accountType": "Loan Account",
+                  "accountId": "153"
+                },
+                {
+                  "title": "Payment Due",
+                  "dueTime": "Due today",
+                  "amount": "-£322.00",
+                  "accountType": "Loan Account",
+                  "accountId": "13"
+                }
+              ]
+            },
+            {
+              "dateLabelYear": "2021",
+              "dateLabelDay": "06",
+              "dateLabelMonth": "Jan",
+              "eventsList": [
+                {
+                  "title": "Payment Due for Invoice #212",
+                  "dueTime": "In two days",
+                  "amount": "-£411.00",
+                  "accountType": "Loan Account",
+                  "accountId": "123"
+                },
+                {
+                  "title": "Payment Due for Invoice #212",
+                  "dueTime": "In two days",
+                  "amount": "-£411.00",
+                  "accountType": "Loan Account",
+                  "accountId": "123"
+                }
+              ]
+            }
+          ],
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "BIC",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Expenses"
+            },
+            {
+              "fieldName": "Current Balance",
+              "fieldValue": "£170,028.<em>23</em>"
+            },
+            {
+              "fieldName": "REMAINING Overdraft",
+              "fieldValue": "£49,200.<em>00</em>"
+            },
+            {
+              "fieldName": "AVAILABLE BALANCE",
+              "fieldValue": "£120,541.<em>69</em>"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Appleseed"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": [
+            {
+              "status": "active",
+              "bankName": "Odyssey Bank",
+              "cardType": "PLATINUM DEBIT CARD",
+              "cardNumber": "XXXX - XXXX - XXXX - 3367",
+              "expireDate": "DEC 2019"
+            },
+            {
+              "status": "inactive",
+              "bankName": "Odyssey Bank",
+              "cardType": "PLATINUM DEBIT CARD",
+              "cardNumber": "XXXX - XXXX - XXXX - 2367",
+              "expireDate": "DEC 2020"
+            },
+            {
+              "status": "active",
+              "bankName": "Odyssey Bank",
+              "cardType": "CLASIC DEBIT CARD",
+              "cardNumber": "XXXX - XXXX - XXXX - 1367",
+              "expireDate": "DEC 2021"
+            },
+            {
+              "status": "closed",
+              "bankName": "Odyssey Bank",
+              "cardType": "CLASIC DEBIT CARD",
+              "cardNumber": "XXXX - XXXX - XXXX - 1367",
+              "expireDate": "DEC 2021"
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "accountType": "savings",
+        "isFavourite": true,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533201",
+        "firstName": "Smith",
+        "lastName": "Apple",
+        "deliveryAddress": "61 Nikolaus Inlet Suite 234",
+        "accountCardInfoNormalClosed": {
+          "activity": "Saving Account",
+          "number": "1094  4536  5765  85",
+          "sortCode": "16-17-00",
+          "money": "£350,028.23",
+          "overDraft": "",
+          "closedDate": "",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875232"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "BIC",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Expenses"
+            },
+            {
+              "fieldName": "Current Balance",
+              "fieldValue": "£170,028.<em>23</em>"
+            },
+            {
+              "fieldName": "REMAINING Overdraft",
+              "fieldValue": "£49,200.<em>00</em>"
+            },
+            {
+              "fieldName": "AVAILABLE BALANCE",
+              "fieldValue": "£120,541.<em>69</em>"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Appleseed"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": [
+            {
+              "status": "active",
+              "bankName": "Odyssey Bank",
+              "cardType": "PLATINUM DEBIT CARD",
+              "cardNumber": "XXXX - XXXX - XXXX - 3367",
+              "expireDate": "DEC 2020"
+            },
+            {
+              
+              "status": "inactive",
+              "bankName": "Odyssey Bank",
+              "cardType": "PLATINUM DEBIT CARD",
+              "cardNumber": "XXXX - XXXX - XXXX - 5367",
+              "expireDate": "DEC 2021"
+            },
+            {
+              "status": "active",
+              "bankName": "Odyssey Bank",
+              "cardType": "CLASIC DEBIT CARD",
+              "cardNumber": "XXXX - XXXX - XXXX - 7367",
+              "expireDate": "DEC 2023"
+            },
+            {
+              "status": "closed",
+              "bankName": "Odyssey Bank",
+              "cardType": "CLASIC DEBIT CARD",
+              "cardNumber": "XXXX - XXXX - XXXX - 7367",
+              "expireDate": "DEC 2023"
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "accountType": "closed",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533202",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 851",
+        "accountCardInfoNormalClosed": {
+          "activity": "Saving Account",
+          "number": "2591  4861  7715  78",
+          "sortCode": "16-16-00",
+          "money": "",
+          "overDraft": "",
+          "closedDate": "DEC 2019",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": true,
+          "accountsAlertSwitchAccountToList": [
+            "Fixed ISA Account 2",
+            "Fixed ISA Account 4"
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875234"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687747"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "4.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-17"
+            },
+            {
+              "fieldName": "BIC",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Expenses"
+            },
+            {
+              "fieldName": "Current Balance",
+              "fieldValue": "£170,089.<em>23</em>"
+            },
+            {
+              "fieldName": "REMAINING Overdraft",
+              "fieldValue": "£49,223.<em>10</em>"
+            },
+            {
+              "fieldName": "AVAILABLE BALANCE",
+              "fieldValue": "£320,541.<em>69</em>"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Apple"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 4,
+        "accountType": "savings",
+        "isFavourite": false,
+        "accountName": "ODT-PREVIOUS",
+        "customerId": "CID 4533203",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 853",
+        "accountCardInfoNormalClosed": {
+          "activity": "Yearly ISA account",
+          "number": "1094  4545  3121  01",
+          "sortCode": "16-16-00",
+          "money": "£170,028.23",
+          "overDraft": "",
+          "closedDate": "",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "RYA",
+              "fieldValue": "2020/21"
+            },
+            {
+              "fieldName": "Maturity Date",
+              "fieldValue": "01 April 2023"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Appleseed"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 5,
+        "accountType": "closed",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533204",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 851",
+        "accountCardInfoNormalClosed": {
+          "activity": "Yearly ISA account",
+          "number": "2591  4861  7715  78",
+          "sortCode": "16-16-20",
+          "money": "",
+          "overDraft": "",
+          "closedDate": "DEC 2019",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "BIC",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Expenses"
+            },
+            {
+              "fieldName": "Current Balance",
+              "fieldValue": "£170,028.<em>23</em>"
+            },
+            {
+              "fieldName": "REMAINING Overdraft",
+              "fieldValue": "£49,200.<em>00</em>"
+            },
+            {
+              "fieldName": "AVAILABLE BALANCE",
+              "fieldValue": "£120,541.<em>69</em>"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Appleseed"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 6,
+        "accountType": "savings",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533205",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 851",
+        "accountCardInfoNormalClosed": {
+          "activity": "ISA account",
+          "number": "1094  4545  3121  01",
+          "sortCode": "16-16-00",
+          "money": "£155,028.23",
+          "overDraft": "£6,200.00",
+          "closedDate": "",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "RYA",
+              "fieldValue": "2020/21"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "ISA Account"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Appleseed"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 7,
+        "accountType": "closed",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533206",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 851",
+        "accountCardInfoNormalClosed": {
+          "activity": "ISA account",
+          "number": "2591  4861  7715  78",
+          "sortCode": "16-16-00",
+          "money": "",
+          "overDraft": "",
+          "closedDate": "DEC 2019",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "BIC",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Expenses"
+            },
+            {
+              "fieldName": "Current Balance",
+              "fieldValue": "£170,028.<em>23</em>"
+            },
+            {
+              "fieldName": "REMAINING Overdraft",
+              "fieldValue": "£49,200.<em>00</em>"
+            },
+            {
+              "fieldName": "AVAILABLE BALANCE",
+              "fieldValue": "£120,541.<em>69</em>"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Appleseed"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 8,
+        "accountType": "savings",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533207",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 85",
+        "accountCardInfoNormalClosed": {
+          "activity": "Classic saver",
+          "number": "1094  4545  3121  01",
+          "sortCode": "16-16-00",
+          "money": "£155,028.23",
+          "overDraft": "",
+          "closedDate": "",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Classic Saver"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "Account owner"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 9,
+        "accountType": "closed",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533208",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 851",
+        "accountCardInfoNormalClosed": {
+          "activity": "Classic saver",
+          "number": "2591  4861  7715  78",
+          "sortCode": "16-18-00",
+          "money": "",
+          "overDraft": "",
+          "closedDate": "DEC 2019",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "BIC",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Expenses"
+            },
+            {
+              "fieldName": "Current Balance",
+              "fieldValue": "£170,028.<em>23</em>"
+            },
+            {
+              "fieldName": "REMAINING Overdraft",
+              "fieldValue": "£49,200.<em>00</em>"
+            },
+            {
+              "fieldName": "AVAILABLE BALANCE",
+              "fieldValue": "£120,541.<em>69</em>"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Appleseed"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 10,
+        "accountType": "savings",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533209",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 851",
+        "accountCardInfoNormalClosed": {
+          "activity": "Yearly bonds",
+          "number": "1094  4545  3121  01",
+          "sortCode": "16-16-00",
+          "money": "£155,028.23",
+          "overDraft": "£2,200.00",
+          "closedDate": "",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Appleseed"
+            },
+            {
+              "fieldName": "Issue Number",
+              "fieldValue": "INO25568774"
+            },
+            {
+              "fieldName": "Sort code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Yearly Bonds"
+            },
+            {
+              "fieldName": "RYA",
+              "fieldValue": "2020/21"
+            },
+            {
+              "fieldName": "Maturity Date",
+              "fieldValue": "01 April 2023"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 11,
+        "accountType": "closed",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533210",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 851",
+        "accountCardInfoNormalClosed": {
+          "activity": "Yearly bonds",
+          "number": "2591  4861  7715  78",
+          "sortCode": "16-16-00",
+          "money": "",
+          "overDraft": "",
+          "closedDate": "DEC 2019",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "BIC",
+              "fieldValue": "CTNTGBAV"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Expenses"
+            },
+            {
+              "fieldName": "Current Balance",
+              "fieldValue": "£170,028.<em>23</em>"
+            },
+            {
+              "fieldName": "REMAINING Overdraft",
+              "fieldValue": "£49,200.<em>00</em>"
+            },
+            {
+              "fieldName": "AVAILABLE BALANCE",
+              "fieldValue": "£120,541.<em>69</em>"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "John Appleseed"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 17,
+        "accountType": "savings",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533211",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 851",
+        "accountCardInfoNormalClosed": {
+          "activity": "Classic saver",
+          "number": "1094  4545  3121  01",
+          "sortCode": "16-16-00",
+          "money": "£155,028.23",
+          "overDraft": "",
+          "closedDate": "",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Classic Saver"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "Account owner"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      },
+      {
+        "id": 18,
+        "accountType": "savings",
+        "isFavourite": false,
+        "accountName": "ODT-CURRENT",
+        "customerId": "CID 4533212",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "deliveryAddress": "85 Nikolaus Inlet Suite 8",
+        "accountCardInfoNormalClosed": {
+          "activity": "Classic saver",
+          "number": "1094  4545  3121  01",
+          "sortCode": "16-16-00",
+          "money": "£155,028.23",
+          "overDraft": "",
+          "closedDate": "",
+          "interestRate": ""
+        },
+        "detailsNormalClosed": {
+          "showAccountAlerts": false,
+          "accountsAlertSwitchAccountToList": [
+          ],
+          "transactionHistory": {
+            "transactions": null,
+            "spendingCategories": null,
+            "pendingTransactions": [
+              {
+                "dateLabel": "8 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-wifi.svg",
+                    "title": "Vodafone Internet",
+                    "timeLabel": "12:04 am, Mobile services",
+                    "price": "–£49.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transportation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "£24.12",
+                    "changedTypeRed": false
+                  }
+                ]
+              },
+              {
+                "dateLabel": "2 OCT",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "CC Supplies Ltd.",
+                    "timeLabel": "6:32 pm, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/bus.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Transporation",
+                    "price": "–£24.<em>89</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/card.svg",
+                    "title": "London TFL",
+                    "timeLabel": "8:40 am, Spending",
+                    "price": "–£89.<em>99</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              },
+              {
+                "dateLabel": "29 AUG",
+                "itemList": [
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  },
+                  {
+                    "iconUrl": "/assets/icon-business.png",
+                    "title": "AAPL Income montly salary",
+                    "timeLabel": "09:30 am, Business",
+                    "price": "£7,000.<em>00</em>",
+                    "cardSubfix": "4597",
+                    "changedLabel": "-£49.00",
+                    "changedTypeRed": true
+                  }
+                ]
+              }
+            ]
+          },
+          "accountInformation": [
+            {
+              "fieldName": "ACCOUNT NUMBER",
+              "fieldValue": "10875235"
+            },
+            {
+              "fieldName": "ISSUE NUMBER",
+              "fieldValue": "INO255687748"
+            },
+            {
+              "fieldName": "INTEREST RATE",
+              "fieldValue": "3.5%"
+            },
+            {
+              "fieldName": "Sort Code",
+              "fieldValue": "16-10-16"
+            },
+            {
+              "fieldName": "Product Name",
+              "fieldValue": "Classic Saver"
+            },
+            {
+              "fieldName": "Account owner",
+              "fieldValue": "Account owner"
+            }
+          ],
+          "todaysInsight": null,
+          "cards": null
+        }
+      }
+    ]
+  }
+}

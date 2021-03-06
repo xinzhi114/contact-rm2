@@ -1,0 +1,58 @@
+@import '../../../../styles/variables';
+
+.base-modal.your-unique-code-modal {
+  display: flex !important;
+  align-items: center;
+  .modal-dialog {
+    height: unset;
+    min-width: unset;
+    max-width: 600px;
+  }
+  .modal-header {
+    padding: 24px;
+    padding-top: 20px;
+    border-bottom: none;
+    .modal-title-text span {
+      font-family: $gotham-rounded;
+    }
+  }
+  .modal-body {
+    padding: 24px 68px;
+    padding-bottom: 78px;
+    display: flex;
+    align-items: center;
+    background-color: $bg-gray;
+    img.unique-code {
+      margin-top: 12px;
+    }
+    span {
+      color: $font-black;
+      margin-bottom: 20px;
+      text-align: center;
+      white-space: nowrap;
+      &.bold {
+        margin-bottom: 0;
+        font-weight: bold;
+      }
+    }
+  }
+  .modal-footer {
+    padding: 24px 20px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border-top: none;
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .base-modal.your-unique-code-modal {
+    .modal-dialog {
+      max-width: 96vw !important;
+    }
+    .modal-footer {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

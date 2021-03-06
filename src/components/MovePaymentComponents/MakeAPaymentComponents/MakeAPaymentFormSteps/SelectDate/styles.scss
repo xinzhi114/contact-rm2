@@ -1,0 +1,38 @@
+@import '../../../../../styles/variables';
+
+.select-date {
+  width: 40%;
+  padding-bottom: 30px;
+  .date-info {
+    @include icon-alert-circle;
+    color: $font-black;
+    background-position: 0 0;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-left: 30px;
+    font-size: 14px;
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+.select-date-review {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  .text-wrap {
+    display: flex;
+    flex-grow: 1;
+    > span {
+      width: 50%;
+      font-weight: 500;
+      color: $font-black;
+    }
+  }
+  .edit-button-wrap {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

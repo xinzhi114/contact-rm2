@@ -1,0 +1,68 @@
+@import '../../styles/_variables.scss';
+
+//.blue-tips
+.blue-tips {
+  position: fixed;
+  top: 79px;
+  width: 680px;
+  height: 60px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  background-color: $dark-black;
+  left: 50%;
+  margin-left: -340px;
+  padding: 0 20px;
+  z-index: 3003;
+  &.show-center {
+    top: 50%;
+  }
+  .icon-done {
+    @include icon-check-circle;
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    max-width: 24px;
+    margin-right: 18px;
+  }
+  .txt {
+    color: $white;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+  }
+  .green-link {
+    color: $bg-green;
+  }
+  &.black {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    background-color: $dark-black;
+  }
+}
+/* fix layout issue when smaller than 767px width */
+@media (max-width: $min-desktop-width) {
+  .blue-tips {
+    width: 607px;
+    &.show-center {
+      top: 100px;
+      left: auto;
+      margin-left: auto;
+    }
+  }
+}
+/* fix layout issue when smaller than 767px width */
+@media (max-width: $max-mobile-width) {
+  .blue-tips {
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: auto !important;
+    top: auto !important;
+    margin-left: 0 !important;
+    z-index: 99999999 !important;
+    align-items: flex-start !important;
+    padding: 35px 20px;
+    &.show-center {
+      left: 0;
+    }
+  }
+}

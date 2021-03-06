@@ -1,0 +1,60 @@
+@import '../../../../styles/_variables.scss';
+
+.online-transaction-status-left-filter {
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  padding: 14px 20px;
+  flex: 0 0 305px;
+  max-width: 305px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .black-title {
+    color: $font-black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  .center-boxs {
+    flex: 1;
+    .items {
+      .top-gray-title {
+        color: $font-black;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .row-line {
+    margin-bottom: 5px;
+  }
+  .bottom-btn {
+    padding: 20px 0 0;
+    border-top: 1px solid $top-line-gray;
+    .btn-green {
+      min-width: 100px;
+      height: 38px;
+      line-height: 38px;
+      font-size: 14px;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+  .online-transaction-status-left-filter {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $min-desktop-width) {
+  .online-transaction-status-left-filter {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}

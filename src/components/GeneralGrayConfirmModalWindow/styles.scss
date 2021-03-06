@@ -1,0 +1,117 @@
+@import '../../styles/_variables.scss';
+
+.modal-default {
+    &.general-gray-confirm-modal {
+        .modal-mains {
+            width: 550px;
+            background-color: $white;
+            border-radius: 10px;
+            padding: 0;
+            .title-area {
+                padding: 25px;
+                border-bottom: 1px solid $border-gray;
+                margin-bottom: 0;
+                display: flex;
+                justify-content: flex-start;
+                .blue-title {
+                    color: $dark-blue;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 300;
+                    margin-left: 12px;
+                }
+                .icon-info {
+                    @include icon-alert-circle;
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    margin-top: 2px;
+                }
+            }
+        }
+        .btn-close {
+            @include icon-closegreen;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+        .modal-info {
+            background-color: $bg-gray;
+        }
+        .row-line {
+            padding: 0 25px;
+            .blue-txt {
+                font-weight: normal;
+            }
+            .center-info {
+                padding: 28px 0 138px 0;
+                .done-icons {
+                    margin-bottom: 18px;
+                    img {
+                        width: 100px;
+                        height: auto;
+                    }
+                }
+                .white-txt {
+                    color: $font-black;
+                    font-size: 16px;
+                    font-weight: 400;
+                    .bold-txt {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .bottom-btns {
+            padding: 20px 30px 23px;
+            justify-content: center!important;
+            border-top: 1px solid $border-gray;
+            .btn {
+                min-width: 89px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .modal-default {
+        &.general-gray-confirm-modal {
+            .modal-mains {
+                width: 667px;
+                .title-area {
+                    margin-bottom: -7px;
+                }
+            }
+            .bottom-btns {
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                .btn-green {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-default {
+        &.general-gray-confirm-modal {
+            .modal-mains {
+                margin: 17px auto;
+                width: 95%;
+            }
+            .bottom-btns {
+                .links {
+                    &.green {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

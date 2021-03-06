@@ -1,0 +1,332 @@
+{
+  "dataList": {
+    "creditTurnover": 89,
+    "debitTurnover": 21,
+    "tableData": [
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "date",
+            "fieldValue": "2 Oct 2020",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "description",
+            "fieldValue": "London TFL",
+            "queryHide": false
+          },
+          {
+            "fieldType": "clearance-status-label",
+            "fieldName": "clearance_status",
+            "fieldValue": "Cleared transaction",
+            "queryHide": false
+          },
+          {
+            "fieldType": "strongLabel-amount",
+            "fieldName": "amount",
+            "fieldValue": "£89",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "balance",
+            "fieldValue": "£120,50.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "date",
+            "fieldValue": "2 Oct 2020",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "description",
+            "fieldValue": "AAPL Income montly ",
+            "queryHide": false
+          },
+          {
+            "fieldType": "clearance-status-label",
+            "fieldName": "clearance_status",
+            "fieldValue": "Uncleared transaction",
+            "queryHide": false
+          },
+          {
+            "fieldType": "strongLabel-amount",
+            "fieldName": "amount",
+            "fieldValue": "£1,204.89",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "balance",
+            "fieldValue": "£130,89.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "date",
+            "fieldValue": "29 Oct 2020",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "description",
+            "fieldValue": "Vodafone Internet ",
+            "queryHide": false
+          },
+          {
+            "fieldType": "clearance-status-label",
+            "fieldName": "clearance_status",
+            "fieldValue": "Uncleared transaction",
+            "queryHide": false
+          },
+          {
+            "fieldType": "strongLabel-amount",
+            "fieldName": "amount",
+            "fieldValue": "-£89",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "balance",
+            "fieldValue": "£120,50.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "date",
+            "fieldValue": "29 Oct 2020",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "description",
+            "fieldValue": "London TFL",
+            "queryHide": false
+          },
+          {
+            "fieldType": "clearance-status-label",
+            "fieldName": "clearance_status",
+            "fieldValue": "Uncleared transaction",
+            "queryHide": false
+          },
+          {
+            "fieldType": "strongLabel-amount",
+            "fieldName": "amount",
+            "fieldValue": "£24.89",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "balance",
+            "fieldValue": "£130,89.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "date",
+            "fieldValue": "29 Oct 2020",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "description",
+            "fieldValue": "CC Supplies Ltd",
+            "queryHide": false
+          },
+          {
+            "fieldType": "clearance-status-label",
+            "fieldName": "clearance_status",
+            "fieldValue": "Uncleared transaction",
+            "queryHide": false
+          },
+          {
+            "fieldType": "strongLabel-amount",
+            "fieldName": "amount",
+            "fieldValue": "£89",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "balance",
+            "fieldValue": "£120,50.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "date",
+            "fieldValue": "8 Oct 2020",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "description",
+            "fieldValue": "Vodafone Internet ",
+            "queryHide": false
+          },
+          {
+            "fieldType": "clearance-status-label",
+            "fieldName": "clearance_status",
+            "fieldValue": "Cleared transaction",
+            "queryHide": false
+          },
+          {
+            "fieldType": "strongLabel-amount",
+            "fieldName": "amount",
+            "fieldValue": "£49.00",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "balance",
+            "fieldValue": "£120,50.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "date",
+            "fieldValue": "8 Oct 2020",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "description",
+            "fieldValue": "London TFL",
+            "queryHide": false
+          },
+          {
+            "fieldType": "clearance-status-label",
+            "fieldName": "clearance_status",
+            "fieldValue": "Cleared transaction",
+            "queryHide": false
+          },
+          {
+            "fieldType": "strongLabel-amount",
+            "fieldName": "amount",
+            "fieldValue": "-£24.89",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "balance",
+            "fieldValue": "£130,89.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "date",
+            "fieldValue": "2 Oct 2020",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "description",
+            "fieldValue": "CC Supplies Ltd",
+            "queryHide": false
+          },
+          {
+            "fieldType": "clearance-status-label",
+            "fieldName": "clearance_status",
+            "fieldValue": "Cleared transaction",
+            "queryHide": false
+          },
+          {
+            "fieldType": "strongLabel-amount",
+            "fieldName": "amount",
+            "fieldValue": "-£89",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "balance",
+            "fieldValue": "£120,50.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "date",
+            "fieldValue": "2 Oct 2020",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "description",
+            "fieldValue": "London TFL",
+            "queryHide": false
+          },
+          {
+            "fieldType": "clearance-status-label",
+            "fieldName": "clearance_status",
+            "fieldValue": "Cleared transaction",
+            "queryHide": false
+          },
+          {
+            "fieldType": "strongLabel-amount",
+            "fieldName": "amount",
+            "fieldValue": "-£24.89",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "balance",
+            "fieldValue": "£130,89.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      }
+    ]
+  }
+}

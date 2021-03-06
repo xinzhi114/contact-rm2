@@ -1,0 +1,44 @@
+@import '../../../styles/_variables.scss';
+
+.no-transactions-txt {
+  display: flex;
+  align-items: center;
+  max-width: 445px;
+  color: $font-black;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: calc(50% - 70px);
+  left: calc(50% - 220px);
+}
+
+.apexcharts-tooltip {
+  box-shadow: none!important;
+  border: none!important;
+  background-color: initial!important;
+  .tooltip_arrow_box {
+    width: 93px;
+    height: 29px;
+    border-radius: 15px;
+    background-color: $dark-black;
+    padding-top: 5px;
+    padding-left: 10px;
+    .span-txt {
+      font-size: 14px;
+      color: $white;
+    }
+  }
+}
+
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: $max-mobile-width) {
+  .no-transactions-txt {
+    font-size: 14px;
+    max-width: 187px;
+    top: calc(50% - 60px);
+    left: calc(50% - 80px);
+  }
+}

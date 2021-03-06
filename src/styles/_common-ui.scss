@@ -1,0 +1,771 @@
+/* common style */
+#nprogress {
+  .bar {
+    z-index: 10000 !important;
+  }
+}
+.desktop-hide {
+  display: none;
+}
+.desktop-show {
+  display: block;
+}
+body {
+  background: $white;
+  height: 100%;
+  &.bg-gray {
+    background-color: $bg-gray;
+  }
+}
+
+input,
+button {
+  border-radius: 0;
+}
+a,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a,
+label,
+h1 {
+  &.label-transparent {
+    color: transparent !important;
+  }
+}
+.icons,
+.icon-before::before {
+  vertical-align: middle;
+  display: inline-block;
+}
+.icon-before::before {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.hide {
+  display: none !important;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn.active,
+.btn:active,
+.btn:focus {
+  box-shadow: none;
+}
+
+.links {
+  font-size: 16px;
+  font-weight: 700;
+  &.red {
+    color: #91302e;
+  }
+  &.green {
+    color: $dark-green;
+    padding: 0 25px;
+  }
+}
+
+.tooltip {
+  z-index: 3000;
+}
+
+/* .radio-wrap */
+.radio-wrap {
+  display: inline-block;
+  vertical-align: top;
+  input[type='radio'] {
+    display: none;
+  }
+  input[type='radio'] + label {
+    font-size: 14px;
+    color: $font-black;
+    display: inline-block;
+    font-weight: normal;
+    padding-left: 30px;
+    text-align: left;
+    position: relative;
+    line-height: 23px;
+    text-transform: none;
+    cursor: pointer;
+  }
+  label::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 1px solid $df-gray;
+    background: none;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+  input[type='radio']:checked + label::before {
+    border: 1px solid $light-green-label;
+    box-shadow: 0 0 0 3px $white inset;
+    background-color: $light-green-label;
+  }
+  input[type='radio']:checked + label {
+    font-weight: 600;
+  }
+}
+//.check-round-wrap
+.check-round-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  height: 28px;
+  input[type='checkbox'] {
+    display: none;
+  }
+  input[type='checkbox'] + label {
+    font-size: 14px;
+    color: $dark-gray;
+    display: inline-block;
+    font-weight: normal;
+    padding-left: 42px;
+    padding-top: 27px;
+    text-align: left;
+    position: relative;
+    line-height: 27px;
+    text-transform: none;
+    cursor: pointer;
+  }
+  label::before {
+    content: '';
+    display: block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 42px;
+    height: 27px;
+    border-radius: 15px;
+    background-color: #796E65;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-color: $white;
+    border-radius: 100%;
+    transition: all 0.25s ease-in-out;
+  }
+  input[type='checkbox']:checked + label::before {
+    background-color: $bg-green;
+  }
+  input[type='checkbox']:checked + label::after {
+    left: 18px;
+  }
+}
+.link-view,
+.link-view:focus,
+.link-view:hover {
+  text-decoration: underline;
+  color: $bg-green;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+}
+/* .checkbox-wrap */
+.checkbox-wrap {
+  display: inline-block;
+  vertical-align: top;
+  input[type='checkbox'] {
+    display: none;
+  }
+  input[type='checkbox'] + label {
+    font-size: 14px;
+    color: $font-black;
+    display: inline-block;
+    font-weight: normal;
+    padding-left: 36px;
+    text-align: left;
+    position: relative;
+    line-height: 20px;
+    text-transform: none;
+    cursor: pointer;
+  }
+  label::before {
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: 1px solid $disabled-bg;
+    background: none;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+  input[type='checkbox']:checked + label::before {
+    @include icon-check-green;
+    border: 1px solid $dark-green;
+  }
+  input[type='checkbox']:checked + label {
+    font-weight: 700;
+  }
+}
+
+.alert1-history-period-dropdown {
+  position: relative;
+  .dropdown-toggle {
+    &.btn {
+      &.btn-success {
+        color: $font-black;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        width: 183px;
+        padding-left: 16px;
+        height: 50px;
+        border-radius: 2px;
+        border: 1px solid $disabled-bg;
+        &:after {
+          @include btn-right-arrow;
+          width: 40px;
+          height: 40px;
+          margin-top: -20px;
+        }
+        &:active {
+          opacity: 1;
+          color: $font-black;
+          border: 1px solid $disabled-bg;
+        }
+      }
+    }
+  }
+  .dropdown-menu {
+    &.show {
+      width: 228px;
+      height: 165px;
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+      border-radius: 2px;
+      border: 0;
+      background-color: $white;
+      left: auto !important;
+      right: 0 !important;
+      .dropdown-item {
+        padding: 8px 16px;
+        font-size: 14px;
+        color: $font-black;
+        &:hover {
+          background-color: #cef6f0;
+        }
+      }
+    }
+  }
+}
+// .drop-module
+.drop-module {
+  &.white-drop {
+    .dropdown-toggle {
+      &.btn {
+        &.btn-success {
+          color: $dark-black;
+          border: 0;
+          padding-right: 48px;
+          padding-left: 0;
+          height: 50px;
+          &:after {
+            @include btn-right-arrow;
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-toggle {
+    &.btn.btn-success {
+      height: 50px;
+      border-radius: 2px;
+      border: 1px solid $black-border;
+      width: 100%;
+      padding-left: 19px;
+      font-size: 14px;
+      padding-right: 50px;
+      color: $font-black;
+      font-weight: normal;
+      &.hide-border {
+        border: none;
+        padding-left: 0;
+      }
+      &:after {
+        background-size: 14px 8px;
+        right: 10px;
+      }
+    }
+  }
+  &.disabled {
+    pointer-events: none;
+    .dropdown-toggle {
+      &.btn.btn-success {
+        border: 1px solid $df-gray;
+        &:after {
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+  .dropdown-item {
+    .right-gray {
+      color: $df-gray;
+      font-size: 12px;
+      font-weight: 400;
+    }
+    &.gray-txt {
+      color: $light-gray;
+      opacity: 0.4;
+    }
+  }
+}
+
+.dropdown-toggle:not(:disabled):not(.disabled):active,
+.dropdown-toggle:not(:disabled):not(.disabled).active,
+.show > .dropdown-toggle {
+  background-color: $white;
+  border-color: $black-border;
+}
+
+.dropdown-toggle:not(:disabled):not(.disabled):active:focus,
+.dropdown-toggle:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.select-period-dropdown,
+.select-account-dropdown,
+.select-email-dropdown,
+.tab-dropdown {
+  position: relative;
+}
+
+//.d-inline-block
+.dropdown-toggle {
+  &.btn.btn-success {
+    font-size: 14px;
+    height: 30px;
+    border: 0;
+    font-weight: 700;
+    border-radius: 3px;
+    min-width: 158px;
+    color: $dark-black;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: left;
+    padding-right: 27px;
+    position: relative;
+    padding-left: 10px;
+    &::after {
+      @include icon-arrow;
+      display: block;
+      width: 30px;
+      height: 30px;
+      content: '';
+      border: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -15px;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &.dropup,
+  &.dropdown {
+    display: block;
+
+    &.error {
+      .btn.btn-outline-primary {
+        border-color: $black;
+      }
+    }
+  }
+}
+.dropdown-menu.show {
+  border: solid 1px $disabled-bg;
+  margin-top: 0;
+  width: 100%;
+  min-width: 108px;
+  z-index: 999;
+  max-height: 200px;
+  overflow-y: auto;
+  &:focus {
+    outline: none;
+  }
+  .dropdown-item {
+    font-size: 12px;
+    padding-right: 16px;
+    padding-left: 14px;
+    white-space: normal;
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      background-color: #f3f3f3;
+      color: $dark-gray;
+    }
+  }
+}
+
+// .date-boxs
+.date-boxs {
+  .inputs {
+    border: 1px solid $black-border;
+    border-radius: 2px;
+    height: 50px;
+    position: relative;
+    width: 100%;
+    padding-right: 0;
+    &.disabled-style {
+      border-color: $font-gray;
+      background-color: $gray-block;
+      border: none;
+      .react-datepicker__input-container {
+        @include little-calender-gray-big;
+        background-position-x: calc(100% - 10px);
+        input {
+          font-weight: 600;
+        }
+      }
+    }
+    .icon-calender {
+      display: none;
+    }
+    .react-datepicker__input-container {
+      height: 100%;
+      font-size: 14px;
+      color: $font-black;
+      @include little-calender-big;
+      background-position-x: calc(100% - 10px);
+    }
+
+    .react-daterange-picker {
+      width: 100%;
+      height: 100%;
+      .react-daterange-picker__wrapper {
+        border: none;
+      }
+    }
+  }
+  .react-datepicker-popper {
+    .react-datepicker {
+      box-shadow: 0 8px 24px #dbe0e6;
+      border-radius: 10px;
+      background-color: $white;
+      border: 0;
+      margin: -1px 0 0 -18px;
+    }
+    .react-datepicker__header {
+      background-color: $white;
+      border-bottom: 0;
+      padding-top: 30px;
+      .react-datepicker__day-name {
+        opacity: 0.49;
+        color: $font-black;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+    }
+    .react-datepicker__navigation {
+      top: 32px;
+      &:focus {
+        outline: none;
+      }
+    }
+    &[data-placement^='top'],
+    &[data-placement^='bottom'] {
+      .react-datepicker__triangle {
+        display: none;
+      }
+    }
+    .react-datepicker__current-month {
+      color: $font-black;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+    }
+    .react-datepicker__day-names {
+      margin-top: 20px;
+    }
+    .react-datepicker__day:hover,
+    .react-datepicker__month-text:hover,
+    .react-datepicker__quarter-text:hover {
+      border-radius: 100%;
+    }
+    .react-datepicker__day--keyboard-selected,
+    .react-datepicker__month-text--keyboard-selected,
+    .react-datepicker__quarter-text--keyboard-selected {
+      background-color: $green;
+      border-radius: 100%;
+    }
+    .react-datepicker__day--selected,
+    .react-datepicker__day--in-selecting-range,
+    .react-datepicker__day--in-range,
+    .react-datepicker__month-text--selected:hover,
+    .react-datepicker__month-text--in-selecting-range,
+    .react-datepicker__month-text--in-range,
+    .react-datepicker__quarter-text--selected:hover,
+    .react-datepicker__quarter-text--in-selecting-range,
+    .react-datepicker__quarter-text--in-range {
+      background-color: $green;
+      border-radius: 100%;
+      color: $font-black;
+      font-size: 16px;
+      font-weight: 600;
+      &:hover {
+        background-color: $green;
+        border-radius: 100%;
+        font-weight: 600;
+      }
+    }
+
+    .react-datepicker__day-name,
+    .react-datepicker__day,
+    .react-datepicker__time-name {
+      outline: none;
+      margin: 0.5rem;
+      width: 2rem;
+      line-height: 2rem;
+    }
+    .react-datepicker__day--keyboard-selected:hover,
+    .react-datepicker__month-text--keyboard-selected:hover,
+    .react-datepicker__quarter-text--keyboard-selected:hover {
+      background-color: $green;
+    }
+  }
+  &.calender-boxs {
+    .react-calendar {
+      width: 343px;
+      box-shadow: 0 0 10px rgba(0, 31, 38, 0.2);
+      background-color: $white;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin: 2px 0 0 -15px;
+    }
+    button {
+      &:focus {
+        outline: none;
+      }
+    }
+    .react-daterange-picker__calendar-button .react-daterange-picker__button {
+      outline: none;
+    }
+    .react-daterange-picker__wrapper {
+      .react-daterange-picker__clear-button {
+        svg {
+          display: none;
+        }
+      }
+      .react-daterange-picker__calendar-button {
+        @include little-calender-big;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        svg {
+          display: none;
+        }
+      }
+    }
+
+    .react-date-picker__inputGroup__divider {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .react-daterange-picker__inputGroup__input:invalid {
+      background-color: $white;
+    }
+    .react-calendar__tile--hasActive,
+    .react-calendar__tile--now {
+      background: $green;
+      color: $font-black;
+    }
+    .react-calendar__navigation {
+      .react-calendar__navigation__next2-button,
+      .react-calendar__navigation__prev2-button {
+        display: none;
+      }
+      .react-calendar__navigation__arrow {
+        font-size: 24px;
+      }
+      .react-calendar__navigation__label__labelText {
+        font-weight: 600;
+      }
+    }
+    .react-calendar__month-view__weekdays {
+      abbr {
+        text-decoration: none;
+        color: #82a0a8;
+        font-weight: 600;
+      }
+    }
+    .react-daterange-picker__inputGroup__leadingZero {
+      font-size: 12px;
+    }
+    .react-calendar__month-view__days {
+      color: $font-black;
+      .react-calendar__tile {
+        font-size: 15px;
+      }
+      .react-calendar__tile--active {
+        background-color: $font-black;
+        color: $bg-green;
+      }
+      .react-calendar__tile--rangeStart,
+      .react-calendar__tile--rangeEnd,
+      .react-calendar__tile--rangeBothEnds {
+        background-color: $font-black;
+        color: $bg-green;
+        max-width: 12%;
+      }
+      .react-calendar__tile--now {
+        background-color: $green;
+        color: $font-black;
+      }
+    }
+  }
+}
+
+//.contents
+.content {
+  padding: 66px 0 0 0;
+  position: relative;
+}
+
+.mains {
+  align-items: flex-start;
+  align-items: stretch;
+}
+
+.row {
+  margin: 0 -12px;
+  .col {
+    padding: 0 12px;
+  }
+}
+
+// .insight-expend
+.insight-expend {
+  .gre1en-txt {
+    font-weight: 600;
+    color: $dark-green;
+    display: inline-block;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: $normal-desktop-width) {
+  .desktop-normal-hide {
+    display: none !important;
+  }
+  .desktop-normal-show {
+    display: block;
+  }
+}
+
+/* fix layout issue when smaller than 991px width */
+@media (max-width: $max-tablet-width) {
+  .tablet-hide {
+    display: none !important;
+  }
+  .tablet-show {
+    display: block;
+  }
+}
+
+/* fix layout issue when smaller than 991px width */
+@media (max-width: $max-mobile-width) {
+  .mobile-hide {
+    display: none !important;
+  }
+  .mobile-show {
+    display: block;
+  }
+  .mains {
+    &.flex {
+      display: block;
+    }
+  }
+
+  body {
+    background-color: transparent;
+  }
+  //.contents
+  .content {
+    padding-top: 58px;
+  }
+  .date-boxs {
+    &.calender-boxs {
+      .react-calendar {
+        margin: 2px auto 0 22px;
+      }
+    }
+  }
+}
+
+.api-error-txt {
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  color: $red !important;
+  max-height: 42px;
+  overflow: hidden;
+}
+.global-select {
+  .btn-success {
+    width: 100% !important;
+    padding-left: 16px !important;
+    height: 50px !important;
+    border: 1px solid $black-border !important;
+  }
+  .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .red-inactive {
+      @include icon-alert-circle-red;
+      display: inline-block;
+      padding-left: 20px;
+      color: #91302e;
+      font-size: 12px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+.tip-txt {
+  padding: 24px;
+  text-align: center;
+
+  &.left {
+    text-align: left;
+  }
+  &.error {
+    color: $red;
+  }
+}

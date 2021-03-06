@@ -1,0 +1,33 @@
+@import '../../../styles/variables';
+
+.otp-modal {
+  .base-form {
+    margin: 40px 0;
+    .row-line {
+      display: flex;
+      justify-content: center;
+      > div {
+        min-width: 160px;
+        width: 30%;
+      }
+      .inputs {
+        padding-right: 14px;
+        input {
+          letter-spacing: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .otp-modal {
+    .base-form {
+      .row-line {
+        > div {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

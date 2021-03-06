@@ -1,0 +1,843 @@
+// general image mixin
+@mixin background-image(
+  $url,
+  $width: 24px,
+  $height: 24px,
+  $position: center center,
+  $repeat: no-repeat
+) {
+  background-image: url($url);
+  background-size: $width $height;
+  background-position: $position;
+  background-repeat: $repeat;
+}
+
+// image variables
+@mixin image-logo {
+  @include background-image('/assets/logo-white-dummy.svg');
+}
+@mixin icon-home {
+  @include background-image('/assets/icon-home-inactive.svg', 24px, 24px);
+}
+@mixin icon-home-active {
+  @include background-image('/assets/home-green.svg');
+}
+@mixin icon-account {
+  @include background-image('/assets/icon-accounts.svg');
+}
+@mixin icon-account-active {
+  @include background-image('/assets/icon-accounts-active@2x.png');
+}
+@mixin icon-book {
+  @include background-image('/assets/icon-book.svg');
+}
+@mixin icon-book-active {
+  @include background-image('/assets/icon-book-active@2x.png', 24px, 24px);
+}
+@mixin icon-finance {
+  @include background-image('/assets/icon-finance.svg');
+}
+@mixin icon-manage {
+  @include background-image('/assets/move-money.svg');
+}
+@mixin icon-support {
+  @include background-image('/assets/icon-support.svg');
+}
+@mixin icon-menu {
+  @include background-image('/assets/icon-menu.svg');
+}
+@mixin icon-drop {
+  @include background-image('/assets/more-drop.svg', 10px, 8px);
+}
+@mixin icon-setting {
+  @include background-image('/assets/green-set.svg', 20px, 21px);
+}
+@mixin green-set {
+  @include background-image('/assets/green-set.svg');
+}
+@mixin icon-setting-green {
+  @include background-image('/assets/icon-setting-green.svg', 20px, 21px);
+}
+@mixin icon-mark {
+  @include background-image('/assets/icon-mark.svg', 20px, 19px, left center);
+}
+@mixin icon-mark-active {
+  @include background-image('/assets/icon-mark-active.svg', 20px, 19px, left center);
+}
+@mixin icon-change {
+  @include background-image('/assets/icon-edit.svg', 20px, 19px, left 14px);
+}
+@mixin icon-initiate {
+  @include background-image('/assets/briefcase.svg', 20px, 19px, left 14px);
+}
+@mixin icon-four-arrow {
+  @include background-image('/assets/four-arrow.svg', 16px, 16px);
+}
+@mixin prev {
+  @include background-image('/assets/green-dropdown.svg', 10px, 15px);
+}
+@mixin prev-disabled {
+  @include background-image('/assets/drop-down.svg', 10px, 15px);
+}
+@mixin next-disabled {
+  @include background-image('/assets/drop-down.svg', 10px, 15px);
+}
+@mixin icon-arrow {
+  @include background-image('/assets/green-dropdown.svg', 10px, 6px);
+}
+@mixin disabled-btn-left {
+  @include background-image('/assets/icon-prev-white.svg', 6px, 10px);
+}
+@mixin btn-left {
+  @include background-image('/assets/icon-prev-green.svg', 6px, 10px);
+}
+@mixin btn-visa {
+  @include background-image('/assets/card-visa@2x.png', 136px, 47px);
+}
+@mixin icon-card {
+  @include background-image('/assets/credit-card@2x.png', 37px, 32px);
+}
+@mixin icon-card-small {
+  @include background-image('/assets/credit-card@2x.png');
+}
+@mixin icon-lock {
+  @include background-image('/assets/icon-lock-blue@2x.png');
+}
+@mixin icon-block {
+  @include background-image('/assets/icon-block-debit@2x.png');
+}
+@mixin icon-reveal {
+  @include background-image('/assets/reveal@2x.png');
+}
+@mixin icon-reveal-green {
+  @include background-image('/assets/green-request.svg');
+}
+
+@mixin icon-manage-access-green {
+  @include background-image('/assets/green-card.svg');
+}
+
+@mixin icon-channel {
+  @include background-image('/assets/channel@2x.png');
+}
+@mixin icon-setting {
+  @include background-image('/assets/icon-setting-green.svg');
+}
+@mixin icon-line-setting {
+  @include background-image('/assets/line-setting.svg');
+}
+@mixin icon-gray-lock {
+  @include background-image('/assets/gray-lock@2x.png');
+}
+@mixin icon-line-home {
+  @include background-image('/assets/icon-line-home.svg', 12px, 13px);
+}
+@mixin btn-close {
+  @include background-image('/assets/black-close.svg', 16px, 16px);
+}
+@mixin btn-close-small {
+  @include background-image('/assets/black-close.svg', 12px, 12px);
+}
+@mixin icon-question-little {
+  @include background-image('/assets/mobile-support.svg', 20px, 20px);
+}
+@mixin icon-del {
+  @include background-image('/assets/blue-close.svg', 12px, 12px);
+}
+@mixin btn-right-arrow {
+  @include background-image('/assets/expend-blue-arrow.svg', 10px, 6px);
+}
+@mixin btn-arrow-big {
+  @include background-image('/assets/expend-blue-arrow.svg', 12px, 8px);
+}
+@mixin btn-arrow {
+  @include background-image('/assets/green-dropdown.svg', 12px, 10px);
+}
+@mixin icon-mobile {
+  @include background-image('/assets/icon-phone-blue@2x.png', 21px, 21px);
+}
+@mixin icon-mobile-svg {
+  @include background-image('/assets/phone-svg.svg', 16px, 15px);
+}
+@mixin work-phone-blue {
+  @include background-image('/assets/work-phone-blue.svg', 14px, 18px);
+}
+@mixin icon-email {
+  @include background-image('/assets/icon-email-blue.svg', 20px, 20px);
+}
+@mixin icon-message {
+  @include background-image('/assets/message-circle.svg', 20px, 20px);
+}
+@mixin icon-white-account {
+  @include background-image('/assets/white-account.svg', 31px, 25px);
+}
+@mixin icon-up {
+  @include background-image('/assets/mobile-back.svg', 15px, 20px);
+}
+@mixin upload-blue {
+  @include background-image('/assets/upload-blue.svg', 14px, 18px);
+}
+@mixin top-setting {
+  @include background-image('/assets/icon-setting.svg', 20px, 21px);
+}
+@mixin payment {
+  @include background-image('/assets/green-loan@2x.png', 18px, 26px);
+}
+@mixin payment-hover {
+  @include background-image('/assets/green-loan-hover@2x.png', 18px, 26px);
+}
+@mixin management {
+  @include background-image('/assets/icon-management.svg');
+}
+@mixin management-hover {
+  @include background-image('/assets/icon-management-hover.svg');
+}
+@mixin more-option {
+  @include background-image('/assets/more-option@2x.png', 22px, 22px);
+}
+@mixin btn-blue-close {
+  @include background-image('/assets/blue-close.svg', 14px, 14px);
+}
+@mixin icon-left-arrow {
+  @include background-image('/assets/left-arrow.svg', 16px, 12px);
+}
+@mixin icon-search {
+  @include background-image('/assets/icon-search-line@2x.png');
+}
+@mixin btn-filter {
+  @include background-image('/assets/filter.svg', 19px, 17px);
+}
+@mixin icon-pdf {
+  @include background-image('/assets/icon-pdf.svg', 19px, 22px);
+}
+@mixin icon-time {
+  @include background-image('/assets/white-time@2x.png', 22px, 22px);
+}
+@mixin mobile-profile {
+  @include background-image('/assets/mobile-profile.svg', 32px, 32px);
+}
+@mixin profile-blue {
+  @include background-image('/assets/profile-user-blue.svg', 22px, 26px);
+}
+@mixin mobile-profile-white {
+  @include background-image('/assets/mobile-profile-white.svg', 18px, 22px);
+}
+@mixin icon-weekly {
+  @include background-image('/assets/canlender-line.svg');
+}
+@mixin icon-high {
+  @include background-image('/assets/up.svg');
+}
+@mixin icon-low {
+  @include background-image('/assets/low.svg');
+}
+@mixin icon-approaching {
+  @include background-image('/assets/low.svg');
+}
+@mixin icon-channel {
+  @include background-image('/assets/channel@2x.png');
+}
+@mixin icon-overdraft-pos {
+  @include background-image('/assets/savings@2x.png');
+}
+@mixin icon-advice {
+  @include background-image('/assets/channel@2x.png');
+}
+@mixin icon-gray-calender {
+  @include background-image('/assets/canlender-line-gray.svg', 20px, 20px);
+}
+@mixin icon-history {
+  @include background-image('/assets/icon-time@2x.png', 28px, 28px);
+}
+@mixin btn-play {
+  @include background-image('/assets/icon-play.svg', 30px, 30px);
+}
+@mixin icon-arrow-back {
+  @include background-image('/assets/green-back.svg', 16px, 16px);
+}
+@mixin icon-arrow-back-left {
+  @include background-image('/assets/green-back.svg', 16px, 16px, left center);
+}
+@mixin icon-clock {
+  @include background-image('/assets/clock-blue.svg', 32px, 32px);
+}
+@mixin logo-visa {
+  @include background-image('/assets/logo-visa.svg', 22px, 8px);
+}
+@mixin icon-payment-alert {
+  @include background-image('/assets/payment-alert.svg', 32px, 32px);
+}
+@mixin icon-online {
+  @include background-image('/assets/online@2x.png');
+}
+@mixin btn-nav-setting {
+  @include background-image('/assets/nav-settings@2x.png');
+}
+@mixin close {
+  @include background-image('/assets/close.svg', 10px, 10px);
+}
+@mixin top-green-plan {
+  @include background-image('/assets/top-green-plan.svg', 80px, 74px);
+}
+@mixin icon-done {
+  @include background-image('/assets/white-done.svg', 21px, 15px);
+}
+@mixin icon-green-done {
+  @include background-image('/assets/icon-done.svg', 16px, 16px);
+}
+@mixin icon-dashboard {
+  @include background-image('/assets/icon-accounts@2x.png', 32px, 32px);
+}
+@mixin icon-alerts {
+  @include background-image('/assets/icon-bell-white-header@2x.png', 32px, 32px);
+}
+@mixin icon-back {
+  @include background-image('/assets/left-arrow.svg', 32px, 32px);
+}
+@mixin icon-bell {
+  @include background-image('/assets/blue-bell.svg', 16px, 20px);
+}
+@mixin icon-white-arrow {
+  @include background-image('/assets/white-arrow.svg', 5px, 8px);
+}
+@mixin time-txt {
+  @include background-image('/assets/time-circle.svg', 15px, 15px, left center);
+}
+@mixin icon-user {
+  @include background-image('/assets/mobile-profile.svg', 20px, 20px);
+}
+@mixin icon-build {
+  @include background-image('/assets/filter-build@2x.png', 20px, 20px);
+}
+@mixin icon-build-big {
+  @include background-image('/assets/filter-build@2x.png');
+}
+@mixin icon-left-back {
+  @include background-image('/assets/mobile-back.svg', 24px, 24px, left center);
+}
+@mixin icon-move-money {
+  @include background-image('/assets/move-money-title.svg', 33px, 15px, left center);
+}
+@mixin icon-sticker {
+  @include background-image('/assets/sticker.svg', 18px, 24px);
+}
+@mixin icon-user-little {
+  @include background-image('/assets/mobile-profile.svg', 18px, 22px);
+}
+@mixin icon-green-question {
+  @include background-image('/assets/question-green.svg', 20px, 20px);
+}
+@mixin icon-green-question-little {
+  @include background-image('/assets/question-green.svg', 14px, 14px);
+}
+@mixin icon-email-phone {
+  @include background-image('/assets/email-phone.svg', 19px, 20px);
+}
+@mixin icon-blue-logout {
+  @include background-image('/assets/blue-logout.svg');
+}
+@mixin mobile-back-arrow {
+  @include background-image('/assets/mobile-back.svg', 18px, 18px);
+}
+@mixin mobile-next-back {
+  @include background-image('/assets/mobile-back.svg', 21px, 16px);
+}
+@mixin tip-arrow {
+  @include background-image('/assets/tip-arrow.svg', 12px, 6px);
+}
+@mixin black-right-arrow {
+  @include background-image('/assets/drop-down.svg', 10px, 6px);
+}
+@mixin green-done {
+  @include background-image('/assets/green-done.svg', 10px, 6px);
+}
+@mixin green-email {
+  @include background-image('/assets/green-email.svg', 10px, 6px);
+}
+@mixin green-approved {
+  @include background-image('/assets/green-done.svg',14px,11px,left center);
+}
+@mixin bold-done {
+  @include background-image('/assets/bold-done.svg', 12px, 8px);
+}
+@mixin icon-menu-white {
+  @include background-image('/assets/icon-menu-white.svg', 20px, 16px);
+}
+@mixin icon-header-back {
+  @include background-image('/assets/icon-header-back@2x.png');
+}
+@mixin white-bell {
+  @include background-image('/assets/white-bell.svg', 22px, 22px);
+}
+@mixin mobile-back-white {
+  @include background-image('/assets/mobile-back-white.svg', 18px, 18px);
+}
+@mixin icon-close-small {
+  @include background-image('/assets/icon-close.svg', 18px, 18px);
+}
+@mixin icon-close-six {
+  @include background-image('/assets/icon-close.svg', 16px, 16px);
+}
+@mixin bottom-banner {
+  @include background-image('/assets/bottom-banner.jpg', cover);
+}
+@mixin green-back {
+  @include background-image('/assets/green-back.svg', 20px, 16px);
+}
+@mixin question-active {
+  @include background-image('/assets/question-active.svg');
+}
+@mixin icon-finance-active {
+  @include background-image('/assets/icon-finance-active@2x.png');
+}
+@mixin move-money-active {
+  @include background-image('/assets/move-money-active.svg');
+}
+@mixin mobile-white-support {
+  @include background-image('/assets/mobile-support-white.svg', 20px, 20px);
+}
+@mixin mobile-contact {
+  @include background-image('/assets/mobile-contact.svg', 20px, 20px);
+}
+@mixin mobile-logout {
+  @include background-image('/assets/mobile-logout.svg', 18px, 18px);
+}
+@mixin mobile-profile-active {
+  @include background-image('/assets/mobile-profile-active.svg', 18px, 22px);
+}
+@mixin mobile-support-active {
+  @include background-image('/assets/mobile-support-active.svg', 20px, 20px);
+}
+@mixin mobile-contact-active {
+  @include background-image('/assets/mobile-contact-active.svg', 20px, 20px);
+}
+@mixin mobile-logout-active {
+  @include background-image('/assets/mobile-logout-active.svg', 18px, 18px);
+}
+@mixin blue-logout-white {
+  @include background-image('/assets/blue-logout-white.svg', 24px, 24px, left 5px);
+}
+@mixin lazzada-online {
+  @include background-image('/assets/lazzada-online@2x.png', 20px, 21px);
+}
+@mixin icon-star-green {
+  @include background-image('/assets/icon-star-green.svg', 14px, 13px);
+}
+@mixin icon-star-gray {
+  @include background-image('/assets/icon-star-gray.svg', 14px, 13px);
+}
+@mixin icon-vioce-call {
+  @include background-image('/assets/vioce-call.svg', 17px, 17px, left center);
+}
+@mixin icon-video-call {
+  @include background-image('/assets/video-call.svg', 21px, 13px, left center);
+}
+@mixin email {
+  @include background-image('/assets/email.svg', 18px, 13px, left center);
+}
+@mixin little-calender {
+  @include background-image('/assets/little-calender.svg', 16px, 16px, left center);
+}
+@mixin little-calender-big {
+  @include background-image('/assets/little-calender.svg', 20px, 20px);
+}
+@mixin little-calender-gray-big {
+  @include background-image('/assets/little-calender-gray.svg', 20px, 20px);
+}
+@mixin small-calender {
+  @include background-image('/assets/little-calender.svg', 12px, 12px);
+}
+@mixin white-close {
+  @include background-image('/assets/white-close.svg', 16px, 16px);
+}
+@mixin chevron-right {
+  @include background-image('/assets/chevron-right.svg', 16px, 16px);
+}
+@mixin chevron-right-box {
+  @include background-image('/assets/chevron-right.svg', 12px, 13px);
+}
+@mixin gray-done {
+  @include background-image('/assets/gray-done.svg', 15px, 11px);
+}
+@mixin green-done {
+  @include background-image('/assets/green-done.svg', 15px, 11px);
+}
+@mixin icon-unread {
+  @include background-image('/assets/unread.svg', 14px, 12px);
+}
+@mixin icon-trash {
+  @include background-image('/assets/move-to-trash.svg', 13px, 14px);
+}
+@mixin icon-delete {
+  @include background-image('/assets/delete-permanently.svg', 13px, 14px);
+}
+@mixin icon-print {
+  @include background-image('/assets/print.svg', 13px, 14px);
+}
+@mixin icon-more {
+  @include background-image('/assets/more-vertical-gray.svg', 4px, 16px);
+}
+@mixin icon-blue-arrow {
+  @include background-image('/assets/expend-blue-arrow.svg', 9px, 6px);
+}
+@mixin icon-question {
+  @include background-image('/assets/icon-question.svg', 43px, 43px);
+}
+@mixin chevron-right-small {
+  @include background-image('/assets/chevron-right.svg', 6px, 10px);
+}
+@mixin icon-bank {
+  @include background-image('/assets/icon-bank.svg', 16px, 16px);
+}
+@mixin question-bold {
+  @include background-image('/assets/question-bold.svg', 14px, 14px);
+}
+@mixin btn-list {
+  @include background-image('/assets/list.svg', 14px, 10px);
+}
+@mixin btn-finance {
+  @include background-image('/assets/fina-icon.svg', 15px, 13px);
+}
+@mixin bold-clock {
+  @include background-image('/assets/bold-clock.svg', 14px, 14px);
+}
+@mixin arrow-up {
+  @include background-image('/assets/arrow-up.svg', 8px, 8px);
+}
+@mixin light-blue-info {
+  @include background-image('/assets/light-blue-info.svg', 14px, 14px);
+}
+@mixin blue-info {
+  @include background-image('/assets/blue-info.svg', 14px, 14px);
+}
+@mixin icon-pro {
+  @include background-image('/assets/gz-systems@2x.png', 20px, 20px);
+}
+@mixin btn-arrow-right {
+  @include background-image('/assets/expend-blue-arrow.svg', 8px, 11px);
+}
+@mixin btn-arrow-right-white {
+  @include background-image('/assets/expend-white-arrow.svg', 8px, 11px);
+}
+@mixin banner-blue-bottom {
+  @include background-image('/assets/banner-blue-bottom.svg', 100%, auto, 0 100%);
+}
+@mixin left-darkblue {
+  @include background-image('/assets/left-darkblue.svg', 100%, auto);
+}
+@mixin left-green {
+  @include background-image('/assets/left-green.svg', 100%, auto);
+}
+@mixin logo-lock {
+  @include background-image('/assets/logo-odyssey.svg', 16px, 21px);
+}
+@mixin icon-vector {
+  @include background-image('/assets/icon-vector@2x.png', 18px, 22px);
+}
+@mixin icon-bell-two {
+  @include background-image('/assets/bell@2x.png', 20px, 22px);
+}
+@mixin icon-opacity-bell {
+  @include background-image('/assets/opacity-bell@2x.png', 38px, 42px);
+}
+@mixin icon-vector-big {
+  @include background-image('/assets/blue-vector@2x.png', 26px, 30px);
+}
+@mixin icon-works {
+  @include background-image('/assets/works@2x.png', 28px, 30px);
+}
+@mixin icon-trusteer {
+  @include background-image('/assets/icon-trusteer@2x.png', 32px, 32px);
+}
+@mixin icon-calender {
+  @include background-image('/assets/icon-calender@2x.png', 20px, 22px);
+}
+@mixin icon-next-vector {
+  @include background-image('/assets/blue-vector@2x.png', 18px, 22px);
+}
+@mixin green-set-disabled {
+  @include background-image('/assets/green-set-disabled.png');
+}
+@mixin icon-check {
+  @include background-image('/assets/green-set-disabled.png', 16px, 11px);
+}
+@mixin icon-close-gray {
+  @include background-image('/assets/green-set-disabled.png', 12px, 12px);
+}
+@mixin icon-check-circle {
+  @include background-image('/assets/green-set-disabled.png');
+}
+@mixin icon-error {
+  @include background-image('/assets/icon-error@2x.png', 20px, 20px);
+}
+@mixin icon-alert-circle {
+  @include background-image('/assets/icon-alert-circle.svg', 20px, 20px);
+}
+@mixin transfer-between {
+  @include background-image('/assets/transfer-between.svg', 21px, 20px);
+}
+@mixin icon-alert-circle-red {
+  @include background-image('/assets/alert-circle-red.svg', 14px, 14px, left center);
+}
+@mixin icon-manager {
+  @include background-image('/assets/icon-manager.png', 42px, 42px);
+}
+@mixin icon-closegreen {
+  @include background-image('/assets/icon-closegreen.svg');
+}
+@mixin icon-check-green {
+  @include background-image('/assets/icon-check.svg', 16px, 11px);
+}
+@mixin icon-eyes {
+  @include background-image('/assets/eye-no.svg', 22px, 20px);
+}
+@mixin icon-eyes-yes {
+  @include background-image('/assets/eye-yes.svg', 22px, 20px);
+}
+
+@mixin icon-download {
+  @include background-image('/assets/download.svg', 20px, 20px);
+}
+
+@mixin icon-pdf-big-active {
+  @include background-image('/assets/pdf-icon.svg', 37px, 49px);
+}
+
+@mixin icon-xls-big-active {
+  @include background-image('/assets/xls-icon.svg', 37px, 49px);
+}
+
+@mixin icon-pdf-big {
+  @include background-image('/assets/pdf-icon-gray.svg', 37px, 49px);
+}
+
+@mixin icon-xls-big {
+  @include background-image('/assets/xls-icon-gray.svg', 37px, 49px);
+}
+
+@mixin icon-checkbox-16 {
+  @include background-image('/assets/icon-check.svg', 16px, 16px);
+}
+
+@mixin icon-checkbox-24 {
+  @include background-image('/assets/icon-check.svg');
+}
+
+@mixin icon-list-star-finance {
+  @include background-image('/assets/star-two.svg', 11px, 10px);
+}
+
+@mixin icon-list-star {
+  @include background-image('/assets/icon-star-green.svg', 14px, 13px);
+}
+@mixin icon-more-dark {
+  @include background-image('/assets/icon-more-dark.svg', 5px, 19px);
+}
+
+@mixin icon-more-finance {
+  @include background-image('/assets/icon-more.svg', 16px, 16px);
+}
+
+@mixin pdf-icon-active {
+  @include background-image('/assets/pdf-file-green.svg', 20px, 25px);
+}
+
+@mixin pdf-icon {
+  @include background-image('/assets/pdf-file.svg', 20px, 25px);
+}
+
+@mixin excel-icon-active {
+  @include background-image('/assets/excel-file-green.svg', 20px, 25px);
+}
+
+@mixin excel-icon {
+  @include background-image('/assets/excel-file.svg', 20px, 25px);
+}
+
+@mixin icon-download {
+  @include background-image('/assets/download.svg', 20px, 20px);
+}
+
+@mixin finance-manager-mobile-tab-dropdown {
+  @include background-image('/assets/mobile-drop-green@2x.png', 8px, 5px);
+}
+
+@mixin icon-close-drop-menu {
+  @include background-image('/assets/icon-close-green.svg', 16px, 16px);
+}
+
+@mixin icon-edit-darkgreen {
+  @include background-image('/assets/edit-darkgreen.svg', 13px, 13px);
+}
+
+@mixin icon-delete-darkgreen {
+  @include background-image('/assets/delete-darkgreen.svg', 13px, 14px);
+}
+
+@mixin icon-edit-lightgreen {
+  @include background-image('/assets/edit-lightgreen.svg', 13px, 13px);
+}
+
+@mixin icon-delete-lightgreen {
+  @include background-image('/assets/delete-lightgreen.svg', 13px, 14px);
+}
+
+@mixin icon-expand {
+  @include background-image('/assets/icon-expand-dark-green.svg', 13px, 8px);
+}
+
+@mixin icon-expand-green {
+  @include background-image('/assets/icon-expand-green.svg', 13px, 8px);
+}
+
+@mixin icon-finance-manager-move-default {
+  @include background-image('/assets/bills.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-groceries {
+  @include background-image('/assets/shopping-cart.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-education {
+  @include background-image('/assets/book-open.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-travel {
+  @include background-image('/assets/plane-departure.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-mortgage {
+  @include background-image('/assets/home.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-entertainment {
+  @include background-image('/assets/smile.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-charity {
+  @include background-image('/assets/gift.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-shopping {
+  @include background-image('/assets/shopping-bag.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-miscellaneous {
+  @include background-image('/assets/icon-miscellaneous.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-transfers {
+  @include background-image('/assets/send.svg', 16px, 16px);
+}
+
+@mixin icon-finance-manager-move-healthcare {
+  @include background-image('/assets/healthy.svg', 16px, 16px);
+}
+@mixin account-trans {
+  @include background-image('/assets/account-trans.svg',153px,97px);
+}
+@mixin top-circle-bg {
+  @include background-image('/assets/top-circle-bg.svg',44px,50px);
+}
+
+@mixin icon-home-bg {
+  @include background-image('/assets/icon-home.svg',16px,16px);
+}
+@mixin icon-big-info {
+  @include background-image('/assets/big-blue-info.svg',20px,20px);
+}
+@mixin icon-check-ok {
+  @include background-image('/assets/check-ok.svg',25px,25px);
+}
+@mixin red-delete {
+  @include background-image('/assets/red-delete.svg',11px,15px);
+}
+@mixin icon-blue-edit {
+  @include background-image('/assets/edit.svg',16px,16px);
+}
+@mixin icon-blue-edit-bigger {
+  @include background-image('/assets/edit.svg',20px,20px);
+}
+@mixin icon-black-back {
+  @include background-image('/assets/black-left-arrow.svg',24px,24px);
+}
+
+@mixin icon-clearance-status {
+  @include background-image('/assets/clearance-status.svg');
+}
+@mixin icon-gray-clearance-status {
+  @include background-image('/assets/gray-clearance-status.svg');
+}
+
+@mixin icon-no-result {
+  @include background-image('/assets/icon-no-result.svg',30px,37px);
+}
+
+@mixin icon-error {
+  @include background-image('/assets/icon-error.svg',63px,63px);
+}
+@mixin icon-eye-blue {
+  @include background-image('/assets/icon-eye@2x.png',18px,18px);
+}
+@mixin icon-pin-number {
+  @include background-image('/assets/auth-blue.svg', 32px, 32px);
+}
+
+@mixin icon-loading {
+  @include background-image('/assets/icon-loading.svg',30px,30px);
+}
+
+@mixin icon-tips-move-payment {
+  @include background-image('/assets/icon-tips-move-payment.svg',36px,16px);
+}
+
+@mixin icon-tips-profile {
+  @include background-image('/assets/icon-tips-profile.svg',28px,21px);
+}
+
+@mixin icon-download-file {
+  @include background-image('/assets/icon-download-file.svg',32px,40px);
+}
+@mixin icon-user-line {
+  @include background-image('/assets/icon-profile.svg', 24px, 29px);
+}
+@mixin date-clock {
+  @include background-image('/assets/date-clock.svg', 30px, 25px);
+}
+@mixin icon-phone {
+  @include background-image('/assets/icon-phone.svg', 20px, 20px);
+}
+@mixin icon-app {
+  @include background-image('/assets/date-minu.svg', 30px, 25px);
+}
+@mixin icon-x-circle  {
+  @include background-image('/assets/x-circle.svg', 18px, 18px);
+}
+@mixin icon-slash {
+  @include background-image('/assets/slash.svg', 16px, 16px);
+}
+@mixin icon-trash {
+  @include background-image('/assets/red-trash.svg', 16px, 18px);
+}
+@mixin icon-green-edit {
+  @include background-image('/assets/green-edit.svg', 25px, 24px);
+}
+@mixin icon-border-calender  {
+  @include background-image('/assets/icon-calendar.svg', 31px, 34px);
+}
+@mixin icon-line-back {
+  @include background-image('/assets/icon-back.svg', 20px, 20px);
+}
+@mixin icon-pointer {
+  @include background-image('/assets/icon-pointer.svg', 18px, 22px);
+}
+@mixin icon-business {
+  @include background-image('/assets/icon-business.png', 24px, 24px);
+}
+@mixin icon-red-point {
+  @include background-image('/assets/red-point.svg', 16px, 17px);
+}
+
+@mixin icon-info {
+  @include background-image('/assets/icon-info.svg', 20px, 20px);
+}

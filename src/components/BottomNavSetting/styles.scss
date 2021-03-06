@@ -1,0 +1,31 @@
+@import '../../styles/_variables.scss';
+
+.bottom-nav-setting  {
+    display: flex;
+    justify-content: flex-end;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: -50px;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    .btn-nav-move-payment {
+        position: relative;
+        z-index: 999;
+        width: 68px;
+        height: 50px;
+        border-radius: 25px 0 0 25px;
+        background-color: #09d1b6;
+        @include icon-tips-move-payment;
+        border-right: 1px solid #001f26;
+    }
+    .btn-nav-profile {
+        position: relative;
+        z-index: 999;
+        width: 68px;
+        height: 50px;
+        border-radius: 0 25px 25px 0;
+        background-color: #09d1b6;
+        @include icon-tips-profile;
+    }
+}

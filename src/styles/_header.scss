@@ -1,0 +1,480 @@
+//.header
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100%);
+  z-index: 2000;
+  background-color: #155161;
+  height: 66px;
+  padding: 0 221px 0 28px;
+  border-top-left-radius: 30px;
+  justify-content: flex-end !important;
+  .bg-green {
+    background-color: $bg-green;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .left-darkblue {
+    position: absolute;
+    left: 0;
+    top: 37px;
+    @include left-darkblue;
+    width: 402px;
+    height: 75px;
+    z-index: 5;
+  }
+  .left-green {
+    position: absolute;
+    left: 0;
+    top: 58px;
+    @include left-green;
+    width: 402px;
+    height: 105px;
+    z-index: 2;
+  }
+  .lefts {
+    position: absolute;
+    left: 28px;
+    top: 20px;
+    .logo-lock {
+      @include logo-lock;
+      width: 16px;
+      height: 21px;
+      position: relative;
+      z-index: 7;
+    }
+    .btn-logo {
+      position: relative;
+      z-index: 7;
+      img {
+        width: 84px;
+        height: auto;
+        margin-left: 86px;
+      }
+    }
+  }
+  .rights {
+    .icon-vector {
+      @include icon-vector;
+      width: 18px;
+      height: 22px;
+    }
+    .icon-bell {
+      @include icon-bell-two;
+      width: 20px;
+      height: 22px;
+      margin-left: 45px;
+    }
+    .txt-already {
+      color: #f6f6f6;
+      font-family: $gotham-rounded;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+      .green-link {
+        display: inline-block;
+        margin-left: 3px;
+      }
+    }
+  }
+
+  //.bell-module
+  .bell-module {
+    .bell-panel {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      .main-panel {
+        width: 700px;
+        right: 0;
+        top: 50%;
+        margin-top: -246px;
+        position: fixed;
+        height: 493px;
+        padding-bottom: 25px;
+        left: 50%;
+        margin-left: -350px;
+        .lefts {
+          position: relative;
+          left: auto;
+          top: auto;
+        }
+        &.bell-modal {
+          width: 800px;
+          height: auto;
+          margin-top: -300px;
+          padding-bottom: 0;
+          .bottom-btn {
+            justify-content: flex-end;
+            .btn {
+              min-width: 177px;
+            }
+          }
+          .left-icon-module {
+            margin-bottom: 24px;
+          }
+        }
+        .icon-close {
+          @include icon-close-six;
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+        .blue-bar {
+          height: 110px;
+          background-color: $font-black;
+          padding: 30px 45px 20px 35px;
+          border-top-left-radius: 6px;
+          border-top-right-radius: 6px;
+          .rights {
+            margin-top: -30px;
+            position: absolute;
+            right: 28px;
+          }
+          .white-txt {
+            color: $white;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.15px;
+            font-family: $gotham-rounded;
+          }
+          .icon-vector {
+            background-size: 34px 42px;
+            width: 34px;
+            height: 42px;
+            opacity: 0.25;
+            margin: 35px 20px 0 0;
+          }
+          .icon-bell {
+            @include icon-opacity-bell;
+            width: 44px;
+            height: 44px;
+            margin: 35px 20px 0 0;
+          }
+        }
+        .paddings {
+          padding: 32px;
+          background-color: $white;
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+          .blue-link {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.15px;
+            font-family: $gotham-rounded;
+            text-decoration: underline;
+          }
+          .titles {
+            color: $font-black;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: $gotham-rounded;
+            letter-spacing: 0.15px;
+            margin-bottom: 32px;
+          }
+
+          .some-txt {
+            .txt {
+              color: $font-black;
+              font-size: 14px;
+              font-weight: 400;
+              font-family: $gotham-rounded;
+              letter-spacing: 0.15px;
+              margin-bottom: 23px;
+            }
+          }
+        }
+        .bottom-btn {
+          display: flex;
+          position: static;
+          bottom: 24px;
+          right: 24px;
+          .btn-green {
+            height: 44px;
+            line-height: 44px;
+            padding: 1px 28px;
+            min-width: 177px;
+          }
+        }
+        .bottom-links {
+          display: flex;
+          justify-content: center;
+          ul {
+            li {
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .two-txts {
+    align-items: flex-start;
+    .flex-8 {
+      flex: 0 0 60%;
+    }
+    .flex-4 {
+      flex: 0 0 35%;
+    }
+  }
+  //.left-icon-module
+  .left-icon-module {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    .icons {
+      width: 32px;
+      height: 32px;
+      margin-right: 16px;
+      flex: 0 0 32px;
+      max-width: 32px;
+      &.icon-vector-big {
+        @include icon-vector;
+        width: 32px;
+        height: 32px;
+      }
+      &.icon-works {
+        @include icon-works;
+      }
+      &.icon-trusteer {
+        @include icon-trusteer;
+      }
+      &.icon-calender {
+        @include icon-calender;
+      }
+      &.icon-next-vector {
+        @include icon-next-vector;
+      }
+    }
+    .right-txt {
+      color: $font-black;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: $gotham-rounded;
+      letter-spacing: 0.15px;
+      &.max-325 {
+        max-width: 325px;
+      }
+      .bold-txt {
+        opacity: 0.8;
+        color: $font-black;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $gotham-rounded;
+        letter-spacing: 0.15px;
+        margin-bottom: 3px;
+      }
+      .txt {
+        opacity: 0.8;
+        color: $font-black;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $gotham-rounded;
+        letter-spacing: 0.15px;
+        .bold {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1181px width */
+@media (max-width: $smaller-desktop-width) {
+  .header {
+    padding-right: 28px;
+  }
+}
+
+/* fix layout issue when smaller than 991px width */
+@media (max-width: $min-desktop-width) {
+  .header {
+    .bell-module {
+      .bell-panel {
+        .main-panel {
+          &.bell-modal {
+            width: 700px;
+            margin-top: -350px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .header-wrap {
+    &.other-page {
+      .header {
+        display: none;
+        .left-green,
+        .left-darkblue {
+          display: none;
+        }
+      }
+      .mobile-title {
+        display: block;
+      }
+    }
+    .mobile-title {
+      margin: 0 0 0;
+      padding: 16px;
+      background-color: $font-black;
+      position: fixed;
+      width: 100%;
+      height: 50px;
+      top: 0;
+      left: 0;
+      z-index: 3010;
+      text-align: center;
+      display: none;
+      .btn-back {
+        @include green-back;
+        width: 20px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        left: 26px;
+        top: 20px;
+        z-index: 1500;
+      }
+      .titles {
+        text-align: center;
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $gotham-rounded;
+        letter-spacing: 0.15px;
+        margin-top: 0;
+        display: inline-block;
+      }
+      .green-link {
+        font-size: 14px;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+      }
+    }
+  }
+  .header {
+    border-top-left-radius: 0;
+    .lefts {
+      display: none;
+    }
+    .rights {
+      position: relative;
+      z-index: 888;
+    }
+    .green-link {
+      font-size: 14px;
+    }
+    .left-mobile {
+      position: absolute;
+      left: 28px;
+      top: 20px;
+      z-index: 88;
+      img {
+        width: 101px;
+        height: 38px;
+      }
+    }
+    .left-green,
+    .left-darkblue {
+      width: 100%;
+    }
+    .left-icon-module {
+      margin-bottom: 16px;
+    }
+    .left-darkblue {
+      background-size: 100% 100%;
+      height: 144px;
+      top: 10px;
+    }
+    .left-green {
+      background-size: cover;
+      height: 188px;
+      top: 57px;
+    }
+    .bell-module {
+      .bell-panel {
+        overflow-y: auto;
+        .main-panel {
+          width: 311px;
+          margin-left: -150px;
+          .blue-bar {
+            display: none;
+          }
+          .bottom-btn {
+            padding-top: 40px;
+            .btn-green {
+              margin: 0 auto 25px;
+            }
+          }
+          .paddings {
+            padding: 24px;
+            border-radius: 10px;
+            position: relative;
+            .titles {
+              padding-right: 25px;
+            }
+            .btn-close {
+              @include icon-del;
+              width: 16px;
+              height: 16px;
+              position: absolute;
+              right: 20px;
+              top: 20px;
+            }
+            .bottom-btn {
+              flex-direction: column-reverse;
+              justify-content: center;
+              align-items: center;
+            }
+            .bottom-links {
+              padding-top: 25px;
+              .green-link {
+                font-size: 14px;
+              }
+              ul {
+                li {
+                  display: none;
+                  &:first-child {
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+          }
+          &.bell-modal {
+            top: auto;
+            width: 311px;
+            margin-top: 30px;
+            position: absolute;
+            margin-bottom: 30px;
+            .two-txts {
+              flex-direction: column;
+            }
+            .bottom-btn {
+              padding-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

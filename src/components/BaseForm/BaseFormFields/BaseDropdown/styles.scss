@@ -1,0 +1,24 @@
+@import '../../../../styles/variables';
+.base-dropdown {
+  .drop-module .dropdown-menu.show .dropdown-item {
+    color: $font-black;
+    font-weight: 500;
+    &.category-title {
+      color: $green;
+    }
+    &:hover {
+      background-color: #cef6f0;
+    }
+    &.title-option {
+      display: flex;
+      flex-direction: column;
+      padding: 0.37rem 13px;
+      .inner-title {
+        color: $light-green-label;
+      }
+    }
+    .icon-image {
+      width: 16px;
+    }
+  }
+}

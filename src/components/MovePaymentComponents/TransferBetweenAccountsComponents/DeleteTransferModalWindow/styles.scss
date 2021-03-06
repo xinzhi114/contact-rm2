@@ -1,0 +1,193 @@
+@import '../../../../styles/_variables.scss';
+
+.modal-default {
+    &.delete-ransfer-modal {
+        .modal-mains {
+            width: 615px;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 0;
+            .title-area {
+                margin-bottom: -10px;
+                padding: 28px 24px;
+                .blue-title {
+                    color: $font-black;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+            .top-line {
+                padding: 16px 23px;
+                color: $font-black;
+                font-size: 16px;
+                font-weight: 400;
+                border-top: 1px solid $border-gray;
+            }
+        }
+        .blue-title {
+            .icon-download {
+                @include icon-alert-circle;
+                margin-right: 16px;
+                width: 21px;
+                height: 21px;
+            }
+        }
+        .btn-close {
+            @include btn-close;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+        .modal-info {
+            padding: 24px 0 0;
+            background-color: $bg-gray;
+        }
+        .row-line {
+            padding: 0 0 0 25px;
+            .blue-txt {
+                font-weight: normal;
+            }
+            .group {
+                margin-bottom: 30px;
+                &:first-child {
+                  border-bottom: 1px solid $border-gray;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .top-title {
+                    color: $dark-black;
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 23px;
+                    max-width: 600px;
+                }
+                .three-drop {
+                    display: flex;
+                    flex-wrap: wrap;
+                    &.top-three-drop {
+                        .items {
+                            padding-right: 30px;
+                            margin-right: 50px;
+                        }
+                    }
+                    .items {
+                        flex: 0 0 33.33333333%;
+                        max-width: 33.33333333%;
+                        margin-bottom: 30px;
+                        position: relative;
+                        .label-txt {
+                            opacity: 0.5;
+                            color: $font-black;
+                            font-size: 10px;
+                            font-weight: 600;
+                            line-height: 10px;
+                            margin-bottom: 5px;
+                            text-transform: uppercase;
+                            &.thin-label {
+                                font-weight: 400;
+                                text-transform: uppercase;
+                                font-size: 10px;
+                                color: $font-black;
+                                margin-bottom: 2px;
+                                line-height: 11px;
+                            }
+                        }
+                        .values {
+                            font-size: 14px;
+                            line-height: 20px;
+                            font-weight: 500;
+                            .bold-txt {
+                                font-weight: 500;
+                                font-size: 14px;
+                            }
+                            .phone-number {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .right-line-arrow {
+                        @include mobile-next-back;
+                        width: 21px;
+                        height: 16px;
+                        position: absolute;
+                        right: 5px;
+                        top: 16px;
+                        transform: rotate(-180deg);
+                    }
+                    .control-item {
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+        .bottom-btns {
+            margin: 0 -30px;
+            padding: 23px 30px 24px;
+            justify-content: center;
+            .btn {
+                min-width: 152px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .modal-default {
+        &.delete-ransfer-modal {
+            .modal-mains {
+                width: 667px;
+                .title-area {
+                    margin-bottom: -7px;
+                }
+            }
+            .date-bar {
+                border: 0;
+                .lefts {
+                    .icon-calender {
+                        background-size: 20px 20px;
+                    }
+                }
+            }
+            .bottom-btns {
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                .btn-green {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-default {
+        &.delete-ransfer-modal {
+            .modal-mains {
+                margin: 17px auto;
+                width: 95%;
+            }
+            .bottom-btns {
+                .btn-green {
+                    margin-bottom: 0;
+                }
+            }
+            .row-line {
+                .group {
+                    .three-drop {
+                        .items {
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

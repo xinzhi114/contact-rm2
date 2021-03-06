@@ -1,0 +1,18 @@
+@import '../../styles/_variables.scss';
+
+.top-ctrl-normal-tab {
+  margin-bottom: 16px;
+  ul {
+    li {
+      margin-right: 32px;
+    }
+    .tab-link {
+      color: $dark-green;
+      font-size: 14px;
+      font-weight: 700;
+      &.current {
+        color: $dark-black;
+      }
+    }
+  }
+}

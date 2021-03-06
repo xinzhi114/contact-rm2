@@ -1,0 +1,14 @@
+@import '../../../../styles/variables';
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  .base-form {
+    width: 100%;
+    .row-line .inputs {
+      padding-right: 14px;
+    }
+  }
+}

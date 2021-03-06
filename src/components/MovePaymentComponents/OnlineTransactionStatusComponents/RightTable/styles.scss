@@ -1,0 +1,85 @@
+@import '../../../../styles/_variables.scss';
+
+.online-transaction-status-right-table {
+  height: 100%;
+  flex: 1 1;
+  margin-left: 24px;
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  .icon-home {
+      @include icon-home-bg;
+      width: 20px;
+      height: 20px;
+      left: 10px;
+      position: absolute;
+      top: 12px;
+  }
+  .top-table-bar {
+    padding: 26px 46px 26px 40px;
+    flex-wrap: wrap;
+    .lefts {
+      .left-img {
+        img {
+          width: 23px;
+          height: 20px;
+          display: inline-block;
+          margin-right: 14px;
+        }
+        
+      }
+      .blue-txt {
+        color: $font-black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+      }
+    }
+    .rights {
+      .inputs {
+        width: 232px;
+        padding-left: 45px;
+        position: relative;
+        .icon-search {
+          @include icon-search;
+          transform: rotateY(-180deg);
+          width: 40px;
+          height: 44px;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-tablet-width) {
+  .online-transaction-status-right-table {
+    margin-left: 0;
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .online-transaction-status-right-table {
+    .top-table-bar {
+      padding: 26px 15px 26px 15px;
+      flex-direction: column;
+      align-items: normal;
+      .lefts {
+        margin-bottom: 15px;
+      }
+      .rights {
+        flex: 1;
+        .inputs {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@import '../../../../styles/variables';
+
+.set-password-step {
+  .top-section {
+    padding: 40px 64px;
+    padding-bottom: 0;
+    .section-title {
+      color: $font-black;
+    }
+    .base-form {
+      flex-direction: row;
+      padding-top: 28px;
+      margin-right: 98px;
+      .row-line {
+        flex-grow: 1;
+        position: relative;
+        &.odd {
+          padding-left: 32px;
+        }
+        .right-text {
+          position: absolute;
+          right: 10px;
+          bottom: 13px;
+          z-index: 2;
+        }
+      }
+    }
+    .password-strength {
+      position: absolute;
+      width: 100%;
+      padding-top: 8px;
+      .indicators {
+        height: 4px;
+        width: 100%;
+        padding-bottom: 4px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .indicator {
+          height: 4px;
+          width: 31%;
+          border-radius: 2px;
+          &.strength-weak {
+            background-color: $dark-red;
+          }
+          &.strength-good {
+            background-color: $orange;
+          }
+          &.strength-strong {
+            background-color: $dark-green;
+          }
+          &:not(.active) {
+            background-color: $bg-gray;
+          }
+        }
+      }
+      > span {
+        font-size: 12px;
+        font-weight: bold;
+        color: $font-black;
+      }
+    }
+  }
+  .requirements-section {
+    padding: 40px 64px;
+    padding-top: 64px;
+  }
+  .submit-section {
+    border-top: 1px solid $border-gray;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 64px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .set-password-step {
+    .top-section,
+    .requirements-section {
+      padding: 16px 24px;
+    }
+    .top-section {
+      .base-form {
+        flex-direction: column;
+        margin-right: 0;
+        .row-line {
+          width: 100%;
+          &:not(.odd) {
+            margin-bottom: 52px;
+          }
+          &.odd {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    .requirements-section {
+      .suggest-password {
+        text-align: center;
+      }
+    }
+    .submit-section {
+      .btn.btn-primary {
+        width: 100%;
+      }
+    }
+  }
+}

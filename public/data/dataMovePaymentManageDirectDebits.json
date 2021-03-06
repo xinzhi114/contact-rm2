@@ -1,0 +1,440 @@
+{
+  "dataList": {
+    "selectAccountData": [
+      {
+        "title": "Current Account",
+        "subTitle": "9846 - 4754 - 7584"
+      },
+      {
+        "title": "Saving Account",
+        "subTitle": "9846 - 4754 - 7585"
+      },
+      {
+        "title": "Other Account",
+        "subTitle": "9846 - 4754 - 7586"
+      }
+    ],
+    "tableData": [
+      {
+        "id": "08962426",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962426",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962427",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962427",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962428",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962428",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962428",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962428",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962428",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962428",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962428",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962428",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962428",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962428",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962428",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962428",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962428",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962428",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962428",
+        "fieldList": [
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "direct_debit_reference",
+            "fieldValue": "08962428",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator_reference",
+            "fieldValue": "0MDAE118DTR",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "originator",
+            "fieldValue": "987654321",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "last_payment",
+            "fieldValue": "30 Oct 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "next_payment",
+            "fieldValue": "30 Nov 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-single-label",
+            "fieldName": "action",
+            "fieldValue": "Cancel",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      }
+    ]
+  }
+}

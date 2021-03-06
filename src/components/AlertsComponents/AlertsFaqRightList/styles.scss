@@ -1,0 +1,102 @@
+@import '../../../styles/_variables.scss';
+
+.card-list-boxs {
+  &.alerts-faq-right-content {
+    height: 100%;
+    background-color: $white;
+    border-radius: 6px;
+    box-shadow: 0 5px 12px $shadow-gray;
+    padding: 20px;
+    padding-top: 24px;
+    margin-left: 24px;
+    .title-line-bar {
+      padding-left: 20px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid $border-gray;
+      margin: 0 -20px;
+      .txt {
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 20px;
+        color: $dark-blue;
+      }
+    }
+    .debit-card-list {
+      .row-line {
+        padding: 16px 0;
+        min-height: 55px;
+        display: block;
+        border-bottom: 1px solid $border-gray;
+      }
+    }
+    .expend-wrap {
+      .expend-title {
+        display: flex;
+        .title {
+          color: $font-black;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 22px;
+        }
+        .btn-expend {
+          min-width: 20px;
+          height: 20px;
+          @include btn-right-arrow;
+        }
+      }
+      .expend-body {
+        display: none;
+      }
+      &.open {
+        .expend-title {
+          margin-bottom: 10px;
+        }
+        .btn-expend {
+          transform: rotate(-180deg);
+        }
+        .expend-body {
+          display: block;
+          color: $dark-black;
+          font-size: 14px;
+          font-weight: 400;
+          padding-right: 110px;
+        }
+      }
+    }
+    .row-bottom {
+      padding: 14px 0;
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .card-list-boxs {
+    &.alerts-faq-right-content {
+      margin-left: 0;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .card-list-boxs {
+    &.alerts-faq-right-content {
+      .debit-card-list {
+        padding: 0 20px;
+      }
+      .expend-wrap {
+        .expend-title {
+          align-items: flex-start;
+          .title {
+            padding-right: 37px;
+          }
+        }
+        &.open {
+          .expend-body {
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

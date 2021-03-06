@@ -1,0 +1,165 @@
+@import '../../../styles/_variables.scss';
+
+.modal-default {
+    &.cancel-appointment-modal {
+        .modal-mains {
+            width: 612px;
+            border-radius: 10px;
+            padding: 0;
+            .title-area {
+                padding: 25px;
+                border-bottom: 1px solid $border-gray;
+                margin-bottom: 0;
+                display: flex;
+                justify-content: flex-start;
+                .blue-title {
+                    color: $dark-blue;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    margin-left: 12px;
+                }
+                .icon-info {
+                    @include icon-alert-circle;
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    margin-top: 2px;
+                }
+            }
+        }
+        .btn-close {
+            @include icon-closegreen;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+        .bottom-data {
+            padding: 24px 56px 0 25px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: -1px;
+            position: relative;
+            &.textarea {
+                padding-top: 15px;
+                margin-bottom: -22px;
+                justify-content: space-between;
+            }
+            .description-title {
+                color: $dark-blue;
+                font-size: 16px;
+            }
+            .smaller-description-title {
+                color: $dark-blue;
+                font-size: 10px;
+                opacity: 0.75;
+                text-transform: uppercase;
+            }
+            
+            .blue-title {
+                color: $dark-blue;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .group {
+                flex: 0 0 33%;
+                max-width: 33%;
+                &.width-27 {
+                   flex: 0 0 27%;
+                   max-width: 27%; 
+                }
+                &.width-46 {
+                   flex: 0 0 46%;
+                   max-width: 46%;
+                }
+                margin-bottom: 21px;
+                .top-label {
+                    line-height: 10px;
+                    font-size: 10px;
+                    color: $dark-blue;
+                    opacity: 0.5;
+                    text-transform: uppercase;
+                    margin-bottom: 6px;
+                    font-weight: 600;
+                }
+                .values {
+                    line-height: 14px;
+                    font-size: 14px;
+                    color: $dark-blue;
+                    font-weight: 500;
+                    &.green-txt {
+                        color: $green;
+                    }
+                    &.red-txt {
+                        color: #91302e;
+                    }
+                }
+            }
+            .textareas {
+                width: 100%;
+                height: 88px;
+                margin-bottom: 50px;
+            }
+        }
+        .bottom-btns {
+            margin: 0;
+            padding: 20px 30px 23px;
+            border-top: 1px solid $border-gray;
+            &.center {
+                justify-content: center;
+                .green-link {
+                    margin-left: 0;
+                    margin-right: 25px;
+                    text-decoration: none;
+                }
+            }
+            .btn {
+                min-width: 89px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .modal-default {
+        &.cancel-appointment-modal {
+            .modal-mains {
+                width: 667px;
+                .title-area {
+                    margin-bottom: -7px;
+                }
+            }
+            .date-bar {
+                border: 0;
+                .lefts {
+                    .icon-calender {
+                        background-size: 20px 20px;
+                    }
+                }
+            }
+            .bottom-btns {
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                .btn-green {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-default {
+        &.cancel-appointment-modal {
+            .modal-mains {
+                margin: 17px auto;
+                width: 95%;
+            }
+        }
+    }
+}

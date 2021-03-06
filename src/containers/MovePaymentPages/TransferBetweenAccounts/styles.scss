@@ -1,0 +1,81 @@
+@import '../../../styles/_variables.scss';
+
+.content {
+  &.transfer-between-accounts-content {
+    padding-left: 108px;
+    padding-top: 100px;
+    background-color: $bg-gray;
+    .three-row {
+      flex: 1;
+      padding: 24px 28px;
+      min-height: 700px;
+      .two-row {
+        display: flex;
+        align-content: stretch;
+        .right-container {
+          flex: 0 0 305px;
+          max-width: 305px;
+          .flex-dialog {
+            margin: 0;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+  .content {
+    &.transfer-between-accounts-content {
+      .progress-stepper {
+        padding-bottom: 112px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+  .content {
+    &.transfer-between-accounts-content {
+      padding-top: 78px;
+      .three-row {
+        padding-top: 50px;
+        .mobile-tabs {
+          padding-left: 25px;
+        }
+        .two-row {
+          display: flex;
+          min-height: auto;
+          flex-direction: column;
+          .right-container {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-right: 0;
+            .flex-dialog {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .content {
+    &.transfer-between-accounts-content {
+      padding-left: 0;
+      padding-top: 63px;
+      .three-row {
+        padding: 0;
+        .nav-top {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

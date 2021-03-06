@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.recover-user-id-form {
+  .title-text {
+    width: 350px !important;
+  }
+  .user-id-wrapper {
+    position: relative;
+    span.copy {
+      cursor: pointer;
+      position: absolute;
+      font-weight: bold;
+      right: 16px;
+      top: 42px;
+      font-size: 14px;
+      color: $light-green-label;
+    }
+    .inputs {
+      border: none;
+      background-color: $gray-block;
+    }
+  }
+  .submit-row {
+    margin-top: 28px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

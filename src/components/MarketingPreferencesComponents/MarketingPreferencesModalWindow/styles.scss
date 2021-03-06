@@ -1,0 +1,179 @@
+@import '../../../styles/_variables.scss';
+
+.modal-default {
+  &.marketing-preferences-modal {
+    .modal-mains {
+      width: 592px;
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      .title-area {
+        margin-bottom: 20px;
+        .blue-title {
+          color: $font-black;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .btn-close {
+      @include btn-close;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 25px;
+      top: 25px;
+    }
+    .date-bar {
+      height: 69px;
+      border-radius: 4px;
+      background-color: $bg-gray;
+      border-top: 1px solid $border-gray;
+      margin: 0 -30px;
+      padding: 18px 30px;
+      .lefts {
+        display: flex;
+        align-items: center;
+        .left-icons {
+          flex: 0 0 24px;
+          max-width: 24px;
+        }
+        .icon-calender {
+          @include icon-weekly;
+          width: 24px;
+          height: 24px;
+        }
+        .txt-area {
+          margin-left: 18px;
+          .gray-txt {
+            opacity: 0.5;
+            color: $font-black;
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 10px;
+            margin-bottom: 5px;
+          }
+          .date-txt {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+    .marketing-preferences-form {
+      margin: 0 -45px;
+      .debit-card-list {
+        .row-line {
+          padding: 0 25px;
+          &:first-child {
+            border-top: 1px solid $border-gray;
+          }
+          &.open-expend {
+            margin-bottom: 180px;
+          }
+          .blue-txt {
+            font-weight: normal;
+          }
+        }
+      }
+      .other-marketing-setting-wrap {
+        &.setting-wrap {
+          .tip-panel {
+            .bottom-btns {
+              .green-link {
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-btns {
+      margin: 0 -30px;
+      padding: 24px 23px 10px 0;
+      justify-content: center !important;
+      .btn-green {
+        min-width: 211px;
+        margin-right: 12px;
+      }
+      .btn-green-link {
+        color: $green;
+        font-size: 16px;
+        font-weight: 700;
+        display: inline-block;
+        margin-left: 33px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+  .modal-default {
+    &.marketing-preferences-modal {
+      .modal-mains {
+        width: 667px;
+        .title-area {
+          margin-bottom: -7px;
+        }
+      }
+      .date-bar {
+        border: 0;
+        .lefts {
+          .icon-calender {
+            background-size: 20px 20px;
+          }
+        }
+      }
+      .marketing-preferences-form {
+        .other-marketing-setting-wrap {
+          &.setting-wrap {
+            .tip-panel {
+              .bottom-btns {
+                padding-right: 0;
+                flex-wrap: nowrap;
+                flex-direction: initial;
+                align-items: baseline;
+              }
+            }
+          }
+        }
+      }
+      .bottom-btns {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center !important;
+        .btn-green {
+          margin-bottom: 15px;
+          min-width: 300px;
+        }
+        .btn-green-link {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .modal-default {
+    &.marketing-preferences-modal {
+      .modal-mains {
+        margin: 17px auto;
+        position: absolute;
+        bottom: 0;
+        top: auto;
+        margin-bottom: 0;
+        width: 100%;
+        border-radius: 6px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+}

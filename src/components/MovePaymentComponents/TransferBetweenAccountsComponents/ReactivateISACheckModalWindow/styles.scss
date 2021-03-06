@@ -1,0 +1,112 @@
+@import '../../../../styles/_variables.scss';
+
+.modal-default {
+    &.reactivate-isa-check-modal {
+        .modal-mains {
+            width: 591px;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 0;
+            .title-area {
+                margin-bottom: 0;
+                padding: 24px 28px;
+                .blue-title {
+                    color: $font-black;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+            .modal-info {
+                background-color: $bg-gray;
+                border-top: 0;
+                .info-reactivate {
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid $border-gray;
+                    max-height: 241px;
+                    overflow-y: auto;
+                    .p-txt {
+                        color: $font-black;
+                        line-height: 24px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        padding: 0 31px;
+                        &.pb15 {
+                            padding-bottom: 15px;
+                        }
+                    }
+                }
+                .row-line {
+                    padding: 19px 31px 0;
+                    .checkbox-wrap {
+                        input[type="checkbox"] + label {
+                            font-weight: 600;
+                            .green-link {
+                                color: $light-green-label;
+                                text-decoration: none;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-close {
+            @include btn-close;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+        .modal-info {
+            padding: 19px 0;
+            border-top: 1px solid $border-gray;
+        }
+        .row-line {
+            padding: 0 25px;
+        }
+        .bottom-btns {
+            margin: 0 26px;
+            padding: 25px 30px 23px;
+            justify-content: center;
+            .btn {
+                min-width: 152px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .modal-default {
+        &.reactivate-isa-check-modal {
+            .modal-mains {
+                width: 667px;
+                .title-area {
+                    margin-bottom: -7px;
+                }
+            }
+            .bottom-btns {
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                .btn-green {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-default {
+        &.reactivate-isa-check-modal {
+            .modal-mains {
+                margin: 17px auto;
+                width: 95%;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import '../../../styles/_variables.scss';
+
+// .center-blue-bar
+.center-blue-bar {
+  margin: 15px 30px 0;
+  background: $font-black;
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 5px;
+  padding: 22px 34px;
+  .lefts {
+    display: flex;
+    align-items: center;
+    .icon-account {
+      @include icon-white-account;
+      width: 31px;
+      height: 31px;
+      flex: 0 0 31px;
+      max-width: 31px;
+    }
+    .right-txt {
+      margin-left: 22px;
+      .white-title {
+        color: $white;
+        line-height: 35px;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .thin-txt {
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+  .rights {
+    .btn-green {
+      margin-left: 14px;
+      height: 38px;
+      line-height: 38px;
+      font-size: 13px;
+      min-width: 141px;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1181px width */
+@media (max-width: $bigger-desktop-width) {
+  // .center-blue-bar
+  .center-blue-bar {
+    .rights {
+      .btn-green {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

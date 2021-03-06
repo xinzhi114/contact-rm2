@@ -1,0 +1,95 @@
+@import '../../styles/_variables.scss';
+
+.modal-panel {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3800;
+    .main-panel {
+        width: fit-content;
+        right: 0;
+        top: 50%;
+        margin-top: -246px;
+        position: fixed;
+        height: fit-content;
+        padding-bottom: 25px;
+        left: 50%;
+        margin-left: -455px;
+        .top-panel {
+            height: 40px;
+            padding: 0 15px;
+            background-color: $border-gray;
+            border-radius: 4px 4px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left-txt {
+                color: $font-black;
+                font-size: 12px;
+                font-weight: 700;
+            }
+            .icon-close {
+                @include icon-closegreen;
+                width: 12px;
+                height: 12px;
+            }
+            &+div{
+                height: 532px;
+                width: 910px;
+            }
+        }
+    }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $normal-desktop-width) {
+    .modal-panel {
+        .main-panel {
+            width: 750px;
+            margin-left: -375px;
+            .top-panel {
+                &+div{
+                    height: 498px;
+                    width: 750px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $min-desktop-width) {
+    .modal-panel {
+        .main-panel {
+            width: 680px;
+            margin-left: -340px;
+            .top-panel {
+                &+div{
+                    height: 383px;
+                    width: 680px;
+                }
+            }
+        }
+    }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-panel {
+        display: flex;
+        justify-content: center;
+        .main-panel {
+            margin-left: -171px;
+            margin-top: -250px;
+            width: 343px;
+            border-radius: 20px;
+            .top-panel {
+                &+div{
+                    height: 473px;
+                    width: 343px;
+                }
+            }
+        }
+    }
+}

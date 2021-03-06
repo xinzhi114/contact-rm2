@@ -1,0 +1,402 @@
+{
+  "dataList": {
+    "relationshipManager": {
+      "photoUrl": "/assets/photo-home.jpg",
+      "stars": 4,
+      "name": "Mark Thompson",
+      "role": "Relationship Manager",
+      "state": "Busy",
+      "email": "support@odyssey.com",
+      "phoneNumber": "+22 (0) 20 3375 6422",
+      "yourNextAppointment": {
+        "timeFull": "Thursday, 11 February 2021",
+        "timeRange": "15:15 to 15:45",
+        "subject": "Other services",
+        "iconUrl": "/assets/online@2x.png",
+        "topLabel": "At Customer Location",
+        "bottomLabel": "<strong>PO16 7GZ, Fareham, UK</strong>"
+      }
+    },
+    "contactBank": {
+      "secureEmail": {
+        "totalNumber": 38,
+        "categoryList": [
+          {
+            "categoryName": "Inbox",
+            "categoryTotalNumber": 15,
+            "unreadNumber": 10,
+            "unread": [
+              {
+                "groupTitle": "",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022510",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+                    "isRm": true
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022511",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022512",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              },
+              {
+                "groupTitle": "05 October 2020",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022513",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022514",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022515",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              },
+              {
+                "groupTitle": "01 October 2020",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022516",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022517",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022518",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022519",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              }
+            ],
+            "readNumber": 5,
+            "read": [
+              {
+                "groupTitle": "",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.cn",
+                    "sn": "MG04022520",
+                    "time": "02 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022521",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022522",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              },
+              {
+                "groupTitle": "05 October 2020",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022523",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022524",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "categoryName": "Sent",
+            "categoryTotalNumber": 8,
+            "unreadNumber": 6,
+            "unread": [
+              {
+                "groupTitle": "",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum Sent",
+                    "replyEmail": "no_reply@odyssey.cn",
+                    "sn": "MG04022525",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipi",
+                    "isRm": true
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022526",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              },
+              {
+                "groupTitle": "03 October 2020",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022527",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022528",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              },
+              {
+                "groupTitle": "02 October 2020",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022529",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022530",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              }
+            ],
+            "readNumber": 2,
+            "read": [
+              {
+                "groupTitle": "",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022531",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              },
+              {
+                "groupTitle": "08 October 2020",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022532",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "categoryName": "Trash",
+            "categoryTotalNumber": 15,
+            "unreadNumber": 10,
+            "unread": [
+              {
+                "groupTitle": "",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022533",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris",
+                    "isRm": true
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022534",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022535",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              },
+              {
+                "groupTitle": "05 October 2020",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022536",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022537",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022538",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              },
+              {
+                "groupTitle": "01 October 2020",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022539",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022540",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022541",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022542",
+                    "time": "01 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              }
+            ],
+            "readNumber": 5,
+            "read": [
+              {
+                "groupTitle": "",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022543",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022544",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022545",
+                    "time": "06 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              },
+              {
+                "groupTitle": "05 October 2020",
+                "emailList": [
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022546",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  },
+                  {
+                    "title": "Lorem Ipsum",
+                    "replyEmail": "no_reply@odyssey.com",
+                    "sn": "MG04022547",
+                    "time": "05 Oct 2020, 03:00 PM",
+                    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

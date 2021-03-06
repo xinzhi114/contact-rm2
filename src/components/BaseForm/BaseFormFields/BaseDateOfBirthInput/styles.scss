@@ -1,0 +1,12 @@
+@import '../../../../styles/variables';
+
+.base-date-of-birth-input {
+  display: flex;
+  .separator {
+    margin: 0 10px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    color: $light-gray;
+  }
+}

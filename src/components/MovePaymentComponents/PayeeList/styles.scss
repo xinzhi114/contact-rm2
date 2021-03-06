@@ -1,0 +1,241 @@
+@import '../../../styles/variables';
+
+.payee-list-wrapper {
+  position: relative;
+  overflow-y: auto;
+  flex-grow: 1;
+  .payee-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .payee-item {
+      display: flex;
+      width: 100%;
+      padding: 16px;
+      align-items: center;
+      border-top: 1px solid #c9c5c1;
+      &.last {
+        border-bottom: 1px solid #c9c5c1;
+      }
+      &:hover {
+        background-color: $bg-gray;
+      }
+      &.desktop-show {
+        display: flex;
+      }
+      &.desktop-hide {
+        display: none;
+      }
+      > div {
+        width: 20%;
+      }
+      .avatar {
+        flex-grow: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #71b2c9;
+        border-radius: 50%;
+        color: $white;
+        font-weight: bold;
+        height: 36px;
+        width: 36px;
+        min-width: 36px;
+        min-height: 36px;
+        font-size: 16px;
+        margin-right: 22px;
+      }
+      .name {
+        width: 30%;
+        font-weight: bold;
+        color: $font-black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .payee-col {
+        display: flex;
+        flex-direction: column;
+        color: $font-black;
+        font-weight: 500;
+        padding: 0 20px;
+        min-width: 10%;
+        .label {
+          font-size: 10px;
+          line-height: 10px;
+          opacity: 0.7;
+          text-transform: uppercase;
+          margin-bottom: 2px;
+          white-space: nowrap;
+        }
+        .value {
+          font-size: 12px;
+          line-height: 14px;
+          white-space: nowrap;
+        }
+        &.payee-reference {
+          min-width: 17%;
+        }
+        &.account-number {
+          min-width: 17%;
+        }
+        &.sort-code {
+          width: 15%;
+        }
+      }
+      .actions {
+        display: flex;
+        justify-content: flex-end;
+        img {
+          cursor: pointer;
+          &.update {
+            margin-right: 36px;
+          }
+          &.delete {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .payee-list-wrapper {
+    .payee-list {
+      .payee-item {
+        &.tablet-show {
+          display: flex;
+        }
+        &.tablet-hide {
+          display: none;
+        }
+        .actions {
+          font-weight: bold;
+        }
+      }
+      &:not(.grid-view) {
+        .payee-item {
+          border: none;
+          padding: 20px;
+          padding-right: 8px;
+          height: 80px;
+          > div:not(.avatar) {
+            width: unset;
+            height: 100%;
+            &.left-info {
+              .name {
+                overflow: unset;
+              }
+              .payee-reference,
+              .account-number {
+                opacity: 50%;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                color: $font-black;
+              }
+              .account-number {
+                opacity: 1;
+                line-height: 20px;
+              }
+            }
+            &.right-info {
+              width: 33%;
+              flex-grow: 1;
+              font-weight: 500;
+              font-size: 14px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              color: $font-black;
+            }
+            &.actions {
+              cursor: pointer;
+              width: 12px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-end;
+              span {
+                height: 6px;
+                line-height: 1px;
+              }
+            }
+          }
+        }
+      }
+      &.grid-view {
+        flex-direction: row;
+        flex-wrap: wrap;
+        .payee-item {
+          position: relative;
+          width: calc(50% - 16px);
+          flex-direction: column;
+          border: 1px solid #c9c5c1;
+          border-radius: 10px;
+          margin: 8px;
+          padding: 20px;
+          > div {
+            width: unset;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &:not(.avatar) {
+              color: $font-black;
+            }
+            &.avatar {
+              height: 72px;
+              width: 72px;
+              min-height: 72px;
+              min-width: 72px;
+              font-size: 37px;
+              margin-right: 0;
+              margin-bottom: 15px;
+            }
+            &.name {
+              overflow: unset;
+              width: unset;
+            }
+            &.account-number,
+            &.payee-reference,
+            &.bic,
+            &.iban {
+              font-size: 10px;
+            }
+            &.payee-reference,
+            &.bic,
+            &.iban {
+              opacity: 50%;
+            }
+            &.account-number {
+              font-weight: 500;
+            }
+            &.payee-reference {
+              font-weight: 500;
+              margin-top: 5px;
+            }
+            &.bic {
+              margin-top: 5px;
+            }
+            &.actions {
+              cursor: pointer;
+              position: absolute;
+              top: 10px;
+              right: 5px;
+              width: 30px;
+              flex-direction: row;
+              font-size: 26px;
+              span {
+                height: 14px;
+                line-height: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

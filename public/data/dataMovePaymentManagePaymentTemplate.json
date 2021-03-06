@@ -1,0 +1,400 @@
+{
+  "dataList": {
+    "selectAccountData": [
+      {
+        "title": "Current Account",
+        "subTitle": "9846 - 4754 - 7584"
+      },
+      {
+        "title": "Saving Account",
+        "subTitle": "9846 - 4754 - 7585"
+      },
+      {
+        "title": "Other Account",
+        "subTitle": "9846 - 4754 - 7586"
+      }
+    ],
+    "helpAndSupportData": [
+      {
+        "title": "How to manage payment template?",
+        "description": "The former is for transactions within the same bank - moving money from checking to savings, for example. Acme information context-sensitive help here."
+      },
+      {
+        "title": "How do I  change payment template name?",
+        "description": "The former is for transactions within the same bank."
+      },
+      {
+        "title": "How to setup payment template from current account?",
+        "description": "The former is for transactions within the same bank - moving money from checking to savings, for example. Acme information context-sensitive help here."
+      },
+      {
+        "title": "What if payment template is lorem dolore?",
+        "description": "The former is for transactions within the same bank - moving money from checking to savings, for example. Acme information context-sensitive help here."
+      }
+    ],
+    "fromAccountList": [
+      {
+        "label": "Current account",
+        "number": "9846 - 4754 - 7584",
+        "value": "Current account",
+        "availableBalance": "120.650.00"
+      },
+      {
+        "label": "Saving account",
+        "number": "9846 - 4754 - 7585",
+        "value": "Saving account",
+        "availableBalance": "220.650.00"
+      },
+      {
+        "label": "Other account",
+        "number": "9846 - 4754 - 7586",
+        "value": "Other account",
+        "availableBalance": "320.650.00"
+      }
+    ],
+    "tableData": [
+      {
+        "id": "08962426",
+        "debitAccountId": "9846 - 4754 - 7584",
+        "debitAccountAvailableBalance": "120.650.00",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "account_name",
+            "fieldValue": "Current account",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "template_name",
+            "fieldValue": "Acme Template 1",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020, 12:04 am",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "number_of_payments",
+            "fieldValue": "12",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-edit-delete",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962427",
+        "debitAccountId": "9846 - 4754 - 7585",
+        "debitAccountAvailableBalance": "220.650.00",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "account_name",
+            "fieldValue": "Saving account",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "template_name",
+            "fieldValue": "Acme Template 2",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "26 Oct 2020, 12:04 am",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "number_of_payments",
+            "fieldValue": "12",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-edit-delete",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "debitAccountId": "9846 - 4754 - 7586",
+        "debitAccountAvailableBalance": "320.650.00",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "account_name",
+            "fieldValue": "Other account",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "template_name",
+            "fieldValue": "Acme Template 3",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020, 12:04 am",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "number_of_payments",
+            "fieldValue": "12",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-edit-delete",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "debitAccountId": "9846 - 4754 - 7584",
+        "debitAccountAvailableBalance": "120.650.00",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "account_name",
+            "fieldValue": "Current account",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "template_name",
+            "fieldValue": "Acme Template 4",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020, 12:04 am",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "number_of_payments",
+            "fieldValue": "12",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-edit-delete",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "debitAccountId": "9846 - 4754 - 7584",
+        "debitAccountAvailableBalance": "120.650.00",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "account_name",
+            "fieldValue": "Current account",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "template_name",
+            "fieldValue": "Acme Template 5",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020, 12:04 am",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "number_of_payments",
+            "fieldValue": "12",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-edit-delete",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "debitAccountId": "9846 - 4754 - 7584",
+        "debitAccountAvailableBalance": "120.650.00",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "account_name",
+            "fieldValue": "Current account",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "template_name",
+            "fieldValue": "Acme Template 6",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020, 12:04 am",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "number_of_payments",
+            "fieldValue": "12",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-edit-delete",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "debitAccountId": "9846 - 4754 - 7584",
+        "debitAccountAvailableBalance": "120.650.00",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "account_name",
+            "fieldValue": "Current account",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "template_name",
+            "fieldValue": "Acme Template 7",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020, 12:04 am",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "number_of_payments",
+            "fieldValue": "12",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-edit-delete",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "debitAccountId": "9846 - 4754 - 7584",
+        "debitAccountAvailableBalance": "120.650.00",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "account_name",
+            "fieldValue": "Current account",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "template_name",
+            "fieldValue": "Acme Template 8",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020, 12:04 am",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "number_of_payments",
+            "fieldValue": "12",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-edit-delete",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "debitAccountId": "9846 - 4754 - 7584",
+        "debitAccountAvailableBalance": "120.650.00",
+        "fieldList": [
+          {
+            "fieldType": "label",
+            "fieldName": "account_name",
+            "fieldValue": "Current account",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "template_name",
+            "fieldValue": "Acme Template 8",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Oct 2020, 12:04 am",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "number_of_payments",
+            "fieldValue": "12",
+            "queryHide": true
+          },
+          {
+            "fieldType": "action-edit-delete",
+            "fieldName": "action",
+            "fieldValue": "",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      }
+    ]
+  }
+}

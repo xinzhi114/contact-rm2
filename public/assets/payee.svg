@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.048" height="20" viewBox="0 0 19.048 20">
+    <g id="community" transform="translate(13895.239 4372.381)">
+        <path id="Rectangle_327" data-name="Rectangle 327"
+            d="M1.9,0H6.667a1.9,1.9,0,0,1,1.9,1.9V9.524H1.9A1.9,1.9,0,0,1,0,7.619V1.9A1.9,1.9,0,0,1,1.9,0Z"
+            transform="translate(-13894.286 -4362.857)" fill="none" stroke="#003d4c" stroke-width="1.905" />
+        <path id="Rectangle_328" data-name="Rectangle 328"
+            d="M0,0H2.857A5.714,5.714,0,0,1,8.571,5.714h0a1.9,1.9,0,0,1-1.9,1.9H0Z"
+            transform="translate(-13885.714 -4360.952)" fill="none" stroke="#003d4c" stroke-width="1.905" />
+        <circle id="Ellipse_24" data-name="Ellipse 24" cx="2.381" cy="2.381" r="2.381"
+            transform="translate(-13892.381 -4371.429)" fill="none" stroke="#003d4c" stroke-width="1.905" />
+        <circle id="Ellipse_25" data-name="Ellipse 25" cx="2.381" cy="2.381" r="2.381"
+            transform="translate(-13884.286 -4368.571)" fill="none" stroke="#003d4c" stroke-width="1.905" />
+    </g>
+</svg>

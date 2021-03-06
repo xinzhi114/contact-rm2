@@ -1,0 +1,40 @@
+@import '../../styles/_variables.scss';
+
+.content {
+  &.manage-alerts-content {
+    padding-left: 267px;
+    padding-top: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &.main {
+      background-color: #155161;
+    }
+    .mobile-contact.payment-home-contact {
+      position: relative;
+      border-radius: 0;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+  .content {
+    &.manage-alerts-content {
+      padding-top: 100px;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .content {
+    &.manage-alerts-content {
+      padding-left: 0;
+      padding-top: 58px;
+      .mobile-contact.payment-home-contact {
+        padding-top: 20px;
+      }
+    }
+  }
+}

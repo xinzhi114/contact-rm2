@@ -1,0 +1,14 @@
+@import '../../../../../../styles/variables';
+
+.account-card {
+  color: $font-black;
+  font-size: 20px;
+  line-height: 24px;
+  .top-row {
+    margin-bottom: 8px;
+    display: flex;
+    img {
+      margin-right: 8px;
+    }
+  }
+}

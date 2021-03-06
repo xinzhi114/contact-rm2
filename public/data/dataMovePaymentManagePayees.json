@@ -1,0 +1,160 @@
+{
+  "dataList": {
+    "ukPayees": [
+      {
+        "name": "Alex Smith",
+        "userNameColor": "#71b2c9",
+        "userNameLabelColor": "#333",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Bills allocation (NOV 2020)",
+        "iban": "8940328493"
+      },
+      {
+        "name": "John Smith",
+        "userNameColor": "#006a8e",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Bills allocation (NOV 2020)",
+        "iban": "8940328493"
+      },
+      {
+        "name": "Sarah Smith",
+        "userNameColor": "#8a2a2b",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Business Bills (SEP-20)",
+        "iban": "8940328493"
+      },
+      {
+        "name": "Jim Smithson",
+        "userNameColor": "#a83d72",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Business Bills (SEP-20)",
+        "iban": "8940328493"
+      },
+      {
+        "name": "Robert Smith",
+        "userNameColor": "#d45d00",
+        "userNameLabelColor": "#181818",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Business Bills (SEP-20)",
+        "iban": "8940328493"
+      },
+      {
+        "name": "Alex Smith",
+        "userNameColor": "#71b2c9",
+        "userNameLabelColor": "#333",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Bills allocation (NOV 2020)",
+        "iban": "8940328493"
+      },
+      {
+        "name": "John Smith",
+        "userNameColor": "#006a8e",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Bills allocation (NOV 2020)",
+        "iban": "8940328493"
+      },
+      {
+        "name": "Jim Smithson",
+        "userNameColor": "#a83d72",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Bills allocation (NOV 2020)",
+        "iban": "8940328493"
+      }
+    ],
+    "nonUkPayees": [
+      {
+        "name": "Alexander Doe",
+        "userNameColor": "#71b2c9",
+        "userNameLabelColor": "#333",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Business Bills (SEP-20)",
+        "bic": "CTNTGBAV",
+        "iban": "55687748"
+      },
+      {
+        "name": "John Smith",
+        "userNameColor": "#006a8e",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Business Bills (SEP-20)",
+        "bic": "CTNTGBAV",
+        "iban": "55687748"
+      },
+      {
+        "name": "Sarah Smith",
+        "userNameColor": "#8a2a2b",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Business Bills (SEP-20)",
+        "bic": "CTNTGBAV",
+        "iban": "55687748"
+      },
+      {
+        "name": "Jim Smithson",
+        "userNameColor": "#a83d72",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Business Bills (SEP-20)",
+        "bic": "CTNTGBAV",
+        "iban": "55687748"
+      },
+      {
+        "name": "Robert Smith",
+        "userNameColor": "#d45d00",
+        "userNameLabelColor": "#181818",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Business Bills (SEP-20)",
+        "bic": "CTNTGBAV",
+        "iban": "55687748"
+      },
+      {
+        "name": "Alex Smith",
+        "userNameColor": "#71b2c9",
+        "userNameLabelColor": "#333",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Business Bills (SEP-20)",
+        "bic": "CTNTGBAV",
+        "iban": "55687748"
+      },
+      {
+        "name": "John Smith",
+        "userNameColor": "#a83d72",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Bills allocation (NOV 2020)",
+        "bic": "CTNTGBAV",
+        "iban": "55687748"
+      },
+      {
+        "name": "Jim Smithson",
+        "userNameColor": "#a83d72",
+        "userNameLabelColor": "#fff",
+        "accountNumber": "11223344",
+        "sortCode": "00-00-00",
+        "reference": "Bills allocation (NOV 2020)",
+        "bic": "CTNTGBAV",
+        "iban": "55687748"
+      }
+    ]
+  }
+}

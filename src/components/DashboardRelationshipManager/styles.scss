@@ -1,0 +1,231 @@
+@import '../../styles/_variables.scss';
+
+// .contact-boxs
+.home-contact {
+    flex: 0 0 360px;
+    background-color: $white;
+    box-shadow: 0 5px 12px #dde1e6;
+    padding: 14px 20px;
+    border-radius: 5px;
+    max-width: 360px;
+    .icons-arrow {
+        @include lazzada-online;
+    }
+    .user-module {
+        display: flex;
+        .left-img {
+            flex: 0 0 100px;
+            max-width: 100px;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            position: relative;
+            margin-right: 16px;
+            .state-point {
+                width: 17px;
+                height: 17px;
+                border: 2px solid $white;
+                position: absolute;
+                top: 6px;
+                right: 6px;
+                border-radius: 100%;
+                &.green {
+                    background-color: #00d1b6;//#1ec600
+                }
+                &.red {
+                    @include icon-red-point;
+                    border: 0;
+                }
+                &.gray {
+                    background-color: #979797;
+                }
+            }
+            
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 100%;
+            }
+        }
+        .rights {
+            .names {
+                color: $dark-black;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+            .role-txt {
+                color: $dark-black;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                margin: 4px 0 0;
+            }
+            .state-txt {
+                color: $light-gray;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                margin: 4px 0 0;
+            }
+            .start-list {
+                li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 4px;
+                    .icon-star-green {
+                        @include icon-star-green;
+                        display: inline-block;
+                        width: 14px;
+                        height: 13px;
+                    }
+                    .icon-star-gray {
+                        @include icon-star-gray;
+                        display: inline-block;
+                        width: 14px;
+                        height: 13px;
+                    }
+                }
+            }
+        }
+    }
+    .four-icons {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        .items {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-top: 10px;
+        }
+        .icons {
+            padding-left: 31px;
+            color: $dark-black;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17px;
+            &.icon-voice {
+                @include icon-vioce-call;
+            }
+            &.icon-video {
+                @include icon-video-call;
+            }
+            &.icon-email {
+                @include email;
+            }
+            &.icon-appoinment {
+                @include little-calender;
+            }
+        }
+    }
+    .btn-contact-rm {
+        width: 100%;
+        &.margin-bottom-20 {
+          margin-bottom: 20px;
+        }
+    }
+    .next-appointment-box {
+        margin-top: 20px;
+        border-top: 1px solid $top-line-gray;
+        .top-title {
+            padding: 20px 0;
+            color: $dark-blue;
+            font-size: 14px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 22px;
+        }
+        .gray-block {
+            border-radius: 6px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            .title-date {
+                color: #003d4c;
+                font-family: $gotham-rounded;
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .two-items {
+                .items {
+                    flex: 1;
+                    .label-txt {
+                        opacity: 0.5;
+                        color: #003d4c;
+                        font-size: 10px;
+                        font-weight: 600;
+                        line-height: 10px;
+                        margin-bottom: 4px;
+                    }
+                    .values {
+                        color: #003d4c;
+                        font-family: $gotham-rounded;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 18px;
+                    }
+                }
+            }
+            .bottom-area {
+                margin-top: 20px;
+                border-top: 1px solid #dedede;
+                padding: 18px 0 0;
+                align-items: flex-start;
+                .icon-location {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 9px;
+                }
+                .right-txt {
+                    .label-txt {
+                        opacity: 0.5;
+                        color: #003d4c;
+                        font-size: 10px;
+                        font-weight: 600;
+                        line-height: 10px;
+                    }
+                    .value-txt {
+                        font-family: $gotham-rounded;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        margin-top: 3px;
+                        color: #003d4c;
+                        strong {
+                          font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+    .home-contact {
+        max-width: none;
+    }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $min-desktop-width) {
+    .home-contact {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .home-contact {
+        position: relative;
+        background-color: $white;
+        .btn-arrow {
+            @include btn-arrow;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+    }
+}

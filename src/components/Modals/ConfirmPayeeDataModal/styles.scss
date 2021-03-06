@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.base-modal.confirm-payee-data-modal {
+  .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-content {
+      width: 35vw;
+      min-width: 550px;
+      height: 50%;
+      min-height: 500px;
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "dataList": {
+    "cardDetails": [
+      {
+        "bankName": "Odyssey Bank",
+        "cardType": "PLATINUM DEBIT CARD",
+        "fieldList": [
+          {
+            "label": "card_number",
+            "value": "XXXX - XXXX - XXXX - 3367"
+          },
+          {
+            "label": "card_type",
+            "value": "Visa"
+          },
+          {
+            "label": "expiry",
+            "value": "DEC 2019"
+          },
+          {
+            "label": "status",
+            "value": "active"
+          },
+          {
+            "label": "account_linked",
+            "value": "4094 4545 3121 02"
+          }
+        ],
+        "manageDebitCard": [
+          {
+            "type": "revealPINCVV",
+            "iconUrl": "/assets/reveal@2x.png",
+            "title": "Show card details",
+            "description": "",
+            "rightGrayText": "PIN 787895 / CVV 022",
+            "actived": false
+          }
+        ]
+      },
+      {
+        "bankName": "Odyssey Bank",
+        "cardType": "PLATINUM DEBIT CARD",
+        "fieldList": [
+          {
+            "label": "card_number",
+            "value": "XXXX - XXXX - XXXX - 3367"
+          },
+          {
+            "label": "card_type",
+            "value": "Visa"
+          },
+          {
+            "label": "expiry",
+            "value": "DEC 2019"
+          },
+          {
+            "label": "status",
+            "value": "active"
+          },
+          {
+            "label": "account_linked",
+            "value": "4094 4545 3121 02"
+          }
+        ],
+        "manageDebitCard": [
+          {
+            "type": "revealPINCVV",
+            "iconUrl": "/assets/reveal@2x.png",
+            "title": "Show card details",
+            "description": "",
+            "rightGrayText": "PIN 787895 / CVV 022",
+            "actived": false
+          },
+          {
+            "type": "pinNumber",
+            "iconUrl": "/assets/icon-lock-blue@2x.png",
+            "title": "PIN Number",
+            "description": "",
+            "rightGrayText": "",
+            "actived": true
+          }
+        ]
+      },
+      {
+        "bankName": "Odyssey Bank",
+        "cardType": "PLATINUM DEBIT CARD",
+        "fieldList": [
+          {
+            "label": "card_number",
+            "value": "XXXX - XXXX - XXXX - 3362"
+          },
+          {
+            "label": "card_type",
+            "value": "Master"
+          },
+          {
+            "label": "expiry",
+            "value": "DEC 2018"
+          },
+          {
+            "label": "status",
+            "value": "inactive"
+          },
+          {
+            "label": "account_linked",
+            "value": "4094 4545 3121 01"
+          }
+        ],
+        "manageDebitCard": [
+          {
+            "type": "activateDebitCard",
+            "iconUrl": "/assets/icon-activate.svg",
+            "title": "Activate debit card",
+            "description": "",
+            "rightGrayText": "Request submitted",
+            "actived": false
+          }
+        ]
+      },
+      {
+        "bankName": "Odyssey Bank",
+        "cardType": "PLATINUM DEBIT CARD",
+        "fieldList": [
+          {
+            "label": "card_number",
+            "value": "XXXX - XXXX - XXXX - 3369"
+          },
+          {
+            "label": "card_type",
+            "value": "Visa"
+          },
+          {
+            "label": "expiry",
+            "value": "DEC 2019"
+          },
+          {
+            "label": "status",
+            "value": "closed"
+          },
+          {
+            "label": "account_linked",
+            "value": "4094 4545 3121 01"
+          }
+        ],
+        "manageDebitCard": [
+          {
+            "type": "lockDebitCard",
+            "iconUrl": "/assets/icon-lock-blue@2x.png",
+            "title": "Lock debit card",
+            "description": "Locked on 14 October 2020, 10:00 AM",
+            "rightGrayText": "",
+            "actived": false
+          },
+          {
+            "type": "blockDebitCard",
+            "iconUrl": "/assets/icon-block-debit@2x.png",
+            "title": "Block debit card",
+            "description": "Blocked on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": true
+          },
+          {
+            "type": "revealPINCVV",
+            "iconUrl": "/assets/reveal@2x.png",
+            "title": "Show card details",
+            "description": "",
+            "rightGrayText": "PIN 787895 / CVV 022",
+            "actived": false
+          },
+          {
+            "type": "channelCanBeUsed",
+            "iconUrl": "/assets/channel@2x.png",
+            "title": "Channel can be used",
+            "description": "ATM",
+            "rightGrayText": "",
+            "actived": true
+          }
+        ]
+      },
+      {
+        "bankName": "Odyssey Bank",
+        "cardType": "PLATINUM DEBIT CARD",
+        "fieldList": [
+          {
+            "label": "card_number",
+            "value": "XXXX - XXXX - XXXX - 3360"
+          },
+          {
+            "label": "card_type",
+            "value": "Visa"
+          },
+          {
+            "label": "expiry",
+            "value": "DEC 2019"
+          },
+          {
+            "label": "status",
+            "value": "active"
+          },
+          {
+            "label": "account_linked",
+            "value": "4094 4545 3121 01"
+          }
+        ],
+        "manageDebitCard": [
+          {
+            "type": "lockDebitCard",
+            "iconUrl": "/assets/icon-lock-blue@2x.png",
+            "title": "Lock debit card",
+            "description": "Locked on 14 October 2020, 10:00 AM",
+            "rightGrayText": "",
+            "actived": true
+          },
+          {
+            "type": "blockDebitCard",
+            "iconUrl": "/assets/icon-block-debit@2x.png",
+            "title": "Block debit card",
+            "description": "Blocked on 15 October 2020, 09:03 AM",
+            "rightGrayText": "",
+            "actived": true
+          },
+          {
+            "type": "revealPINCVV",
+            "iconUrl": "/assets/reveal@2x.png",
+            "title": "Show card details",
+            "description": "",
+            "rightGrayText": "PIN 787895 / CVV 022",
+            "actived": false
+          },
+          {
+            "type": "channelCanBeUsed",
+            "iconUrl": "/assets/channel@2x.png",
+            "title": "Channel can be used",
+            "description": "ATM",
+            "rightGrayText": "",
+            "actived": true
+          }
+        ]
+      }
+    ]
+  }
+}

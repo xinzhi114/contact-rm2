@@ -1,0 +1,200 @@
+@import '../../../styles/_variables.scss';
+
+.finance-manager {
+    .icon-question {
+      @include question-bold;
+      width: 14px;
+      height: 14px;
+      margin-left: 5px;
+    }
+    .white-panel {
+      box-shadow: none!important;
+    }
+    .finance-list {
+        .items {
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left-area {
+                display: flex;
+                align-items: flex-start;
+                .left-img {
+                  width: 35px;
+                  height: 35px;
+                  margin-right: 14px;
+                  position: relative;
+                  flex: 0 0 35px;
+                  max-width: 35px;
+                  .center-txt {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: -9px;
+                    margin-top: -9px;
+                    text-align: center;
+                    .num {
+                      font-size: 14px;
+                      font-weight: 700;
+                      line-height: 15px;
+                    }
+                    .oc-txt {
+                      font-size: 10px;
+                      line-height: 10px;
+                    }
+                  }
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+                .info-txt {
+                  .top-txt {
+                    color: $font-black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 4px;
+                  }
+                  .txt {
+                    opacity: 0.8;
+                    color: $font-black;
+                    font-size: 12px;
+                    font-weight: 400;
+                  }
+                }
+            }
+            .right-area {
+                text-align: right;
+                .price {
+                  color: $font-black;
+                  font-size: 14px;
+                  font-weight: 700;
+                }
+                .gray-txt {
+                  opacity: 0.8;
+                  color: $font-black;
+                  font-size: 12px;
+                  font-weight: 400;
+                }
+            }
+        }
+        .bottom-link {
+            display: block;
+            text-align: center;
+        }
+    }
+    .two-tab {
+      display: flex;
+      width: 108px;
+      height: 32px;
+      border: 1px solid #d5d5d5;
+      border-radius: 20px;
+      &.three-icons {
+        .icons {
+          flex: 0 0 33.33333333%;
+          max-width: 33.33333333%;
+        }
+      }
+      .icons {
+        flex: 0 0 50%;
+        max-width: 50%;
+        height: 32px;
+        margin-top: -1px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        &.btn-list {
+          @include btn-list;
+          &.current {
+            background-color: $green;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+        }
+        &.btn-finance {
+          @include btn-finance;
+          &.current {
+            background-color: $green;
+            border-radius: 0;
+          }
+        }
+        &.btn-calender {
+          @include small-calender;
+          &.current {
+            background-color: $green;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+    }
+    .bottom-bar {
+		padding: 0 30px;
+		height: 62px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: $gray-block;
+		display: flex;
+		align-items: center;
+		border-radius: 0 0 6px 6px;
+		.two-points {
+			.items {
+				margin-right: 16px;
+				display: flex;
+				align-items: center;
+				.points {
+					width: 17px;
+					height: 17px;
+					border-radius: 100%;
+					overflow: hidden;
+					margin-right: 10px;
+					flex: 0 0 17px;
+					max-width: 17px;
+					&.green {
+						background-color: $dark-green;
+					}
+					&.blue {
+						background-color: #04779F;
+					}
+				}
+				.txt {
+					opacity: 1;
+					color: $dark-black;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: $max-mobile-width) {
+    
+    .finance-manager {
+        &.white-panel {
+            &.open  {
+                .finance-list {
+                    display: block;
+                }
+            }
+            .finance-list {
+                display: none;
+            }
+        }
+    }
+    .title-bar {
+        .rights {
+            display: flex;
+            align-items: center;
+            .btn-arrow {
+                @include btn-arrow-big;
+                width: 15px;
+                height: 15px;
+                margin-left: 15px;
+            }
+        }
+    }
+}

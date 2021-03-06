@@ -1,0 +1,15 @@
+@import '../../../styles/variables';
+
+.logout-button {
+  &:not(.mobile-hide) {
+    @include blue-logout-white;
+    padding-left: 54px;
+    font-size: 16px;
+    color: $white;
+    min-height: auto;
+  }
+  .mobile-hide {
+    @include icon-blue-logout;
+  }
+  cursor: pointer;
+}

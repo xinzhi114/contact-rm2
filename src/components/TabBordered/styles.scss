@@ -1,0 +1,51 @@
+@import '../../styles/_variables.scss';
+
+.three-tab-border {
+    width: 100%;
+    border-radius: 17px;
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    .items {
+        border: 1px solid $font-black;
+        flex: 1;
+        text-align: center;
+        color: $font-black;
+        font-size: 14px;
+        font-weight: 600;
+        display: block;
+        height: 32px;
+        line-height: 30px;
+        &.current {
+            background-color: $font-black;
+            color: $white;
+        }
+        &:first-child {
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+            border-right: 0;
+        }
+        &:last-child {
+            border-top-right-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-left: 0;
+        }
+    }
+}
+
+@media (min-width: $smaller-desktop-width) and (max-width: $bigger-desktop-width) {
+    .three-tab-border {
+        .items {
+            font-size: 8px;
+        }
+    }
+}
+
+/* fix layout issue when smaller than 767px width */
+@media (max-width: $max-mobile-width) {   
+    .three-tab-border {
+        .items {
+            font-size: 12px;
+        }
+    }
+}

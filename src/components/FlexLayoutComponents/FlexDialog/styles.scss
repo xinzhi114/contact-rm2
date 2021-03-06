@@ -1,0 +1,132 @@
+@import '../../../styles/variables';
+
+.modal-dialog.flex-dialog {
+  max-width: unset;
+  margin: 24px;
+  margin-bottom: 90px;
+  background-color: $white;
+  flex-grow: 1;
+  height: calc(100% - 90px);
+  &.full-height {
+    height: calc(100% - 24px) !important;
+  }
+  .modal-header,
+  .modal-footer {
+    border-color: $border-gray;
+  }
+  .modal-header {
+    padding: 30px 40px;
+    justify-content: flex-start;
+    align-items: center;
+    color: $font-black;
+    font-weight: bold;
+    font-size: 16px;
+    img {
+      cursor: pointer;
+      margin-right: 16px;
+    }
+  }
+  .modal-content {
+    height: 100%;
+    border: none;
+    -webkit-box-shadow: 0px 5px 12px 0px rgba(221, 225, 230, 1);
+    -moz-box-shadow: 0px 5px 12px 0px rgba(221, 225, 230, 1);
+    box-shadow: 0px 5px 12px 0px rgba(221, 225, 230, 1);
+    .btn-group .btn {
+      &:not(:last-child):not(.dropdown-toggle) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      &:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+    .action-bar {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+      .form-check {
+        padding-left: 0;
+      }
+      :last-child {
+        .form-check {
+          padding-left: 34px;
+        }
+      }
+      .right-actions {
+        display: flex;
+        align-items: center;
+        min-width: 40%;
+        .total-payees {
+          display: none;
+        }
+        .inputs {
+          border-color: $font-black;
+        }
+        .buttons {
+          flex-grow: 1;
+          display: flex;
+          justify-content: flex-end;
+        }
+        button {
+          margin-left: 24px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .modal-body {
+    padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    &.save-clicked {
+      flex-direction: row;
+    }
+    .top-title {
+      color: $font-black;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 23px;
+    }
+  }
+  .modal-footer {
+    justify-content: flex-start;
+    padding: 20px 40px;
+    .load-more {
+      cursor: pointer;
+      text-decoration: underline;
+      color: $dark-green;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .btn {
+      flex-grow: 1;
+      max-width: 230px;
+    }
+    .btn-link {
+      color: $green;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .modal-dialog.flex-dialog {
+    &.full-height {
+      margin: 0 !important;
+      height: 100% !important;
+      .modal-body {
+        padding: 24px;
+      }
+      .modal-footer {
+        justify-content: center;
+      }
+    }
+  }
+}

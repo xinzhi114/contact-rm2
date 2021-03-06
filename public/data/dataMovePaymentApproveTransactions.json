@@ -1,0 +1,402 @@
+{
+  "dataList": {
+    "tableData": [
+      {
+        "id": "08962426",
+        "checked": false,
+        "transactionStatus": "",
+        "fieldList": [
+          {
+            "fieldType": "label-status",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "account",
+            "fieldValue": "Expenses",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Jun 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Robert Smith",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "type",
+            "fieldValue": "Faster Payments",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "amount",
+            "fieldValue": "£49.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "checked": false,
+        "transactionStatus": "",
+        "fieldList": [
+          {
+            "fieldType": "label-status",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "account",
+            "fieldValue": "Expenses",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Jun 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Robert Smith",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "type",
+            "fieldValue": "Faster Payments",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "amount",
+            "fieldValue": "£24.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "checked": false,
+        "transactionStatus": "",
+        "fieldList": [
+          {
+            "fieldType": "label-status",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "account",
+            "fieldValue": "Expenses",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Jun 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Robert Smith",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "type",
+            "fieldValue": "Faster Payments",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "89",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "checked": false,
+        "transactionStatus": "",
+        "fieldList": [
+          {
+            "fieldType": "label-status",
+            "fieldName": "reference",
+            "fieldValue": "Individual Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "account",
+            "fieldValue": "Expenses",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Jun 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Robert Smith",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "type",
+            "fieldValue": "Faster Payments",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "amount",
+            "fieldValue": "£24.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "checked": false,
+        "transactionStatus": "",
+        "fieldList": [
+          {
+            "fieldType": "label-status",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "account",
+            "fieldValue": "Expenses",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Jun 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Robert Smith",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "type",
+            "fieldValue": "SWIFT-SEPA",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "amount",
+            "fieldValue": "£70.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "checked": false,
+        "transactionStatus": "",
+        "fieldList": [
+          {
+            "fieldType": "label-status",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "account",
+            "fieldValue": "Fix Bond",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Jun 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Robert Smith",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "type",
+            "fieldValue": "SWIFT-SEPA",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "amount",
+            "fieldValue": "£49.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "checked": false,
+        "transactionStatus": "",
+        "fieldList": [
+          {
+            "fieldType": "label-status",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "account",
+            "fieldValue": "Fix Bond",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Jun 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Robert Smith",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "type",
+            "fieldValue": "SWIFT-SEPA",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel",
+            "fieldName": "amount",
+            "fieldValue": "£24.00",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "checked": false,
+        "transactionStatus": "",
+        "fieldList": [
+          {
+            "fieldType": "label-status",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "account",
+            "fieldValue": "Fix Bond",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Jun 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Robert Smith",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "type",
+            "fieldValue": "SWIFT-SEPA",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "89",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      },
+      {
+        "id": "08962426",
+        "checked": false,
+        "transactionStatus": "",
+        "fieldList": [
+          {
+            "fieldType": "label-status",
+            "fieldName": "reference",
+            "fieldValue": "Business Bills",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "account",
+            "fieldValue": "Fix Bond",
+            "queryHide": false
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "created_date",
+            "fieldValue": "30 Jun 2020",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "payee_name",
+            "fieldValue": "Robert Smith",
+            "queryHide": true
+          },
+          {
+            "fieldType": "label",
+            "fieldName": "type",
+            "fieldValue": "SWIFT-SEPA",
+            "queryHide": true
+          },
+          {
+            "fieldType": "strongLabel-currency",
+            "fieldName": "amount",
+            "fieldValue": "89",
+            "queryHide": false
+          }
+        ],
+        "expandData": null
+      }
+    ]
+  }
+}

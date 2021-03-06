@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+
+.base-modal.terms-and-conditions-modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  .modal-dialog {
+    height: unset;
+    max-height: unset;
+    min-width: 50vw;
+  }
+  .modal-content {
+    .modal-header {
+      padding: 20px 20px 24px 24px;
+    }
+    .modal-body {
+      color: $font-black;
+      padding-top: 20px;
+      .disclaimer {
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .terms-wrapper {
+        max-height: 293px;
+        overflow-y: auto;
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 16px;
+        p {
+          margin-bottom: 19px;
+        }
+      }
+    }
+    .modal-footer {
+      justify-content: flex-end;
+      padding: 20px 25px;
+    }
+  }
+}

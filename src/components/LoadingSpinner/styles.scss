@@ -1,0 +1,27 @@
+$animation-duration: 1s;
+$animation-steps: steps(12);
+
+.loading-spinner {
+  img {
+    -webkit-animation: spin $animation-duration $animation-steps infinite;
+    -moz-animation: spin $animation-duration $animation-steps infinite;
+    animation: spin $animation-duration $animation-steps infinite;
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

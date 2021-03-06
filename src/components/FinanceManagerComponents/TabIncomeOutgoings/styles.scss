@@ -1,0 +1,224 @@
+@import '../../../styles/_variables.scss';
+.tab-income-outgoing {
+  padding: 43px 36px;
+  background: $white;
+  .top-title {
+    color: $font-black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .mobile-right-points {
+    .desktop-hide {
+      display: none;
+    }
+  }
+  .right-points {
+    padding-right: 10px;
+    &.desktop-hide {
+      display: none;
+    }
+    .group {
+      margin-right: 30px;
+      .txt,
+      .point {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .point {
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        margin-right: 10px;
+        &.income-color {
+          background-color: $bg-green;
+        }
+        &.outgoings-color {
+          background-color: #cfd9d8;
+        }
+      }
+      .txt {
+        color: $black;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+// .drop-module
+.drop-module {
+  position: relative;
+  .dropdown-toggle {
+    &.btn.btn-success {
+      color: $font-black;
+      font-size: 14px;
+      font-weight: 700;
+      padding-left: 0;
+      &:after {
+        @include btn-right-arrow;
+      }
+      &:active {
+        color: $black;
+      }
+    }
+  }
+  .dropdown-menu {
+    &.show {
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+      border-radius: 5px;
+      background-color: $white;
+      max-height: 189px;
+      overflow-y: auto;
+      border: 0;
+      .dropdown-item {
+        padding: 0.37rem 13px;
+        color: #25a994;
+        &:hover,
+        &:focus,
+        &.active {
+          background-color: $bg-gray;
+        }
+        &:hover,
+        &.active {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+// .two-dropdown
+.two-dropdown {
+  .top-gray-title {
+    color: #7e9da4;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .line {
+    width: 1px;
+    height: 36px;
+    border: 1px solid $border-gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+  }
+}
+/* fix layout issue when smaller than 1024px width */
+@media (max-width: $min-desktop-width) {
+  .drop-wrap {
+    flex-wrap: wrap;
+    .right-points {
+      margin-top: 25px;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .mobile-show-flex {
+    display: flex !important;
+  }
+  .tab-income-outgoing {
+    .top-title {
+      margin-bottom: 0;
+      background-color: $bg-gray;
+      padding: 15px 23px;
+    }
+    padding: 0;
+    .mobile-right-points {
+      display: flex;
+      margin-bottom: 20px;
+      margin-top: 15px;
+    }
+    .drop-module {
+      .btn.btn-success {
+        text-align: end;
+      }
+    }
+    .drop-wrap {
+      padding: 0 20px;
+      .two-dropdown {
+        flex-direction: column;
+        align-items: flex-start !important;
+        width: 100%;
+        .items {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          border-bottom: 1px solid $border-gray;
+        }
+      }
+    }
+    .right-points {
+      padding: 0 25px;
+      padding-bottom: 10px;
+      margin: 0;
+      &.mobile-show {
+        display: flex;
+      }
+    }
+    .white-panel {
+      padding: 0 10px;
+    }
+  }
+  // .two-dropdown
+  .two-dropdown {
+    padding: 14px 0;
+  }
+  .mobile-hide-strict {
+    display: none !important;
+  }
+  .drop-module {
+    .black-bg {
+      display: none;
+    }
+    &.show {
+      .black-bg {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        height: 100%;
+        z-index: 9990 !important;
+      }
+    }
+    .dropdown-menu {
+      background: $white;
+      .top-area {
+        display: flex;
+        align-items: center;
+        .txt {
+          font-size: 16px;
+          color: $font-black;
+          font-weight: 700;
+        }
+        .icon-close {
+          @include icon-close-drop-menu;
+          width: 16px;
+          height: 16px;
+          margin-left: auto;
+          display: inline-block;
+        }
+      }
+      &.show {
+        z-index: 99999 !important;
+      }
+      .dropdown-item {
+        &.active {
+          .item {
+            display: flex;
+            width: 100%;
+            .icon-checkmark {
+              @include icon-checkbox-16;
+              width: 16px;
+              display: inline-block;
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

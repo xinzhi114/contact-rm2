@@ -1,0 +1,128 @@
+@import '../../../../styles/_variables.scss';
+
+.manage-standing-orders-create-form {
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  flex: 1;
+  padding: 29px 70px;
+  overflow: auto;
+  .top-back {
+    color: $dark-blue;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    position: relative;
+    margin-bottom: 34px;
+    margin-left: 55px;
+    .btn-back {
+      @include icon-black-back;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      left: -35px;
+      top: 0;
+    }
+  }
+  .form-title {
+    color: $font-black;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .form-area {
+    .row-line {
+      padding: 0 25px;
+      .blue-txt {
+        font-weight: normal;
+      }
+      .two-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -20px;
+        .items {
+          margin-right: 20px;
+          flex: 0 0 290px;
+          max-width: calc(50% - 20px);
+          &:last-child {
+            margin-right: 0;
+          }
+          .label-txt {
+            color: $font-black;
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: 700;
+          }
+          .drop-area {
+            border: 1px solid $black;
+          }
+        }
+        .control-item {
+          margin-bottom: 15px;
+          &.disabled {
+            opacity: 0.4;
+            pointer-events: none;
+          }
+          .drop-module {
+            .phoneNumber {
+              color: $font-black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom-btns {
+    border-top: 1px solid $border-gray;
+    padding: 10px 0;
+    margin-top: 40px;
+    .btn-green {
+      min-width: 129px;
+      margin-right: 24px;
+    }
+    .green-link {
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+  .manage-standing-orders-create-form {
+    padding: 29px 50px 5px;
+    margin: 0 10px;
+    .top-back {
+      margin-bottom: 20px;
+    }
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $min-desktop-width) {
+  .manage-standing-orders-create-form {
+    padding: 10px 10px;
+    .top-back {
+      margin-left: 45px;
+    }
+    .form-title {
+      margin-left: 10px;
+    }
+    .form-area {
+      .row-line {
+        padding: 0 10px;
+        .two-group {
+          margin-right: 0;
+          .items {
+            margin-right: 0;
+            flex: 0 0 100%;
+            max-width: calc(100%);
+          }
+        }
+      }
+    }
+  }
+}

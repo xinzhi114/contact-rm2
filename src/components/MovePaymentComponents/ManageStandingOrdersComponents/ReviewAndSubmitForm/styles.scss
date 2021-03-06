@@ -1,0 +1,153 @@
+@import '../../../../styles/_variables.scss';
+
+.manage-standing-orders-review-and-submit-form {
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  flex: 1;
+  .top-title {
+    color: $dark-blue;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 29px 35px;
+    border-bottom: 1px solid $border-gray;
+  }
+  .review-and-submit-main {
+    display: flex;
+    flex-wrap: wrap;
+    .left-area {
+      flex: 0 0 322px;
+      max-width: 322px;
+      padding: 33px 35px;
+      .big-title {
+        color: $font-black;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 42px;
+        margin-bottom: 35px;
+      }
+    }
+    .right-area {
+      flex: 1;
+      border-left: 1px solid $border-gray;
+      padding-left: 28px;
+      .line-title {
+        padding: 31px 15px;
+        color: $dark-blue;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        border-bottom: 1px solid $border-gray;
+        margin-bottom: 30px;
+      }
+      .center-txt {
+        padding: 0 15px;
+        img.mobile-banking-approve {
+          margin: 40px 0;
+        }
+        .message {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: center;
+          margin-bottom: 40px;
+          padding: 0 16px;
+          color: $font-black;
+          .sending-request {
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: $font-black;
+          }
+        }
+        .phone-name {
+          display: flex;
+          flex-direction: column;
+          padding: 24px;
+          background-color: $bg-gray;
+          font-weight: 500;
+          .label {
+            text-transform: uppercase;
+            font-size: 10px;
+            opacity: 50%;
+          }
+          .value {
+            font-size: 14px;
+          }
+        }
+      }
+      .bottom-btns {
+        padding: 25px 21px 65px;
+        border-top: 1px solid $border-gray;
+        margin-top: 50px;
+        .btn-green {
+          min-width: 265px;
+        }
+      }
+    }
+  }
+  .gray-wrap {
+    .row-groups {
+      padding: 16px 0;
+      &:last-child {
+        border-bottom: 0;
+      }
+      .bold-title {
+        color: $dark-blue;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+      .row-list {
+        display: flex;
+        flex-wrap: wrap;
+        .items {
+          flex: 0 0 49%;
+          max-width: 49%;
+          padding-right: 5px;
+          .label-txt {
+            color: $font-black;
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 14px;
+            opacity: 0.5;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+          }
+          .value-txt {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $min-desktop-width) {
+  .manage-standing-orders-review-and-submit-form {
+    .review-and-submit-main {
+      .left-area {
+        flex: 1;
+        max-width: none;
+      }
+      .right-area {
+        border-left: 0;
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+  .manage-standing-orders-review-and-submit-form {
+    .review-and-submit-main {
+      .left-area {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

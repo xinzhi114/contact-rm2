@@ -1,0 +1,132 @@
+{
+  "dataList": {
+    "relationshipManager": {
+      "photoUrl": "/assets/photo-home.jpg",
+      "stars": 4,
+      "name": "Mark Thompson",
+      "role": "Relationship Manager",
+      "state": "Available",
+      "email": "markthompson45@odyssey.com",
+      "phoneNumber": "+41 (0) 20 3375 6422",
+      "description": "Relationship Manager with 10+ years' experience in Odyssey's Bank Online. Currently managing ultra-high net worth clients across the UK with combined AUM of 200 million GBP.",
+      "availableToday": [
+        "9:00 to 12:00",
+        "15:00 to 17:00"
+      ]
+    },
+    "contactDetails": {
+      "address": "PO Box 17484<br/>34 Sample Court, Example Avenue SW 8EP London",
+      "mapUrl": "https://www.google.com/maps/place/Chinatown,+San+Francisco,+CA/@37.7939041,-122.4103965,15.75z/data=!4m5!3m4!1s0x8085808b58a58a1d:0x289f3092660f80ac!8m2!3d37.7941378!4d-122.4077914"
+    },
+    "appointment": [
+    ],
+    "reviews": {
+      "averageRating": 4.2,
+      "customerReviews": 836,
+      "ratingDetails": [
+        {
+          "rate": 5,
+          "percentage": 65
+        },
+        {
+          "rate": 4,
+          "percentage": 17
+        },
+        {
+          "rate": 3,
+          "percentage": 6
+        },
+        {
+          "rate": 2,
+          "percentage": 9
+        },
+        {
+          "rate": 1,
+          "percentage": 3
+        }
+      ],
+      "reviews": [
+        {
+          "username": "John Applessed",
+          "usernameLabel": "JA",
+          "isMe": true,
+          "date": "31 January 2021",
+          "rate": 1,
+          "description": "The best RM I ever meet. It's an awesome experience that can work together with you. Help me a lot of things in Odyssey Bank Online. Here's to the start of a good working relationship!"
+        },
+        {
+          "username": "Jim Smithson",
+          "usernameLabel": "JS",
+          "isMe": false,
+          "date": "31 January 2021",
+          "rate": 2,
+          "description": "Consectetur adipiscing elit."
+        },
+        {
+          "username": "Lettie Schutz",
+          "usernameLabel": "LS",
+          "isMe": false,
+          "date": "28 January 2021",
+          "rate": 3,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus risus, consectetur non gravida placerat, dapibus sit amet justo. Etiam maximus sagittis maximus."
+        },
+        {
+          "username": "Lettie Schutz",
+          "usernameLabel": "LS",
+          "isMe": false,
+          "date": "28 January 2021",
+          "rate": 4,
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus risus, consectetur non gravida placerat, dapibus sit amet justo. Etiam maximus sagittis maximus."
+        },
+        {
+          "username": "Joe Coleman",
+          "usernameLabel": "JC",
+          "isMe": false,
+          "date": "28 January 2021",
+          "rate": 5,
+          "description": "Consectetur adipiscing elit. Vestibulum risus risus, consectetur  gravida placerat, dapibus sit amet justo. Etiam maximus sagittis maximus. Aenean condimentu molestie nulla, ut aliquam magna imperdiet a. Cras varius sollicitudin massa molestie gravida."
+        },
+        {
+          "username": "Robert Smith",
+          "usernameLabel": "RS",
+          "isMe": false,
+          "date": "14 January 2021",
+          "rate": 6,
+          "description": "Dolor sit amet, consectetur adipiscing elit. Vestibulum risus risus, consectetur gravida place, dapibus sit amet justo. Etiam maximus sagittis maximus. Aenean condimen molestie nulla,  aliquam magna imperdie."
+        },
+        {
+          "username": "Robert Smith",
+          "usernameLabel": "RS",
+          "isMe": false,
+          "date": "14 January 2021",
+          "rate": 7,
+          "description": "Dolor sit amet, consectetur adipiscing elit. Vestibulum risus risus, consectetur gravida place, dapibus sit amet justo. Etiam maximus sagittis maximus. Aenean condimen molestie nulla,  aliquam magna imperdie."
+        },
+        {
+          "username": "Robert Smith",
+          "usernameLabel": "RS",
+          "isMe": false,
+          "date": "14 January 2021",
+          "rate": 9,
+          "description": "Dolor sit amet, consectetur adipiscing elit. Vestibulum risus risus, consectetur gravida place, dapibus sit amet justo. Etiam maximus sagittis maximus. Aenean condimen molestie nulla,  aliquam magna imperdie."
+        },
+        {
+          "username": "Robert Smith",
+          "usernameLabel": "RS",
+          "isMe": false,
+          "date": "14 January 2021",
+          "rate": 8,
+          "description": "Dolor sit amet, consectetur adipiscing elit. Vestibulum risus risus, consectetur gravida place, dapibus sit amet justo. Etiam maximus sagittis maximus. Aenean condimen molestie nulla,  aliquam magna imperdie."
+        },
+        {
+          "username": "Robert Smith",
+          "usernameLabel": "RS",
+          "isMe": false,
+          "date": "14 January 2021",
+          "rate": 10,
+          "description": "Dolor sit amet, consectetur adipiscing elit. Vestibulum risus risus, consectetur gravida place, dapibus sit amet justo. Etiam maximus sagittis maximus. Aenean condimen molestie nulla,  aliquam magna imperdie."
+        }
+      ]
+    }
+  }
+}

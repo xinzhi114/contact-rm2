@@ -1,0 +1,22 @@
+@import '../../../styles/variables';
+
+.form-step {
+  padding: 20px;
+  &.review,
+  .review {
+    border: 1px solid $border-gray;
+    border-radius: 6px;
+  }
+  &.review {
+    margin: 16px 0;
+    .flex-list {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .form-step:not(.review) {
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../styles/_variables.scss';
+
+.nav-top-breadcrumb {
+  padding-bottom: 0;
+  ul {
+    display: flex;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    .icon-home {
+      @include icon-line-home;
+      width: 12px;
+      height: 13px;
+    }
+    .line {
+      display: inline-block;
+      @include chevron-right-small;
+      background-color: transparent;
+      width: 6px;
+      height: 9px;
+      margin: 0 5px;
+      opacity: 1;
+      border: 0;
+    }
+    .tab-link {
+      color: $dark-green;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: $gotham-rounded;
+      &.current {
+        color: $dark-black;
+        cursor: default;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 900px width */
+@media (max-width: $min-desktop-width) {
+  .nav-top-breadcrumb {
+    padding-top: 15px;
+  }
+}

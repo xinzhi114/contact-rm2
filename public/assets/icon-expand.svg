@@ -1,0 +1,8 @@
+<svg id="icon_expand" data-name="icon/expand" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+  viewBox="0 0 24 24">
+  <path id="Shape" d="M0,7.273S3.636,0,10,0,20,7.273,20,7.273s-3.636,7.273-10,7.273S0,7.273,0,7.273Z"
+    transform="translate(2 5)" fill="none" stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round"
+    stroke-miterlimit="10" stroke-width="2" />
+  <circle id="Oval" cx="2.727" cy="2.727" r="2.727" transform="translate(9.273 9.545)" fill="none" stroke="#003d4c"
+    stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+</svg>

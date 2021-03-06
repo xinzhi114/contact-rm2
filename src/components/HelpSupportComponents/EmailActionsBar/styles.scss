@@ -1,0 +1,31 @@
+@import '../../../styles/variables';
+
+ul.email-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  span {
+    color: $light-green-label;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  img {
+    margin-right: 10px;
+  }
+  .mobile-action {
+    display: none;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  ul.email-actions {
+    .icon-btn {
+      img {
+        display: none;
+      }
+      .mobile-action {
+        display: block;
+      }
+    }
+  }
+}

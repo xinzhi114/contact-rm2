@@ -1,0 +1,19 @@
+<svg id="icon_shield_copy" data-name="icon/shield copy" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+  viewBox="0 0 32 32">
+  <g id="Group" transform="translate(4 3.304)">
+    <path id="Path"
+      d="M22.857,17.775V7.616a2.539,2.539,0,0,0-1.27-2.2L12.7.34a2.54,2.54,0,0,0-2.54,0L1.27,5.42A2.54,2.54,0,0,0,0,7.616V17.775a2.54,2.54,0,0,0,1.27,2.2l8.889,5.079a2.54,2.54,0,0,0,2.54,0l8.889-5.079a2.54,2.54,0,0,0,1.27-2.2Z"
+      fill="none" stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+      stroke-width="2" />
+    <path id="Path-2" data-name="Path" d="M0,0,5.714,3.3,11.429,0" transform="translate(5.714 2.804)" fill="none"
+      stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Path-3" data-name="Path" d="M5.714,9.892V3.3L0,0" transform="translate(0 12.696)" fill="none"
+      stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Path-4" data-name="Path" d="M5.714,0,0,3.3v6.59" transform="translate(17.143 12.696)" fill="none"
+      stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Path-5" data-name="Path" d="M0,0,11.086,6.413,22.171,0" transform="translate(0.342 6.296)" fill="none"
+      stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+    <path id="Path-6" data-name="Path" d="M.357,12.8V0" transform="translate(11.071 12.696)" fill="none"
+      stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+  </g>
+</svg>

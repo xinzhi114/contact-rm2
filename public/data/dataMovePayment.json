@@ -1,0 +1,15 @@
+{
+  "dataList": {
+    "approveTransactionsPending": 3,
+    "onlineTransactionStatusPending": 4,
+    "relationshipManager": {
+      "photoUrl": "/assets/photo-home.jpg",
+      "stars": 4,
+      "name": "Mark Thompson",
+      "role": "Relationship Manager",
+      "state": "active",
+      "email": "support@odyssey.com",
+      "phoneNumber": "+22 (0) 20 3375 6422"
+    }
+  }
+}

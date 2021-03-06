@@ -1,0 +1,109 @@
+@import '../../../styles/_variables.scss';
+
+.modal-default {
+    &.initiate-account-closure-modal {
+        .modal-mains {
+            width: 473px;
+            .title-area {
+                margin-bottom: 20px;
+            }
+        }
+        .btn-close {
+            @include btn-close;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+        .icon-question {
+            @include icon-question;
+            width: 20px;
+            height: 20px;
+        }
+        .title-area {
+            padding-bottom: 14px;
+            border-bottom: 1px solid $border-gray;
+            margin-bottom: 18px;
+            
+        }
+        .row-line {
+            margin-bottom: 24px;
+            .title {
+                color: $font-black;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 8px;
+                font-weight: 600;
+            }
+        }
+        .four-gray {
+            .items {
+                margin-bottom: 6px;
+                border-radius: 2px;
+                background-color: $border-gray;
+                padding: 16px 16px;
+                .blue-txt {
+                    color: $font-black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    margin-bottom: 2px;
+                }
+                .gray-txt {
+                    color: $light-gray;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+            }
+        }
+        .bottom-btns {
+            padding-top: 24px;
+            border-top: 1px solid $border-gray;
+            .btn-green {
+                min-width: 220px;
+            }
+            .green-link {
+                color: $green;
+                font-size: 16px;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .modal-default {
+        &.initiate-account-closure-modal {
+            .modal-mains {
+                width: 667px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-default {
+        &.initiate-account-closure-modal {
+            .modal-mains {
+                width: 360px;
+                margin: 17px auto;
+                .bottom-btns {
+                    flex-direction: column;
+                    justify-content: center;
+                    .btn-green {
+                        margin-bottom: 15px;
+                        align-self: center;
+                    }
+                    .green-link {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

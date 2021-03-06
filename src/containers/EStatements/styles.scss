@@ -1,0 +1,95 @@
+@import '../../styles/_variables.scss';
+
+.content {
+    &.eStatements-content {
+        padding-left: 267px;
+        .transation-panel {
+            flex: 1;
+            margin-left: 20px;
+            &.open {
+                padding: 24px 59px;
+            }
+        }
+        
+        .three-row {
+            flex: 1;
+            .two-row {
+                display: flex;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1181px width */
+@media (max-width: $bigger-desktop-width) {
+    .content {
+        &.eStatements-content {
+            .transation-panel {
+                margin-left: 10px;
+                &.open {
+                    padding: 24px 50px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 1181px width */
+@media (max-width: $smaller-desktop-width) {
+    .content {
+        &.eStatements-content {
+            .transation-panel {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+/* fix layout issue when smaller than 1181px width */
+@media (max-width: $smaller-desktop-width) {
+    .content {
+        &.eStatements-content {
+            .three-row {
+                flex: 1;
+                .two-row {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .content {
+        &.eStatements-content {
+            .transation-panel {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .content {
+        &.eStatements-content {
+            padding-left: 0;
+            .transation-panel {
+                margin-left: 0;
+                &.open {
+                    padding: 14px 20px;
+                }
+                .search-filter-wrap {
+                    .gray-title {
+                        .rights {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

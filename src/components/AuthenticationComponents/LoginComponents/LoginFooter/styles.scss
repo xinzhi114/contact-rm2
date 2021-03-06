@@ -1,0 +1,123 @@
+@import '../../../../styles/variables';
+
+.login-footer {
+  border-top: 1px solid $shadow-gray;
+  max-width: 100vw;
+  .row {
+    margin: 0;
+    .col {
+      padding: 0;
+    }
+  }
+  color: $font-black;
+  .link {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #00a792;
+  }
+  .top-section {
+    padding: 64px 160px 36px 86px;
+    flex-wrap: nowrap;
+    > div {
+      padding-left: 64px;
+      &.stay-safe-online {
+        max-width: 300px;
+      }
+      .col-title {
+        font-family: $gotham-rounded;
+        font-size: 36px;
+        line-height: 39px;
+        max-width: 250px;
+      }
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .section {
+        margin-top: 35px;
+        .section-title {
+          font-family: $gotham-rounded;
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .section-paragraph {
+          font-size: 16px;
+          line-height: 22px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  .bottom-section {
+    border-top: 35px solid $bg-gray;
+    background-image: url('/assets/footer-background.svg');
+    background-color: $dark-black;
+    background-position: 0 -52px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 730px;
+    padding-top: 64px;
+    padding-right: 160px;
+    padding-left: 160px;
+    justify-content: space-between;
+    color: $white;
+    .text-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .left-col {
+      padding: 0;
+      img {
+        max-width: 100%;
+      }
+      .text-wrapper {
+        margin-top: 24px;
+        .odyssey-bank-limited {
+          margin: 24px 0;
+          font-weight: bold;
+        }
+      }
+      .flex-list {
+        margin-bottom: 16px;
+        .item {
+          margin-bottom: 26px;
+          .label {
+            opacity: 75%;
+            font-size: 12px;
+          }
+        }
+      }
+      span.helper-link {
+        margin-bottom: 40px;
+      }
+    }
+    .right-col {
+      padding: 0;
+      .badges {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 92px;
+        > :nth-child(1) {
+          flex-grow: 1;
+          min-width: 290px;
+        }
+      }
+      .text-wrapper {
+        > span {
+          margin-bottom: 24px;
+          max-width: 500px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      .toolbar {
+        margin-top: 16px;
+        .link {
+          margin-right: 32px;
+        }
+      }
+    }
+  }
+}

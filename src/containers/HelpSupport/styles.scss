@@ -1,0 +1,81 @@
+@import '../../styles/_variables.scss';
+
+.content {
+  &.help-support-content {
+    &,
+    .mains {
+      height: 100%;
+    }
+    padding-left: 267px;
+    background-color: $bg-gray;
+    .three-row {
+      flex: 1;
+      padding: 24px 28px;
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      .right-link {
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        .icon-back {
+          color: $bg-green;
+          font-size: 16px;
+          font-weight: 700;
+          @include icon-arrow-back;
+          display: inline-block;
+          padding-left: 23px;
+        }
+      }
+      .two-row {
+        display: flex;
+        flex-grow: 1;
+        padding-bottom: 24px;
+        .right-container {
+          flex: 1;
+          > div {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $max-tablet-width) {
+  .content {
+    &.help-support-content {
+      .three-row {
+        padding-top: 50px;
+      }
+      .two-row {
+        flex-direction: column;
+      }
+      .right-container {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .content {
+    &.help-support-content {
+      padding-left: 0;
+      background-color: initial;
+      .two-row {
+        display: flex;
+        min-height: auto;
+      }
+      .three-row {
+        padding: 0;
+      }
+      .right-container {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

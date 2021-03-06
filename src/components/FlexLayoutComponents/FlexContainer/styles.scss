@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+
+.container.flex-container {
+  max-width: unset;
+  padding: 24px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 90px;
+  overflow: auto;
+  .row > div {
+    padding: 0;
+  }
+  &.column {
+    .row {
+      height: 100%;
+      margin: 0;
+      > div {
+        flex-direction: column;
+        min-height: 100%;
+        .modal-dialog.flex-dialog {
+          margin: 12px;
+          height: unset;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .container.flex-container {
+    padding: 0;
+    &.column {
+      .row {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

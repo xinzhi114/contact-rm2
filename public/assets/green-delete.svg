@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+    <g id="minus-circle" transform="translate(1 1)">
+        <circle id="Oval" cx="9.5" cy="9.5" r="9.5" fill="none" stroke="#00a792" stroke-linecap="round"
+            stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+        <path id="Path" d="M0,.475H7.6" transform="translate(5.7 9.025)" fill="none" stroke="#00a792"
+            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+    </g>
+</svg>

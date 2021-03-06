@@ -1,0 +1,6 @@
+@import '../../styles/variables';
+
+.react-joyride__overlay,
+.__floater {
+  z-index: 10000 !important;
+}

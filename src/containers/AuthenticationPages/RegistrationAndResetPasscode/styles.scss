@@ -1,0 +1,94 @@
+@import '../../../styles/variables';
+
+.registration-container {
+  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  > .row {
+    margin: 0;
+    height: 100%;
+    > div {
+      height: 100%;
+      padding: 0;
+      &.form-col {
+        max-height: 100vh;
+        overflow: auto;
+        .mandatory-fields {
+          color: $light-gray;
+          font-size: 14px;
+          font-weight: normal;
+        }
+        .top-bar {
+          padding: 64px;
+          padding-bottom: 40px;
+          border-bottom: 1px solid $border-gray;
+          .logo {
+            margin-bottom: 40px;
+          }
+          .additional-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            .titles {
+              display: flex;
+              flex-direction: column;
+              .title {
+                color: $font-black;
+                font-size: 16px;
+              }
+              .subtitle {
+                color: $dark-blue;
+                font-family: $gotham-rounded;
+                font-size: 20px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        .reviewable-form {
+          .previous-steps {
+            display: none;
+          }
+          .form-step {
+            padding: 0;
+            .base-modal.otp-modal {
+              .modal-header {
+                display: none;
+              }
+              .modal-footer {
+                border-top: none;
+                padding-top: 0;
+                justify-content: flex-end;
+              }
+            }
+          }
+        }
+      }
+      &.carousel-col {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .registration-container {
+    > .row {
+      > div {
+        &.form-col {
+          width: 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding-top: 64px;
+        }
+        &.carousel-col {
+          position: absolute;
+          display: block;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

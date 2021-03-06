@@ -1,0 +1,58 @@
+@import '../../styles/_variables.scss';
+
+.base-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  .icon-question {
+    @include question-bold;
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+  }
+  .row-line {
+    &.flex-grow-field {
+      flex-grow: 1;
+    }
+    margin-bottom: 20px;
+    .title {
+      color: $font-black;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      .right-text {
+        cursor: pointer;
+        color: $green;
+      }
+    }
+    .dropdown-toggle {
+      text-align: start;
+    }
+    .inputs {
+      padding-right: 40px;
+      border: 1px solid $black-border;
+      border-radius: 2px;
+      height: 50px;
+      position: relative;
+      width: 100%;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .base-form {
+    .row-line {
+      .drop-module {
+        .dropdown-toggle {
+          &.btn.btn-success {
+            &:after {
+              background-size: 8px 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

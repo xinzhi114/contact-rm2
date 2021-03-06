@@ -1,0 +1,25 @@
+@import '../../../styles/_variables.scss';
+// .marketing-preferences-details-boxs
+.marketing-preferences-details-boxs {
+  flex: 1;
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  margin-right: 0;
+  position: relative;
+  min-height: 400px;
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+  .marketing-preferences-details-boxs {
+    margin: 0 0 20px;
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .marketing-preferences-details-boxs {
+    margin: 0;
+    box-shadow: none;
+  }
+}

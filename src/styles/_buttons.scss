@@ -1,0 +1,34 @@
+.btn.btn-primary {
+  font-weight: bold;
+  font-size: 14px;
+  color: $font-black !important;
+  border-color: $border-gray !important;
+  border-width: 0;
+  background-color: $green !important;
+  padding: 10px 44px;
+  border-radius: 29px;
+  white-space: nowrap;
+  &.inactive {
+    background-color: $white !important;
+  }
+  &:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba($color: $green, $alpha: 0.5) !important;
+  }
+}
+
+.btn.btn-secondary {
+  font-weight: bold;
+  font-size: 14px;
+  color: $green !important;
+  border-color: $green !important;
+  background-color: $white !important;
+  padding: 10px 44px;
+  border-radius: 29px;
+  white-space: nowrap;
+  &.inactive {
+    background-color: $bg-gray !important;
+  }
+  &:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba($color: $bg-gray, $alpha: 0.5) !important;
+  }
+}

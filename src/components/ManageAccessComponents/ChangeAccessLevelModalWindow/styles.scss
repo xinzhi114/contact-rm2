@@ -1,0 +1,151 @@
+@import '../../../styles/_variables.scss';
+
+.modal-default {
+    &.change-access-level-modal {
+        .modal-mains {
+            width: 550px;
+            background-color: $white;
+            border-radius: 10px;
+            padding: 0;
+            .title-area {
+                padding: 25px;
+                border-bottom: 1px solid $border-gray;
+                margin-bottom: 0;
+                display: flex;
+                justify-content: flex-start;
+                .blue-title {
+                    color: $dark-blue;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+                .icon-info {
+                    @include icon-alert-circle;
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    margin-top: 2px;
+                }
+            }
+        }
+        .btn-close {
+            @include icon-closegreen;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+        .modal-info {
+            background-color: $white;
+        }
+        .row-line {
+            padding: 0 25px;
+            .blue-txt {
+                font-weight: normal;
+            }
+            .center-info {
+                padding: 28px 0 28px 0;
+                border-bottom: 1px solid $border-gray;
+                &:last-child {
+                  border-bottom: none;
+                }
+                .white-txt {
+                    color: $font-black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    &.bold-txt {
+                        font-weight: 700;
+                    }
+                }
+                .user-name {
+                  display: flex;
+                  align-items: center;
+                  margin-top: 14px;
+                  .txt {
+                    color: $font-black;
+                    font-size: 14px;
+                    font-weight: 700;
+                    display: flex;
+                    flex-direction: column;
+                    .bottom-txt {
+                      font-weight: normal;
+                    }
+                  }
+                  .avatar {
+                    flex-grow: unset;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #71b2c9;
+                    border-radius: 50%;
+                    color: $white;
+                    font-weight: 500;
+                    height: 40px;
+                    width: 40px;
+                    min-width: 40px;
+                    min-height: 40px;
+                    font-size: 14px;
+                    margin-right: 12px;
+                  }
+                }
+            }
+            .four-checkradio {
+              display: flex;
+              flex-direction: column;
+              .radio-wrap {
+                margin: 10px 0;
+              }
+            }
+        }
+        .bottom-btns {
+            padding: 20px 30px 23px;
+            justify-content: flex-start;
+            border-top: 1px solid $border-gray;
+            .btn {
+                min-width: 89px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .modal-default {
+        &.change-access-level-modal {
+            .modal-mains {
+                width: 667px;
+                .title-area {
+                    margin-bottom: -7px;
+                }
+            }
+            .bottom-btns {
+                flex-wrap: wrap;
+                justify-content: center;
+                .btn-green {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-default {
+        &.change-access-level-modal {
+            .modal-mains {
+                margin: 17px auto;
+                width: 95%;
+                
+            }
+            .bottom-btns {
+                .links {
+                    &.green {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<svg id="cards_resources_Currency_EUR" data-name="cards / resources / Currency – EUR" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group" transform="translate(3 1)">
+    <path id="Path" d="M9.844,0H2.25A2.276,2.276,0,0,0,.659.644,2.175,2.175,0,0,0,0,2.2V19.8a2.176,2.176,0,0,0,.659,1.556A2.276,2.276,0,0,0,2.25,22h13.5a2.276,2.276,0,0,0,1.591-.644A2.176,2.176,0,0,0,18,19.8V7.7" fill="none" stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path-2" data-name="Path" d="M8.828.414H0" transform="translate(4.414 12.103)" fill="none" stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path-3" data-name="Path" d="M8.828.414H0" transform="translate(4.414 16.517)" fill="none" stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Rectangle" d="M0,0H0A8,8,0,0,1,8,8V8A0,0,0,0,1,8,8H0A0,0,0,0,1,0,8V0A0,0,0,0,1,0,0Z" transform="translate(10)" fill="none" stroke="#003d4c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

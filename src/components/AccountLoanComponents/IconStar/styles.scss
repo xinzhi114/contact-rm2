@@ -1,0 +1,8 @@
+@import '../../../styles/_variables.scss';
+
+.icon-star {
+  @include icon-star-green;
+  width: 14px;
+  height: 13px;
+  margin-left: 10px;
+}

@@ -1,0 +1,238 @@
+{
+  "dataList": {
+    "lastLogin": {
+      "loginTime": "12 Oct 2020, 1:19:50 PM",
+      "loginIP": "185.86.151.11"
+    },
+    "contactUs": {
+      "phoneNumber": "+44 20 7646 0612",
+      "email": "support@odyssey.com"
+    },
+    "relationshipManager": {
+      "photoUrl": "/assets/photo-home.jpg",
+      "stars": 4,
+      "name": "Mark Thompson",
+      "role": "Relationship Manager",
+      "state": "Available",
+      "email": "support@odyssey.com",
+      "phoneNumber": "+22 (0) 20 3375 6422",
+      "yourNextAppointment": {
+        "timeFull": "Today, 4 February 2021",
+        "timeRange": "15:15 to 15:45",
+        "subject": "Other services",
+        "iconUrl": "/assets/icon-camera.svg",
+        "topLabel": "",
+        "bottomLabel": "Expect a call from <strong>Mark Thompson</strong> in 15 mins"
+      }
+    },
+    "portfolioOverview": {
+      "carousel": [
+        {
+          "companyName": "XYZ COMPANY",
+          "price": "£2,123,000.00",
+          "changeType": "inscrease",
+          "changeFromLastMonth": "55,760",
+          "productList": [
+            {
+              "iconUrl": "/assets/filter-build@2x.png",
+              "price": "£3,000,000.00",
+              "title": "PROPERTY Equity"
+            },
+            {
+              "iconUrl": "/assets/savings@2x.png",
+              "price": "£80,000.00",
+              "title": "SAVINGS"
+            },
+            {
+              "iconUrl": "/assets/briefcase.svg",
+              "price": "£43,000.00",
+              "title": "Current Accounts"
+            },
+            {
+              "iconUrl": "/assets/loan@2x.png",
+              "price": "-£800,000.00",
+              "title": "Loan"
+            }
+          ]
+        },
+        {
+          "companyName": "ACME COMPANY",
+          "price": "£4,123,000.00",
+          "changeType": "inscrease",
+          "changeFromLastMonth": "25,760",
+          "productList": [
+            {
+              "iconUrl": "/assets/filter-build@2x.png",
+              "price": "£1000000.00",
+              "title": "PROPERTY Equity"
+            },
+            {
+              "iconUrl": "/assets/savings@2x.png",
+              "price": "£20000.00",
+              "title": "SAVINGS"
+            },
+            {
+              "iconUrl": "/assets/briefcase.svg",
+              "price": "£43000.00",
+              "title": "Current Accounts"
+            },
+            {
+              "iconUrl": "/assets/loan@2x.png",
+              "price": "-£800,000.00",
+              "title": "Loan"
+            }
+          ]
+        },
+        {
+          "companyName": "AC COMPANY",
+          "price": "£78,123,000.00",
+          "changeType": "inscrease",
+          "changeFromLastMonth": "25,760",
+          "productList": [
+            {
+              "iconUrl": "/assets/filter-build@2x.png",
+              "price": "£3,000,000.00",
+              "title": "PROPERTY Equity"
+            },
+            {
+              "iconUrl": "/assets/savings@2x.png",
+              "price": "£80,000.00",
+              "title": "SAVINGS"
+            },
+            {
+              "iconUrl": "/assets/briefcase.svg",
+              "price": "£43,000.00",
+              "title": "Current Accounts"
+            },
+            {
+              "iconUrl": "/assets/loan@2x.png",
+              "price": "-£800,000.00",
+              "title": "Loan"
+            }
+          ]
+        },
+        {
+          "companyName": "ACMEXYZ COMPANY",
+          "price": "£3,123,000.00",
+          "changeType": "inscrease",
+          "changeFromLastMonth": "55,760",
+          "productList": [
+            {
+              "iconUrl": "/assets/filter-build@2x.png",
+              "price": "£3,000,000.00",
+              "title": "PROPERTY Equity"
+            },
+            {
+              "iconUrl": "/assets/savings@2x.png",
+              "price": "£80,000.00",
+              "title": "SAVINGS"
+            },
+            {
+              "iconUrl": "/assets/briefcase.svg",
+              "price": "£43,000.00",
+              "title": "Current Accounts"
+            },
+            {
+              "iconUrl": "/assets/loan@2x.png",
+              "price": "-£800,000.00",
+              "title": "Loan"
+            }
+          ]
+        }
+      ]
+    },
+    "upcomingActivityEvents": [
+      {
+        "dateLabelYear": "2020",
+        "dateLabelDay": "14",
+        "dateLabelMonth": "Dec",
+        "eventsList": [
+          {
+            "title": "Central Apartement Loan Payment",
+            "dueTime": "Due today",
+            "amount": "-£1,500.00",
+            "accountType": "Current Account",
+            "accountId": "123"
+          },
+          {
+            "title": "Central Apartement Payment",
+            "dueTime": "Due today",
+            "amount": "-£1,200.00",
+            "accountType": "Loan Account",
+            "accountId": "453"
+          }
+        ]
+      },
+      {
+        "dateLabelYear": "2020",
+        "dateLabelDay": "18",
+        "dateLabelMonth": "Dec",
+        "eventsList": [
+          {
+            "title": "Payment Due to Screwfix",
+            "dueTime": "Due today",
+            "amount": "-£322.00",
+            "accountType": "Loan Account",
+            "accountId": "123"
+          }
+        ]
+      },
+      {
+        "dateLabelYear": "2020",
+        "dateLabelDay": "27",
+        "dateLabelMonth": "Dec",
+        "eventsList": [
+          {
+            "title": "Payment Due to Screwfix",
+            "dueTime": "Due today",
+            "amount": "-£922.00",
+            "accountType": "Loan Account",
+            "accountId": "153"
+          },
+          {
+            "title": "Payment Due",
+            "dueTime": "Due today",
+            "amount": "-£322.00",
+            "accountType": "Loan Account",
+            "accountId": "13"
+          }
+        ]
+      },
+      {
+        "dateLabelYear": "2021",
+        "dateLabelDay": "06",
+        "dateLabelMonth": "Jan",
+        "eventsList": [
+          {
+            "title": "Payment Due for Invoice #212",
+            "dueTime": "In two days",
+            "amount": "-£411.00",
+            "accountType": "Loan Account",
+            "accountId": "123"
+          },
+          {
+            "title": "Payment Due for Invoice #212",
+            "dueTime": "In two days",
+            "amount": "-£411.00",
+            "accountType": "Loan Account",
+            "accountId": "123"
+          }
+        ]
+      }
+    ],
+    "mostActiveAccounts": [
+      {
+        "accountType": "Current Account",
+        "accountNumber": "11223344",
+        "remainingBalance": "£179,000",
+        "overdraft": "£2,000"
+      },
+      {
+        "accountType": "Saving Account",
+        "accountNumber": "11223355",
+        "remainingBalance": "£350,028",
+        "overdraft": "£6,200"
+      }
+    ]
+  }
+}

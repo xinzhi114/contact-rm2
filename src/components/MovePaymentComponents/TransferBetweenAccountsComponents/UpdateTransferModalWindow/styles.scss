@@ -1,0 +1,191 @@
+@import '../../../../styles/_variables.scss';
+
+.modal-default {
+    &.update-ransfer-modal {
+        .modal-mains {
+            width: 615px;
+            box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 0;
+            .title-area {
+                margin-bottom: 0;
+                padding: 28px 24px;
+                .blue-title {
+                    color: $font-black;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+        }
+        .inputs {
+            border: 1px solid $black-border;
+            height: 50px;
+            &.have-tit {
+                padding-left: 40px;
+                .tit-left {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    line-height: 50px;
+                    padding: 0 10px;
+                    color: $label-gray;
+                    font-size: 24px;
+                    font-weight: 400;
+                    width: 40px;
+                    text-align: center;
+                }
+            }
+        }
+        .btn-close {
+            @include btn-close;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+        }
+        .modal-info {
+            padding: 19px 0;
+            border-top: 1px solid $border-gray;
+        }
+        .row-line {
+            padding: 0 25px;
+            .blue-txt {
+                font-weight: normal;
+            }
+            .group {
+                .top-title {
+                    color: $dark-black;
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    max-width: 600px;
+                }
+            }
+            .two-group {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -20px;
+                .items {
+                    margin-right: 20px;
+                    flex: 1;
+                    max-width: calc(50% - 20px);
+                    position: relative;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    .icon-right-arrow {
+                        @include mobile-next-back;
+                        width: 21px;
+                        height: 16px;
+                        position: absolute;
+                        right: 66px;
+                        top: 15px;
+                        transform: rotate(-180deg);
+                    }
+                    .label-txt {
+                        color: $font-black;
+                        font-weight: 700;
+                        font-size: 13px;
+                        margin-bottom: 6px;
+                        &.thin-label {
+                            font-weight: normal;
+                            text-transform: uppercase;
+                            font-size: 10px;
+                            color: $font-black;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .drop-area {
+                        border: 1px solid $black;
+                    }
+                    .values {
+                        .bold-txt {
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                        .phone-number {
+                            margin-bottom: 25px;
+                            font-size: 12px;
+                        }
+                    }
+                    
+                }
+                .control-item {
+                    margin-bottom: 15px;
+                    &.disabled {
+                        opacity: 0.4;
+                        pointer-events: none;
+                    }
+                    .drop-module {
+                        .phoneNumber {
+                            color: $font-black;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-btns {
+            margin: 0 26px;
+            padding: 20px 30px 23px;
+            justify-content: center;
+            border-top: 1px solid $border-gray;
+            .btn {
+                min-width: 152px;
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+    .modal-default {
+        &.update-ransfer-modal {
+            .modal-mains {
+                width: 667px;
+                .title-area {
+                    margin-bottom: -7px;
+                }
+            }
+            .date-bar {
+                border: 0;
+                .lefts {
+                    .icon-calender {
+                        background-size: 20px 20px;
+                    }
+                }
+            }
+            .bottom-btns {
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                .btn-green {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+    .modal-default {
+        &.update-ransfer-modal {
+            .modal-mains {
+                margin: 17px auto;
+                width: 95%;
+            }
+            .row-line {
+                .two-group {
+                    margin-right: 0;
+                    .items {
+                        margin-right: 0;
+                        flex: 0 0 100%;
+                        max-width: calc(100%);
+                    }
+                }
+            }
+        }
+    }
+}

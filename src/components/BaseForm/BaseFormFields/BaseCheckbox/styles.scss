@@ -1,0 +1,21 @@
+@import '../../../../styles/_variables.scss';
+
+.base-checkbox {
+  display: flex;
+  align-items: center;
+  .option-text {
+    cursor: pointer;
+    margin-left: 6px;
+    font-weight: bold;
+    color: $font-black;
+    font-size: 14px;
+    line-height: 17px;
+    white-space: nowrap;
+  }
+  .radio-checkbox {
+    label::before {
+      border-radius: 24px;
+    }
+    margin-right: 34px;
+  }
+}

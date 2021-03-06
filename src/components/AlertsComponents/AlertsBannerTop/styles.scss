@@ -1,0 +1,156 @@
+@import '../../../styles/_variables.scss';
+
+// .banner-wrap
+.banner-wrap {
+  display: flex;
+  padding: 20px 12px;
+  background-color: $white;
+  flex-wrap: wrap;
+  .items {
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+    margin-bottom: 5px;
+    padding: 0 12px;
+    .white-panel {
+      border-radius: 10px;
+      padding: 20px;
+      background-color: $gray-block;
+      min-height: 183px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .icons {
+        margin-bottom: 11px;
+        width: 32px;
+        height: 32px;
+        &.icon-user-line {
+          @include mobile-profile;
+        }
+        &.icon-payment {
+          @include icon-payment-alert;
+        }
+        &.icon-clock {
+          @include icon-clock;
+        }
+      }
+      .blue-title {
+        color: $font-black;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 10px 0 5px;
+      }
+      .thin-txt {
+        opacity: 0.75;
+        color: $font-black;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .btn {
+        margin-top: 16px;
+        height: 39px;
+        line-height: 39px;
+        font-size: 13px;
+      }
+      .btn-gray {
+        margin-top: 16px;
+        background-color: $btn-gray;
+        line-height: 39px;
+        height: 39px;
+        border-radius: 20px;
+        padding: 0 34px;
+        color: $light-gray;
+        font-size: 13px;
+        font-weight: 700;
+        min-width: 177px;
+      }
+      .btn-blue-border {
+        border-radius: 24px;
+        background-color: $green;
+        line-height: 37px;
+        padding: 0 20px;
+        min-width: 177px;
+        color: $font-black;
+        font-size: 13px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+  // .banner-wrap
+  .banner-wrap {
+    padding-top: 36px;
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $min-desktop-width) {
+  // .banner-wrap
+  .banner-wrap {
+    .items {
+      .white-panel {
+        .btn {
+          padding: 0 10px;
+          min-width: 100%;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  // .banner-wrap
+  .banner-wrap {
+    flex-direction: column;
+    padding: 0;
+    :nth-child(1) {
+      .white-panel {
+        border-top: 1px solid $border-gray;
+      }
+    }
+    .items {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 0;
+      padding: 0;
+      .white-panel {
+        cursor: pointer;
+        position: relative;
+        padding: 17px 151px 19px 60px;
+        min-height: 96px;
+        border-bottom: 1px solid $border-gray;
+        border-radius: 0;
+        margin: 0;
+        background-color: $white;
+        .icons {
+          margin-bottom: 0;
+          position: absolute;
+          left: 21px;
+          top: 27px;
+          &.icon-user-line {
+            background-size: 24px 24px;
+          }
+          &.icon-payment {
+            background-size: 18px 22px;
+          }
+          &.icon-clock {
+            background-size: 20px 20px;
+          }
+        }
+        .btn-gray {
+          width: 134px;
+          border-radius: 24px;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          margin-top: -20px;
+          min-width: auto;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import '../../../styles/_variables.scss';
+
+.transaction-history-left-filter {
+    .modal-body {
+        overflow: unset!important;
+    }
+    .black-title {
+        color: $font-black;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22px;
+        margin-bottom: 30px;
+    }
+    .items {
+      margin-bottom: 15px;
+      .top-gray-title {
+        color: $font-black;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        .radio-wrap {
+          margin: 10px 0;
+        }
+      }
+      .check-group {
+        display: flex;
+        flex-direction: column;
+        .checkbox-wrap {
+          margin: 10px 0;
+        }
+      }
+      .date-group {
+        display: flex;
+        .date-item {
+          .date-boxs {
+            .inputs {
+              border: none;
+              padding-left: 0;
+              .react-datepicker__input-container {
+                background-position-x: 0;
+                padding-left: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottom-btn {
+      .btn-green {
+        min-width: 100px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 14px;
+        margin-right: 25px;
+      }
+    }
+}

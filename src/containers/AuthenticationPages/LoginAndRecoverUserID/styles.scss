@@ -1,0 +1,95 @@
+@import '../../../styles/variables';
+@import '../../../styles/buttons';
+
+.login-container {
+  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  > .row {
+    margin: 0;
+    height: 100%;
+    > div {
+      height: 100%;
+      padding: 0;
+      &.form-col {
+        padding: 64px;
+        display: flex;
+        flex-direction: column;
+        .title-text {
+          font-family: $gotham-rounded;
+          font-weight: bold;
+          color: $dark-blue;
+          font-size: 26px;
+          width: 200px;
+          margin-bottom: 72px;
+        }
+        .login-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .logo {
+            margin-bottom: 64px;
+            align-self: flex-start;
+          }
+          .login-form-wrapper {
+            width: 40%;
+            min-width: 384px;
+          }
+          .error-text {
+            color: $error-red;
+            font-size: 12px;
+            margin-top: 32px;
+          }
+        }
+        .links {
+          flex-grow: 1;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          font-weight: bold;
+          font-size: 16px;
+          color: $green;
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+      &.carousel-col {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .login-container {
+    > .row {
+      > div {
+        .form-row {
+          padding-top: 32px;
+        }
+        &.form-col,
+        &.carousel-col {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        &.form-col {
+          .login-content {
+            .login-form-wrapper {
+              width: 100%;
+              min-width: none;
+              .login-form {
+                margin-top: 24px;
+              }
+            }
+          }
+        }
+        &.carousel-col {
+          position: absolute;
+          display: block;
+        }
+      }
+    }
+  }
+}

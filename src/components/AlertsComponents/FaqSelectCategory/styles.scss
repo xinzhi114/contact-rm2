@@ -1,0 +1,51 @@
+@import '../../../styles/_variables.scss';
+.faq-select-lefts {
+  box-shadow: 0 5px 12px $shadow-gray;
+  border-radius: 6px;
+  background-color: $white;
+  padding: 14px 20px;
+  flex: 0 0 305px;
+  max-width: 305px;
+  .black-title {
+    color: $font-black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  .tab-list {
+    li {
+      margin-bottom: 5px;
+    }
+    .tab-bar {
+      display: block;
+      padding: 13px 16px;
+      height: 44px;
+      border-radius: 4px;
+
+      color: $dark-green;
+      font-size: 14px;
+      font-weight: 700;
+      &.current {
+        color: $dark-black;
+        background-color: $gray-block;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $smaller-desktop-width) {
+  .faq-select-lefts {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $min-desktop-width) {
+  .faq-select-lefts {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,237 @@
+@import '../../../styles/_variables.scss';
+
+.finance-tab-contents {
+  padding: 0;
+}
+.tab-account-aggregation {
+  .border-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    .items {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .inner {
+      height: 100%;
+      padding: 30px 19px;
+      margin-right: 20px;
+      border: 1px solid #e3e3e3;
+      border-top-left-radius: 15px;
+      background: $white;
+      box-shadow: 0 1px 6px #00000001;
+    }
+    .title-bar {
+      justify-content: flex-start !important;
+      .title {
+        color: $font-black;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .blue-points1,
+      .blue-points2 {
+        width: 26px;
+        height: 26px;
+        background-color: #234a5e;
+        border-radius: 100%;
+        color: $white;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 26px;
+      }
+      .blue-points1 {
+        margin-right: 14px;
+      }
+      .blue-points2 {
+        margin-left: auto !important;
+      }
+      .icon-expand {
+        @include icon-expand;
+        cursor: pointer;
+        width: 12px;
+        height: 12px;
+        margin-left: auto;
+        &.expanded {
+          transform: rotateZ(180deg);
+        }
+      }
+    }
+    .chat-boxs {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      min-height: 150px;
+      position: relative;
+      padding-top: 50px;
+      .white-panel {
+        display: flex;
+        justify-content: center;
+      }
+      .chat-num {
+        margin: 0 auto;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: $font-black;
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+    .gray-list {
+      margin-top: 50px;
+      .gray-item {
+        border-radius: 5px;
+        padding: 15px 16px;
+        background-color: $bg-gray;
+        margin-bottom: 8px;
+        .titles {
+          color: $font-black;
+          font-size: 12px;
+          font-weight: 700;
+        }
+        .parent {
+          color: $font-black;
+          font-size: 12px;
+          font-weight: 700;
+        }
+        .points-example {
+          margin-bottom: 5px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .points {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            &.green {
+              background-color: $bg-green;
+            }
+            &.overdraft-color {
+              background-color: $dark-red;
+            }
+            &.isa-color {
+              background-color: $bg-green;
+            }
+            &.dark-isa-color {
+              background-color: $font-black;
+            }
+            &.bonds-color {
+              background-color: #71b2c9;
+            }
+          }
+          .txt {
+            color: $font-black;
+            font-size: 12px;
+            &.thin {
+              color: $font-black;
+              font-weight: normal;
+            }
+          }
+          .price {
+            color: $font-black;
+            font-size: 12px;
+            &.thin {
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 1254px width */
+@media (max-width: $normal-desktop-width) {
+  .tab-account-aggregation {
+    svg.half-donut {
+      transform: scale(0.7);
+    }
+    .border-boxs {
+      .chat-boxs {
+        .chat-num {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 1180px width */
+@media (max-width: $smaller-desktop-width) {
+  .tab-account-aggregation {
+    padding-top: 24px;
+    .border-boxs {
+      .items {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+/* fix layout issue when smaller than 992px width */
+@media (max-width: $min-desktop-width) {
+  .tab-account-aggregation {
+    .border-boxs {
+      .chat-boxs {
+        .chat-num {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .finance-tab-contents {
+    margin-left: 0;
+  }
+  .tab-account-aggregation {
+    padding: 0;
+    svg.half-donut {
+      transform: scale(1.2);
+      margin-left: auto;
+    }
+    .border-boxs {
+      flex-wrap: wrap;
+      .chat-boxs {
+        background: $bg-gray;
+        min-height: 180px !important;
+        padding-top: 20px !important;
+        .chat-num {
+          font-size: 20px;
+        }
+      }
+      .inner {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        min-height: auto;
+        padding-bottom: 10px;
+        .title-bar {
+          padding: 17px 24px;
+          background-color: $bg-gray;
+          .title {
+            font-size: 16px;
+          }
+        }
+        .gray-list {
+          padding: 0;
+          margin-top: 0 !important;
+          .gray-item {
+            background: $white;
+          }
+        }
+      }
+      .items {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

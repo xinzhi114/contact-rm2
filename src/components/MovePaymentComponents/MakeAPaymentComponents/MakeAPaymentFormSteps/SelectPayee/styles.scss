@@ -1,0 +1,102 @@
+@import '../../../../../styles/variables';
+
+.select-payee {
+  margin-bottom: 40px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  .form-check {
+    padding-left: 0;
+  }
+  .payee-list-top-bar {
+    justify-content: space-between;
+    margin-bottom: 36px;
+    &,
+    > div {
+      display: flex;
+      align-items: center;
+    }
+    .left-title {
+      img {
+        margin-right: 16px;
+      }
+      span {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .right-actions {
+      .select-payee-type-button-group {
+        padding-left: 22px;
+        .btn {
+          padding: 10px 24px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .payee-list-wrapper {
+    min-height: calc(76px * 4);
+    .payee-list {
+      .payee-item {
+        cursor: pointer;
+        margin: 3px 0;
+        border: 1px solid $border-gray;
+        border-radius: 6px;
+        .name {
+          min-width: 17%;
+        }
+        .payee-col {
+          min-width: 11%;
+          padding-right: 0;
+          .value {
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          &.payee-reference {
+            min-width: 19%;
+          }
+          &.account-number {
+            min-width: 22%;
+          }
+          &.sort-code {
+            width: 20%;
+          }
+        }
+      }
+    }
+    .actions {
+      cursor: pointer;
+      width: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      span {
+        height: 6px;
+        line-height: 1px;
+      }
+    }
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .select-payee {
+    .payee-list-top-bar {
+      margin-bottom: 16px;
+      .right-actions {
+        flex-wrap: wrap;
+        width: 100%;
+        .search-bar-payee.expanded {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .payee-list-wrapper {
+      .payee-list.grid-view {
+        justify-content: space-evenly;
+      }
+    }
+  }
+}

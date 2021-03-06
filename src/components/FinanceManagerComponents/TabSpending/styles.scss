@@ -1,0 +1,467 @@
+@import '../../../styles/_variables.scss';
+
+.tab-spending {
+  padding: 43px 36px;
+  background: $white;
+  .top-title {
+    color: $font-black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .chart-panel {
+    display: flex;
+    padding-top: 55px;
+    .white-panel {
+      flex: 0 0 25%;
+      max-width: 25%;
+      display: flex;
+      justify-content: center;
+    }
+    .spending-chart {
+      margin-right: 60px;
+    }
+    .right-gray-list {
+      flex: 0 0 75%;
+      max-width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+      .gray-group {
+        margin-right: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 10px 20px;
+        flex: 0 0 47%;
+        max-width: 47%;
+        background-color: $bg-gray;
+        border-radius: 5px;
+        align-items: flex-start;
+        &:hover {
+          cursor: pointer;
+        }
+        &.current {
+          box-shadow: 0 5px 12px $shadow-gray;
+          background-color: $white;
+        }
+        &.open {
+          background-color: $white;
+          border-radius: 4px;
+          position: relative;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+          .rights,
+          .lefts {
+            position: relative;
+            z-index: 1;
+          }
+
+          .right-txt {
+            .title {
+              font-weight: 300;
+            }
+            .price {
+              display: none;
+            }
+          }
+          .rights {
+            .drop-parent {
+              .icon-arrow {
+                transform: rotate(-180deg);
+              }
+            }
+          }
+          .icon-arrow {
+            @include btn-right-arrow;
+            margin-left: 8px;
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+          }
+          .more-panel {
+            display: block;
+            position: absolute;
+            top: 72px;
+            left: 0;
+            background-color: $white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+            width: 100%;
+            margin-bottom: 10px;
+            z-index: 99;
+            .title-bar {
+              padding: 11px 30px;
+              border-top: 1px solid $bg-gray;
+              border-bottom: 1px solid $bg-gray;
+              .blue-title {
+                color: $font-black;
+                font-size: 14px;
+                font-weight: 700;
+              }
+              .green-txt {
+                color: $bg-green;
+                font-size: 16px;
+                font-weight: 300;
+              }
+            }
+
+            .lists {
+              padding: 0 5px 0 20px;
+              ul {
+                max-height: 278px;
+                overflow-y: auto;
+                padding-right: 15px;
+                li {
+                  border-bottom: 1px solid $bg-gray;
+                  display: flex;
+                  padding: 8px 10px;
+                  position: relative;
+                  align-items: center;
+                  flex-wrap: wrap;
+                  .lefts {
+                    display: flex;
+                    align-items: center;
+                    .icons {
+                      margin-right: 10px;
+                      background-size: 16px 16px;
+                    }
+                  }
+                  &.activesubitem {
+                    background: #e7f6f4;
+                  }
+                  .move-container {
+                    margin: 10px 0;
+                    width: 100%;
+                    .txt {
+                      font-size: 14px;
+                      color: $font-black;
+                      font-weight: 700;
+                    }
+                  }
+                  &.move-status {
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+                    background-color: $white;
+                    padding: 10px 10px 10px 6px;
+                  }
+                  .top-txt {
+                    color: $font-black;
+                    font-size: 14px;
+                    margin-bottom: 2px;
+                  }
+                  .gray-txt {
+                    color: $disabled-color;
+                    font-size: 12px;
+                  }
+                  .rights {
+                    text-align: right;
+                    margin-left: auto;
+                    width: 50%;
+                  }
+                  .green-dash-box {
+                    background-color: #e7f6f4;
+                    border: 1px dashed #39dac5;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+            .view-more {
+              text-align: center;
+              padding: 10px 0;
+              .green-link {
+                color: $bg-green;
+                font-size: 14px;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        .more-panel {
+          display: none;
+        }
+        .lefts {
+          display: flex;
+        }
+        .left-point {
+          width: 14px;
+          height: 14px;
+          display: inline-block;
+          margin-right: 15px;
+          border-radius: 100%;
+          flex: 0 0 14px;
+          max-width: 14px;
+          margin-top: 4px;
+          vertical-align: bottom;
+        }
+        .icon-txt {
+          display: flex;
+          .icons {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            flex: 0 0 20px;
+            max-width: 20px;
+            margin-top: -1px;
+            img {
+              width: 17px;
+              height: 17px;
+            }
+          }
+        }
+        .right-txt {
+          .title {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 500;
+          }
+          .price {
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 300;
+          }
+        }
+        .drop-parent {
+          .parent-list {
+            display: inline-block;
+            color: $font-black;
+            font-size: 14px;
+            font-weight: 500;
+          }
+          .icon-arrow {
+            @include btn-right-arrow;
+            margin-left: 8px;
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1440px width */
+@media (max-width: $bigger-tab-spending-width) {
+  .tab-spending {
+    svg.half-donut {
+      transform: scale(1);
+      margin: 0 auto;
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1280px width */
+@media (max-width: $bigger-desktop-width) {
+  .tab-spending {
+    svg.half-donut {
+      transform: scale(0.7);
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $normal-desktop-width) {
+  .tab-spending {
+    &.more-panel-open-third-row {
+      margin-bottom: 150px;
+    }
+    &.more-panel-open-forth-row {
+      margin-bottom: 175px;
+    }
+    &.more-panel-open-fifth-row {
+      margin-bottom: 260px;
+    }
+    &.more-panel-open-last-row {
+      margin-bottom: 386px;
+    }
+  }
+}
+
+@media (max-width: $normal-desktop-width) {
+  .tab-spending {
+    .chart-panel {
+      flex-direction: column;
+      .white-panel {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 20px;
+      }
+      .right-gray-list {
+        flex: 0 0 100%;
+        max-width: 100%;
+        .gray-group {
+          flex: 0 0 100%;
+          max-width: 100%;
+          &.open {
+            margin-bottom: 414px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 1024px width */
+@media (max-width: $min-desktop-width) {
+  .tab-spending {
+    .chart-panel {
+      .white-panel {
+        padding-bottom: 30px;
+      }
+    }
+    .mobile-tab-finance {
+      &.mobile-show {
+        display: block;
+      }
+    }
+  }
+}
+
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-mobile-width) {
+  .tab-spending {
+    padding: 0;
+    margin-bottom: 10px;
+    .drop-module {
+      .btn.btn-success {
+        text-align: end;
+      }
+    }
+    .dropdown-item {
+      &.active {
+        .item {
+          display: flex;
+          width: 100%;
+          .icon-checkmark {
+            @include icon-checkbox-16;
+            width: 16px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .two-dropdown {
+      flex-direction: column;
+      align-items: flex-start !important;
+      width: 100%;
+      padding: 0 20px;
+      .items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid $border-gray;
+      }
+    }
+    svg.half-donut {
+      transform: scale(0.7);
+      margin: 0 auto;
+    }
+    .chart-panel {
+      padding-top: 0;
+      .white-panel {
+        padding-bottom: 0;
+      }
+    }
+    .right-gray-list {
+      padding: 0 28px;
+      margin-bottom: 30px;
+      .gray-group.open {
+        margin-bottom: 400px !important;
+      }
+    }
+    .top-title {
+      padding: 15px 23px;
+      background-color: $bg-gray;
+      margin-bottom: 15px;
+    }
+  }
+  .mobile-hide-strict {
+    display: none !important;
+  }
+  .more-panel {
+    top: 53px !important;
+    .title-bar {
+      padding: 11px 15px !important;
+    }
+    .lists {
+      padding: 0 5px !important;
+      .drop-module {
+        .btn.btn-success {
+          text-align: start;
+        }
+      }
+      ul {
+        padding-right: 0 !important;
+        li {
+          .rights {
+            max-width: 50% !important;
+            width: auto !important;
+          }
+          .move-container {
+            .finance-manager-move-to-dropdown {
+              z-index: 999 !important;
+              .dropdown-menu {
+                &.show {
+                  border: none !important;
+                  border-radius: 2px;
+                  margin-top: -1px !important;
+                  background: $white !important;
+                  .dropdown-item {
+                    padding: 10px 15px;
+                    font-size: 14px;
+                    .item {
+                      display: flex;
+                      align-items: center;
+                      width: 100%;
+                      .icon-checkmark {
+                        margin-left: auto;
+                      }
+                      .icon {
+                        @include icon-finance-manager-move-default;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        margin-right: 15px;
+                        &.icon-Groceries {
+                          @include icon-finance-manager-move-groceries;
+                        }
+                        &.icon-Education {
+                          @include icon-finance-manager-move-education;
+                        }
+                        &.icon-Travel {
+                          @include icon-finance-manager-move-travel;
+                        }
+                        &.icon-Mortgage {
+                          @include icon-finance-manager-move-mortgage;
+                        }
+                        &.icon-Entertainment {
+                          @include icon-finance-manager-move-entertainment;
+                        }
+                        &.icon-Charity {
+                          @include icon-finance-manager-move-charity;
+                        }
+                        &.icon-Shopping {
+                          @include icon-finance-manager-move-shopping;
+                        }
+                        &.icon-Miscellaneous {
+                          @include icon-finance-manager-move-miscellaneous;
+                        }
+                        &.icon-Transfers {
+                          @include icon-finance-manager-move-transfers;
+                        }
+                        &.icon-Healthcare {
+                          @include icon-finance-manager-move-healthcare;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
