@@ -848,13 +848,43 @@
       "normal": "Normal",
       "good": "Good",
       "excellent": "Excellent",
-      "customer_reviews": "Customer reviews",
       "reviews": "Reviews",
       "sort_by": "Sort by",
       "rating": "Rating",
       "rate": "Rate",
       "me": "me",
       "load_more": "Load more"
+    }
+  },
+  "bookAppointment": {
+    "leftBar": {
+      "imformation_title": "Important imformation",
+      "imformation_text": "1. Calendar invites slots are for 30 minutes. Customer has optiin to book multiples slots.",
+      "available_today": "Available Today"
+    },
+    "right": {
+      "cancel": "Cancel",
+      "continue": "Continue",
+      "subject": {
+        "subject": "Subject",
+        "first_enter": "First enter appointment subject and description",
+        "enter_your_subject": "Enter you subject",
+        "enter_your_description": "Enter you description",
+        "attach_file": "Attach File",
+        "attachment": "Attachment"
+      },
+      "date_and_time": {
+        "date_and_time": "Date and Time",
+        "you_can_select_any_date": "You can select any date on weekDays only from current",
+      },
+      "metting_mode": {
+        "metting_mode": "Meeting mode",
+        "select_preferred": "Select preferred mode of metting: ",
+        "virtual_metting": "Virtual metting",
+        "in-person_metting": "In-person metting",
+        "phone_call": "Phone call",
+        "video_call": "Video call"
+      }
     }
   },
   "accountsDashboard": {

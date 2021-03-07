@@ -5,6 +5,7 @@ import { RegistrationAndResetPasscode } from './containers/AuthenticationPages/R
 import { GetOdysseyMobileApp } from './containers/AuthenticationPages/GetOdysseyMobileApp'
 import CustomerDashboard from './containers/CustomerDashboard'
 import ContactRM from './containers/ContactRM'
+import BookAppointment from './containers/BookAppointment'
 import AccountsDashboard from './containers/AccountsDashboard'
 import ManageCard from './containers/ManageCard'
 import ManageProfile from './containers/ManageProfile'
@@ -63,6 +64,7 @@ export default [
   createPage('/getMobileApp', 'GetOdysseyMobileApp', GetOdysseyMobileApp),
   createPage('/customerDashboard', 'CustomerDashboard', CustomerDashboard),
   createPage('/contactRM', 'ContactRM', ContactRM),
+  createPage('/contactRM/BookAppointment', 'BookAppointment', BookAppointment),
   createPage('/accountsDashboard', 'AccountsDashboard', AccountsDashboard),
   createPage('/accountsDashboard/:accountType', 'AccountsDashboard', AccountsDashboard),
   createPage(
