@@ -865,6 +865,7 @@
     "right": {
       "cancel": "Cancel",
       "continue": "Continue",
+      "book_appointment": "Book Appointment",
       "subject": {
         "subject": "Subject",
         "first_enter": "First enter appointment subject and description",

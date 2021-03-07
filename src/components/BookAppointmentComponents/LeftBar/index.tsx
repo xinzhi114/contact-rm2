@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
 import './styles.scss'
 import { useRM } from '../../DashboardRelationshipManager'
 import { ProfileIcon } from '../../ProfileIcon'

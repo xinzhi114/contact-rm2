@@ -4,10 +4,8 @@ import { connect } from 'react-redux'
 import nprogress from 'accessible-nprogress'
 import dataAction from '../../store/actions/dataAction'
 import DashboardLeftSidebar from '../../components/DashboardLeftSidebar'
-import LeftFilters from '../../components/BookAppointmentComponents/LeftFilters'
-import RightContactDetails from '../../components/ContactRMComponents/RightContactDetails'
-import RightAppointment from '../../components/ContactRMComponents/RightAppointment'
-import RightReviews from '../../components/ContactRMComponents/RightReviews'
+import LeftBar from '../../components/BookAppointmentComponents/LeftBar'
+import RightBookAppointment from '../../components/BookAppointmentComponents/RightBookAppointment';
 import ActivityDetection from '../../components/ActivityDetection'
 import { Appointment } from '../../domain/Appointment'
 import './styles.scss'
@@ -54,8 +52,6 @@ interface IBookAppointmentProps {
 
 const BookAppointment: React.FunctionComponent<IBookAppointmentProps> = (props) => {
   const [individualBusiness, setIndividualBusiness] = useState('individual')
-
-  const [currentTabIndex, setCurrentTabIndex] = useState(0)
 
   const [headerBreadcrumbData] = useState([
     {
@@ -114,25 +110,11 @@ const BookAppointment: React.FunctionComponent<IBookAppointmentProps> = (props) 
 
             <div className="three-row">
               <div className="two-row ">
-                <LeftFilters
+                <LeftBar
                   data={dataList.relationshipManager}/>
 
                 <div className={`right-container`}>
-                  {currentTabIndex === 0 && (
-                    <RightContactDetails
-                      relationshipManager={dataList.relationshipManager}
-                      contactDetails={dataList.contactDetails}
-                    />
-                  )}
-
-                  {currentTabIndex === 1 && (
-                    <RightAppointment
-                      relationshipManagerName={dataList.relationshipManager.name}
-                      dataList={dataList.appointment}
-                    />
-                  )}
-
-                  {currentTabIndex === 2 && <RightReviews dataList={dataList.reviews} />}
+                  <RightBookAppointment />
                 </div>
               </div>
             </div>
