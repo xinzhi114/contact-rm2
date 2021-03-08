@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useHistory } from 'react-router-dom'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
 import './styles.scss'
 import { useRM } from '../../DashboardRelationshipManager'
@@ -25,11 +26,16 @@ const tabArray = ['contact_details', 'appointment', 'reviews']
 const LeftFilters: React.FunctionComponent<ILeftFiltersProps> = (props) => {
   const { t: _t } = useTranslation()
   const t = (key: string) => _t(`contactRM.leftBar.${key}`)
+  const history = useHistory()
   const rm = useRM()
 
   const [data] = useState(props.data)
 
   const [currentIndex, setCurrentIndex] = useState(props.currentIndex)
+
+  const goto = () => {
+    history.push( '/contactRM/BookAppointment' )
+  }
 
   useEffect(() => {
     setCurrentIndex(props.currentIndex)
@@ -76,7 +82,7 @@ const LeftFilters: React.FunctionComponent<ILeftFiltersProps> = (props) => {
           classNameContainer={`btn-book-appointment`}
           label={t('book_appointment')}
           isButton
-          onClick={() => null}
+          onClick={ () => goto() }
         />
 
         <div className="description-txt">

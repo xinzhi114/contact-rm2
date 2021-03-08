@@ -51,6 +51,9 @@ class Index extends Component {
           <NavLink to="/contactRM">Contact RM</NavLink>
         </li>
         <li>
+          <NavLink to="/contactRM/BookAppointment">Book Appointment</NavLink>
+        </li>
+        <li>
           <NavLink to="/accountsDashboard">AccountsDashboard</NavLink>
         </li>
         <li>

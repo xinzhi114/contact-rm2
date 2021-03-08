@@ -228,7 +228,8 @@
         "current_account": "Current Account",
         "transaction_history": "Transaction History",
         "manage_debit_card": "Manage Debit Card",
-        "contact_details": "Contact Details"
+        "contact_details": "Contact Details",
+        "book_appointment": "Book Appointment"
       },
       "headerContent": {
         "edit_mode": "Edit Mode",
@@ -868,6 +869,7 @@
       "book_appointment": "Book Appointment",
       "subject": {
         "subject": "Subject",
+        "description": "Description",
         "first_enter": "First enter appointment subject and description",
         "enter_your_subject": "Enter you subject",
         "enter_your_description": "Enter you description",
