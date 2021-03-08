@@ -3,32 +3,56 @@ import { useTranslation } from 'react-i18next'
 import { useHistory } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
+import { IBaseFileInputValue } from '../../BaseForm/BaseFormFields/BaseFileInput'
 import Subject from '../Subject';
 import './styles.scss'
 
 interface IRightBookAppointmentProps {
 }
 
+export interface IBookAppointmentProps {
+  subject: string
+  description: string
+  attachedFiles: IBaseFileInputValue[]
+  dateAndTime: {
+    date: string
+    time_slot: string[]
+  }
+  meeting_mode: string
+  meeting_by: string
+  meeting_address?: string
+}
+
 const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> = (props) => {
   const { t: _t } = useTranslation()
   const t = ( key: string ) => _t( `bookAppointment.right.${ key }` )
   const history = useHistory()
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isContinue, setIsContinue] = useState( false )
+  const [currentStep, setCurrentStep] = useState<'subject' | 'date_and_time' | 'meeting_mode'>(
+    'subject'
+  )
+  const [isContinueDisabled, setIsContinueDisabled] = useState<boolean>( true )
+  const [formValue, setFormValue] = useState<IBookAppointmentProps>( {
+    subject: '',
+    description: '',
+    attachedFiles: [],
+    dateAndTime: {
+      date: '',
+      time_slot: []
+    },
+    meeting_mode: 'virtual',
+    meeting_by: 'phone_call',
+    meeting_address: ''
+  } )
 
   const goBack = () => {
     history.goBack()
   }
 
   const handleContinueClick = () => {
-    setCurrentIndex( currentIndex + 1 )
+    setCurrentStep( currentStep === 'subject' ? 'date_and_time' : 'meeting_mode' )
   }
 
-  // const isContinueDisabled =
-  //   (showPassword || forceShowPassword ? formValue.password === '' : false) ||
-  //   formValue.userId === '' ||
-  //   !!loading
-  const isContinueDisabled = false
+  const handleSubmit = () => { }
 
   useEffect( () => {
 
@@ -62,13 +86,18 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
               </div>
             </div>
             <div className="step-module">
-              { currentIndex === 0 && (
-                <Subject />
+              { currentStep === 'subject' && (
+                <Subject
+                  setIsContinueDisabled={ setIsContinueDisabled }
+                  formValue={ formValue }
+                  onChange={ ( formValue ) => setFormValue( formValue ) }
+                  onSubmit={ () => handleSubmit() }
+                />
               ) }
-              { currentIndex === 1 && (
+              { currentStep === 'date_and_time' && (
                 <div>Step2</div>
               ) }
-              { currentIndex === 2 && (
+              { currentStep === 'meeting_mode' && (
                 <div>Step3</div>
               ) }
             </div>
