@@ -1,62 +1,94 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useHistory } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
-import { IBaseFileInputValue } from '../../BaseForm/BaseFormFields/BaseFileInput'
-import Subject from '../Subject';
+import SubjectStep from '../SubjectStep';
+import { MeetingMode, VirtualMeetingWay, InPersonMeetingWay, IBookAppointmentProps, IStepProps, SetEditableHandleTypes } from '../../../constants/appointment';
 import './styles.scss'
 
 interface IRightBookAppointmentProps {
-}
-
-export interface IBookAppointmentProps {
-  subject: string
-  description: string
-  attachedFiles: IBaseFileInputValue[]
-  dateAndTime: {
-    date: string
-    time_slot: string[]
-  }
-  meeting_mode: string
-  meeting_by: string
-  meeting_address?: string
 }
 
 const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> = (props) => {
   const { t: _t } = useTranslation()
   const t = ( key: string ) => _t( `bookAppointment.right.${ key }` )
   const history = useHistory()
-  const [currentStep, setCurrentStep] = useState<'subject' | 'date_and_time' | 'meeting_mode'>(
+  const [currentStep, setCurrentStep] = useState<'subject' | 'date_time' | 'meeting_mode'>(
     'subject'
   )
+  const [isShowDateTimeStep, setIsShowDateTimeStep] = useState(false)
+  const [isShowMeetingModeStep, setIsShowMeetingModeStep] = useState(false)
+  const SubjectRef = useRef<SetEditableHandleTypes>(null)
+  const DateTimeRef = useRef<SetEditableHandleTypes>(null)
+  const MeetingModeRef = useRef<SetEditableHandleTypes>(null)
   const [isContinueDisabled, setIsContinueDisabled] = useState<boolean>( true )
-  const [formValue, setFormValue] = useState<IBookAppointmentProps>( {
+  const [formValue, setFormValue] = useState<IBookAppointmentProps>({
     subject: '',
     description: '',
     attachedFiles: [],
-    dateAndTime: {
-      date: '',
-      time_slot: []
-    },
+    date: '',
+    time_slots: [],
     meeting_mode: 'virtual',
-    meeting_by: 'phone_call',
+    meeting_way: 'phone_call',
     meeting_address: ''
-  } )
+  })
 
   const goBack = () => {
     history.goBack()
   }
 
   const handleContinueClick = () => {
-    setCurrentStep( currentStep === 'subject' ? 'date_and_time' : 'meeting_mode' )
+    switch(currentStep) {
+      case 'subject':
+        SubjectRef.current?.setEditable(false)
+        setIsShowDateTimeStep(true)
+        break;
+      case 'date_time':
+        DateTimeRef.current?.setEditable(false)
+        setIsShowMeetingModeStep(true)
+        break;
+      case 'meeting_mode':
+        MeetingModeRef.current?.setEditable(false)
+        break;
+      default:
+        break;
+    }
+    setCurrentStep(currentStep === 'subject' ? 'date_time' : 'meeting_mode' )
+    setIsContinueDisabled(true)
+    console.log(formValue, 'formValue');
   }
 
-  const handleSubmit = () => { }
-
   useEffect( () => {
-
-  }, [] )
+    const { subject, description, date, time_slots, meeting_mode, meeting_way, meeting_address } = formValue
+    switch(currentStep) {
+      case 'subject':
+        if (subject && description) {
+          setIsContinueDisabled(false)
+        }
+        break;
+      case 'date_time':
+        if (date && time_slots.length) {
+          setIsContinueDisabled(false)
+        }
+        break;
+      case 'meeting_mode':
+        if (meeting_mode && meeting_way) {
+          // in-person meeting mode
+          if (meeting_mode === MeetingMode[1] ) {
+            // at customer location
+            if (meeting_way === InPersonMeetingWay[0] && meeting_address === '') {
+              setIsContinueDisabled(true)
+            }
+          }
+          setIsContinueDisabled(false)
+        }
+        break;
+      default:
+        setIsContinueDisabled(true)
+        break;
+    }
+  }, [formValue] )
 
   return (
     <div className="contact-rm-right-appointment ">
@@ -86,20 +118,19 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
               </div>
             </div>
             <div className="step-module">
-              { currentStep === 'subject' && (
-                <Subject
-                  setIsContinueDisabled={ setIsContinueDisabled }
-                  formValue={ formValue }
-                  onChange={ ( formValue ) => setFormValue( formValue ) }
-                  onSubmit={ () => handleSubmit() }
-                />
-              ) }
-              { currentStep === 'date_and_time' && (
-                <div>Step2</div>
-              ) }
-              { currentStep === 'meeting_mode' && (
+              { isShowMeetingModeStep && (
                 <div>Step3</div>
               ) }
+              { isShowDateTimeStep && (
+                <>
+                  <div>Step2</div>
+                </>
+              ) }
+              <SubjectStep
+                ref={SubjectRef}
+                formValue={ formValue }
+                onChange={ ( formValue ) => setFormValue( formValue ) }
+              />
             </div>
           </div>
         </React.Fragment>

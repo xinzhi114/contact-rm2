@@ -1,0 +1,51 @@
+@import '../../../styles/_variables.scss';
+
+.border-boxs {
+    border-radius: 6px;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    padding: 22px;
+    // align-items: flex-start;
+    margin-bottom: 15px;
+
+    .lefts {
+        align-items: flex-start;
+        flex: 1;
+
+        .color-point {
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 24px;
+            display: inline-block;
+            background-color: #09d1b6;
+            color: #003d4c;
+            font-weight: 700;
+            margin-right: 15px;
+            margin-top: 2px;
+        }
+
+        .right-txt {
+            flex: 1;
+
+            .titles {
+                font-weight: 700;
+                color: #001f26;
+                font-size: 18px;
+                font-family: $gotham-rounded;
+                margin-bottom: 20px;
+            }
+
+            .sub-titles {
+                font-weight: normal;
+                color: #003D4C;
+                font-size: 14px;
+                font-family: $open-sans;
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+}

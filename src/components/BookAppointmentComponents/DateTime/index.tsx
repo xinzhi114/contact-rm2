@@ -1,26 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useImperativeHandle, forwardRef, SetStateAction, Dispatch } from 'react'
 import { useTranslation } from 'react-i18next'
 import { IBaseFormFields, IBaseFormFieldValue } from '../../../constants/baseForm'
-import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
+import { BaseTextLinkButton } from '../../BaseForm/BaseFormFields/BaseTextLinkButton'
 import { IBaseFileInputValue } from '../../BaseForm/BaseFormFields/BaseFileInput'
 import BaseForm from '../../BaseForm'
-import { IBookAppointmentProps } from '../RightBookAppointment';
+import { IStepProps, SetEditableHandleTypes } from '../../../constants/appointment';
 import './styles.scss'
 
-interface ISubjectProps {
-  setIsContinueDisabled: ( disabled: boolean ) => void
-  formValue: IBookAppointmentProps
-  onChange: ( formValue: IBookAppointmentProps ) => void
-  onSubmit: () => void
-}
-
-const Subject: React.FunctionComponent<ISubjectProps> = ( props ) => {
+const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes,IStepProps> = ( props, ref ) => {
   const { t: _t } = useTranslation()
   const t = ( key: string ) => _t( `bookAppointment.right.subject.${ key }` )
 
   const [editable, setEditable] = useState<boolean>( true )
 
-  const { formValue, onChange, onSubmit, setIsContinueDisabled } = props
+  const { formValue, onChange } = props
 
   const fields: IBaseFormFields = {
     subject: {
@@ -62,6 +55,10 @@ const Subject: React.FunctionComponent<ISubjectProps> = ( props ) => {
     },
   }
 
+  useImperativeHandle(ref, () => ({
+    setEditable
+  }))
+
   return (
     <div className="border-boxs">
       { editable ?
@@ -101,4 +98,4 @@ const Subject: React.FunctionComponent<ISubjectProps> = ( props ) => {
   )
 }
 
-export default Subject
+export default forwardRef(SubjectStep)
