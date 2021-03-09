@@ -860,7 +860,10 @@
   "bookAppointment": {
     "leftBar": {
       "imformation_title": "Important imformation",
-      "imformation_text": "1. Calendar invites slots are for 30 minutes. Customer has optiin to book multiples slots.",
+      "imformation_text_1": "1. Calendar invites slots are for 30 minutes. Customer has option to book multiple slots.",
+      "imformation_text_2": "2. Appointments can be booked up to 30 days into the future.",
+      "imformation_text_3": "3. When Relationship Manager accepts, declines or proposes another time for the meeting, a mail is triggered to the customer.",
+      "imformation_text_4": "4. RM contact will be available for the customer who have been assigned Individual RMs at customer.",
       "available_today": "Available Today"
     },
     "right": {
@@ -878,7 +881,7 @@
       },
       "date_and_time": {
         "date_and_time": "Date and Time",
-        "you_can_select_any_date": "You can select any date on weekDays only from current"
+        "you_can_select_any_date": "You can select any date on weekdays only from current or future month (next 30 days) and select one or multiple time slot (max 2 hours) between 9:15 AM till 5:15 PM for the selected date."
       },
       "metting_mode": {
         "metting_mode": "Meeting mode",

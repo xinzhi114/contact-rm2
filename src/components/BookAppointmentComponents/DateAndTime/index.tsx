@@ -1,5 +1,8 @@
-import React, { useState, useEffect, useImperativeHandle, forwardRef, SetStateAction, Dispatch } from 'react'
+import React, { useState, useEffect, useImperativeHandle, forwardRef } from 'react'
 import { useTranslation } from 'react-i18next'
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
+import { DATE_FORMAT } from '../../../constants/date'
 import { IBaseFormFields, IBaseFormFieldValue } from '../../../constants/baseForm'
 import { BaseTextLinkButton } from '../../BaseForm/BaseFormFields/BaseTextLinkButton'
 import { IBaseFileInputValue } from '../../BaseForm/BaseFormFields/BaseFileInput'
@@ -7,9 +10,9 @@ import BaseForm from '../../BaseForm'
 import { IStepProps, SetEditableHandleTypes } from '../../../constants/appointment';
 import './styles.scss'
 
-const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes,IStepProps> = ( props, ref ) => {
+const DateAndTime: React.ForwardRefRenderFunction<SetEditableHandleTypes,IStepProps> = ( props, ref ) => {
   const { t: _t } = useTranslation()
-  const t = ( key: string ) => _t( `bookAppointment.right.subject.${ key }` )
+  const t = ( key: string ) => _t( `bookAppointment.right.date_and_time.${ key }` )
 
   const [editable, setEditable] = useState<boolean>( true )
 
@@ -64,19 +67,27 @@ const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes,IStepPr
       { editable ?
         <>
           <div className="lefts flex">
-            <span className="color-point">1</span>
+            <span className="color-point">2</span>
             <div className="right-txt">
-              <div className="titles">{ t( 'subject' ) }</div>
-              <div className="sub-titles">{ t( 'first_enter' ) }</div>
-              <BaseForm fields={ fields } isShowHelp={ false } disableTranslation />
+              <div className="titles">{ t( 'date_and_time' ) }</div>
+              <div className="sub-titles">{ t( 'you_can_select_any_date' ) }</div>
+              {/* <DatePicker
+                placeholderText={t(
+                  'accountsDashboard.transactionLeftFilter.celendar_placeholder'
+                )}
+                dateFormat={DATE_FORMAT}
+                maxDate={new Date()}
+                selected={specificDateInput}
+                onChange={(event: Date) => this.handleDateChange(event)}
+              /> */}
             </div>
           </div>
         </>
         : <>
           <div className="lefts flex">
-            <span className="color-point">1</span>
+            <span className="color-point">2</span>
             <div className="right-txt">
-              <div className="titles">{ t( 'subject' ) }</div>
+              <div className="titles">{ t( 'date_and_time' ) }</div>
               <div className="three-area">
                 <div className="items">
                   <div className="label-txt">{ t( 'subject' ) }</div>
@@ -98,4 +109,4 @@ const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes,IStepPr
   )
 }
 
-export default forwardRef(SubjectStep)
+export default forwardRef(DateAndTime)

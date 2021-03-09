@@ -573,6 +573,9 @@
 @mixin icon-alert-circle {
   @include background-image('/assets/icon-alert-circle.svg', 20px, 20px);
 }
+@mixin icon-alert-circle-small {
+  @include background-image('/assets/icon-alert-circle.svg', 14px, 14px);
+}
 @mixin transfer-between {
   @include background-image('/assets/transfer-between.svg', 21px, 20px);
 }

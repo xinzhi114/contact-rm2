@@ -4,7 +4,8 @@ import { useHistory } from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
 import SubjectStep from '../SubjectStep';
-import { MeetingMode, VirtualMeetingWay, InPersonMeetingWay, IBookAppointmentProps, IStepProps, SetEditableHandleTypes } from '../../../constants/appointment';
+import { IBookAppointmentProps, SetEditableHandleTypes } from '../../../constants/appointment';
+import DateAndTime from '../DateAndTime';
 import './styles.scss'
 
 interface IRightBookAppointmentProps {
@@ -14,7 +15,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
   const { t: _t } = useTranslation()
   const t = ( key: string ) => _t( `bookAppointment.right.${ key }` )
   const history = useHistory()
-  const [currentStep, setCurrentStep] = useState<'subject' | 'date_time' | 'meeting_mode'>(
+  const [currentStep, setCurrentStep] = useState<'subject' | 'date_and_time' | 'meeting_mode'>(
     'subject'
   )
   const [isShowDateTimeStep, setIsShowDateTimeStep] = useState(false)
@@ -44,7 +45,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
         SubjectRef.current?.setEditable(false)
         setIsShowDateTimeStep(true)
         break;
-      case 'date_time':
+      case 'date_and_time':
         DateTimeRef.current?.setEditable(false)
         setIsShowMeetingModeStep(true)
         break;
@@ -54,7 +55,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
       default:
         break;
     }
-    setCurrentStep(currentStep === 'subject' ? 'date_time' : 'meeting_mode' )
+    setCurrentStep(currentStep === 'subject' ? 'date_and_time' : 'meeting_mode' )
     setIsContinueDisabled(true)
     console.log(formValue, 'formValue');
   }
@@ -67,20 +68,13 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
           setIsContinueDisabled(false)
         }
         break;
-      case 'date_time':
+      case 'date_and_time':
         if (date && time_slots.length) {
           setIsContinueDisabled(false)
         }
         break;
       case 'meeting_mode':
-        if (meeting_mode && meeting_way) {
-          // in-person meeting mode
-          if (meeting_mode === MeetingMode[1] ) {
-            // at customer location
-            if (meeting_way === InPersonMeetingWay[0] && meeting_address === '') {
-              setIsContinueDisabled(true)
-            }
-          }
+        if (meeting_mode && meeting_way && meeting_address)  {
           setIsContinueDisabled(false)
         }
         break;
@@ -123,7 +117,11 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
               ) }
               { isShowDateTimeStep && (
                 <>
-                  <div>Step2</div>
+                  <DateAndTime 
+                    ref={DateTimeRef}
+                    formValue={ formValue }
+                    onChange={ ( formValue ) => setFormValue( formValue ) }
+                  />
                 </>
               ) }
               <SubjectStep

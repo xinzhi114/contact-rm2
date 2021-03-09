@@ -72,8 +72,11 @@ const LeftFilters: React.FunctionComponent<ILeftFiltersProps> = (props) => {
         </div>
 
         <div className="imformation-box">
-          <span className="icon-info" /><span className="title">{t('imformation_title')}</span>
-          <div className="imformation-txt">{t('imformation_text')}</div>
+          <div className="imformation-title-box"><span className="icon-info" /><span className="title">{t('imformation_title')}</span></div>
+          <div className="imformation-txt">{t('imformation_text_1')}</div>
+          <div className="imformation-txt">{t('imformation_text_2')}</div>
+          <div className="imformation-txt">{t('imformation_text_3')}</div>
+          <div className="imformation-txt">{t('imformation_text_4')}</div>
         </div>
 
       </div>
