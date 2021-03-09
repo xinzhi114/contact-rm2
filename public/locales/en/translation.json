@@ -884,6 +884,8 @@
       },
       "date_and_time": {
         "date_and_time": "Date and Time",
+        "captial_appointment_date": "APPOINTMENT DATE",
+        "captial_appointment_time": "APPOINTMENT TIME",
         "you_can_select_any_date": "You can select any date on weekdays only from current or future month (next 30 days) and select one or multiple time slot (max 2 hours) between 9:15 AM till 5:15 PM for the selected date."
       },
       "metting_mode": {

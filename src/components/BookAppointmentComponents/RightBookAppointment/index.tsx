@@ -5,12 +5,12 @@ import { Button } from 'react-bootstrap'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
 import SubjectStep from '../SubjectStep';
 import { IBookAppointmentProps, SetEditableHandleTypes } from '../../../constants/appointment';
-import { IDisableDateAndTime } from '../../../domain/Appointment'
+import { IDisabledDateAndTime } from '../../../domain/Appointment'
 import DateAndTimeStep from '../DateAndTimeStep';
 import './styles.scss'
 
 interface IRightBookAppointmentProps {
-  disableDateAndTime: IDisableDateAndTime[]
+  disabledDateAndTime: IDisabledDateAndTime[]
 }
 
 const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> = (props) => {
@@ -27,17 +27,17 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
   const MeetingModeRef = useRef<SetEditableHandleTypes>(null)
   const [isContinueDisabled, setIsContinueDisabled] = useState<boolean>( true )
   const [formValue, setFormValue] = useState<IBookAppointmentProps>({
-    subject: '',
-    description: '',
-    attachedFiles: [],
-    date: '',
+    subject: '111111',
+    description: 'dsadasdasdasdas',
+    attachedFile: {},
+    date: new Date(),
     time_slots: [],
     meeting_mode: 'virtual',
     meeting_way: 'phone_call',
     meeting_address: ''
   })
 
-  const { disableDateAndTime } = props
+  const { disabledDateAndTime } = props
 
   const goBack = () => {
     history.goBack()
@@ -61,7 +61,6 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
     }
     setCurrentStep(currentStep === 'subject' ? 'date_and_time' : 'meeting_mode' )
     setIsContinueDisabled(true)
-    console.log(formValue, 'formValue');
   }
 
   useEffect( () => {
@@ -75,6 +74,8 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
       case 'date_and_time':
         if (date && time_slots.length) {
           setIsContinueDisabled(false)
+        } else {
+          setIsContinueDisabled(true)
         }
         break;
       case 'meeting_mode':
@@ -86,6 +87,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
         setIsContinueDisabled(true)
         break;
     }
+    console.log(formValue, 'formValue');
   }, [formValue] )
 
   return (
@@ -124,7 +126,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
                   <DateAndTimeStep
                     ref={DateTimeRef}
                     formValue={ formValue }
-                    disableDateAndTime={ disableDateAndTime }
+                    disabledDateAndTime={ disabledDateAndTime }
                     onChange={ ( formValue ) => setFormValue( formValue ) }
                   />
                 </>

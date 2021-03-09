@@ -18,7 +18,7 @@
       "address": "PO Box 17484<br/>34 Sample Court, Example Avenue SW 8EP London",
       "mapUrl": "https://www.google.com/maps/place/Chinatown,+San+Francisco,+CA/@37.7939041,-122.4103965,15.75z/data=!4m5!3m4!1s0x8085808b58a58a1d:0x289f3092660f80ac!8m2!3d37.7941378!4d-122.4077914"
     },
-    "disableDateAndTime": [
+    "disabledDateAndTime": [
       {
         "date": "Tuesday, 9 Mar 2021",
         "time": [

@@ -88,7 +88,7 @@ const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IStepP
                 </div>
                 <div className="items">
                   <div className="label-txt">{ t( 'captial_attachment' ) }</div>
-                  <div className="values">{ formValue.attachedFiles }</div>
+                  <div className="values">{ formValue.attachedFile.name }</div>
                 </div>
               </div>
             </div>

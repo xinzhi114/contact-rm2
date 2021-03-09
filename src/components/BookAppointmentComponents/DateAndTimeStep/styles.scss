@@ -105,6 +105,7 @@
                     .slot-cell-disabled {
                         background-color: $top-line-gray;
                         color: rgba(0, 31, 38, 0.85);
+                        cursor: not-allowed;
                     }
 
                     .slot-cell-selected {
