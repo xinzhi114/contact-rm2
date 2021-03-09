@@ -33,8 +33,8 @@
             font-size: 14px;
             line-height: 24px;
             display: inline-block;
-            background-color: #09d1b6;
-            color: #003d4c;
+            background-color: $green;
+            color: $font-black;
             font-weight: 700;
             margin-right: 15px;
             margin-top: 2px;
@@ -45,7 +45,7 @@
 
             .titles {
                 font-weight: 700;
-                color: #001f26;
+                color: $dark-black;
                 font-size: 18px;
                 font-family: $gotham-rounded;
                 margin-bottom: 20px;
@@ -53,7 +53,7 @@
 
             .sub-titles {
                 font-weight: normal;
-                color: #003D4C;
+                color: $font-black;
                 font-size: 14px;
                 font-family: $open-sans;
                 margin-bottom: 20px;
@@ -69,7 +69,7 @@
 
                 .selected-date {
                     font-weight: 700;
-                    color: #003D4C;
+                    color: $font-black;
                     font-size: 14px;
                     font-family: $open-sans;
                     margin-bottom: 10px;
@@ -77,7 +77,7 @@
 
                 .slots {
                     font-size: 10px;
-                    color: #003D4C;
+                    color: $font-black;
                     margin-bottom: 10px;
                 }
 
@@ -99,17 +99,17 @@
 
                     .slot-cell-available {
                         border: 1px solid #C9C5C1;
-                        color: #001F26;
+                        color: $dark-black;
                     }
 
                     .slot-cell-disabled {
-                        background-color: #EDEDED;
+                        background-color: $top-line-gray;
                         color: rgba(0, 31, 38, 0.85);
                     }
 
                     .slot-cell-selected {
                         background-color: #00D0B5;
-                        color: #001F26;
+                        color: $dark-black;
                     }
                 }
             }
@@ -126,14 +126,14 @@
 
                 .label-txt {
                     opacity: 0.5;
-                    color: #003d4c;
+                    color: $font-black;
                     font-size: 10px;
                     font-weight: 600;
                     text-transform: uppercase;
                 }
 
                 .values {
-                    color: #003d4c;
+                    color: $font-black;
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 18px;
