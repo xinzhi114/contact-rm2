@@ -121,7 +121,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
             <div className="step-module">
               { isShowMeetingModeStep && (
                 <MeetingModeStep
-                  ref={SubjectRef}
+                  ref={MeetingModeRef}
                   formValue={ formValue }
                   onChange={ ( formValue ) => setFormValue( formValue ) }
                 />
