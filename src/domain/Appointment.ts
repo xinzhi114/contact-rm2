@@ -18,3 +18,8 @@ export interface Appointment {
     timeOfAppointment: string
   }
 }
+
+export interface IDisableDateAndTime {
+  day: string,
+  time: string[]
+}

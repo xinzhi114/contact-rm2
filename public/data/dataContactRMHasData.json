@@ -18,10 +18,40 @@
       "address": "PO Box 17484<br/>34 Sample Court, Example Avenue SW 8EP London",
       "mapUrl": "https://www.google.com/maps/place/Chinatown,+San+Francisco,+CA/@37.7939041,-122.4103965,15.75z/data=!4m5!3m4!1s0x8085808b58a58a1d:0x289f3092660f80ac!8m2!3d37.7941378!4d-122.4077914"
     },
+    "disableDateAndTime": [
+      {
+        "date": "Tuesday, 9 Mar 2021",
+        "time": [
+          "9:15 - 9:45",
+          "10:45 - 11:15",
+          "16:15 - 16:45"
+        ]
+      },
+      {
+        "date": "Wednesday, 17 Mar 2021",
+        "time": [
+          "9:15 - 9:45",
+          "9:45 - 10:15",
+          "10:45 - 11:15",
+          "11:15 - 11:45",
+          "15:15 - 15:45",
+          "15:45 - 16:15",
+          "16:15 - 16:45"
+        ]
+      },
+      {
+        "date": "Friday, 26 Mar 2021",
+        "time": [
+          "9:45 - 10:15",
+          "11:15 - 11:45",
+          "15:15 - 15:45"
+        ]
+      }
+    ],
     "appointment": [
       {
         "appointmentRef": "2206996",
-        "dateOfAppointment": "Tuesday, 29 December 2020",
+        "dateOfAppointment": "Tuesday, new ",
         "dateLabelDay": "29",
         "dateLabelMonth": "Dec",
         "subject": "Personal banking",

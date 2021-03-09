@@ -5,10 +5,12 @@ import { Button } from 'react-bootstrap'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
 import SubjectStep from '../SubjectStep';
 import { IBookAppointmentProps, SetEditableHandleTypes } from '../../../constants/appointment';
+import { IDisableDateAndTime } from '../../../domain/Appointment'
 import DateAndTimeStep from '../DateAndTimeStep';
 import './styles.scss'
 
 interface IRightBookAppointmentProps {
+  disableDateAndTime: IDisableDateAndTime[]
 }
 
 const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> = (props) => {
@@ -34,6 +36,8 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
     meeting_way: 'phone_call',
     meeting_address: ''
   })
+
+  const { disableDateAndTime } = props
 
   const goBack = () => {
     history.goBack()
@@ -120,6 +124,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
                   <DateAndTimeStep
                     ref={DateTimeRef}
                     formValue={ formValue }
+                    disableDateAndTime={ disableDateAndTime }
                     onChange={ ( formValue ) => setFormValue( formValue ) }
                   />
                 </>

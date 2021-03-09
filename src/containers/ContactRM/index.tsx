@@ -9,7 +9,7 @@ import RightContactDetails from '../../components/ContactRMComponents/RightConta
 import RightAppointment from '../../components/ContactRMComponents/RightAppointment'
 import RightReviews from '../../components/ContactRMComponents/RightReviews'
 import ActivityDetection from '../../components/ActivityDetection'
-import { Appointment } from '../../domain/Appointment'
+import { Appointment, IDisableDateAndTime } from '../../domain/Appointment'
 import './styles.scss'
 
 interface IContactRMProps {
@@ -30,6 +30,7 @@ interface IContactRMProps {
         address: string
         mapUrl: string
       }
+      disableDateAndTime: IDisableDateAndTime[]
       appointment: Appointment[]
       reviews: {
         averageRating: number

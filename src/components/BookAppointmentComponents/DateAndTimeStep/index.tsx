@@ -6,30 +6,31 @@ import { IBaseFormFields, IBaseFormFieldValue } from '../../../constants/baseFor
 import { BaseTextLinkButton } from '../../BaseForm/BaseFormFields/BaseTextLinkButton'
 import { IBaseFileInputValue } from '../../BaseForm/BaseFormFields/BaseFileInput'
 import BaseForm from '../../BaseForm'
-import { IStepProps, SetEditableHandleTypes, MorningSlots, AfternoonSlots } from '../../../constants/appointment';
+import { IDisableDateAndTime } from '../../../domain/Appointment'
+import { SetEditableHandleTypes, MorningSlots, AfternoonSlots, IStepProps } from '../../../constants/appointment';
 import moment from 'moment';
+import _ from 'lodash';
 import './styles.scss'
 import './calendar.css'
 
-const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IStepProps> = ( props, ref ) => {
+const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IStepProps & { disableDateAndTime: IDisableDateAndTime[] }> = ( props, ref ) => {
   const { t: _t } = useTranslation()
   const t = ( key: string ) => _t( `bookAppointment.right.date_and_time.${ key }` )
 
   const [editable, setEditable] = useState<boolean>( true )
   const [selectedDate, setSelectedDate] = useState<Date | null>( new Date() )
-  const [formatedDate, setFormatedDate] = useState( '&nvsp;' )
+  const [formatedDate, setFormatedDate] = useState( '' )
   const [timeSlots, setTimeSlots] = useState( [] )
 
-  const { formValue, onChange } = props
+  const { formValue, onChange, disableDateAndTime } = props
   const today = new Date()
   const feature30days = today.getDate() + 30
   const feature30Date = new Date( today.setDate( feature30days ) )
 
   const handleCalendarChange = ( value: any ) => {
     setSelectedDate( value )
-    console.log( value, 'value' )
   }
-
+  // format choosen date
   const handleFormatDate = ( date: Date | null ): void => {
     if( date ) {
       const formatDate = moment( date ).format( "dddd, D MMM YYYY" )
@@ -37,6 +38,26 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
     } else {
       setFormatedDate( '' )
     }
+  }
+
+  const setDisabledDate = ( date: Date ) => {
+    // Creates an object composed of date generated from the disableDateAndTime
+    // disable date other than disableDateAndTime
+    const dictByDate = _.keyBy( disableDateAndTime, 'date' )
+    let disableDate = Object.keys( dictByDate ).map( ( item: any ) => {
+      if( dictByDate[item]['time'].length === 7 ) {
+        return new Date( item ).toISOString()
+      }
+    } ).filter( Boolean )
+    const isWeekend = [0, 6].includes( date.getDay() )
+
+    return disableDate.includes( date.toISOString() ) || isWeekend
+  }
+
+  const getDisableTime = ( date: Date ): string[] => {
+    const dateObj = disableDateAndTime.find( ( item: any ) => new Date( item['date'] ).toISOString() === new Date( date ).toISOString() )
+    const disableTime = dateObj ? dateObj['time'] : []
+    return disableTime
   }
 
   useImperativeHandle( ref, () => ( {
@@ -62,7 +83,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                   value={ selectedDate }
                   minDate={ new Date() }
                   maxDate={ feature30Date }
-                  tileDisabled={ ( { date } ) => [0, 6].includes( date.getDay() ) }
+                  tileDisabled={ ( { date } ) => setDisabledDate( date ) }
                   onChange={ handleCalendarChange } />
                 <div className="time-slots-container">
                   <div className="selected-date">{ formatedDate }</div>

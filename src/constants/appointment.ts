@@ -1,5 +1,6 @@
 import { IBaseFileInputValue } from '../components/BaseForm/BaseFormFields/BaseFileInput'
 import { SetStateAction, Dispatch } from 'react'
+import { IDisableDateAndTime } from '../domain/Appointment'
 
 export const MeetingMode = ['virtual_meeting', 'in_person_meeting'] as const
 export const VirtualMeetingWay = ['phone_call', 'video_call'] as const
@@ -15,7 +16,6 @@ export interface IStepProps {
   formValue: IBookAppointmentProps
   onChange: ( formValue: IBookAppointmentProps ) => void
 }
-
 export interface IBookAppointmentProps {
   subject: string
   description: string

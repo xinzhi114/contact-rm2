@@ -7,7 +7,7 @@ import DashboardLeftSidebar from '../../components/DashboardLeftSidebar'
 import LeftBar from '../../components/BookAppointmentComponents/LeftBar'
 import RightBookAppointment from '../../components/BookAppointmentComponents/RightBookAppointment';
 import ActivityDetection from '../../components/ActivityDetection'
-import { Appointment } from '../../domain/Appointment'
+import { Appointment, IDisableDateAndTime } from '../../domain/Appointment'
 import './styles.scss'
 
 interface IBookAppointmentProps {
@@ -28,6 +28,7 @@ interface IBookAppointmentProps {
         address: string
         mapUrl: string
       }
+      disableDateAndTime: IDisableDateAndTime[]
       appointment: Appointment[]
       reviews: {
         averageRating: number
@@ -118,7 +119,7 @@ const BookAppointment: React.FunctionComponent<IBookAppointmentProps> = (props) 
                   data={dataList.relationshipManager}/>
 
                 <div className={`right-container`}>
-                  <RightBookAppointment />
+                  <RightBookAppointment disableDateAndTime={ dataList.disableDateAndTime } />
                 </div>
               </div>
             </div>

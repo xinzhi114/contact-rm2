@@ -4,10 +4,10 @@ import { IBaseFormFields, IBaseFormFieldValue } from '../../../constants/baseFor
 import { BaseTextLinkButton } from '../../BaseForm/BaseFormFields/BaseTextLinkButton'
 import { IBaseFileInputValue } from '../../BaseForm/BaseFormFields/BaseFileInput'
 import BaseForm from '../../BaseForm'
-import { IStepProps, SetEditableHandleTypes } from '../../../constants/appointment';
+import { IStepProps, SetEditableHandleTypes } from '../../../constants/appointment'
 import './styles.scss'
 
-const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes,IStepProps> = ( props, ref ) => {
+const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IStepProps> = ( props, ref ) => {
   const { t: _t } = useTranslation()
   const t = ( key: string ) => _t( `bookAppointment.right.subject.${ key }` )
 
