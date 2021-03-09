@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
 import SubjectStep from '../SubjectStep';
 import { IBookAppointmentProps, SetEditableHandleTypes } from '../../../constants/appointment';
-import DateAndTime from '../DateAndTime';
+import DateAndTimeStep from '../DateAndTimeStep';
 import './styles.scss'
 
 interface IRightBookAppointmentProps {
@@ -117,7 +117,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
               ) }
               { isShowDateTimeStep && (
                 <>
-                  <DateAndTime 
+                  <DateAndTimeStep
                     ref={DateTimeRef}
                     formValue={ formValue }
                     onChange={ ( formValue ) => setFormValue( formValue ) }

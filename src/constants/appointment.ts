@@ -26,3 +26,6 @@ export interface IBookAppointmentProps {
   meeting_way: string
   meeting_address?: string
 }
+
+export const MorningSlots = ['9:15 - 9:45', '9:45 - 10:15', '10:45 - 11:15', '11:15 - 11:45']
+export const AfternoonSlots = ['15:15 - 15:45', '15:45 - 16:15', '16:15 - 16:45']

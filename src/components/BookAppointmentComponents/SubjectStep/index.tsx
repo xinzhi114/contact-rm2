@@ -79,12 +79,16 @@ const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes,IStepPr
               <div className="titles">{ t( 'subject' ) }</div>
               <div className="three-area">
                 <div className="items">
-                  <div className="label-txt">{ t( 'subject' ) }</div>
+                  <div className="label-txt">{ t( 'captial_subject' ) }</div>
                   <div className="values">{ formValue.subject }</div>
                 </div>
                 <div className="items">
-                  <div className="label-txt">{ t( 'description' ) }</div>
+                  <div className="label-txt">{ t( 'captial_description' ) }</div>
                   <div className="values">{ formValue.description }</div>
+                </div>
+                <div className="items">
+                  <div className="label-txt">{ t( 'captial_attachment' ) }</div>
+                  <div className="values">{ formValue.attachedFiles }</div>
                 </div>
               </div>
             </div>

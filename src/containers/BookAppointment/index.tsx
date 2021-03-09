@@ -60,11 +60,11 @@ const BookAppointment: React.FunctionComponent<IBookAppointmentProps> = (props) 
     },
     {
       pageName: 'contact_rm',
-      pageUrl: '#',
+      pageUrl: '/contactRM',
     },
     {
       pageName: 'book_appointment',
-      pageUrl: '/contactRM/BookAppointment',
+      pageUrl: '#',
     },
   ])
 

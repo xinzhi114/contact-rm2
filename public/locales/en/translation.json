@@ -872,12 +872,15 @@
       "book_appointment": "Book Appointment",
       "subject": {
         "subject": "Subject",
+        "captial_subject": "SUBJECT",
         "description": "Description",
+        "captial_description": "DESCRIPTION",
         "first_enter": "First enter appointment subject and description",
         "enter_your_subject": "Enter you subject",
         "enter_your_description": "Enter you description",
         "attach_file": "Attach File",
-        "attachment": "Attachment"
+        "attachment": "Attachment",
+        "captial_attachment": "ATTACHMENT"
       },
       "date_and_time": {
         "date_and_time": "Date and Time",
