@@ -19,7 +19,7 @@ export interface IStepProps {
 export interface IBookAppointmentProps {
   subject: string
   description: string
-  attachedFile: IBaseFileInputValue
+  attachedFiles: IBaseFileInputValue[]
   date: Date
   time_slots: string[]
   meeting_mode: string

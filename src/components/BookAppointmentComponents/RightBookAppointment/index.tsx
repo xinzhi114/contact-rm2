@@ -5,6 +5,7 @@ import { Button } from 'react-bootstrap'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
 import SubjectStep from '../SubjectStep';
 import { IBookAppointmentProps, SetEditableHandleTypes } from '../../../constants/appointment';
+import { IBaseFileInputValue } from '../../BaseForm/BaseFormFields/BaseFileInput'
 import { IDisabledDateAndTime } from '../../../domain/Appointment'
 import DateAndTimeStep from '../DateAndTimeStep';
 import './styles.scss'
@@ -29,7 +30,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
   const [formValue, setFormValue] = useState<IBookAppointmentProps>({
     subject: '111111',
     description: 'dsadasdasdasdas',
-    attachedFile: {},
+    attachedFiles: [],
     date: new Date(),
     time_slots: [],
     meeting_mode: 'virtual',

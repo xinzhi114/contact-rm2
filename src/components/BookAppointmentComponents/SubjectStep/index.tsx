@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useImperativeHandle, forwardRef } from 'react'
+import React, { useState, useImperativeHandle, forwardRef } from 'react'
 import { useTranslation } from 'react-i18next'
-import { IBaseFormFields, IBaseFormFieldValue } from '../../../constants/baseForm'
-import { BaseTextLinkButton } from '../../BaseForm/BaseFormFields/BaseTextLinkButton'
+import { IBaseFormFields } from '../../../constants/baseForm'
 import { IBaseFileInputValue } from '../../BaseForm/BaseFormFields/BaseFileInput'
 import BaseForm from '../../BaseForm'
 import { IStepProps, SetEditableHandleTypes } from '../../../constants/appointment'
@@ -86,10 +85,17 @@ const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IStepP
                   <div className="label-txt">{ t( 'captial_description' ) }</div>
                   <div className="values">{ formValue.description }</div>
                 </div>
-                <div className="items">
-                  <div className="label-txt">{ t( 'captial_attachment' ) }</div>
-                  <div className="values">{ formValue.attachedFile.name }</div>
-                </div>
+                {
+                  formValue.attachedFiles.length ?
+                  (<div className="items">
+                    <div className="label-txt">{ t( 'captial_attachment' ) }</div>
+                    <div className="values">
+                      {  formValue.attachedFiles.map((file, index) => (<span key={index}>{file.name}</span>)
+                        ) }
+                    </div>
+                  </div>)
+                  : ''
+                }
               </div>
             </div>
           </div>
