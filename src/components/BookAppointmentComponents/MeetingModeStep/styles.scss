@@ -1,0 +1,147 @@
+@import '../../../styles/_variables.scss';
+
+.border-boxs {
+    border-radius: 6px;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    padding: 22px;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    .mt20 {
+        margin-top: 20px;
+    }
+
+    .btn-edit {
+        @include icon-green-edit;
+        width: 25px;
+        height: 25px;
+        align-items: flex-start;
+    }
+
+    .lefts {
+        align-items: flex-start;
+        flex: 1;
+
+        .color-point {
+            width: 24px;
+            height: 24px;
+            border-radius: 100%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 24px;
+            display: inline-block;
+            background-color: $green;
+            color: $font-black;
+            font-weight: 700;
+            margin-right: 15px;
+            margin-top: 2px;
+        }
+
+        .right-txt {
+            flex: 1;
+
+            .titles {
+                font-weight: 700;
+                color: $dark-black;
+                font-size: 18px;
+                font-family: $gotham-rounded;
+                margin-bottom: 20px;
+            }
+
+            .sub-titles {
+                font-weight: normal;
+                color: $font-black;
+                font-size: 14px;
+                font-family: $open-sans;
+                margin-bottom: 20px;
+            }
+
+            .calendar-container {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .time-slots-container {
+                margin-left: 20px;
+
+                .selected-date {
+                    font-weight: 700;
+                    color: $font-black;
+                    font-size: 14px;
+                    font-family: $open-sans;
+                    margin-bottom: 10px;
+                }
+
+                .slots {
+                    font-size: 10px;
+                    color: $font-black;
+                    margin-bottom: 10px;
+                }
+
+                .slots-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+
+                    .slot-cell {
+                        border-radius: 6px;
+                        height: 50px;
+                        width: 118px;
+                        line-height: 50px;
+                        text-align: center;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                    }
+
+                    .slot-cell-available {
+                        border: 1px solid #C9C5C1;
+                        color: $dark-black;
+                    }
+
+                    .slot-cell-disabled {
+                        background-color: $top-line-gray;
+                        color: rgba(0, 31, 38, 0.85);
+                        cursor: not-allowed;
+                    }
+
+                    .slot-cell-selected {
+                        background-color: #00D0B5;
+                        color: $dark-black;
+                    }
+                }
+            }
+        }
+
+        .three-area {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .items {
+                flex: 0 0 33%;
+                max-width: 33%;
+
+                .label-txt {
+                    opacity: 0.5;
+                    color: $font-black;
+                    font-size: 10px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+
+                .values {
+                    color: $font-black;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    font-family: $gotham-rounded;
+                    max-width: 419px;
+                }
+            }
+        }
+    }
+}

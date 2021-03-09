@@ -888,8 +888,10 @@
         "captial_appointment_time": "APPOINTMENT TIME",
         "you_can_select_any_date": "You can select any date on weekdays only from current or future month (next 30 days) and select one or multiple time slot (max 2 hours) between 9:15 AM till 5:15 PM for the selected date."
       },
-      "metting_mode": {
-        "metting_mode": "Meeting mode",
+      "meeting_mode": {
+        "meeting_mode": "Meeting mode",
+        "captial_meeting_mode": "MEETING MODE",
+        "captial_at_customer_location": "AT CUSTOMER LOCATION",
         "select_preferred": "Select preferred mode of metting: ",
         "virtual_metting": "Virtual metting",
         "in-person_metting": "In-person metting",

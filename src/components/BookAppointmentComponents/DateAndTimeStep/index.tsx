@@ -12,6 +12,31 @@ import './calendar.css'
 
 const formatDateWeekDay = (date: Date) => moment(date).format(DATE_WEEKDAY_FORMAT)
 
+const TimeSlot = (slots: string[], disabledTime: string[], time_slots: string[], handleSelectSlot: (slot: string) => void ) => {
+  return (
+    <div className="mt20">
+      <div className="slots">MORNING (3 SLOT AVAILABLE)</div>
+      <div className="slots-wrapper">
+      {
+        slots.map( ( slot: string, index: number ) => {
+          let klassName = 'slot-cell slot-cell-available'
+          if (disabledTime.includes(slot)) {
+            return (
+              <div key={ index } className="slot-cell slot-cell-disabled">{ slot }</div>
+              )
+            } 
+            if (time_slots.includes(slot)) {
+              klassName = 'slot-cell slot-cell-selected'
+            }
+            return (
+              <div key={ index } className={ klassName } onClick={() => handleSelectSlot(slot)}>{ slot }</div>
+            )  
+          } ) 
+      }
+      </div>
+    </div>
+  )
+}
 const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IStepProps & { disabledDateAndTime: IDisabledDateAndTime[] }> = ( props, ref ) => {
   const { t: _t } = useTranslation()
   const t = ( key: string ) => _t( `bookAppointment.right.date_and_time.${ key }` )
@@ -113,44 +138,8 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                   onChange={ handleCalendarChange } />
                 <div className="time-slots-container">
                   <div className="selected-date">{ formatedDate }</div>
-                  <div className="mt20">
-                    <div className="slots">MORNING (3 SLOT AVAILABLE)</div>
-                    <div className="slots-wrapper">
-                      { MorningSlots.map( ( slot: string, index: number ) => {
-                        let klassName = 'slot-cell slot-cell-available'
-                        if (disabledTime.includes(slot)) {
-                          return (
-                            <div key={ index } className="slot-cell slot-cell-disabled">{ slot }</div>
-                          )
-                        } 
-                        if (formValue.time_slots.includes(slot)) {
-                          klassName = 'slot-cell slot-cell-selected'
-                        }
-                        return (
-                          <div key={ index } className={ klassName } onClick={() => handleSelectSlot(slot)}>{ slot }</div>
-                        )  
-                      } ) }
-                    </div>
-                  </div>
-                  <div className="mt20">
-                    <div className="slots">AFTERNOON (2 SLOT AVAILABLE)</div>
-                    <div className="slots-wrapper">
-                      { AfternoonSlots.map( ( slot: string, index: number ) => {
-                        let klassName = 'slot-cell slot-cell-available'
-                        if (disabledTime.includes(slot)) {
-                          return (
-                            <div key={ index } className="slot-cell slot-cell-disabled">{ slot }</div>
-                          )
-                        } 
-                        if (formValue.time_slots.includes(slot)) {
-                          klassName = 'slot-cell slot-cell-selected'
-                        }
-                        return (
-                          <div key={ index } className={ klassName } onClick={() => handleSelectSlot(slot)}>{ slot }</div>
-                        )  
-                      } ) }
-                    </div>
-                  </div>
+                  {TimeSlot(MorningSlots, disabledTime, formValue.time_slots, handleSelectSlot)}
+                  {TimeSlot(AfternoonSlots, disabledTime, formValue.time_slots, handleSelectSlot)}
                 </div>
               </div>
             </div>
