@@ -33,7 +33,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
     attachedFiles: [],
     date: new Date(),
     time_slots: [],
-    meeting_mode: 'virtual',
+    meeting_mode: 'virtual_metting',
     meeting_way: 'phone_call',
     meeting_address: ''
   })

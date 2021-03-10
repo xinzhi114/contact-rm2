@@ -2,7 +2,7 @@ import React, { useState, useEffect, useImperativeHandle, forwardRef } from 'rea
 import { useTranslation } from 'react-i18next'
 import { SetEditableHandleTypes, IStepProps } from '../../../constants/appointment';
 import { showErrorMsg } from '../../../components/Toast';
-import Radio, { RadioGroup } from '../RadioGroup';
+import Radio, { RadioGroup, RadioButton } from '../RadioGroup';
 import _ from 'lodash';
 import './styles.scss'
 
@@ -11,18 +11,22 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
   const t = ( key: string ) => _t( `bookAppointment.right.meeting_mode.${ key }` )
 
   const [editable, setEditable] = useState<boolean>( true )
-  const [virtualMeetingMode, setVirtualMeetingMode] = useState(true)
-  const [inPersonMettingMode, setInPersonMettingMode] = useState(false)
-  const [phoneCall, setPhoneCall] = useState(false)
-  const [videoCall, setVideoCall] = useState(false)
 
   const { formValue, onChange } = props
 
-  const handleCalendarChange = ( value: any ) => {
-
+  const handleMeetingModeChange = ( value: string ) => {
     onChange( {
       ...formValue,
+      meeting_mode: value,
+      meeting_way: ''
     } )
+  }
+
+  const handleMeetingWayChange = (value: string) => {
+    onChange({
+      ...formValue,
+      meeting_way: value
+    })
   }
 
 
@@ -42,73 +46,34 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
               <span className="color-point">3</span>
               <div className="right-txt">
                 <div className="titles">{ t( 'meeting_mode' ) }</div>
-                <div className="meeting_mode_row flex">
+                <div className="meeting-mode-row flex">
                   { t( 'select_preferred' ) }
-                  <div className="radio-group">
-                    <div className="radio-wrap">
-                      <input
-                        type="radio"
-                        name="meeting_mode"
-                        id="virtualMeetingMode"
-                        checked={virtualMeetingMode}
-                        onChange={(event) => {
-                          setVirtualMeetingMode(event.target.checked)
-                          setInPersonMettingMode(false)
-                        }}
-                      />
-                      <label htmlFor="virtualMeetingMode">{t('virtual_metting')}</label>
-                    </div>
-                    <div className="radio-wrap">
-                      <input
-                        type="radio"
-                        name="meeting_mode"
-                        id="inPersonMettingMode"
-                        checked={inPersonMettingMode}
-                        onChange={(event) => {
-                          setVirtualMeetingMode(false)
-                          setInPersonMettingMode(event.target.checked)
-                        }}
-                      />
-                      <label htmlFor="inPersonMettingMode">
-                        {t('in_person_metting')}
-                      </label>
+                  <RadioGroup name="meeting_mode" onChange={(val) => handleMeetingModeChange(val)} value={formValue.meeting_mode}>
+                    <Radio value="virtual_metting">{t('virtual_metting')}</Radio>
+                    <Radio value="in_person_metting">{t('in_person_metting')}</Radio>
+                  </RadioGroup>
+                </div>
+                {
+                  formValue.meeting_mode === 'virtual_metting' 
+                  ?
+                  <div className="meeting-way-row flex">
+                    <RadioGroup name="meeting_way" onChange={(val) => handleMeetingWayChange(val)} value={formValue.meeting_way}>
+                      <RadioButton value="phone_call">{t('phone_call')}</RadioButton>
+                      <RadioButton value="video_call">{t('video_call')}</RadioButton>
+                    </RadioGroup>
+                    <div className="meeting-way-title-box">
+                      <span className="icon-info" />
+                      <span className="title">{t('meeting_using_video_will_be_recorded')}</span>
                     </div>
                   </div>
-                </div>
-
-                <RadioGroup name="meeting_way" onChange={(val) => {console.log(val,'kkkkk');}} value="phone_call">
-                  <Radio value="phone_call">Phone call</Radio>
-                  <Radio value="video_call">Video Call</Radio>
-                </RadioGroup>
-                  {/* <div className="radio-group">
-                    <label htmlFor="phoneCall" className="radio-wrap radio-button-wrapper" style={{'backgroundColor': phoneCall ? 'red' : 'green'}}>
-                      <input
-                        type="radio"
-                        name="meeting_way"
-                        id="phoneCall"
-                        checked={phoneCall}
-                        onChange={(event) => {
-                          setPhoneCall(event.target.checked)
-                          setVideoCall(false)
-                        }}
-                      />
-                      <span>{t('phone_call')}</span>
-                    </label>
-                    <label className="radio-wrap radio-button-wrapper" style={{'backgroundColor': videoCall ? 'red' : 'green'}}>
-                      <input
-                        type="radio"
-                        name="meeting_way"
-                        id="videoCall"
-                        checked={videoCall}
-                        onChange={(event) => {
-                          setVideoCall(event.target.checked)
-                          setPhoneCall(false)
-                        }}
-                      />
-                      <span>{t('video_call')}</span>
-                    </label>
-                  </div> */}
-
+                  : 
+                  <div className="meeting-way-row flex">
+                    <RadioGroup name="meeting_way" onChange={(val) => handleMeetingWayChange(val)} value={formValue.meeting_way}>
+                      <RadioButton value="at_customer_location">{t('at_customer_location')}</RadioButton>
+                      <RadioButton value="at_branch">{t('at_branch')}</RadioButton>
+                    </RadioGroup>
+                  </div>
+                }
               </div>
             </div>
           </>

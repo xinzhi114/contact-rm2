@@ -50,7 +50,7 @@
               font-family: $gotham-rounded;
               margin-bottom: 20px;
             }
-            .meeting_mode_row {
+            .meeting-mode-row {
               font-weight: normal;
               color: $font-black;
               font-size: 14px;
@@ -65,13 +65,22 @@
                 }
               }
             }
-            .meeting_way_row {
-              .radio-group {
-                display: flex;
-                flex-direction: row;
-                margin-left: 20px;
-                .radio-wrap {
-                  margin: 10px 20px;
+            .meeting-way-row {
+              .meeting-way-title-box {
+                line-height: 32px;
+                .title {
+                  color: #003D4C;
+                  font-family: $open-sans;
+                  font-size: 14px;
+                  line-height: 32px;
+                }
+                .icon-info {
+                  @include icon-alert-circle-small;
+                  width: 14px;
+                  height: 14px;
+                  vertical-align: middle;
+                  margin-right: 6px;
+                  display: inline-block;
                 }
               }
             }

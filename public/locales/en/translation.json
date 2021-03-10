@@ -896,7 +896,10 @@
         "virtual_metting": "Virtual metting",
         "in_person_metting": "In-person metting",
         "phone_call": "Phone call",
-        "video_call": "Video call"
+        "video_call": "Video call",
+        "at_customer_location": "At customer location",
+        "at_branch": "At branch",
+        "meeting_using_video_will_be_recorded": "Meeting using video will be recorded."
       }
     }
   },

@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { RadioGroupContext } from './group';
-import shortid from 'shortid';
 import './styles.scss';
 interface IRadioProps {
   value: string
@@ -9,24 +8,21 @@ interface IRadioProps {
 const Radio: React.FunctionComponent<IRadioProps> = (props) => {
   const { value, children } = props
   const radioGroup = useContext<any>(RadioGroupContext)
-  const id = shortid.generate()
+
   return (
-    <div className="radio-group">
-      <div className="radio-wrap radio-text-wrap">
+    <label className="radio-group">
+      <div className={`radio-wrap radio-button-wrap ${value === radioGroup.value ? 'radio-button-active' : 'radio-button'}`}>
         <input
           type="radio"
-          id={id}
           name={radioGroup.name}
           checked={value === radioGroup.value}
-          onChange={() => {
+          onChange={(event) => {
             radioGroup.onChange(value)
           }}
-        />
-        <label htmlFor={id}>
-          {children}
-        </label>
+          />
+        <span>{children}</span>
       </div>
-    </div>
+    </label>
   )
 }
 
