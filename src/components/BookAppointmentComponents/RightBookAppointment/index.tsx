@@ -131,6 +131,23 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
     setCurrentStep(currentStep === 'subject' ? 'date_and_time' : 'meeting_mode' )
     setIsContinueDisabled(true)
   }
+  
+  // click edit btn back to prev step
+  const prevStep = (step: 'subject' | 'date_and_time' | 'meeting_mode') => {
+    setCurrentStep(step)
+    if (step === 'subject') {
+      setIsShowDateTimeStep(false)
+      setIsShowMeetingModeStep(false)
+    }
+    if (step === 'date_and_time') {
+      setIsShowMeetingModeStep(false)
+    }
+    if (step === 'meeting_mode') {
+      setIsShowBookButton(false)
+    }
+    setCurrentStep(step)
+    setIsContinueDisabled(false)
+  }
 
   // book button click
   const handleBookButtonClick = () => {
@@ -166,7 +183,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
         setIsContinueDisabled(true)
         break;
     }
-  }, [formValue] )
+  }, [formValue, currentStep] )
 
   return (
     <div className="contact-rm-right-appointment ">
@@ -233,6 +250,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
               { isShowMeetingModeStep && (
                 <MeetingModeStep
                   ref={MeetingModeRef}
+                  prevStep={prevStep}
                   formValue={ formValue }
                   onChange={ ( formValue ) => setFormValue( formValue ) }
                 />
@@ -241,6 +259,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
                 <>
                   <DateAndTimeStep
                     ref={DateTimeRef}
+                    prevStep={prevStep}
                     formValue={ formValue }
                     disabledDateAndTime={ disabledDateAndTime }
                     onChange={ ( formValue ) => setFormValue( formValue ) }
@@ -250,6 +269,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
               <SubjectStep
                 ref={SubjectRef}
                 formValue={ formValue }
+                prevStep={prevStep}
                 onChange={ ( formValue ) => setFormValue( formValue ) }
               />
             </div>

@@ -12,7 +12,7 @@ const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IStepP
 
   const [editable, setEditable] = useState<boolean>( true )
 
-  const { formValue, onChange } = props
+  const { formValue, onChange, prevStep } = props
 
   const fields: IBaseFormFields = {
     subject: {
@@ -99,7 +99,12 @@ const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IStepP
               </div>
             </div>
           </div>
-          <a href="#javascript" className="icons btn-edit label-transparent">
+          <a className="icons btn-edit label-transparent" 
+            onClick={(e) => { 
+              setEditable(true)
+              prevStep('subject')
+            }}
+          >
             { _t( 'common.btns.edit' ) }
           </a>
         </>

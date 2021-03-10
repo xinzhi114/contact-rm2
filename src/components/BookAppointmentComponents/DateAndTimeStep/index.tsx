@@ -46,7 +46,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
   const [formatedDate, setFormatedDate] = useState( '' )
   const [disabledTime, setDisabledTime] = useState<string[]>( [] )
 
-  const { formValue, onChange, disabledDateAndTime } = props
+  const { formValue, onChange, disabledDateAndTime, prevStep } = props
   const today = new Date()
   const feature30days = today.getDate() + 30
   const feature30Date = new Date( today.setDate( feature30days ) )
@@ -162,7 +162,12 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
               </div>
             </div>
           </div>
-          <a href="#javascript" className="icons btn-edit label-transparent">
+          <a className="icons btn-edit label-transparent" 
+            onClick={(e) => { 
+              setEditable(true)
+              prevStep('date_and_time')
+            }}
+          >
             { _t( 'common.btns.edit' ) }
           </a>
         </>

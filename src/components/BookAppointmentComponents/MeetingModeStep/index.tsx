@@ -22,7 +22,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
 
   const [editable, setEditable] = useState<boolean>( true )
 
-  const { formValue, onChange } = props
+  const { formValue, onChange, prevStep } = props
 
   const handleMeetingModeChange = ( value: string ) => {
     onChange( {
@@ -142,7 +142,12 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                 </div>
               </div>
             </div>
-            <a href="#javascript" className="icons btn-edit label-transparent">
+            <a className="icons btn-edit label-transparent" 
+              onClick={(e) => { 
+                setEditable(true)
+                prevStep('meeting_mode')
+              }}
+            >
               { _t( 'common.btns.edit' ) }
             </a>
           </>
