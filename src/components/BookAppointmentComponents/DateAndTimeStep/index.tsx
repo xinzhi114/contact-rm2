@@ -12,7 +12,7 @@ import './calendar.css'
 
 const formatDateWeekDay = (date: Date) => moment(date).format(DATE_WEEKDAY_FORMAT)
 
-const TimeSlot = (slots: string[], disabledTime: string[], time_slots: string[], handleSelectSlot: (slot: string) => void ) => {
+const TimeSlot = (slots: string[], disabledTime: string[], time_slot: string[], handleSelectSlot: (slot: string) => void ) => {
   return (
     <div className="mt20">
       <div className="slots">MORNING (3 SLOT AVAILABLE)</div>
@@ -25,7 +25,7 @@ const TimeSlot = (slots: string[], disabledTime: string[], time_slots: string[],
               <div key={ index } className="slot-cell slot-cell-disabled">{ slot }</div>
               )
             } 
-            if (time_slots.includes(slot)) {
+            if (time_slot.includes(slot)) {
               klassName = 'slot-cell slot-cell-selected'
             }
             return (
@@ -56,7 +56,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
     onChange( {
       ...formValue,
       date: value,
-      time_slots: []
+      time_slot: []
     } )
   }
   // format choosen date
@@ -93,20 +93,20 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
   }
 
   const handleSelectSlot = (slot: string) => {
-    if (formValue.time_slots.length === 4) {
+    if (formValue.time_slot.length === 4) {
       showErrorMsg('You can only select 4 time slot at most')
       return false
     }
-    const new_time_slots = [...formValue.time_slots]
-    const idx = new_time_slots.indexOf(slot)
+    const new_time_slot = [...formValue.time_slot]
+    const idx = new_time_slot.indexOf(slot)
     if (idx > -1) {
-      new_time_slots.splice(idx, 1)
+      new_time_slot.splice(idx, 1)
     } else {
-      new_time_slots.push(slot)
+      new_time_slot.push(slot)
     }
     onChange( {
       ...formValue,
-      time_slots: new_time_slots
+      time_slot: new_time_slot
     } )
   }
 
@@ -138,8 +138,8 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                   onChange={ handleCalendarChange } />
                 <div className="time-slots-container">
                   <div className="selected-date">{ formatedDate }</div>
-                  {TimeSlot(MorningSlots, disabledTime, formValue.time_slots, handleSelectSlot)}
-                  {TimeSlot(AfternoonSlots, disabledTime, formValue.time_slots, handleSelectSlot)}
+                  {TimeSlot(MorningSlots, disabledTime, formValue.time_slot, handleSelectSlot)}
+                  {TimeSlot(AfternoonSlots, disabledTime, formValue.time_slot, handleSelectSlot)}
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                 </div>
                 <div className="items">
                   <div className="label-txt">{ t( 'captial_appointment_time' ) }</div>
-                  <div className="values">{ formValue.time_slots.join(', ') }</div>
+                  <div className="values">{ formValue.time_slot.join(', ') }</div>
                 </div>
               </div>
             </div>

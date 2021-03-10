@@ -119,7 +119,7 @@ const BookAppointment: React.FunctionComponent<IBookAppointmentProps> = (props) 
                   data={dataList.relationshipManager}/>
 
                 <div className={`right-container`}>
-                  <RightBookAppointment disabledDateAndTime={ dataList.disabledDateAndTime } />
+                  <RightBookAppointment managerName={dataList.relationshipManager.name} disabledDateAndTime={ dataList.disabledDateAndTime } />
                 </div>
               </div>
             </div>

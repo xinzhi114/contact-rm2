@@ -4,16 +4,21 @@
   color: $font-black;
   font-size: 14px;
   font-family: $open-sans;
+  display: flex;
+  .flex-row {
+    flex-direction: row;
+  }
+  .flex-column {
+    flex-direction: column;
+  }
   .radio-group {
     display: flex;
-    flex-direction: row;
-    margin-left: 20px;
     .radio-wrap {
       display: inline-block;
       vertical-align: top;
     }
     .radio-button-wrap {
-      margin: 10px 20px;
+      margin: 10px 20px 20px 0;
       width: 182px;
       height: 60px;
       border-radius: 6px;

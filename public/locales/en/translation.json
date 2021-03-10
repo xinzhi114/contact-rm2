@@ -818,6 +818,7 @@
       "appointment_time": "Appointment Time",
       "description": "Description",
       "update_appointment_complete": "Update Appointment complete",
+      "book_appointment_complete": "Book Appointment complete",
       "your_appointment_successfully_updated_to_your_rm": "Your Appointment successfully updated to your RM",
       "date_of_appointment": "Date of Appointment",
       "time_of_appointment": "Time of Appointment",
@@ -892,15 +893,18 @@
         "meeting_mode": "Meeting mode",
         "captial_meeting_mode": "MEETING MODE",
         "captial_at_customer_location": "AT CUSTOMER LOCATION",
+        "captial_meeting_way": "MEETING WAY",
         "select_preferred": "Select preferred mode of metting: ",
         "virtual_metting": "Virtual metting",
         "in_person_metting": "In-person metting",
         "phone_call": "Phone call",
         "video_call": "Video call",
         "at_customer_location": "At customer location",
-        "at_branch": "At branch",
+        "at_branch": "At Branch",
         "meeting_using_video_will_be_recorded": "Meeting using video will be recorded."
-      }
+      },
+      "book_appointment_complete": "Book appointment complete",
+      "book_sucess_text": "Your Appointment successfully booked to your RM "
     }
   },
   "accountsDashboard": {

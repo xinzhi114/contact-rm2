@@ -21,7 +21,7 @@ export interface IBookAppointmentProps {
   description: string
   attachedFiles: IBaseFileInputValue[]
   date: Date
-  time_slots: string[]
+  time_slot: string[]
   meeting_mode: string
   meeting_way: string
   meeting_address?: string
