@@ -894,7 +894,7 @@
         "captial_at_customer_location": "AT CUSTOMER LOCATION",
         "select_preferred": "Select preferred mode of metting: ",
         "virtual_metting": "Virtual metting",
-        "in-person_metting": "In-person metting",
+        "in_person_metting": "In-person metting",
         "phone_call": "Phone call",
         "video_call": "Video call"
       }

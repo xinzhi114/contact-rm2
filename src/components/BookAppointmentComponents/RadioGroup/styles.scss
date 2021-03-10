@@ -1,0 +1,66 @@
+@import '../../../styles/_variables.scss';
+.customer_radio_row {
+  font-weight: normal;
+  color: $font-black;
+  font-size: 14px;
+  font-family: $open-sans;
+  margin-bottom: 20px;
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    .radio-wrap {
+      margin: 10px 20px;
+      background-color: $green;
+      width: 182px;
+      height: 60px;
+      border-radius: 6px;
+      color: $dark-black;
+      cursor: pointer;
+      line-height: 60px;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+}
+// .radio-wrap {
+//   display: inline-block;
+//   vertical-align: top;
+//   input[type='radio'] {
+//     display: none;
+//   }
+//   input[type='radio'] + label {
+//     font-size: 14px;
+//     color: $font-black;
+//     display: inline-block;
+//     font-weight: normal;
+//     padding-left: 30px;
+//     text-align: left;
+//     position: relative;
+//     line-height: 23px;
+//     text-transform: none;
+//     cursor: pointer;
+//   }
+//   label::before {
+//     content: '';
+//     display: block;
+//     width: 24px;
+//     height: 24px;
+//     vertical-align: middle;
+//     margin-right: 5px;
+//     border: 1px solid $df-gray;
+//     background: none;
+//     border-radius: 100%;
+//     position: absolute;
+//     left: 0;
+//     top: -2px;
+//   }
+//   input[type='radio']:checked + label::before {
+//     border: 1px solid $light-green-label;
+//     box-shadow: 0 0 0 3px $white inset;
+//     background-color: $light-green-label;
+//   }
+//   input[type='radio']:checked + label {
+//     font-weight: 600;
+//   }
+// }

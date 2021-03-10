@@ -24,7 +24,7 @@ export const otpExpireTime = '30'
 
 export const noActivity = {
   notificationTimeout: 1000 * 60000, // 600 seconds
-  logoutTimeout: 1000 * 120, // 120 seconds
+  logoutTimeout: 1000000 * 120000, // 120 seconds
 }
 
 export const contactRMReviewSortByDropdownOptions = ['Newest', 'Oldest']
