@@ -8,7 +8,7 @@ import { showErrorMsg } from '../../../components/Toast';
 import { DATE_WEEKDAY_FORMAT } from '../../../constants/date';
 import _ from 'lodash';
 import './styles.scss'
-import './calendar.css'
+import './calendar.scss'
 
 const formatDateWeekDay = (date: Date) => moment(date).format(DATE_WEEKDAY_FORMAT)
 

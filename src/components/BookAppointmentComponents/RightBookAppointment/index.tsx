@@ -27,10 +27,11 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
     )
     const [isShowDateTimeStep, setIsShowDateTimeStep] = useState<boolean>(false)
     const [isShowMeetingModeStep, setIsShowMeetingModeStep] = useState<boolean>(false)
-    const [isShowBookButton, setIsShowBookButton] = useState<boolean>(true)
+    const [isShowBookButton, setIsShowBookButton] = useState<boolean>(false)
     const [isContinueDisabled, setIsContinueDisabled] = useState<boolean>( true )
     const [isShowSuccessModal, setIsShowSuccessModal] = useState<boolean>( false )
     const [isShowCanelConfirmModalWindow, setIsShowCanelConfirmModalWindow] = useState<boolean>( false )
+
     const SubjectRef = useRef<SetEditableHandleTypes>(null)
     const DateTimeRef = useRef<SetEditableHandleTypes>(null)
     const MeetingModeRef = useRef<SetEditableHandleTypes>(null)
