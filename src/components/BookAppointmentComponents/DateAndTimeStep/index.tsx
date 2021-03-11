@@ -83,7 +83,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
 
     return isDisabledDate || isWeekend
   }
-
+  // set disabled time slot
   const setDisableTime = ( date: Date ): void => {
     const formatedDate = formatDateWeekDay(date)
     if (formatedDate && disabledDateAndTime) {

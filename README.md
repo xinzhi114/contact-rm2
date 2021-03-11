@@ -117,3 +117,11 @@ To change the Firebase app, go to `src/config/firebase.ts` and change `firebaseC
 If you set `firebaseConfig` to `null`, the Firebase integration will be disabled.
 
 Additionally, you can set `PRODUCTION_ONLY` to `true` to disable Firebase during development and only track the analytics once the app is built/deployed in production.
+
+
+## Verification
+Please run `npm install` first, there are some new node modules has been added.
+1. Click the `Book appointment` button, the URL will go to `/contactRM/BookAppointment` routes. In the right container you will see the whole flow of book appointment.
+2. When you finish the each step from, the `Continue` button will be available.
+3. Click the `edit-icon` will go back to the specified step, and the data user inputed would be save.
+4. The `Update Appointment ` edit feature shared the same components with `Book Appointment` flow.

@@ -902,7 +902,8 @@
         "video_call": "Video call",
         "at_customer_location": "At customer location",
         "at_branch": "At Branch",
-        "meeting_using_video_will_be_recorded": "Meeting using video will be recorded."
+        "meeting_using_video_will_be_recorded": "Meeting using video will be recorded.",
+        "enter_postcode_to_find_address": "Enter postcode to find address"
       },
       "book_appointment_complete": "Book appointment complete",
       "update_appointment_complete": "Update appointment complete",

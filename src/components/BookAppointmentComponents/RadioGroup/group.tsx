@@ -3,7 +3,7 @@ import './styles.scss';
 interface IRadioGroupProps {
   name: string
   onChange: (val: string) => void
-  value: string
+  value: string|null
   children: React.ReactNode[],
   direction?: string
 }

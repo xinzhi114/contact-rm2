@@ -3,7 +3,7 @@ import { RadioGroupContext } from './group';
 import shortid from 'shortid';
 import './styles.scss';
 interface IRadioProps {
-  value: string
+  value: string|null
   children: React.ReactNode
 }
 const Radio: React.FunctionComponent<IRadioProps> = (props) => {

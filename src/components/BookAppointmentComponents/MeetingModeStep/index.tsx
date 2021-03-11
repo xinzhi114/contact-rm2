@@ -20,6 +20,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
   const t = ( key: string ) => _t( `bookAppointment.right.meeting_mode.${ key }` )
 
   const [editable, setEditable] = useState<boolean>( true )
+  const [newAddress, setNewAddress] = useState<string|null>(null)
 
   const { formValue, onChange, prevStep } = props
 
@@ -107,6 +108,18 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                           </Radio>
                         </div>
                       ))}
+                      <Radio value={newAddress}>
+                        <div>New address</div>
+                        <div className="inputs">
+                          <input
+                            type="text"
+                            placeholder={t('enter_postcode_to_find_address')}
+                            onChange={(event) => {
+                              setNewAddress(event.target.value)
+                            }}
+                          />
+                        </div>
+                      </Radio>
                     </RadioGroup>
                     </div>
                   </div>

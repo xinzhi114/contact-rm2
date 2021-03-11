@@ -48,7 +48,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
       attachedFiles: [],
       date: new Date(),
       time_slot: [],
-      meetingMode: '',
+      meetingMode: _t('bookAppointment.right.meeting_mode.virtual_metting'),
       preferredModeOfMeeting: '',
       meeting_address: ''
     })
