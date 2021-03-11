@@ -5,13 +5,14 @@ import CancelAppointmentModalWindow from '../CancelAppointmentModalWindow'
 import GeneralGrayConfirmModalWindow from '../../../components/GeneralGrayConfirmModalWindow'
 import GeneralConfirmModalWindow from '../../../components/GeneralConfirmModalWindow'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
-import { Appointment } from '../../../domain/Appointment'
+import { Appointment, IDisabledDateAndTime } from '../../../domain/Appointment'
 import _ from 'lodash'
 import './styles.scss'
 
 interface IRightAppointmentProps {
   relationshipManagerName: string
   dataList: Appointment[]
+  disabledDateAndTime: IDisabledDateAndTime[]
 }
 
 const RightAppointment: React.FunctionComponent<IRightAppointmentProps> = (props) => {
@@ -34,6 +35,8 @@ const RightAppointment: React.FunctionComponent<IRightAppointmentProps> = (props
   const [appointmentData, setAppointmentData] = useState<Appointment | null>(null)
 
   const relationshipManagerName = props.relationshipManagerName
+  
+  const disabledDateAndTime = props.disabledDateAndTime
 
   // click Cancel Appointment
   const clickCancelAppointment = (index: number) => {
@@ -299,6 +302,7 @@ const RightAppointment: React.FunctionComponent<IRightAppointmentProps> = (props
                     <RightUpdateAppointment
                       relationshipManagerName={relationshipManagerName}
                       dataList={appointmentData}
+                      disabledDateAndTime={disabledDateAndTime}
                       confirmCancelledAppointment={() => {
                         setShowUpdateAppointment(false)
                         confirmCancelledAppointment()

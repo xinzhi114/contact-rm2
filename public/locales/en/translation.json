@@ -871,6 +871,7 @@
       "cancel": "Cancel",
       "continue": "Continue",
       "book_appointment": "Book Appointment",
+      "update_appointment": "Update appointment",
       "subject": {
         "subject": "Subject",
         "captial_subject": "SUBJECT",
@@ -904,6 +905,7 @@
         "meeting_using_video_will_be_recorded": "Meeting using video will be recorded."
       },
       "book_appointment_complete": "Book appointment complete",
+      "update_appointment_complete": "Update appointment complete",
       "book_sucess_text": "Your Appointment successfully booked to your RM "
     }
   },

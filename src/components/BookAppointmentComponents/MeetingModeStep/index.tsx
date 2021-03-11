@@ -26,8 +26,8 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
   const handleMeetingModeChange = ( value: string ) => {
     onChange( {
       ...formValue,
-      meeting_mode: value,
-      meeting_way: '',
+      meetingMode: value,
+      preferredModeOfMeeting: '',
       meeting_address: ''
     } )
   }
@@ -35,7 +35,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
   const handleMeetingWayChange = (value: string) => {
     onChange({
       ...formValue,
-      meeting_way: value
+      preferredModeOfMeeting: value
     })
   }
 
@@ -61,19 +61,19 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                 <div className="titles">{ t( 'meeting_mode' ) }</div>
                 <div className="meeting-mode-row flex">
                   { t( 'select_preferred' ) }
-                  <RadioGroup name="meeting_mode" onChange={(val) => handleMeetingModeChange(val)} value={formValue.meeting_mode}>
+                  <RadioGroup name="meeting_mode" onChange={(val) => handleMeetingModeChange(val)} value={formValue.meetingMode}>
                     <Radio value={t('virtual_metting')}>{t('virtual_metting')}</Radio>
                     <Radio value={t('in_person_metting')}>{t('in_person_metting')}</Radio>
                   </RadioGroup>
                 </div>
                 {
-                  formValue.meeting_mode === t('virtual_metting')
+                  formValue.meetingMode === t('virtual_metting')
                   ?
                   <div className="meeting-way-row flex">
                     <RadioGroup 
                       name="meeting_way_v" 
                       onChange={(val) => handleMeetingWayChange(val)} 
-                      value={formValue.meeting_way}
+                      value={formValue.preferredModeOfMeeting}
                     >
                       <RadioButton value="phone_call">{t('phone_call')}</RadioButton>
                       <RadioButton value="video_call">{t('video_call')}</RadioButton>
@@ -88,7 +88,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                     <RadioGroup 
                       name="meeting_way_i" 
                       onChange={(val) => handleMeetingWayChange(val)} 
-                      value={formValue.meeting_way}
+                      value={formValue.preferredModeOfMeeting}
                     >
                       <RadioButton value="at_customer_location">{t('at_customer_location')}</RadioButton>
                       <RadioButton value="at_branch">{t('at_branch')}</RadioButton>
@@ -122,18 +122,18 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                 <div className="three-area">
                   <div className="items">
                     <div className="label-txt">{ t( 'captial_meeting_mode' ) }</div>
-                    <div className="values">{ formValue.meeting_mode }</div>
+                    <div className="values">{ formValue.meetingMode }</div>
                   </div>
-                  { formValue.meeting_mode === t('virtual_metting') && (
+                  { formValue.meetingMode === t('virtual_metting') && (
                     <div className="items">
                       <div className="label-txt">{ t( 'captial_meeting_way' ) }</div>
-                      <div className="values">{ formValue.meeting_way }</div>
+                      <div className="values">{ formValue.preferredModeOfMeeting }</div>
                     </div>
                     )
                   }
-                  { formValue.meeting_mode === t('in_person_metting') && (
+                  { formValue.meetingMode === t('in_person_metting') && (
                     <div className="items">
-                      <div className="label-txt">{ t( formValue.meeting_way ) }</div>
+                      <div className="label-txt">{ t( formValue.preferredModeOfMeeting ) }</div>
                       <div className="values">{ formValue.meeting_address }</div>
                     </div>
                     )

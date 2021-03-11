@@ -4,13 +4,13 @@ import CancelAppointmentModalWindow from '../CancelAppointmentModalWindow'
 import SuccessUpdateAppointmentModalWindow from '../SuccessUpdateAppointmentModalWindow'
 import GeneralGrayConfirmModalWindow from '../../../components/GeneralGrayConfirmModalWindow'
 import GeneralConfirmModalWindow from '../../../components/GeneralConfirmModalWindow'
-import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
-import { Appointment } from '../../../domain/Appointment'
+import { Appointment, IDisabledDateAndTime } from '../../../domain/Appointment'
+import RightBookAppointment from '../../../components/BookAppointmentComponents/RightBookAppointment';
 import './styles.scss'
-
 interface IRightUpdateAppointmentProps {
   relationshipManagerName: string
   dataList: Appointment | null
+  disabledDateAndTime: IDisabledDateAndTime[]
   confirmCancelledAppointment: () => void
   confirmDeleteAppointment: () => void
   confirmAcceptAppointment: () => void
@@ -30,7 +30,7 @@ const RightUpdateAppointment: React.FunctionComponent<IRightUpdateAppointmentPro
   const [cancelledAppointmentRef, setCancelledAppointmentRef] = useState('')
   const [cancelledDateOfAppointment, setCancelledDateOfAppointment] = useState('')
 
-  const { relationshipManagerName, dataList } = { ...props }
+  const { relationshipManagerName, dataList, disabledDateAndTime } = { ...props }
 
   return (
     <React.Fragment>
@@ -107,128 +107,13 @@ const RightUpdateAppointment: React.FunctionComponent<IRightUpdateAppointmentPro
       )}
 
       {!!dataList && (
-        <React.Fragment>
-          <div className="update-appointment">
-            <div className="line-title flex-grid">
-              <div className="lefts flex">
-                <a
-                  href="#javascript"
-                  className="icons icon-back label-transparent"
-                  onClick={() => props.goBack()}
-                >
-                  {_t('common.btns.back')}
-                </a>
-                <span className="title">{t('update_appointment')}</span>
-              </div>
-              <div className="rights">
-                {dataList.status === 'Pending confirmation' && (
-                  <BaseTextLinkButton
-                    classNameContainer={`red-links`}
-                    label={t('cancel_appointment')}
-                    onClick={() => {
-                      setCancelledAppointmentRef(dataList.appointmentRef)
-                      setCancelledDateOfAppointment(dataList.dateOfAppointment)
-                      setIsShowCancelConfirmModalWindow(true)
-                    }}
-                  />
-                )}
-
-                {dataList.status === 'RM Propose new time' && (
-                  <BaseTextLinkButton
-                    classNameContainer={`red-links`}
-                    label={t('accept_appointment')}
-                    onClick={() => {
-                      setIsShowAcceptConfirmModalWindow(true)
-                    }}
-                  />
-                )}
-
-                {dataList.status === 'Rejected' && (
-                  <BaseTextLinkButton
-                    classNameContainer={`red-links`}
-                    label={t('delete_appointment')}
-                    onClick={() => {
-                      setIsShowDeleteConfirmModalWindow(true)
-                    }}
-                  />
-                )}
-
-                <BaseTextLinkButton
-                  label={t('update_appointment')}
-                  isButton
-                  onClick={() => {
-                    setIsShowUpdateConfirmModalWindow(true)
-                  }}
-                />
-              </div>
-            </div>
-            <div className="update-list">
-              <div className="border-boxs flex-grid">
-                <div className="lefts flex">
-                  <span className="color-point">3</span>
-                  <div className="right-txt">
-                    <div className="titles">{t('meeting_mode')}</div>
-                    <div className="three-area">
-                      <div className="items">
-                        <div className="label-txt">{t('preferred_mode_of_meeting')}</div>
-                        <div className="values">{dataList.preferredModeOfMeeting}</div>
-                      </div>
-                      <div className="items">
-                        <div className="label-txt">{t('virtual_meeting_mode')}</div>
-                        <div className="values">{dataList.meetingMode}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#javascript" className="icons btn-edit label-transparent">
-                  {_t('common.btns.edit')}
-                </a>
-              </div>
-              <div className="border-boxs flex-grid">
-                <div className="lefts flex">
-                  <span className="color-point">2</span>
-                  <div className="right-txt">
-                    <div className="titles">{t('date_and_time')}</div>
-                    <div className="three-area">
-                      <div className="items">
-                        <div className="label-txt">{t('appointment_date')}</div>
-                        <div className="values">{dataList.dateOfAppointment}</div>
-                      </div>
-                      <div className="items">
-                        <div className="label-txt">{t('appointment_time')}</div>
-                        <div className="values">{dataList.timeOfAppointment}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#javascript" className="icons btn-edit label-transparent">
-                  {_t('common.btns.edit')}
-                </a>
-              </div>
-              <div className="border-boxs flex-grid">
-                <div className="lefts flex">
-                  <span className="color-point">1</span>
-                  <div className="right-txt">
-                    <div className="titles">{t('subject')}</div>
-                    <div className="three-area">
-                      <div className="items">
-                        <div className="label-txt">{t('subject')}</div>
-                        <div className="values">{dataList.subject}</div>
-                      </div>
-                      <div className="items">
-                        <div className="label-txt">{t('description')}</div>
-                        <div className="values">{dataList.description}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <a href="#javascript" className="icons btn-edit label-transparent">
-                  {_t('common.btns.edit')}
-                </a>
-              </div>
-            </div>
-          </div>
-        </React.Fragment>
+        <RightBookAppointment 
+          managerName={relationshipManagerName} 
+          disabledDateAndTime={ disabledDateAndTime } 
+          goBack={props.goBack}
+          dataList={dataList}
+          confirmCancelledAppointment={props.confirmCancelledAppointment}
+        />
       )}
     </React.Fragment>
   )

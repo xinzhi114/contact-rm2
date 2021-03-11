@@ -58,6 +58,7 @@
               margin-bottom: 20px;
             }
             .meeting-mode-row {
+              flex-wrap: wrap;
               font-weight: normal;
               color: $font-black;
               font-size: 14px;
@@ -73,6 +74,7 @@
               }
             }
             .meeting-way-row {
+              flex-wrap: wrap;
               .meeting-way-title-box {
                 line-height: 32px;
                 .title {
@@ -130,5 +132,20 @@
               }
           }
       }
+  }
+}
+
+@media (max-width: $smaller-desktop-width) {
+  .meeting-mode-row {
+    flex-wrap: wrap;
+  }
+  .meeting-way-row {
+    flex-wrap: wrap;
+  }
+}
+/* fix layout issue when smaller than 768px width */
+@media (max-width: $max-tablet-width) {
+  .meeting-way-row {
+    flex-wrap: wrap;
   }
 }

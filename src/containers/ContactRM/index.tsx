@@ -133,6 +133,7 @@ const ContactRM: React.FunctionComponent<IContactRMProps> = (props) => {
                     <RightAppointment
                       relationshipManagerName={dataList.relationshipManager.name}
                       dataList={dataList.appointment}
+                      disabledDateAndTime={dataList.disabledDateAndTime}
                     />
                   )}
 

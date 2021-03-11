@@ -5,7 +5,8 @@ import { Button } from 'react-bootstrap'
 import { BaseTextLinkButton } from '../../../components/BaseForm/BaseFormFields/BaseTextLinkButton'
 import SubjectStep from '../SubjectStep';
 import { IBookAppointmentProps, SetEditableHandleTypes } from '../../../constants/appointment';
-import { IDisabledDateAndTime } from '../../../domain/Appointment'
+import { IDisabledDateAndTime, Appointment } from '../../../domain/Appointment'
+import CancelAppointmentModalWindow from '../../ContactRMComponents/CancelAppointmentModalWindow'
 import DateAndTimeStep from '../DateAndTimeStep';
 import MeetingModeStep from '../MeetingModeStep';
 import BookSuccessModal from '../../Modals/SuccessModal';
@@ -16,6 +17,9 @@ import './styles.scss'
 interface IRightBookAppointmentProps {
   disabledDateAndTime: IDisabledDateAndTime[]
   managerName: string
+  dataList: Appointment | null
+  goBack: () => void
+  confirmCancelledAppointment: () => void
 }
 
 const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> = (props) => {
@@ -27,9 +31,13 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
     )
     const [isShowDateTimeStep, setIsShowDateTimeStep] = useState<boolean>(false)
     const [isShowMeetingModeStep, setIsShowMeetingModeStep] = useState<boolean>(false)
+    const [isShowCancelConfirmModalWindow, setIsShowCancelConfirmModalWindow] = useState(false)
+    const [isShowCancelledModalWindow, setIsShowCancelledModalWindow] = useState(false)
+
     const [isShowBookButton, setIsShowBookButton] = useState<boolean>(false)
     const [isContinueDisabled, setIsContinueDisabled] = useState<boolean>( true )
     const [isShowSuccessModal, setIsShowSuccessModal] = useState<boolean>( false )
+    const [actionText, setActionText] = useState(t('book_appointment'))
     const [isShowCanelConfirmModalWindow, setIsShowCanelConfirmModalWindow] = useState<boolean>( false )
 
     const SubjectRef = useRef<SetEditableHandleTypes>(null)
@@ -41,12 +49,12 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
       attachedFiles: [],
       date: new Date(),
       time_slot: [],
-      meeting_mode: _t('bookAppointment.right.meeting_mode.virtual_metting'),
-      meeting_way: '',
+      meetingMode: _t('bookAppointment.right.meeting_mode.virtual_metting'),
+      preferredModeOfMeeting: '',
       meeting_address: ''
     })
     
-    const { disabledDateAndTime, managerName } = props
+    const { disabledDateAndTime, managerName, dataList } = props
 
     const FooterContent = (
       <>
@@ -82,12 +90,12 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
       value: <><div>{formValue.time_slot.join(', ')}</div><div>{formValue.time_slot.length / 2}hours ({formValue.time_slot.length} slot)</div></>
     }, {
       label: 'MEETING MODE',
-      value: formValue.meeting_mode
-    }, formValue.meeting_mode === t('virtual_metting') && {
+      value: formValue.meetingMode
+    }, formValue.meetingMode === t('virtual_metting') && {
       label: t( 'captial_meeting_way' ),
-      value: formValue.meeting_way
-    }, formValue.meeting_mode === t('in_person_metting') && {
-      label: t( formValue.meeting_way ),
+      value: formValue.preferredModeOfMeeting
+    }, formValue.meetingMode === t('in_person_metting') && {
+      label: t( formValue.preferredModeOfMeeting ),
       value: formValue.meeting_address
     }].filter(Boolean)
     const SummaryContent = 
@@ -155,7 +163,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
   }
   // only after each step of validation is passed will proceed to the next step
   useEffect( () => {
-    const { subject, description, date, time_slot, meeting_mode, meeting_way, meeting_address } = formValue
+    const { subject, description, date, time_slot, meetingMode, preferredModeOfMeeting, meeting_address } = formValue
     switch(currentStep) {
       case 'subject':
         if (subject && description) {
@@ -171,8 +179,8 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
         break;
       case 'meeting_mode':
         if (
-          (meeting_mode === _t('bookAppointment.right.meeting_mode.virtual_metting') && meeting_way) || 
-          (meeting_mode === _t('bookAppointment.right.meeting_mode.in_person_metting') && meeting_address && meeting_way)
+          (meetingMode === _t('bookAppointment.right.meeting_mode.virtual_metting') && preferredModeOfMeeting) || 
+          (meetingMode === _t('bookAppointment.right.meeting_mode.in_person_metting') && meeting_address && preferredModeOfMeeting)
         )  {
           setIsContinueDisabled(false)
         } else {
@@ -183,13 +191,65 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
         setIsContinueDisabled(true)
         break;
     }
+    console.log(formValue);
   }, [formValue, currentStep] )
 
+  // update appointment data
+  useEffect(() => {
+    if (dataList) {
+      const {dateOfAppointment, subject, description, timeOfAppointment, preferredModeOfMeeting, meetingMode} = dataList
+      const date = moment(dateOfAppointment)
+      const time_slot = [timeOfAppointment.replace(/to/g, '-')]
+      const newFormValue = Object.assign(formValue, { subject, description, date, time_slot, preferredModeOfMeeting, meetingMode })
+      setFormValue({...newFormValue})
+      setIsShowDateTimeStep(true)
+      setIsShowMeetingModeStep(true)
+      setIsShowBookButton(true)
+      SubjectRef.current?.setEditable(false)
+      DateTimeRef.current?.setEditable(false)
+      MeetingModeRef.current?.setEditable(false)
+      setActionText(t('update_appointment'))
+    }
+    console.log(dataList, 'dataList');
+  }, [dataList])
+
   return (
-    <div className="contact-rm-right-appointment ">
+    <div className="appointment-container">
+
+      {isShowCancelConfirmModalWindow && (
+        <CancelAppointmentModalWindow
+          data={dataList}
+          onClose={() => {
+            setIsShowCancelConfirmModalWindow(false)
+          }}
+          onCancelAppointment={() => {
+            setIsShowCancelConfirmModalWindow(false)
+            setIsShowCancelledModalWindow(true)
+          }}
+        />
+      )}
+
+      {isShowCancelledModalWindow && (
+        <GeneralConfirmModalWindow
+          titleText={t('cancel_appointment')}
+          messageText={`${_t(
+            'contactRM.appointmentTab.your_appointment_with_reference_no_is_cancelled_successfully',
+            {
+              appointmentRef: dataList?.appointmentRef || '',
+              dateOfAppointment: moment(formValue.date).format(DATE_WEEKDAY_FORMAT),
+            }
+          )}`}
+          confirmBtnText={_t('common.btns.confirm')}
+          onClose={() => {
+            setIsShowCancelledModalWindow(false)
+            props.confirmCancelledAppointment()
+          }}
+        />
+      )}
+
       {isShowSuccessModal && (
         <BookSuccessModal
-          title={t('book_appointment_complete')}
+          title={dataList ? t('update_appointment_complete') : t('book_appointment_complete')}
           successText={<span>{t('book_sucess_text')}<strong>{managerName}</strong></span>}
           onClose={() => {
             setIsShowSuccessModal(false)
@@ -199,7 +259,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
           {SummaryContent}
         </BookSuccessModal>
       )}
-
+{/* 
       {isShowCanelConfirmModalWindow && (
         <GeneralConfirmModalWindow
           titleText={'Cancel appointment'}
@@ -210,8 +270,8 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
             history.push('/contactRM')
           }}
         />
-      )}
-      <div className="appointment-module">
+      )} */}
+      <div>
         <React.Fragment>
           <div className="book-appointment">
             <div className="line-title flex-grid">
@@ -219,25 +279,26 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
                 <a
                   href="#javascript"
                   className="icons icon-back label-transparent"
-                  onClick={ () => goBack() }
+                  onClick={ () => props.goBack() }
                 >
                   { _t( 'common.btns.back' ) }
                 </a>
-                <span className="title">{t('book_appointment')}</span>
+                <span className="title">{ actionText }
+                </span>
               </div>
               <div className="rights">
                 <BaseTextLinkButton
                   classNameContainer={ `green-txt-btn` }
                   label={ _t( 'common.btns.cancel' ) }
                   onClick={ () => {
-                    setIsShowCanelConfirmModalWindow(true)
+                    !!dataList ? setIsShowCancelConfirmModalWindow(true) : setIsShowCancelledModalWindow(true)
                   } }
                 />
                 {
                 isShowBookButton 
                 ? 
                   <Button variant="primary" onClick={ () => handleBookButtonClick() }>
-                    { _t( 'common.dashboardHeader.topBreadcrumb.book_appointment' ) }
+                    {actionText}
                   </Button>
                 :
                   <Button variant="primary" onClick={ () => handleContinueClick() } disabled={ isContinueDisabled }>
@@ -247,7 +308,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
               </div>
             </div>
             <div className="step-module">
-              { isShowMeetingModeStep && (
+              { (isShowMeetingModeStep || !!dataList) && (
                 <MeetingModeStep
                   ref={MeetingModeRef}
                   prevStep={prevStep}
@@ -255,7 +316,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
                   onChange={ ( formValue ) => setFormValue( formValue ) }
                 />
               ) }
-              { isShowDateTimeStep && (
+              { (isShowDateTimeStep || !!dataList) && (
                 <>
                   <DateAndTimeStep
                     ref={DateTimeRef}

@@ -7,6 +7,7 @@ import DashboardLeftSidebar from '../../components/DashboardLeftSidebar'
 import LeftBar from '../../components/BookAppointmentComponents/LeftBar'
 import RightBookAppointment from '../../components/BookAppointmentComponents/RightBookAppointment';
 import ActivityDetection from '../../components/ActivityDetection'
+import { useHistory } from 'react-router-dom'
 import { Appointment, IDisabledDateAndTime } from '../../domain/Appointment'
 import './styles.scss'
 
@@ -53,6 +54,7 @@ interface IBookAppointmentProps {
 
 const BookAppointment: React.FunctionComponent<IBookAppointmentProps> = (props) => {
   const [individualBusiness, setIndividualBusiness] = useState('individual')
+  const history = useHistory()
 
   const [headerBreadcrumbData] = useState([
     {
@@ -119,7 +121,15 @@ const BookAppointment: React.FunctionComponent<IBookAppointmentProps> = (props) 
                   data={dataList.relationshipManager}/>
 
                 <div className={`right-container`}>
-                  <RightBookAppointment managerName={dataList.relationshipManager.name} disabledDateAndTime={ dataList.disabledDateAndTime } />
+                  <div className="contact-rm-right-contact-details">
+                    <RightBookAppointment 
+                      goBack={() => history.goBack()} 
+                      dataList={null}
+                      managerName={dataList.relationshipManager.name} 
+                      disabledDateAndTime={ dataList.disabledDateAndTime }
+                      confirmCancelledAppointment={() => history.goBack()}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
