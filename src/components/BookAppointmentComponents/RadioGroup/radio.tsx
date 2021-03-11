@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { RadioGroupContext } from './group';
 import shortid from 'shortid';
 import './styles.scss';

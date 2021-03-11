@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useImperativeHandle, forwardRef } from 'react'
+import React, { useState, useImperativeHandle, forwardRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { SetEditableHandleTypes, IStepProps } from '../../../constants/appointment';
 import Radio, { RadioGroup, RadioButton } from '../RadioGroup';
-import _ from 'lodash';
 import './styles.scss'
 
 const AddressList = [
@@ -142,14 +141,13 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
                 </div>
               </div>
             </div>
-            <a className="icons btn-edit label-transparent" 
+            <span className="btn-edit label-transparent" 
               onClick={(e) => { 
                 setEditable(true)
                 prevStep('meeting_mode')
               }}
             >
-              { _t( 'common.btns.edit' ) }
-            </a>
+            </span>
           </>
         }
       </div>

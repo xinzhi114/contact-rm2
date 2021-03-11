@@ -76,6 +76,7 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
       if( dictByDate[item]['time'].length === 7 ) {
         return new Date( item ).toISOString()
       }
+      return false
     } ).filter( Boolean )
     const isWeekend = [0, 6].includes( date.getDay() )
     const isDisabledDate = disableDate.includes( date.toISOString() )
@@ -162,14 +163,13 @@ const DateAndTimeStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IS
               </div>
             </div>
           </div>
-          <a className="icons btn-edit label-transparent" 
+          <span className="btn-edit label-transparent" 
             onClick={(e) => { 
               setEditable(true)
               prevStep('date_and_time')
             }}
           >
-            { _t( 'common.btns.edit' ) }
-          </a>
+          </span>
         </>
       }
     </div>

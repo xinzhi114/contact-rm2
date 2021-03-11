@@ -99,14 +99,12 @@ const SubjectStep: React.ForwardRefRenderFunction<SetEditableHandleTypes, IStepP
               </div>
             </div>
           </div>
-          <a className="icons btn-edit label-transparent" 
+          <span className="icons btn-edit label-transparent" 
             onClick={(e) => { 
               setEditable(true)
               prevStep('subject')
             }}
-          >
-            { _t( 'common.btns.edit' ) }
-          </a>
+          ></span>
         </>
       }
     </div>

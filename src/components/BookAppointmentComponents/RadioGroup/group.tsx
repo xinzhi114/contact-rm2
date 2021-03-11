@@ -20,7 +20,7 @@ const RadioGroup: React.FunctionComponent<IRadioGroupProps> = (props) => {
 
   useEffect(() => {
     setGroupValue(value)
-  }, [])
+  }, [value])
   return (
     <div className={`radio_group_row flex-${direction || 'row'}`}>
       <RadioGroupContext.Provider value={{name, value: groupValue, onChange: onRadioChange}}>
