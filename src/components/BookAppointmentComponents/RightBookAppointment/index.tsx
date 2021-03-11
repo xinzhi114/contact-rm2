@@ -38,18 +38,17 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
     const [isContinueDisabled, setIsContinueDisabled] = useState<boolean>( true )
     const [isShowSuccessModal, setIsShowSuccessModal] = useState<boolean>( false )
     const [actionText, setActionText] = useState(t('book_appointment'))
-    const [isShowCanelConfirmModalWindow, setIsShowCanelConfirmModalWindow] = useState<boolean>( false )
 
     const SubjectRef = useRef<SetEditableHandleTypes>(null)
     const DateTimeRef = useRef<SetEditableHandleTypes>(null)
     const MeetingModeRef = useRef<SetEditableHandleTypes>(null)
     const [formValue, setFormValue] = useState<IBookAppointmentProps>({
-      subject: '111111',
-      description: 'dsadasdasdasdas',
+      subject: '',
+      description: '',
       attachedFiles: [],
       date: new Date(),
       time_slot: [],
-      meetingMode: _t('bookAppointment.right.meeting_mode.virtual_metting'),
+      meetingMode: '',
       preferredModeOfMeeting: '',
       meeting_address: ''
     })
@@ -191,7 +190,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
         setIsContinueDisabled(true)
         break;
     }
-    console.log(formValue);
+
   }, [formValue, currentStep] )
 
   // update appointment data
@@ -210,7 +209,6 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
       MeetingModeRef.current?.setEditable(false)
       setActionText(t('update_appointment'))
     }
-    console.log(dataList, 'dataList');
   }, [dataList])
 
   return (
@@ -259,18 +257,7 @@ const RightBookAppointment: React.FunctionComponent<IRightBookAppointmentProps> 
           {SummaryContent}
         </BookSuccessModal>
       )}
-{/* 
-      {isShowCanelConfirmModalWindow && (
-        <GeneralConfirmModalWindow
-          titleText={'Cancel appointment'}
-          messageText={`Your Appointment with Reference No. '2206998' for '14 Dec 2020' is cancelled successfully. Please raise a new request if you want to contact the RM in the future.`}
-          confirmBtnText={_t('common.btns.confirm')}
-          onClose={() => {
-            setIsShowCanelConfirmModalWindow(false)
-            history.push('/contactRM')
-          }}
-        />
-      )} */}
+
       <div>
         <React.Fragment>
           <div className="book-appointment">
